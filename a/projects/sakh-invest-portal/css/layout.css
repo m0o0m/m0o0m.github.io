@@ -1,0 +1,28 @@
+#container { text-align: left; position: relative; margin: 0 auto; min-height: 100%; height: 100%; width: 960px}
+	HTML>BODY #container { height: auto}
+    #content { background: url(/a/projects/sakh-invest-portal/img/bg-container.png) repeat-y; padding-bottom: 320px}
+
+/* Multicolumns Containers ==========================================================================*/
+#content:after, .row:after { clear: both}
+.row_left:after { clear: left}
+#content:after, .row:after, .row_left:after { content: ""; display: table}
+#content, .row, row_left { zoom: 1}
+
+.primary { float: left; padding: 3.692em 0 2.692em 60px; position: relative; width: 600px}
+	ARTICLE.primary:before, SECTION.primary:before  { background: url(/a/projects/sakh-invest-portal/img/bg-h2.png) no-repeat; border-top: 1px solid #D6D6CC; border-bottom: 1px solid #D6D6CC; content: ''; display: block; position: absolute; left: 1px; top: 40px; height: 58px; width: 39px}
+
+.row, .row_left { width: 100%}
+	.row .row, .row .row_left, .row_left .row_left, .row_left .row { min-width: 0}
+
+/* Columns ====================================================================================*/
+/* For max-width: 920px; margin-left: 40px; columns width: oo4 — 200px; oo3 — 280px; oo2 — 440px; oo3 — 600px
+Use pxtoem to calculate percentage */
+	.col { float: left; margin-left: 4.3%; position: relative; min-height: 1px}
+		.col:first-child, .row DIV.first, .row OL.first, .row UL.first { margin-left: 0}
+	.oo4 { width: 21.7%} /*one of 4*/
+	.oo3 { width: 30.4%}
+	.oo2 { width: 47.8%}
+	.to3 { width: 65.1%}  /*two of 3*/
+		.row .offset_by_one { margin-left: 26.1%}
+/* Set included columns widths with specal classes in customs.css. For example, .thumbnails, .feed etc 
+Inner columns set with column-count/column-gap*/

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+HTML, BODY { height: 100%}
+HTML { text-align: center}
+BODY { background: #000; color: #BBBEC2; font: 81.3%/150% Arial, Geneva, Helvetica, sans-serif; text-align: left; margin: 0 auto 1px; padding: 0; width: 950px}
+	.fluid, .live { max-width: 90em; min-width: 950px; width: 90%}
+#container { position: relative; min-height: 100%; height: 100%}
+	HTML>BODY #container { height: auto}
+	#content { background: #292C30; padding-bottom: 240px}
+
+A, INPUT, SELECT, TEXTAREA { outline: 0}
+A { color: #FFF; text-decoration: none}
+A:hover { color: #FC0; text-decoration: underline}
+H1 { font-size: 200%; margin: 0 0 1em}
+H1, H2, .h2 { font-weight: normal}
+H2, .h2 { font-size: 138.5%}
+H3, H4 { font-size: 100%; margin: 0 0 .4em}
+IMG { border: 0}
+P { margin: 0 0 1.5em}
+	P.caption { margin-bottom: .4em}
+OL, UL { margin: 0 0 1.5em 0; padding: 0}
+	OL UL { margin-bottom: 0}
+	UL UL { margin: 0 0 0 -1.85em}
+UL { list-style-type: disc}
+	LI { margin-bottom: .4em}
+
+#s_core { margin: 0 310px 0 40px; padding-top: 30px}
+.content { background: #292C30}
+
+.active A { cursor: default}
+.left { float: left}
+.right { float: right}
+.disabled { cursor: default; filter: alpha(opacity=50); -moz-opacity: .5; opacity: .5}
+
+/* Casino and Games common styles -------------------------------------------------------------------------------------------*/
+.games_set { padding-left: 90px; position: relative}
+	.games_set H2 { float: left; color: #FC0; margin: 0 1em 0 0; font-size: 100%}
+    	.games_set H2 EM { display: block; text-indent: -4300em; position: absolute; top: 0; left: 0; height: 60px; width: 60px}
+    .games_set UL { list-style-image: none; list-style-type: 0; margin: 0 0 3em; padding: 0}
+		.games_set LI { display: inline; margin: 0 1em 0 0}
+			.games_set A { white-space: nowrap}
+
+/* Pagers -----------------------------------------------------------------------------------------------------------------*/
+#pages { list-style-image: none; list-style-type: none; margin: 0; padding: 0}
+	#pages LI {  float: left; font-size: 123.1%; line-height: 26px; height: 26px}
+		#pages A, #pages STRONG { background: #212428; display: inline-block; line-height: 26px; padding: 0 .4em; height: 26px}
+        #pages .prev,  #pages .next { background: url(/a/projects/betplaynow/img/grey.png) no-repeat; text-indent: -4300em; height: 26px; width: 22px}
+			#pages .prev { background-position: -1050px -1250px}
+			#pages .next { background-position: -1080px -1250px}
+            #pages .prev A,  #pages .next A { background: transparent; display: block; padding: 0; height: 26px; width: 22px}
+		#pages STRONG { color: #FC0}
+        #pages .disabled { cursor: default; filter: alpha(opacity=30); -moz-opacity: .3; opacity: .3}
+ 
+/* Tables -----------------------------------------------------------------------------------------------------------------*/
+TABLE { border: 1px solid #474A4E; border-spacing: 0; border-collapse: collapse; empty-cells: show; line-height: normal; text-align: left; margin: 0 auto 1.5em; width: 100%}
+	CAPTION { font-weight: bold; text-align: left; margin-left: 7px; padding-bottom: .6em}
+	THEAD { background: #222528}
+    	THEAD TH { font-weight: normal}
+			.account THEAD TH { color: #FC0}
+	TD, TH { font-size: 100%; font-weight: normal; vertical-align: top; padding: 10px}
+ 
+.num { text-align: right}
+.zebra UL { margin-bottom: 0}
+
+/* Clearers -----------------------------------------------------------------------------------------------------------------*/
+.clearer { clear: both; font-size: 1px; line-height: 0; height: 0}
+.cfx:after, .on_demand:after { clear: both; content: "."; display: block; font-size: 0; line-height: 0; height: 0; visibility: hidden}
+.cfx, .on_demand { display: inline-block}
+/* Hides from IE-mac \*/
+*HTML .cfx, *HTML .on_demand { height: 1%}
+.cfx { display: block}
+/* End hide from IE Mac */

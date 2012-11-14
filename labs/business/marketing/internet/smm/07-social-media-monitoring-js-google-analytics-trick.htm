@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Мониторинг социальных сетей: трюк с JS и Google Analytics</title>
+<meta name="keywords" content="self employment, personal development" />
+<link href="/labs/a/css/business.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Мониторинг социальных сетей: трюк с JS и Google Analytics</h1>
+<ol class="chapter">
+<li>Для начала нужно получить Facebook AP ID. Для этого <a href="https://developers.facebook.com/apps" target="_blank">зарегистрировать</a> новое пустое приложение. Или использовать <a href="https://developers.facebook.com/apps/135956013135870" target="_blank">ID приложения, уже зарегистрированного на данный домен</a>.</li>
+<li>Затем нужно вставить в шаблон нужного типа материалов, после кода Google ASnalytics код с этой страницы.</li>
+<li>Настройка Google Analytics
+<ol>
+<li>В левом меню выбрать Audience &gt; Demograhics &gt; Customer Variables (Аудитория &gt; Демография &gt; Мои переменные)
+</li>
+<li>В верхнем меню Advanced Segments &gt; +New Custom Segment (Расширенные сегменты &gt; +Добавить сегмент).</li>
+<li>Ввести имя.</li>
+<li>Ниже, в фильтре выбрать Include (Включить) — Custom Variable (Value 01-04) (Моя переменная (Значение 01-05)) — Exactly Matching (С точным соответствием) — LoggedIn<br />
+Номера переменных определяются в JS: 1 = Google, 2 = Google+, 3 = Twitter, and 4=Facebook</li>
+<li>Сохранить сегмент</li>
+<li>Повторить операции 3.1–3.5 для оставшихся соц-сетей.</li>
+</ol>
+</li>
+<li>Просмотр статистики. Первых результатов надо подождать несколько часов. В Audience &gt; Demograhics &gt; Customer Variables &gt; Advanced Segments в левой колонке выбрать «Все посещения», а в правой — один, несколько или все расширенные сегменты.
+<img src="/labs/a/img/marcom/ga-custom-segments.png" width="858" height="192" alt="" />
+После этого фильтр можно закрыть. На графике «Моих переменных» появится новая кривая, отображающая пользователей, авторизованных в соц-сетях. А над графиком — дополнительная информация к размышлению.
+</li>
+</ol>
+
+<!--Вставить этот код после кода Google Analytics-->
+<script type="text/javascript">
+		function record_login_status(slot, network, status)
+		{
+			if (status)
+			{
+				_gaq.push(["_setCustomVar", slot, network + "_State", "LoggedIn", 1]);
+				// You may prefer to record this data with _trackEvent
+				// _gaq.push(['_trackEvent', network + '_State',  'status',  "LoggedIn"]);  
+			}else{
+				_gaq.push(["_setCustomVar", slot, network + "_State", "NotLoggedIn", 1]);
+				// You may prefer to record this data with _trackEvent
+				//_gaq.push(['_trackEvent', network + '_State',  'status',  "NotLoggedIn"]);  
+			}
+		}
+</script>
+<img style="display: none" onload="record_login_status(1, 'Google', true)" onerror="record_login_status(1, 'Google', false)" src="https://accounts.google.com/CheckCookie?continue=https://www.google.com/intl/en/images/logos/accounts_logo.png" />
+<img style="display: none" onload="record_login_status(2, 'GooglePlus', true)" onerror="record_login_status(2, 'GooglePlus', false)" src="https://plus.google.com/up/?continue=https://www.google.com/intl/en/images/logos/accounts_logo.png&type=st&gpsrc=ogpy0" />
+<img style="display: none" src="https://twitter.com/login?redirect_after_login=%2Fimages%2Fspinner.gif" onload="record_login_status(3, 'Twitter', true)" onerror="record_login_status(3, 'Twitter', false)" />
+
+<div id="fb-root"></div>
+<script>
+	window.fbAsyncInit = function(){
+		// FB App ID insert here
+		FB.init({ appId:'XXXXXXXXX', status:true,  cookie:true, xfbml:true});
+		FB.getLoginStatus(function(response){
+			if (response.status != "unknown")
+			{
+				record_login_status(4, "Facebook", true);
+			}else{
+				record_login_status(4, "Facebook", false);
+			}
+		});
+	};
+	// Load the SDK Asynchronously
+	(function(d){
+		var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+		js = d.createElement('script'); js.id = id; js.async = true;
+		js.src = "//connect.facebook.net/en_US/all.js";
+		d.getElementsByTagName('head')[0].appendChild(js);
+	}(document));
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.bg-body1sd80pa { background-color: #F5E8D8}
+.bg-body2sd { background-color: #E5D9CC}
+.footer { font-family: Tahoma, sans-serif; color: #BF7F7F; font-size: 11px}
+ADDRESS { font-family: Tahoma, Arial, sans-serif; color: #4C997F; font-size: 11px; font-style: normal}
+ADDRESS A { color: #BF7F7F}
+A { color: #993F0C}
+A:visited { color: #BF7F7F}
+A:hover { color: #7F3333}
+BODY { background-color: #FFF3E5; margin: 0; padding: 0}
+DIV, DL, P, OL, TD, TH, UL { font-family: Arial, Helvetica, sans-serif; color: #730C19; font-size: 13px}
+H2 { font-family: Tahoma, sans-serif; color: #BF7F7F; font-size: 12px; text-transform: uppercase}
+IMG { border: 0 none}

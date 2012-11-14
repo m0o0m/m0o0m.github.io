@@ -1,0 +1,77 @@
+HTML { background: #EAEAE0; font-size: 100%; overflow-y: scroll; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%}
+HTML, BODY { height: 100%}
+
+BODY { background: url(/a/projects/sakh-invest-portal/img/bg-header.png) repeat-x 0 -360px; counter-reset: section; font: 81.3%/1.54  'Helvetica Neue', Helvetica, Arial, sans-serif; *font-size: small; text-align: center; margin: 0; padding: 0}
+
+/*If IE8 will crush with body image background reassign background to HTML using some hacks*/
+/*HTML { background-color: #FFF\0/; background-image: url(/a/projects/project-name/img/bg.png)\0/; background-repeat: repeat-x\0/} 
+BODY { background: none\0/}*/
+
+
+
+/* SHARED =====================================================================================*/
+BODY, .btn, BUTTON, H3, .h3, #header .label, #header .menu LI A, INPUT, INS, LEGEND, MARK, SELECT, .tel, TEXTAREA, .tsr_inner A P, .tsr_bnr A P
+{ color: #535659}
+
+#header .menu UL, TR:nth-child(even)
+{ background: #ECEFF3}
+
+INPUT[type="text"], INPUT.txt, .txt INPUT, SELECT, TABLE, TEXTAREA
+{ border: 1px solid #D6D6CC}
+/* Shared */
+
+#billboard H1 I, #f_search BUTTON, H2 A:after, #header H1 A, #header .label I, .ico_map, #m_home A, #m_contacts A, #sidebar ARTICLE H3:after,
+.tsr_bnr A P:last-child:after, .tsr_inner A P:last-child:after, .tsr_primary H2.click_area:after, .tsr_primary .click_area P:after
+{ background: url(/a/projects/sakh-invest-portal/img/base-graphics.png) no-repeat; display: block; text-indent: -4000em}
+
+.date, .description, FIGCAPTION, .primary HEADER SMALL, .note, .remark, .src, TIME
+{ color: #909086}
+
+/* HTML5 display definitions ========================================================================= */
+ARTICLE, ASIDE, DETAILS, FIGCAPTION, FIGURE, FOOTER, HEADER, HGROUP, NAV, SECTION { display: block}
+AUDIO, CANVAS, VIDEO { display: inline-block; *display: inline; *zoom: 1}
+AUDIO:not([controls]) { display: none}
+[hidden] { display: none}
+/* HTML5 display definitions */
+
+A { color: #404E8C; text-decoration: none; outline: none}
+A:visited { color: #8C4C8C}
+A: hover { color: #668C59}
+
+ABBR[title], DFN[title] { border-bottom: 1px dotted; cursor: help}
+ADDRESS { font-style: normal}
+BLOCKQUOTE { margin: 0 0 1.54em; padding: 0}
+CITE, .cmd, EM, I { font-style: normal; color: #008000}
+CODE, KBD, PRE, SAMP { color: #009; font-family: monospace, serif; _font-family: 'Courier New', monospace; font-size: 107%}
+
+H1, H2 { text-rendering: optimizeLegibility}
+H1 { color: #668C59; font: normal 261.5%/1.18 'Arial Narrow', 'ArialNarrow', Arial, Helvetica, sans-serif; margin: 0; padding: 0 0 .529em; position: relative}
+H2 { color: #668C59; font: bold 92.3%/1.67 'Arial Narrow', Arial, Helvetica, sans-serif; text-transform: uppercase; margin: 0; padding: 0 0 0}
+	H2.kicker { margin-top: -.429em; padding-top: 0}
+    H2 A, H2 A:visited { color: #668C59}
+    H2 A:after { background-position: -180px -60px; content: ''; display: inline-block; margin-left: .6em; height: 8px; width: 7px}
+H3, .h3 { font: bold 100%/1.54 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0}
+H4, .h4 { color: #888B8F; font: bold 100%/1.54 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0}
+
+HR { border: none 0; border-bottom: 1px solid #CCCFD3; height: 1px; display: block; margin: 1.54em 0; padding: 0}
+IFRAME { border: 0 none; overflow: auto; overflow-x: hidden; overflow-y: auto}
+IMG { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle}
+	ARTICLE.primary IMG { display: block; margin: 1.54em 0; height: auto; max-width: 100%; width: 100%}
+    IMG.left, IMG.right, .primary FORM IMG { width: auto}
+	IMG.left { margin: 0 20px 10px 0}
+    IMG.right { margin: 0 0 10px 20px}
+    .primary FORM IMG { margin: 0}
+INS { background: #FFFFE1; text-decoration: none}
+MARK { background: #FF0; font-weight: bold}
+P { margin: 0 0 1.54em}
+	ARTICLE.primary > P:first-of-type { font-weight: bold} /*lead*/
+PRE { padding: 15px 20px 20px; white-space: pre; white-space: pre-wrap; word-wrap: break-word}
+Q:before { content: no-open-quote}
+Q:after { content: no-close-quote}
+SMALL { font-size: 100%; color: #888B8F}
+SUB, SUP { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline}
+SUB { bottom: -0.25em}
+SUP { top: -0.5em}
+
+::-moz-selection{ background: #F66; color: #FFF; text-shadow: none}
+::selection { background:#F66; color: #FFF; text-shadow: none} 

@@ -1,0 +1,23 @@
+User-agent: *
+Sitemap: http://www.nickysheen.ru/sitemap.xml
+Disallow: /_labs/
+Disallow: /labs/
+Disallow: /personal/
+Disallow: /a/sms-novel.epub
+Disallow: /web-design/reklama-vliftah32/
+
+User-agent: Yandex 
+User-agent: StackRambler 
+User-agent: Aport
+Disallow: /en/
+Disallow: /en
+
+User-agent: ia_archiver
+User-agent: Scooter
+User-agent: ArchitextSpider
+User-agent: InfoSeek Sidewinder
+User-agent: Lycos_Spider_(T-Rex)
+User-agent: Gulliver
+User-agent: WebCrawler/3.0
+Disallow: /ru/
+

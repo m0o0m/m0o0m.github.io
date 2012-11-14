@@ -1,0 +1,224 @@
+A { color: #36C}
+A:visited { color: #800080}
+A:hover { color: #F33}
+BODY { background: #E8EAEE url(/a/projects/3wg04/img/bg_ver.gif) repeat-y center; color: #535559; font-family: Arial, Geneva, Helvetica, sans-serif; font-size: x-small; font-size/**/:/**/ small; text-align: center; margin: 0 0 40px; padding: 0}
+BODY#front { background: #E8EAEE url(/a/projects/3wg04/img/bg_hor.gif) repeat-x; margin: 40px 0}
+CAPTION { padding-bottom: 6px}
+CAPTION, H2, H3 { font-weight: bold}
+CAPTION, TD, TH { font-size: x-small; font-size/**/:/**/ small}
+CAPTION, TH { text-align: left}
+CODE { font-family: "Courier New", Courier, monospace; font-size: x-small; font-size/**/:/**/ small}
+DFN, EM { color: #F33; font-style: normal}
+FORM { margin: 0; padding: 0}
+H1 { font-size: 130%}
+H2 { font-size: 105%}
+.container>H2, .column1-2>H2, .column2-2>H2 { font-size: 110%}
+H3, .like-h3  { color: #36C; font-size: x-small; margin: 1em 0 0 !important; padding: 0; font-size/**/:/**/ small  !important}
+H2.txt-small { margin: 0}
+HR { border: none 0; border-top: 1px solid #C6C8CC; margin-bottom: 1em; height: 1px} 
+IMG { border: 0}
+P { margin: 0 0 1em}
+P.txt-small { margin-top: 1em}
+TABLE { border: 0; width: 100%}
+
+/* Front */
+#alert { background: #FFF; border: 1px solid #C6C8CC; margin-left: -350px; position: absolute; left: 50%; top: 240px; width: 700px; width/**/:/**/ 698px}
+#alert .title-bar { background: url(/a/projects/3wg04/img/bg_alert_bar.gif) no-repeat; border-bottom: 1px solid #C6C8CC; text-align: right; padding: 10px 9px 9px; height: 29px; height/**/:/**/ 9px; width: 698px; width/**/:/**/ 680px}
+#front #footer { margin: 0 auto; padding: 40px 30px 0; height: 31px; width: 760px; width/**/:/**/ 700px}
+#front #footer .column1-2 { width: 265px}
+#front #footer .column2-2 { font-size: 11px; width: 420px}
+#front #footer .column2-2 IMG { margin: 2px 2px 0 0; float: left}
+#front #footer .column2-2 MAP { display: inline}
+#front #footer A, #front #footer A:visited { color: #535559}
+#front .wrapper-level1 { background: url(/a/projects/3wg04/img/bg_footer.gif) no-repeat center bottom; margin: 0 auto; padding: 0 0 44px; width: 760px}
+#front .wrapper-level2 { text-align: left; width: 760px}
+#front H3 { display: inline; color: #535559; padding-right: 0.2em}
+.alert-wrapper-columns { background: url(/a/projects/3wg04/img/dtl_alert_big.gif) no-repeat 50% 9px; text-align: left; padding: 20px; width: 698px; width/**/:/**/ 658px}
+.alert-wrapper-columns .column1-2, .alert-wrapper-columns .column2-2 { font-size: 11px; width: 294px}
+.alert-wrapper-columns .column1-2 { text-align: right}
+.container-noscript { border-bottom: 1px solid #C6C8CC; margin-left: 40px; padding: 20px 0; width: 680px}
+.main-pic { background: #0A4701 url(/a/projects/3wg04/img/pic_main.jpg) no-repeat; border-right: 2px solid #E1E3E7; border-bottom: 2px solid #E1E3E7; border-left: 2px solid #E1E3E7; color: #FFF; font-size: 11px; text-align: left; margin: 0 auto; padding: 60px 0 0 498px; height: 180px; height/**/:/**/ 118px; width: 760px; width/**/:/**/ 258px}
+.main-pic DIV { width: 240px}
+.main-pic DIV IMG { display: block; margin-bottom: 5px}
+.news { background: url(/a/projects/3wg04/img/ru/front/txt_news_h3.gif) no-repeat 0 3px; text-indent: 62px}
+DIV.pair-lang { padding: 0 40px 1em; width: 760px; width/**/:/**/ 680px}
+DIV.pair-lang .column1-2, DIV.pair-lang .column2-2 { width: 320px}
+DIV.pair-lang H2.like-h3 { color: #535559; font-size: 13px; margin: 0}
+DIV.pair-lang H2.like-h3 A:visited { color: #36C}
+DIV.pair-lang H2 { margin: 37px 0 1em}
+DIV.pair-lang P { font-size: 13px; line-height: 16px; margin: 0}
+DIV.pair-lang A { text-decoration: none}
+DIV.pair-lang A:hover { text-decoration: underline}
+
+/* Menu - Containers and wrappers */
+.menu-container { float: right; text-align: left; height: 30px; width: 280px}
+.en { float: right; width: 264px}
+.ru { float: left; width: 264px}
+.menu-wrapper { padding: 15px 40px 0; height: 60px; height/**/:/**/ 45px; width: 760px; width/**/:/**/ 680px}
+#front .menu-wrapper { background: url(/a/projects/3wg04/img/bg_header_front.gif) no-repeat left center; padding: 15px 40px 0 96px; height: 60px; height/**/:/**/ 45px; width: 760px; width/**/:/**/ 624px}
+
+/* Menu - Dropdowns */
+.menu-container UL { list-style-image: none; list-style-type: none; margin: 0} /* 1st step - Design menu's lists */
+LI.level1 { float: left; font-size: 11px; position: relative; width: 93px} /* 2nd step - Design the first-level list */
+LI UL.level2 { background: url(/a/projects/3wg04/img/bg_submenu.gif) repeat-y 16px 0; background-image/**/:/**/ none; display: none; font-size: 11px; position: absolute; top: 30px; left: -16px; left/**/:/**/ 0} /* 3rd step - Design, hide and tackle the second-level lists */
+LI>UL.level2 { top: auto; left: auto} /* 4th step - Set second level position for other than IE */
+LI:hover UL.level2, LI.pc-hover UL.level2 { display: block} /* 5th step - Show second level */
+UL.level2 LI A { background: #ECEEF2; border-right: 1px solid #C6C8CC; border-left: 1px solid #C6C8CC} /* Customization - Design of 2nd level links*/
+UL.level2 LI A, UL.level2 LI A:hover, UL.level2 LI A:visited { color: #535559; display: block; text-decoration: none; padding: 3px 6px} /* Customization - Continuing */
+UL.level2 LI A, UL.level2 LI A:hover, UL.level2 LI A:visited { width: 120px; width/**/:/**/ 106px} /* Customization - IE5+ hack for 2nd level links width*/
+UL.level2 LI A:hover { background: #DFE1E5} /* Customization - Continuing */
+UL.level2 LI.li-bottom A { border-bottom: 3px solid #C6C8CC} /* Customization - Ending */
+
+/*Menu - Rollovers*/
+A.level1-link { background: no-repeat 0 0; display: block; text-decoration: none; margin: 0; padding: 0; height: 30px; width: 93px} /* 1st step - Establish general parameters for rollover link */
+#nav-company, #nav-company-ru, #nav-company A.level1-link, #nav-company-ru A.level1-link { width: 94px}
+#front LI.level1, #front A.level1-link { width: 88px}
+.level1 A SPAN { display: none}
+A.level1-link:hover { background-position: 0 -30px} /* 3d step */
+#nav-product A.level1-link { background-image: url(/a/projects/3wg04/img/en/btn_products.gif)} /* 4th step - Set the unique background images for the various buttons */
+#nav-product-ru A.level1-link { background-image:  url(/a/projects/3wg04/img/ru/btn_products.gif)} /* And so on */
+#nav-company A.level1-link { background-image: url(/a/projects/3wg04/img/en/btn_company.gif)}
+#nav-company-ru A.level1-link { background-image: url(/a/projects/3wg04/img/ru/btn_company.gif)}
+#nav-business A.level1-link { background-image: url(/a/projects/3wg04/img/en/btn_business.gif)}
+#nav-business-ru A.level1-link { background-image: url(/a/projects/3wg04/img/ru/btn_business.gif)}
+#front #nav-product A.level1-link { background-image: url(/a/projects/3wg04/img/en/front/btn_products.gif)} /* Frontpage buttons */
+#front #nav-product-ru A.level1-link { background-image:  url(/a/projects/3wg04/img/ru/front/btn_products.gif)}
+#front #nav-company A.level1-link { background-image: url(/a/projects/3wg04/img/en/front/btn_company.gif)}
+#front #nav-company-ru A.level1-link { background-image: url(/a/projects/3wg04/img/ru/front/btn_company.gif)}
+#front #nav-business A.level1-link { background-image: url(/a/projects/3wg04/img/en/front/btn_business.gif)}
+#front #nav-business-ru A.level1-link { background-image: url(/a/projects/3wg04/img/ru/front/btn_business.gif)}
+
+/* Repeated menus */
+#business-index #a-index, #business-legality #a-legality, #business-payments #a-payments, #company-feedback #a-feedback, #company-jobs #a-jobs, #company-index #a-index, #company-portfolio #a-portfolio, #company-press-room #a-press-room, #company-press-room #a-press-recent, #company-press05 #a-press05, #company-press04 #a-press04, #company-press03 #a-press03, #company-press02 #a-press02, #company-press01 #a-press01, #help-baccarat #a-baccarat, #help-big6 #a-big6, #help-bj #a-bj, #help-caribbean #a-caribbean, #help-common #a-common, #help-craps #a-craps, #help-dog #a-dog, #help-index #a-help, #help-keno #a-keno, #help-lir #a-lir, #help-options #a-options, #help-pai-gow #a-pai-gow, #help-roulette #a-roulette, #help-sic-bo #a-sic-bo, #help-slots #a-slots, #help-solitaires #a-solitaires, #help-vp #a-vp, #help-war #a-war, #products-index #a-index, #products-basic #a-basic, #products-customization #a-customization, #products-downloads #a-downloads { color: #535559; cursor: text; text-decoration: none}
+#links #a-links, #links #a-link01, #link02 #a-link02, #link03 #a-link03, #link04 #a-link04, #link05 #a-link05, #link06 #a-link06, #link07 #a-link07, #link08 #a-link08, #link09 #a-link09, #link10 #a-link10 { color: #535559; cursor: text; text-decoration: none}
+
+/* Layout - Containers and wrappers */
+.container { background: #FFF; text-align: left; margin: 0 auto; padding: 37px 0; width: 640px}
+.wrapper-columns { width: 640px}
+.wrapper-footer { background: url(/a/projects/3wg04/img/bg_footer.gif) no-repeat center bottom; padding: 0}
+.wrapper-footer-business, .wrapper-footer-company, .wrapper-footer-help, .wrapper-footer-products { background: no-repeat center bottom; padding: 0}
+.wrapper-footer-business { background-image: url(/a/projects/3wg04/img/bg_footer_business.gif)}
+.wrapper-footer-company { background-image: url(/a/projects/3wg04/img/bg_footer_company.gif)}
+.wrapper-footer-help { background-image: url(/a/projects/3wg04/img/bg_footer_help.gif)}
+.wrapper-footer-products { background-image: url(/a/projects/3wg04/img/bg_footer_products.gif)}
+.wrapper-level1 { background:  url(/a/projects/3wg04/img/bg_hor.gif) repeat-x; text-align: center; margin: 0; padding: 40px 0 0}
+.wrapper-level2 { background: url(/a/projects/3wg04/img/bg_content.gif) repeat-y center}
+.wrapper-level3 { background: url(/a/projects/3wg04/img/bg_checked.gif) no-repeat 50% 40px}
+
+/* Layout - Blocks */
+#header { background: url(/a/projects/3wg04/img/bg_header.gif) no-repeat left center; clear: both; text-align: left; margin: 0 auto; padding: 0; height: 60px; width: 760px}
+.clearer { border: 0; clear: both; display: block; font-size: 1px; line-height: 1px; margin: 0; padding: 0; height: 0}
+.column1-2, .column1-3, .column2-3, .column3-3, .column1-5, .column2-5, .column3-5, .column4-5, .column5-5 { float: left}
+.column1-2, .column2-2 { width: 310px}
+.column2-2 { float: right}
+
+/* Layout - Clearers */
+.cfx:after, .help-common:after, .menu-wrapper:after, .pair-lang:after, LI P:after { content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.cfx, .help-common, .menu-wrapper, .pair-lang, LI P { display: inline-table}
+/* Hides from IE-mac \*/
+* html .cfx, * html .help-common, * html .menu-wrapper, * html .pair-lang, * html LI P { height: 1%}
+.cfx, .help-common, .pair-lang, .menu-wrapper, LI P { display: block}
+/* End hide from IE-mac */
+
+/* Body Copy */
+#counters { position: absolute; left: 0; top: 0; visibility: hidden}
+#logo { float: left; margin: -1px 0 0 -3px}
+.arrow-back { background: url(/a/projects/3wg04/img/dtl_arrow_back.gif) no-repeat left center; font-size: 85%; padding-left: 1.2em}
+.arrow-back A, .arrow-forward A, .arrow-up A { background: #FFF}
+.arrow-forward { background: url(/a/projects/3wg04/img/dtl_arrow_forward.gif) no-repeat right center; font-size: 85%; padding-right: 1.2em}
+.arrow-up { background: url(/a/projects/3wg04/img/dtl_arrow_up.gif) no-repeat left center; font-size: 85%; padding-left: 1.2em}
+.arrow-up A:visited { color: #36C}
+.callout-right-half-page { float: right; margin: 0 0 1em 1em !important; width: 240px}
+.help-common { margin-bottom: 10px}
+.help-common DIV { float: left; text-align: right; padding-right: 10px; width: 150px}
+.help-common P { float: left; width: 480px}
+.hidden-link A, .hidden-link A:visited { color: #535559; text-decoration: none}
+.hidden-link A:hover { color: #36C}
+.lead { color: #006600; line-height: 1.5em}
+.listing { background: #ECEEF2; border: 1px solid #DFE1E5; border-bottom-width: 2px; margin: 0 0 1em; padding: 20px}
+.margin-b0 { margin-bottom: 0}
+.margin-b1em { margin-bottom: 1em}
+.margin-t0 { margin-top: 0}
+.margin-t1em { margin-top: 1em}
+.margin-t1em-b0 { margin-top: 1em; margin-bottom: 0}
+.new { background: none; background: url(/a/projects/3wg04/img/dtl_new.gif) no-repeat left center; padding-left: 1.9em}
+HTML + HTML .new { background: none}
+.nowrap { white-space: nowrap}
+.post { border-top: 1px solid #C6C8CC; margin: 1em 0 0; padding-top: 1em}
+.post#first { border: 0; padding-top: 0}
+.signature { color: #006600}
+.txt-normal-weight { font-weight: normal}
+.txt-small { font-size: 85% !important}
+TD.txt-small { font-size: 70% !important; font-size/**/:/**/ 85% !important}
+.txt-small-fixed { font-size: 11px}
+
+/* Tables */
+.bg-content { background: #FFF}
+.bg-odd { background: #F2F4F8}
+.bg-trow { background: #EBEDF1}
+.cell-border-b { border-bottom: 1px solid #C6C8CC}
+.cell-border-r-none { border-right: 0 !important}
+.cell-border-t { border-top: 1px solid #C6C8CC}
+.table { margin: 0 0 1em}
+.table TD, .table TH { padding: 6px}
+.table-border { border: 1px solid #C6C8CC; border-collapse: collapse; margin: 0 0 1em}
+.table-border TD, .table-border TH, .width-table-border TD, .width-table-border TH { padding: 6px; border-right: 1px solid #C6C8CC}
+
+/* Lists */
+.list-caption { margin-bottom: 0}
+.list-inline { display: inline; margin: 0; padding: 0}
+.list-inline LI { background: url(/a/projects/3wg04/img/bg_list_inline.gif) no-repeat left bottom; display: inline; list-style: none; padding: 0 0 0 6px}
+HTML + HTML .list-inline LI { background: none}
+.list-inline .li-first { background-image: none; padding-left: 0}
+DD { margin: 0 0 1em}
+DD OL { margin: 1em}
+DT { margin: 1em 0 0}
+DT IMG { float: right; margin: 2px 0 5px 10px}
+LI UL { margin: 0 0 0 16px}
+OL { list-style-type: none; margin: 0 0 1em 0; padding: 0}
+OL LI {	background: transparent 0 5px no-repeat; padding-left: 23px}
+OL LI.li01 { background-image: url(/a/projects/3wg04/img/dtl_01.gif)}
+OL LI.li02 { background-image: url(/a/projects/3wg04/img/dtl_02.gif)}
+OL LI.li03 { background-image: url(/a/projects/3wg04/img/dtl_03.gif)}
+OL LI.li04 { background-image: url(/a/projects/3wg04/img/dtl_04.gif)}
+OL LI.li05 { background-image: url(/a/projects/3wg04/img/dtl_05.gif)}
+OL LI.li06 { background-image: url(/a/projects/3wg04/img/dtl_06.gif)}
+OL LI.li07 { background-image: url(/a/projects/3wg04/img/dtl_07.gif)}
+OL LI.li08 { background-image: url(/a/projects/3wg04/img/dtl_08.gif)}
+OL LI.li09 { background-image: url(/a/projects/3wg04/img/dtl_09.gif)}
+OL LI.li10 { background-image: url(/a/projects/3wg04/img/dtl_10.gif)}
+UL { list-style:  url(/a/projects/3wg04/img/dtl_bullet.gif) outside; margin: 0 0 1em 16px; padding: 0}
+UL.nested { list-style: url(/a/projects/3wg04/img/dtl_bullet_nested.gif)}
+UL LI { padding: 0}
+
+/* Forms */
+#company-feedback FORM { padding-bottom: 2em}
+#company-feedback FORM INPUT#ok { border: 0; margin-top: 21px; height: 30px; width: 60px}
+#company-feedback FORM P { font-size: 13px; margin: 1em 0 0.5em 0}
+#company-feedback FORM TEXTAREA { width: 460px}
+#opinion .column1-2 { width: 460px}
+#opinion .column2-2 { width: 160px}
+
+/* IMGs */
+IMG.footer { float: left; margin: 0 0 0 54px}
+IMG.left { float: left; margin: 2px 10px 5px 0}
+IMG.right { float: right; margin: 2px 0 5px 10px}
+IMG.top-right { float: right; margin: 3px 0 5px 10px}
+
+/*Footer*/
+#footer { text-align: left; margin: 0 auto; height: 120px; width: 760px}
+#footer .counters-b { clear: both; margin: 0 60px 1em 260px; width: 265px}
+#footer .btn31, #footer .btn38, #footer .btn88 { float: left; margin-right: 5px}
+#footer .btn31 { width: 31px}
+#footer .btn38 { width: 38px}
+#footer .btn88 { width: 88px}
+#footer A:visited, #footer A:hover { color: #36C}
+#footer P { font-size: 85%; margin: 0 60px 2em 260px}
+
+/* Portfolio */
+.column1-5 { border-right: 1px solid #C6C8CC; padding: 0 15px 20px 0; height: 160px; height/**/:/**/ 140px; width: 116px; width/**/:/**/ 100px}
+.column2-5, .column3-5, .column4-5 { border-right: 1px solid #C6C8CC; padding: 0 15px 20px 15px; height: 160px; height/**/:/**/ 140px; width: 131px; width/**/:/**/ 100px}
+.column5-5  { padding: 0 15px 17px 15px; height: 160px; height/**/:/**/ 143px; width: 131px; width/**/:/**/ 101px}
+.folio-item { border-bottom: 0; padding: 0; height: 120px}
+.folio-item { border-bottom: 1px solid #C6C8CC; margin: 0; padding: 0 0 20px 0; height: 140px; height/**/:/**/ 119px; width: 100px}
+DIV.folio-item DIV { font-size: 13px; padding: 13px 0 0}

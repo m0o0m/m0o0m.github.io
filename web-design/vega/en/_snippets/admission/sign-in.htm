@@ -1,0 +1,25 @@
+<div class="caption">
+<h2>Sign In</h2>
+<a href="javascript:;" onclick="closeModal()" class="btn_close">Close</a>
+</div>
+
+<form action="" method="post" class="modal narrow" name="form_sign_in" id="form_sign_in" onsubmit="return submitLoginForm(this, event)" >
+
+<label for="email">Email</label>
+<input type="text" tabindex="1" class="field" name="email" id="email" /><br />
+<div class="alert" id="email_alert"></div>
+
+<label for="password">Password</label>
+<input type="password" tabindex="2" maxlength="128" class="field" name="password" id="password" />
+<br />
+<div class="alert" id="password_alert"></div>
+
+<span class="btn submit"><input type="submit" tabindex="3" value="Sign In" name="submit" id="submit" /></span><br />
+
+<ul class="petite">
+<li><a class="loadinto-modal_box" href="/web-design/vega/en/_snippets/help/password-advice.htm">Need Help?</a></li>
+<li><a class="loadinto-modal_box" href="/web-design/vega/en/_snippets/admission/sign-up.htm" title="Open In Same Window">Sign Up</a></li>
+<li><a class="loadinto-modal_box" href="/web-design/vega/en/_snippets/admission/sign-in-options.htm" title="Open In Same Window">Sign-In Options</a></li>
+</ul>
+
+</form>

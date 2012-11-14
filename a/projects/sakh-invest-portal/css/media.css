@@ -1,0 +1,14 @@
+FIGURE {
+ -webkit-margin-before: 0;
+-webkit-margin-after: 1.54 em;
+-webkit-margin-start: 0;
+-webkit-margin-end: 0;
+margin: 0 0 1.54 em
+}
+
+SVG:not(:root) { overflow: hidden}
+VIDEO { height: auto; max-width: 100%}
+
+.ridgepole { margin: 1.54em 0; padding: 30px 0 56.25%; position: relative; height: 0; overflow: hidden}
+.ridgepole EMBED, .ridgepole IFRAME,  .ridgepole OBJECT  { position: absolute; top: 0; left: 0; height: 100%; width: 100%}
+	#main IMG, EMBED, .ridgepole IFRAME, .ridgepole OBJECT { _width: expression(this.width > 577 ? 577: true) !important}

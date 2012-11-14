@@ -1,0 +1,33 @@
+.bg-chalk1 { background-color: #FFFFB2}
+.bg-chalk2 { background-color: #F3F3A6}
+.bg-chalk3 { background-color: #E5E599}
+.bg-dblue { background-color: #334C99}
+.bg-dred { background-color: #600}
+.bg-grey1 { background-color: #333}
+.bg-grey2 { background-color: #191919}
+.bg-white { background-color: #FFF}
+.bolditalik { font-style: italic; font-weight: bold}
+.djs { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold}
+.ha, .teasers H3 { color: #C00; font-size: 12px; font-weight: bold; text-transform: uppercase; padding-right: .4em}
+	.teasers H3 { display: inline}
+.margin-r6l6 { margin-right: 6px; margin-left: 6px}
+.small { font-family: Tahoma, sans-serif; font-size: 11px}
+.sm_white { font-family: Tahoma, sans-serif; font-size: 11px; color: white}
+.sidebar { text-align: left}
+.tdindent {  margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 6px}
+.tdrightindent { margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 2px; padding-right: 6px; padding-bottom: 2px; padding-left: 2px}
+.teasers { text-align: left; padding-bottom: 1em}
+	.teasers P { padding: 0 6px}
+.underline { text-decoration: underline }
+.underline-none A, .teasers A { color: #000; text-decoration: none}
+	.teasers H3 A { color: #C00}
+.underline-none A:hover, .teasers A:hover { text-decoration: underline}
+.whitebold { font-weight: bold; text-transform: uppercase; color: white}
+A { color: #966; text-decoration: underline}
+A:hover { color: #F00}
+BODY { background: #600 url(/a/projects/maximum/img/lines.gif); color: #000; font: 13px Arial, Helvetica, sans-serif; margin: 2em auto; padding: 0}
+H1 { font-size: 24px; color: #001966}
+H3 { font-size: 13px; color: #C00}
+DIV.navigation A, INPUT, TEXTAREA { font-family: Tahoma, sans-serif; font-size: 11px; color: #C00; text-decoration: none}
+DIV.navigation A:hover { color: #F00}
+TD { font-size: 13px}

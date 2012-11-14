@@ -1,0 +1,180 @@
+A { color: #0000FF}
+A:visited { color: #595959}
+A:hover { color: #CC0000}
+BODY { background: #000066 url("/a/projects/amazon/img/bg.gif") center top repeat-y; margin: 0px}
+BODY#sys { background-image:   url("/a/projects/amazon/img/bg_sys.gif")}
+CAPTION { font-weight: bold; padding-bottom: 6px}
+CAPTION, DIV, DL, INPUT, OL, P, TD, TH, UL, H2 { color: #595959; font-family: Arial, Geneva, Helvetica, sans-serif}
+CAPTION, DIV, DL, INPUT, OL, P, TD, TH, UL { font-size: 13px}
+CAPTION, TH { text-align: left}
+DD { margin-left: 2em}
+DD OL { margin: 1em}
+DFN, EM { color: #FF0000; font-style: normal}
+DT IMG { border: 0px; float: right; margin: 2px 0px 5px 10px}
+FORM { margin: 0px; padding: 0px}
+H1 { margin-top: 0px; padding-top: 12px}
+H2 { font-size: 14px}
+H2.like-h3, H3 { color: #006600; font: bold 12px Verdana, Geneva, Arial, sans-serif; margin: 1em 0px 0px; padding: 0px}
+OL { list-style-type: decimal; margin: 0px 0px 1em 2.8em; padding: 0px 0px 1em 0px}
+P { margin: 0px 0px 1em 0px}
+P.txt-small { margin-top: 1em}
+SELECT { background-color: #F2F1F0}
+UL { list-style-image:    url("/a/projects/amazon/img/dtl_bullet.gif"); list-style-position: outside; margin: 0px 0px 0px 16px; padding: 0px}
+
+/* Header */
+#header-b, #header-t { text-align: left; width: 695px}
+#header-b .column1-2 { margin: 0px 1px 0px 0px; width: 521px}
+#header-b .noflash { background: #009900 url("/a/projects/amazon/img/bg_noflash.gif") no-repeat; text-align: left; width: 521px}
+#header-b .noflash P { color: #CCFFCC; font: 11px Tahoma, Geneva, Arial, sans-serif; margin: 0 29px}
+#header-b .noflash A, #header-b .noflash A:visited { color: #004C00}
+#header-b .noflash A:hover { color: #FFCC00}
+#header-b .noflash TABLE { height: 179px}
+#header-b .column2-2 { background: #FFCC00 url("/a/projects/amazon/img/bg_account.png") no-repeat; text-align: center; margin: 0px; height: 179px; width: 173px}
+#header-b .column2-2 DIV.txt-small A, #header-b .column2-2 DIV.txt-small A:visited { color: #000}
+#header-b .column2-2 H2 { margin: 21px 0px 13px 0px; padding: 0px}
+#header-b .column2-2 DIV#money-balance-amount { color: #006600; margin: 0px 6px 29px 0px}
+#header-b .column2-2 DIV#money-balance { color: #000; font-weight: bold; margin: 0px 6px 11px 0px}
+#header-b .column2-2 DIV#username { color: #006600; font-weight: bold; margin: 0px 6px 11px 0px}
+#header-b .column2-2 TABLE { margin-bottom: 8px; width: 167px}
+#header-b .column2-2 TD { color: #006600; padding: 0px 6px 2px 6px}
+#header-b .column2-2 TD.txt-small A, #header-b .column2-2 TD.txt-small A:visited { color: #006600}
+#header-b .column2-2 TD.txt-small A:hover, #header-b .column2-2 DIV.txt-small A:hover { color: #CC0000}
+#header-t .column1-2 { margin: 0px; width: 270px}
+#header-t .column2-2 { text-align: right; margin: 0px; width: 410px}
+#header-t .column2-2 H1, #header-t .column2-2 H2, H2#sys { color: #FFF; font: normal 11px Tahoma, Geneva, Arial, sans-serif; margin: 30px 9px 0px 0px; padding: 0px}
+H2#sys { margin: 20px 0px}
+
+/*Menu*/
+#menu { text-align: left; width: 695px}
+#menu .column1-2 { margin: 0px; width: 90px}
+#menu .column2-2 { margin: 0px; width: 604px}
+#menu UL { list-style: none; margin: 0px; padding: 0px}
+#menu LI { display: inline; padding: 0px}
+#menu A { background-position: 0px 0px; background-repeat: no-repeat; display: block; float: left; text-decoration: none; margin: 0px 1px 0px 0px; padding: 0px}
+#menu .column2-2 A:hover, #about #nav-about A, #deposit #nav-deposit A, #help #nav-help A, #invite #nav-invite A, #news #nav-news A, #personal #nav-personal A, #preview #nav-preview A, #promo #nav-promo A, #support #nav-support A, #thistory #nav-thistory A, #whistory #nav-whistory A, #withdraw #nav-withdraw A { background-position: 0px -35px}
+#nav-about A { background-image:   url("/a/projects/amazon/img/en/btn_about.gif")}
+#nav-deposit A { background-image:   url("/a/projects/amazon/img/en/btn_deposit.gif")}
+#nav-help A { background-image:   url("/a/projects/amazon/img/en/btn_help.gif")}
+#nav-home A, #nav-home IMG#nav-home-front { background-image:   url("/a/projects/amazon/img/en/btn_home.gif"); margin-right: 0px}
+#nav-home A:hover, #home #nav-home A, #nav-home IMG#nav-home-front { background-position: 0px -71px}
+#nav-invite A { background-image:    url("/a/projects/amazon/img/en/btn_invite_menu.gif"); margin-right: 0px}
+#nav-news A { background-image:   url("/a/projects/amazon/img/en/btn_news.gif"); margin-right: 0px}
+#nav-personal A { background-image:   url("/a/projects/amazon/img/en/btn_personal.gif")}
+#nav-preview A { background-image:   url("/a/projects/amazon/img/en/btn_preview.gif")}
+#nav-promo A { background-image:   url("/a/projects/amazon/img/en/btn_promo.gif")}
+#nav-support A { background-image:   url("/a/projects/amazon/img/en/btn_support.gif")}
+#nav-thistory A { background-image:   url("/a/projects/amazon/img/en/btn_thistory.gif")}
+#nav-whistory A { background-image:   url("/a/projects/amazon/img/en/btn_whistory.gif")}
+#nav-withdraw A { background-image:   url("/a/projects/amazon/img/en/btn_withdraw.gif")}
+
+/*Front*/
+.column1-3-front { padding: 0px 29px; vertical-align: middle; width: 203px}
+.column1-3-front A { color: #595959}
+.column1-3-front H2 { color: #595959; font: bold 13px Arial, Geneva, Helvetica, sans-serif; margin-bottom: 0px; padding: 0px}
+.column2-3-front { padding: 0px 29px 0px 0px; vertical-align: middle; height: 71px}
+.column3-3-front  { padding: 0px 27px 0px 0px; width: 406px}
+.column3-3-front  H3 { display: inline; margin: 0px; padding: 0px}
+.column3-3-front A, .column3-3-front A:visited { text-decoration: none}
+.column3-3-front A:hover { text-decoration: underline}
+.column-mergred2-3-front { height: 27px}
+.column-mergred2-3-front H1, .column-mergred2-3-front H2 { margin: 0px; padding: 0px}
+.width-table-without-margins { text-align: left; width: 695px}
+
+/* Main Content */
+.content { background: #FAF9F8 url("/a/projects/amazon/img/bg_content.gif") repeat-y; width: 695px}
+.content-sys { background: #FAF9F8 url("/a/projects/amazon/img/bg_content_sys.gif") repeat-y; width: 521px}
+#ch-password { float: right; margin: 0px 0px 5px 10px; width: 243px}
+#hide-link A, #hide-link A:visited { color: #000000; text-decoration: none}
+#hide-link A:hover { color: #000000; text-decoration: underline}
+#hide-link H2 A, #hide-link H2 A:visited { color: #FF4040; text-decoration: none}
+#hide-link H2 A:hover { color: #FF4040; text-decoration: underline}
+#margin-b0 { margin-bottom: 0px}
+#margin-b1em { margin-bottom: 1em}
+#padding-l1c { padding: 0px 0px 0px 29px}
+#margin-r10 { margin-right: 10px}
+#margin-r10-l10 { margin-right: 10px; margin-left: 10px}
+#margin-t0 { margin-top: 0px}
+#margin-t1em-b0 { margin-top: 1em; margin-bottom: 0px}
+#margin-t1em-r10-l10 { margin: 1em 10px 0px 10px}
+#news { margin-bottom: 0px}
+#security TD { padding: 0px 0px 5px 10px}
+#txt-color-emphasis { color: #CC3300}
+#txt-normal-weight, .txt-normal-weight { font-weight: normal}
+#txt-small, .txt-small { font: 11px Tahoma, Geneva, Arial, sans-serif}
+#txt-soft, .txt-soft { color: #999897}
+.bg-brow { background-color: #F2F1F0}
+.bg-content { background-color: #FAF9F8}
+.bg-tb { background-color: #999897}
+.bg-trow { background-color: #E5E4E3}
+.list-end { font-size: 1px; line-height: 1px; height: 10px}
+.list-links LI { margin-top: 4px}
+.list-h2-h3 { color: #595959; font: bold 13px Arial, Geneva, Helvetica, sans-serif; margin-bottom: 5px}
+.margin-table { margin-right: 0px; margin-bottom: 1em; margin-left: 0px}
+.margin-table-column1-1 { margin-right: 0px; margin-bottom: 1em; margin-left: 0px}
+.nowrap { white-space: nowrap}
+.sidebar-body {	background:   url("/a/projects/amazon/img/bg_sidebar_body.gif") left bottom no-repeat; padding-bottom: 1em; width: 100%}
+.sidebar-head {	background: #F2F1F0 url("/a/projects/amazon/img/bg_sidebar_head.gif") right top no-repeat; margin: 0px; padding: 0px; height: 14px; width: 100%}
+.sidebar-right { background: #F2F1F0 url("/a/projects/amazon/img/bg_sidebar.gif") right bottom no-repeat; float: right; margin: 0px 0px 1em 10px; width: 289px}
+.sidebar-right H2, .sidebar-right H3 { margin: 0px 14px 0px 14px}
+.sidebar-right P { margin: 0px 14px 0px 14px}
+.width100pr { width: 100%}
+.width-table { width: 100%}
+TABLE.width-table TD.column3-3-front  { width: 551px}
+.width-table-column1-1 { width: 100%}
+.width-table-sys { width: 100%}
+.width-table-bg-tb { background-color: #999999; width: 100%}
+.width-table-bg-tb-sys { background-color: #999999; width: 100%}
+
+/* Layout - Columns */
+.clearer { border: 0px; clear: both; display: block; font-size: 1px; line-height: 1px; margin: 0px; padding: 0px; height: 0px}
+.columns-container { text-align: left; margin: 0px 29px; width: 637px}
+.columns-container-sys { text-align: left; margin: 0px 29px; width: 463px}
+.column1-2, .column2-2 { width: 280px}
+.column1-2 { float: left}
+.column2-2 { float: right}
+.column1-3, .column2-3, .column3-3 { float: left; width: 192px}
+.column1-2, .column1-3, .column2-3 { margin-right: 30px}
+
+/*Footer*/
+#footer { width: 637px}
+#footer-sys { width: 521px}
+#footer DIV, #footer-sys P { color: #CCCCFF; font: 11px Tahoma, Geneva, Arial, sans-serif}
+#footer DIV A, #footer-sys P.txt-small A { color: #CCCCFF}
+#footer DIV A:visited, #footer-sys P.txt-small A:visited { color: #6666FF}
+#footer DIV A:hover, #footer-sys P.txt-small A:hover { color: #FFF}
+#footer .column1-2 { text-align: left; width: 305px; margin-right: 10px}
+#footer .column2-2 { text-align: right; width: 305px}
+#footer .payout { background:   url("/a/projects/amazon/img/en/bg_payout.gif") no-repeat; float: left; height: 31px; width: 88px}
+#footer .payout DIV { color: #FFF; font: bold 13px Arial, Geneva, Helvetica, sans-serif; margin: 7px 0px 0px 48px}
+#footer .spylog, #footer .thawte { float: left; margin-right: 10px; height: 31px; width: 88px}
+
+/* Vertical spaces */
+.vspace-1 { height: 1px}
+.vspace-8 { height: 8px}
+.vspace01 { font-size: 1px; line-height: 1px; height: 29px}
+.vspace02 { font-size: 1px; line-height: 1px; height: 60px}
+.vspace03 { font-size: 1px; line-height: 1px; margin: 0px; height: 22px}
+.vspace04 { font-size: 1px; line-height: 1px; height: 4px}
+
+/* Inputs */
+.optional-input { background-color: #F2F1F0}
+.required-input { background-color: #FFF}
+.reports-select03 { margin: 20px 0px 20px 0px; white-space: nowrap; width: 551px}
+.reports-select03 INPUT, .reports-select03 SELECT, TD.nowrap INPUT, TD.nowrap SELECT { vertical-align: middle}
+.reports-select03 INPUT#ok, TD.nowrap INPUT#ok , #subscriberu INPUT#ok { margin-left: 5px}
+.input-standart { height: 21px; width: 121px}
+FORM#login INPUT#name, FORM#login INPUT#password { width: 73px}
+FORM#login INPUT#signin { border: 0 none; margin-top: 6px; height: 27px; width: 75px}
+FORM#newpass INPUT#password, FORM#newpass INPUT#newpassword, FORM#newpass INPUT#confirm { width: 86px}
+FORM#partner INPUT#Submit, FORM#support INPUT#Submit, FORM#partner INPUT#Reset, FORM#partner INPUT#Change { margin-top: 10px}
+FORM#support INPUT#email, FORM#support INPUT#full_name, FORM#support INPUT#username, FORM#support INPUT#url, FORM#support INPUT#url, FORM#support SELECT { width: 310px}
+INPUT#amount { margin-left: 17px}
+INPUT#OK { width: 34px; height: 24px}
+INPUT#change, INPUT#invite, INPUT#play, INPUT#signup, INPUT#submit { width: 115px; height: 24px}
+INPUT#change, INPUT#play { margin-top: 0.5em}
+TEXTAREA#query { width: 421px}
+
+/* IMGs */
+IMG.across { border: 0px; margin: 0px 0px 10px}
+IMG.left { border: 0px; float: left; margin: 2px 10px 5px 0px}
+IMG.right { border: 0px; float: right; margin: 2px 0px 5px 10px}

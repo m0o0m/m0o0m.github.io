@@ -1,0 +1,300 @@
+@charset "UTF-8";
+HTML { text-align: center }
+BODY { background: #ECEFF3; color: #53565A; font: 81.3%/154% Arial, Geneva, Helvetica, sans-serif; text-align: left; margin: 28px auto 60px; padding: 0; width: 980px}
+
+A { color: #66C; outline: none}
+    A.backward, A.forward { cursor: pointer; text-indent: -4300em}
+A:visited { color: #909}
+A:hover { color: #C00}
+DL, OL, UL { margin: 0 0 1.54em; padding: 0}
+	DT { margin: 0 0 .4em}
+    DD { margin: 0 0 1.54em}
+H2 { font-size: 100%; margin: 0 0 1.154em}
+H3 { font: bold 84.6% Tahoma, Geneva, Arial, sans-serif; margin: 0 0 1.154em}
+P { margin: 0 auto 1.54em }
+UL { list-style-image: url(/a/projects/region-20/img/bullet.gif)}
+	LI { margin-bottom: .4em} 
+    	LI UL { margin-bottom: 0}
+
+/* Main content --------------------------------------------------------------------------------------------------------*/
+#main { background: url(/a/projects/region-20/img/gui.png) -780px 100% no-repeat; margin-right: 200px; padding: 32px 0 40px}
+	.content, #content { background: #FFF url(/a/projects/region-20/img/gui.png) 0 0 no-repeat; padding: 45px 40px 0}
+
+BUTTON { border: 0 none; cursor: pointer; overflow: visible !important; outline: none; position: relative}
+	BUTTON.backward, BUTTON.close, BUTTON.forward, BUTTON.maximize, BUTTON.minimize { text-indent: -4300em; padding: 0}
+
+.caption, .hint P.caption { margin-bottom: .4em}
+.disabled { filter: alpha(opacity=43); -moz-opacity: .43; opacity: .43}
+
+DIV.alert { background: #FFFFE1; padding: 10px 40px; position: relative; min-height: 20px; height: 20px}
+	HTML>BODY DIV.alert { height: auto}
+	.alert EM { background: url(/a/projects/region-20/img/icons.png) 0 0 no-repeat; display: block; text-indent: -3400em; position: absolute; top: .6em; left: 10px; height: 20px; width: 20px}
+	.alert .close { background: url(/a/projects/region-20/img/gui.png) -2310px -80px; position: absolute; top: 1.2em; right: 25px; height: 15px; width: 15px}
+DIV.last { padding-bottom: 0}
+DIV.rating H2 { margin-bottom: 1.77em}
+DIV.rating UL { font: 84.6% Tahoma, Geneva, Arial, sans-serif; list-style-image: none; list-style-type: none; padding-right: 10px; overflow: hidden; overflow-y: auto; position: relative; height: 340px}
+    DIV.rating LI { margin-bottom: .455em; padding-right: 60px; position: relative}
+        DIV.rating LI EM { background: #9C9; display: block; font-style: normal; text-align: right; padding: 0 4px; position: absolute; top: 0; right: 0; min-width: 32px; width: 32px}
+            HTML>BODY DIV.rating LI EM { width: auto}
+            DIV.rating LI EM.alert { background: #C33; color: #FFF} 
+.inline LI { display: inline-block}
+.lquot { margin-left: -.55em}
+.right { float: right}
+.row { padding: 0 0 40px}
+	.col1_2 { float: left; width: 320px}
+     	DIV.main { width: 510px}
+        .pro_con .col1_2 { width: 220px}
+	.col2_2 { float: right; width: 320px}
+    	.pro_con .col2_2 { margin-right: 20px; width: 220px}
+		DIV.sidebar { width: 180px}
+			.sidebar H3, .pro_con H3 { font: bold 100% Arial, Geneva, Helvetica, sans-serif; margin: 0; position: relative}
+            	.sidebar H3 EM { background: url(/a/projects/region-20/img/icons.png) no-repeat 0 -20px; display: block; text-indent: -3400em; position: absolute; top: -.2em; right: -25px; height: 20px; width: 20px}
+                	.sidebar H3.bad EM { background-position: -20px 0}
+	.col1_3, .col2_3 { float: left; margin-right: 40px; width: 220px}
+	.col3_3, DIV.rating { float: right; width: 180px}
+     .map { float: left; width: 480px}
+.teasers { padding-top: .23em}
+	.teasers A { color: #53565A; text-decoration: none}
+	.teasers H3 A:hover, .teasers LI A:hover { color: #66C; text-decoration: underline}
+	.teasers P A { display: block}
+#tile_siberia { padding-bottom: 40px; position: relative}
+	#tile_siberia .col2_2 { position: absolute; right: 0; bottom: 39px; width: 180px}
+		#tile_siberia H3 { margin-left: 0; padding-right: 1em; position: relative}
+        	#tile_siberia H3 EM { font-style: normal; font-weight: normal; position: absolute; top: 0; right: 0}
+#tree_map  { display: block; margin: 0; position: relative; height: 340px; width: 700px}
+	#tree_map DT { color: #FFF; display: block; padding: 10px; position: absolute}
+    	#tree_map DT.worse { background: #C33}
+		#tree_map DT.bad { background: #F66}
+        #tree_map DT.good { background: #9C9; color: #030}
+		#tree_map DT.very_good { background: #696}
+    	#tree_map DT.small { text-indent: -3400em; padding: 0}
+        #tm_manufacturing { top: 204px; left: 0; height: 115px; width: 469px}
+		 #tm_agriculture { top: 102px; left: 490px; height: 217px; width: 189px}
+		#tm_transportation { top: 102px; left: 0; height: 81px; width: 259px}
+		#tm_commerce { top: 0; left: 0; height: 81px; width: 259px}
+        #tm_real_estate { top: 136px; left: 280px; height: 47px; width: 189px}
+        #tm_electricity { top: 0; left: 280px; padding: 2px 10px 3px !important; height: 19px; width: 399px}
+        #tm_construction { top: 25px; left: 280px; padding: 3px 10px 3px !important; height: 19px; width: 399px}
+        #tm_health { top: 51px; left: 420px; height: 30px; width: 119px}
+        #tm_education { top: 51px; left: 560px; height: 30px; width: 119px}
+        #tm_federal { top: 51px; left: 280px; height: 30px; width: 119px}
+        #tm_mining { top: 102px; left: 280px; height: 33px; width: 69px}
+        #tm_other { top: 102px; left: 350px; height: 33px; width: 51px}
+        #tm_hotels { top: 102px; left: 402px; height: 33px; width: 52px}
+        #tm_finance { top: 102px; left: 455px; height: 33px; width: 34px}
+			#tree_map DD { color: #FFF; display: none; margin: 0; padding: 10px 20px; width: 180px; z-index: 43}
+           		 #tree_map DD .header { background: url(/a/projects/region-20/img/32/tooltip-t.png) no-repeat; min-height: 0; height: 10px; width: 180px}
+            	#tree_map DD .body { background: url(/a/projects/region-20/img/32/overlay.png); padding: 0 15px}
+            		#tree_map H2 { margin: 0}
+                	#tree_map DD SPAN { color: #393 }
+					#tree_map SPAN.bad { color: #F00}
+			#tree_map DD .footer { background: url(/a/projects/region-20/img/32/tooltip-b.png) no-repeat; height: 10px; width: 180px}
+
+UL.legend { font: 84.6% Tahoma, Geneva, Arial, sans-serif; list-style-image: none; list-style-type: none; margin: 0; padding: 20px 0 0}
+	.legend LI { background: url(/a/projects/region-20/img/legends.png) no-repeat; margin-bottom: .455em; padding-left: 40px}
+    	.legend .caption { background: none; font-weight: bold; padding-left: 0}
+        LI.lgd_01 { background-position: 16px 6px}
+        LI.lgd_02 { background-position: 16px -194px}
+        	.inline LI.lgd_03 { background-position: 27px -394px}
+        LI.lgd_03 { background-position: 16px -394px}
+        LI.lgd_04 { background-position: 16px -594px}
+        LI.lgd_05 { background-position: 16px -794px}
+        LI.lgd_06 { background-position: 16px -994px}
+        LI.lgd_07 { background-position: 16px -1394px}
+			.inline LI.lgd_07 { background-position: 27px -1394px}
+		LI.lgd_08 { background-position: 16px -1594px}
+        	.inline LI.lgd_08 { background-position: 27px -1594px}
+        LI.lgd_09 { background-position: 16px -1794px}
+       		.inline LI.lgd_09 { background-position: 27px -1794px}
+UL.progress { font: 84.6% Tahoma, Geneva, Arial, sans-serif; list-style-image: none; list-style-type: none}
+	.progress LI { margin-bottom: .455em; padding-right: 60px; position: relative}
+		.progress LI EM { display: block; font-style: normal; text-align: right; position: absolute; top: 0; right: 0; min-width: 40px; width: 40px}
+            HTML>BODY .progress LI EM { width: auto}
+
+TABLE { background: #FFF; border: 1px solid #CCCFD3; border-spacing: 0; border-collapse: collapse; empty-cells: show; line-height: normal; text-align: left; margin: 0 auto 1.5em; width: 100%}
+	CAPTION { font-weight: bold; text-align: left; margin: 0 auto; padding-bottom: .6em}
+	THEAD { background: #E1E3E7}
+    	THEAD TH { border-bottom: 1px solid #CCCFD3}
+	.even { background: #EDF0F4}
+	TD, TH { border-right: 1px solid #CCCFD3; font-size: 100%; font-weight: normal; vertical-align: top; padding: 10px}
+
+/* Drop-downs */
+.with_options H2, .with_options H3 { position: relative}
+	.with_options H2 EM, .with_options H3 EM { background: url(/a/projects/region-20/img/gui.png) -2310px -100px no-repeat; cursor: pointer; display: block; text-indent: -3400em; position: absolute; top: 0; left: -40px; height: 20px; width: 20px}
+		.with_options H3 EM { top: -1px; left: -32px}
+        #sidebar .with_options H2 EM { background-position: -2280px -130px}
+
+.header { position: relative; min-height: 3.3em; height: 3.3em}
+	HTML>BODY .header { height: auto}
+    #sidebar .header { min-height: 0; height: auto}
+		#sidebar .header H2 { margin-left: 40px}
+   .with_options UL { background: #FFF; border: 1px solid #E3E6EA; border-bottom-width: 2px; display: none; font: 11px Tahoma, Geneva, Arial, sans-serif; list-style-image: none; list-style-type: none; margin: 0; padding: 10px 0; position: absolute; top: 21px; left: 0; width: 180px}
+       .with_options LI { float: left; margin: 0 0 1px; width: 180px}
+            .with_options LI A {  color: #525559; display: block; text-decoration: none; padding: 3px 10px 4px 39px; width: 131px }
+            .with_options LI A:hover { background: #ECEFF3}
+                        .with_options LI A.selected {  background: url(/a/projects/region-20/img/legends.png) 12px -1195px no-repeat}
+            			.with_options LI A.selected:hover { background-color: #ECEFF3}
+
+/* Tabs ------------------------------------------------------------------------------------------------------------------*/
+.pane { display: none}
+
+.tabs { border-bottom: 1px solid #E3E6EA; display: inline-block; list-style-image: none; list-style-type: none; margin: -5px 0 34px; padding: 0 25px; height: 29px; width: auto}
+	.tabs LI, .tabs A {  background: url(/a/projects/region-20/img/gui-skretches.png); display: block; cursor: pointer; float: left}
+    .tabs LI { background-position: 100% -40px; margin: 1px 1px 0 0; padding-right: 15px; height: 29px}
+    	.tabs A {  background-position: 0 0; color: #53565A; line-height: 29px; text-decoration: none; padding-left: 15px; height: 29px}
+	.tabs LI:hover, .tabs .current { background-position: 100% -120px}
+    	.tabs LI:hover A, .tabs .current A { background-position: 0 -80px}
+        .tabs .current, .tabs .current A { cursor: default}
+
+/* Sidebar -------------------------------------------------------------------------------------------------------------*/
+#sidebar { float: right; padding: 29px 0 40px; position: relative; min-height: 523px; width: 180px}
+
+#sidebar .user { font: 84.6% Tahoma, Geneva, Arial, sans-serif; color: #C00; text-decoration: none; margin-left: 40px}
+	#sidebar .user:hover { color: #66C; text-decoration: underline}
+#sidebar H1 { background: url(/a/projects/region-20/img/gui.png) -1560px -80px no-repeat; margin: 8px 0 5px; height: 60px; width: 180px}
+	#sidebar H1 A { background: url(/a/projects/region-20/img/coat-buryatiya.png) 0 10px no-repeat; display: block; text-indent: -4300em; height: 43px; width: 180px}
+
+#sidebar UL.nav { list-style-image: none; list-style-type: none;  margin: 0; padding: 0 0 20px}
+	#sidebar UL.nav LI { margin-bottom: 0}
+		#sidebar UL.nav A { color: #888B8F; display: block; text-decoration: none; padding: 5px 10px 5px 40px; width: 130px}
+ 	   #sidebar UL.nav A:hover { background: #E3E6EA; color: #53565A}
+
+#marker { background: url(/a/projects/region-20/img/32/marker.png) no-repeat; display: block; position: absolute; left: 0; height: 34px; width: 180px}
+	.federal #marker { top: 110px}
+	.regional #marker { top: 140px}
+    .county #marker { top: 170px}
+    .city #marker { top: 200px}
+
+#sidebar DT { background: url(/a/projects/region-20/img/gui.png) -1920px -80px no-repeat; cursor: pointer; line-height: 30px; margin-bottom: 0; padding: 0 10px 0 40px; height: 30px; width: 130px}
+	#sidebar #m_overview { background-position: -1740px -80px}
+    #sidebar #m_media, .municipal #sidebar #m_society { background-position: -2100px -80px}
+
+    /*current sections*/
+	.economy #sidebar #m_economy, .policy #sidebar #m_policy, .society #sidebar #m_society
+    { background-position: -1920px -140px; color: #FFF}
+	.overview #sidebar #m_overview
+    { background-position: -1740px -140px; color: #FFF}
+	.media #sidebar #m_media, .municipal_society #sidebar #m_society
+    { background-position: -2100px -110px; color: #FFF}
+
+    /*opened tabs*/
+	#sidebar DT.current , #sidebar #m_media.current
+    { background-position: -1920px -110px !important}
+	#sidebar #m_overview.current
+    { background-position: -1740px -110px !important}
+    
+	/*opened tabs on current sections*/
+	.economy #sidebar #m_economy.current, .policy #sidebar #m_policy.current, .society #sidebar #m_society.current, .municipal_society #sidebar #m_society.current, .media #sidebar #m_media.current
+    { background-position: -1920px -170px !important}
+	.overview #sidebar #m_overview.current
+    { background-position: -1740px -170px !important}
+
+#sidebar DD { display: none; margin-bottom: 0}
+	 .overview #sidebar .m_overview, .policy #sidebar .m_policy, .economy #sidebar .m_economy, .society #sidebar .m_society,  .municipal_society #sidebar .m_society, .media #sidebar .m_media
+     { display: block}
+	#sidebar DD UL { background: #FFF; font: 84.6% Tahoma, Geneva, Arial, sans-serif; border-bottom: 1px solid #E3E6EA; list-style-image: none; list-style-type: none; margin: 0; padding: 0 0 1.18em}
+    	#sidebar DD LI { margin-bottom: 0}
+			#sidebar DD A { background: url(/a/projects/region-20/img/bullet-inc-small.gif) 17px 0 no-repeat; color: #53565A; display: block; text-decoration: none; padding: 2px 10px 3px 40px; width: 130px}
+				#sidebar DD LI.first A { background-position: 17px 6px; padding-top: 8px}
+            #sidebar DD A:hover, #minregion #m_minregion, .economy#overview #m_e_overview, .society#overview #m_s_overview, .municipal_society#overview #m_s_overview, .media#overview #m_m_overview, .policy#overview #m_p_overview
+            { background: #99F url(/a/projects/region-20/img/bullet-inc-small-current.gif) no-repeat; color: #FFF}
+            	#sidebar DD A:hover, #minregion #m_minregion
+				{ background-position: 17px 0}
+				.economy#overview #m_e_overview, .society#overview #m_s_overview, .municipal_society#overview #m_s_overview, .media#overview #m_m_overview, .policy#overview #m_p_overview
+				{ background-position: 17px 6px}
+           
+#sidebar .tips { color: #888B8F; text-decoration: none; position: absolute; bottom: 0; left: 40px}
+	#sidebar .tips EM { background: url(/a/projects/region-20/img/gui.png) -2280px -80px; no-repeat; display: block; text-indent: -3400em; position: absolute; bottom: 2px; left: -26px; height: 15px; width: 15px}
+    	#sidebar .tips EM.selected { background-position: -2280px -100px}
+
+/* Help ----------------------------------------------------------------------------------------------------------------*/
+.hints { margin-left: -490px; position: absolute; top: 0; left: 50%; width: 980px}
+	.hint { color: #FFF; position: absolute; width: 400px; z-index: 43}
+		.hint .header { background: url(/a/projects/region-20/img/32/hint-t.png) no-repeat; min-height: 0; height: 10px; width: 400px}
+		.hint .body { background: url(/a/projects/region-20/img/32/overlay-82.png); padding: 10px 25px 20px}
+        	.hint H2 { color: #99F; text-transform: uppercase; margin: 0}
+            	.hint H2 EM { display: block; text-indent: -4300em; position: absolute}
+                	.hint H2 .p_top { background: url(/a/projects/region-20/img/32/hint-p-t.png) no-repeat; top: -6px; left: 25px; height: 6px; width: 12px}
+					.hint H2 .p_right { background:url(/a/projects/region-20/img/32/hint-p-r.png) no-repeat; top: 3.46em; right: -6px; height: 12px; width: 6px}
+                    .hint H2 .p_bottom { background: url(/a/projects/region-20/img/32/hint-p-b.png) no-repeat; bottom: -6px; left: 25px; height: 6px; width: 12px}
+					.hint H2 .p_left { background:url(/a/projects/region-20/img/32/hint-p-l.png) no-repeat; top: 3.46em; left: -6px; height: 12px; width: 6px}
+				.hint OL { margin-left: 1.39em}
+            .hint .minimize { background: url(/a/projects/region-20/img/gui.png) -2310px -130px; position: absolute; top: 1.85em; right: 25px; height: 15px; width: 15px}
+			.hint .minimize_labeled { background: transparent; color: #888B8F; font: 13px Arial, Helvetica, sans-serif; padding: 0 20px 0 0; position: absolute; top: 1.69em; right: 25px}
+                        .hint .minimize_labeled EM { background: url(/a/projects/region-20/img/gui.png) -2310px -130px; display: block; text-indent: -4300em; position: absolute; top: 0; right: 3px; height: 15px; width: 15px}
+			.hint P { margin-bottom: 1em}
+            	.hint STRONG { color: #FC0; font-weight: normal}
+			.hint .pager .count { background: #888B8F; float: right; padding: 0 .4em; height: 20px}
+				.hint .pager .first { background: transparent url(/a/projects/region-20/img/gui-skretches.png) no-repeat 0 -160px; float: right; padding: 0 .4em 0 25px; height: 20px}
+				.hint .pager .last { background: transparent url(/a/projects/region-20/img/gui-skretches.png) no-repeat 100% -160px; float: right; padding: 0 25px 0 .4em; height: 20px}
+			.hint .backward, .hint .forward { background: url(/a/projects/region-20/img/gui.png) no-repeat; display: block; float: right; height: 20px; width: 20px}
+			.hint .backward { background-position: -2280px -190px}
+            .hint .forward { background-position: -2310px -190px}
+		.hint .footer { background: url(/a/projects/region-20/img/32/hint-b.png) no-repeat; height: 10px; width: 400px}
+        
+        #h_intro { position: fixed; margin-left: -200px; top: 100px; left: 50%}
+        #h_interface, #h_reg_eco  { top: 200px; left: 380px}
+        #h_map, #h_mun_eco_02 { top: 160px; left: 530px}
+		#h_timeline { top: 160px; left: 530px}
+        #h_rating { top: 200px; left: 100px}
+        #h_chart { top: 230px; left: 40px}
+        #h_menu { top: 60px; left: 380px}
+        #h_fed_policy, #h_reg_policy, #h_mun_policy { top: 200px; left: 380px}
+        #h_goto_fed_eco { top: 304px; left: 380px}
+		#h_fed_eco { top: 254px; left: 380px}
+		#h_fed_eco_02 { top: 200px; left: 380px}
+		#h_fed_soc { top: 265px; left: 380px}
+        #h_fed_soc_02 { top: 285px; left: 380px}
+        #h_fed_soc_03 { top: 325px; left: 380px}
+        #h_fed_media, #h_reg_media, #h_mun_soc_03 { top: 360px; left: 580px}
+        #h_fed_media_02 { top: 140px; left: 540px}
+        #h_goto_regional  { top: 105px; left: 380px}
+        #h_reg_map { top: 430px; left: 580px}
+		#h_industries,  #h_companies { top: 60px; left: 580px}
+		#h_reg_soc, #h_mun_soc, #h_mun_eco { top: 235px; left: 380px}
+		#h_reg_soc_02, #h_mun_soc_02 { top: 305px; left: 380px}
+		#h_mun_eco_03 { top: 360px; left: 515px}
+
+
+
+.floating { margin-left: -490px; position: fixed; bottom: 20px; left: 50%; height: 100px; width: 980px; z-index: 20}
+	.hints_minimized { background: url(/a/projects/region-20/img/32/hint-minimized.png); color: #888B8F; display: none; font-weight: bold; line-height: 30px; text-transform: uppercase; padding: 0 25px; position: absolute; right: 0; bottom: 0; height: 30px; width: 130px}
+		.hints_minimized .maximize { background: url(/a/projects/region-20/img/gui.png) -2280px -160px; position: absolute; top: 7px; right: 25px; height: 15px; width: 15px}
+
+/* Drop-downs */
+.hint .pager DIV.menu { float: left; position: relative}
+	.hint .menu BUTTON { background: url(/a/projects/region-20/img/gui.png) no-repeat -1560px -220px; color: #FFF; text-align: left; font: 13px/20px Arial, Helvetica, sans-serif; padding: 0 10px; height: 20px; width: 200px}
+
+.hints .menu UL { background: #888B8F; -moz-border-radius: 4px; -webkit-border-radius: 4px; display: none; float: right; list-style-image: none; list-style-type: none; margin: 0; padding: 10px 0; position: absolute; bottom: 15px; left: 0;  width: 200px}
+	.hints .menu LI { float: left; margin: 0 0 1px; width: 200px}
+    	.hints .menu UL UL { background: transparent; display: block; float: none; padding: 0; position: static}
+			.hints .menu LI A { color: #FFF; display: block; text-decoration: none; padding: 3px 14px 4px; width: 172px}
+            .hints .menu LI SPAN { color: #53565A; display: block; padding: 3px 14px 4px; width: 172px}
+            	.hints .menu LI LI A { padding-left: 28px; width: 158px}
+			.hints .menu LI A:hover { background: #D6D9DD; color: #53565A}
+        
+/* Clearing -------------------------------------------------------------------------------------------------------------*/
+.cfx:after { clear: both}
+.cfx_l:after { clear: left}
+.cfx:after, .cfx_l:after { content: "."; display: table; font-size: 0; line-height: 0; height: 0; visibility: hidden}
+.cfx, .cfx_l { display: inline-block}
+/* Hides from IE-mac \*/
+*HTML .cfx, *HTML .cfx_l { height: 1%}
+.cfx, .cfx_l { display: block}
+/* End hide from IE Mac */
+
+/* Hacks --------------------------------------------------------------------------------------------------------------*/
+.help H3 EM
+{ display: -moz-inline-stack;  *display: inline; _overflow: hidden; zoom: 1}
+
+
+*HTML #content { padding: 25px 38px 40px}
+*HTML .floating { position: absolute; top: expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop +(documentElement.clientHeight-this.clientHeight - 20) : document.body.scrollTop +(document.body.clientHeight-this.clientHeight - 20))}
+	*HTML .help { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/_labs/a/projects/region-2-0/img/32/help.png'), sizingMethod='scale')}
+*HTML .hint .header { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/_labs/a/projects/region-2-0/img/32/hint-t.png'), sizingMethod='scale')}
+*HTML .hint .body { background: #000 none; filter: alpha(opacity=82)}
+*HTML .hint .footer { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/_labs/a/projects/region-2-0/img/32/hint-b.png'), sizingMethod='scale')}
+*HTML #marker { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/_labs/a/projects/region-2-0/img/32/marker.png'), sizingMethod='scale')}
+*HTML #tree_map DD .header { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/_labs/a/projects/region-2-0/img/32/tooltip-t.png'), sizingMethod='scale')}
+*HTML #tree_map DD .body { background: #000 none; filter: alpha(opacity=64)}
+*HTML #tree_map DD .footer { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/_labs/a/projects/region-2-0/img/32/tooltip-b.png'), sizingMethod='scale')}

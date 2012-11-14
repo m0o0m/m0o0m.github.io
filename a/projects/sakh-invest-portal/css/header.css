@@ -1,0 +1,49 @@
+#header { color: #FFF; margin: 0 auto; height: 180px; width: 960px}
+
+#header H1 { float: left; padding: 38px 0 0 20px; height: 55px; width: 280px}
+	#header H1 A { background-position: -90px 0; height: 55px; width: 279px}
+    #front #header H1 A, #front #m_home A { cursor: default}
+
+#ftr_map { float: left; margin-left: 40px; padding: 65px 0 0 127px; position: relative; width: 153px}
+	#ftr_map A { color: #99A6E4; font-style: oblique}
+	.ico_map { background-position: 0 -60px; position: absolute; top: 0; left: 0; height: 110px; width: 120px}
+
+#header UL { list-style-image: none; list-style-type: none}
+
+/*Search and Meta Navigation*/
+.b_search { float: right; width: 280px}
+
+.b_search UL { text-align: right; margin: 0 0 4px; padding: 36px 0 0}
+	.b_search LI { display: inline-block; margin-left: 1em}
+    .b_search A { color: #99A6E4; white-space: nowrap} 
+#m_home A, #m_contacts A { line-height: .769; text-align: left; text-indent: -4000em; height: 10px; width: 12px}
+#m_home A { background-position: -220px -60px}
+#m_contacts A { background-position: -249px -60px}
+
+#f_search { border: 1px solid #334080; position: relative; height: 28px; width: 278px}
+#i_search { border: 0 none; height: 16px; width: 239px}
+#f_search BUTTON { background-position: -50px -30px; border: 0 none; position: absolute; top: 0; right: 0; height: 28px; width: 29px}
+
+/* Main menu */
+#header NAV UL { list-style-image: none; list-style-type: none; margin: 0; padding: 15px 0 0}
+	#header NAV .menu { float: left; margin: 0 61px 0 10px; position: relative; z-index: 3}
+        #header NAV LI:last-child { float: right; margin-right: 0}
+    	#header NAV A { text-decoration: none; display: block}
+			#header .label { border: 1px solid #404C8C; border-bottom: 0 none; color: #FFF; font: bold 92.3%/1.67 'Arial Narrow', Arial, Helvetica, sans-serif; padding: 5px 18px 15px 20px; text-transform:uppercase}
+            #header .menu:hover .label { background: #99A6E5; border: 1px solid #6673B2; border-bottom: 0 none}
+				#header .label I { background-position: -380px 0; position: absolute; top: 12px; left: 10px; height: 8px; width: 8px}
+				#header .menu:hover .label I { background-position: -380px -20px}
+
+/* Drop-downs */
+#header .menu UL { background: #99A6E5; border: 1px solid #6673B2; border-top: 0 none; border-bottom-width: 2px; display: none; text-align: left; padding: 3px 19px 15px; position: absolute; top: 40px; left: -10px; width: 220px}
+	#header .menu:hover UL { display: block}
+    #header .last UL { left: auto; right: 0}
+    #header .menu LI { float: left}
+		#header .menu LI A { color: #404E8C; padding: 5px 11px; width: 198px}
+		#header .menu LI A:hover { background: #A6B2F2}
+        
+/* Current sections */
+#header .menu .selector { display: none}
+
+.business #m_business .selector, .industries #m_industries .selector, .support #m_support .selector, .projects #m_projects .selector, .news #m_news .selector
+{ background: url(/a/projects/sakh-invest-portal/img/base-graphics.png) no-repeat -130px -60px; display: block; text-indent: -4000em; position: absolute; bottom: -19px; left: 20px; height: 7px; width: 15px}

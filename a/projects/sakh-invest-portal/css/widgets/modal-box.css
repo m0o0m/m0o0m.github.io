@@ -1,0 +1,35 @@
+#modal_box { display: none; text-align: center; position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: 43}
+	*HTML #modal_box { position: absolute; top: expression( ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) + 'px' ); height: expression(minY=(this.scrollHeight < parseInt(this.currentStyle.minHeight)+1)? this.currentStyle.minHeight : maxY=(this.scrollHeight > parseInt(this.currentStyle.maxHeight)+1)? this.currentStyle.maxHeight : "auto")}
+    
+    #modal_box HEADER, #modal_box .header, #modal_box .single FIGCAPTION, #modal_box .single .figcaption { background: #ABAEB2; background: -moz-linear-gradient(#B8BBBF, #9FA2A6) no-repeat;  background: -webkit-gradient(linear, 0 0, 0 100%, from(#B8BBBF), to(#9FA2A6)) no-repeat; -moz-border-radius-topright: 14px; -moz-border-radius-topleft: 14px; -webkit-border-top-right-radius: 14px; -webkit-border-top-left-radius: 14px; border-top-right-radius: 14px; border-top-left-radius: 14px; color: #FFF; text-align: left; text-shadow: 0 1px 1px #888B8F}
+	#modal_box HEADER, #modal_box .header { margin: 60px auto 0; position: relative; height: 40px; width: 640px}
+     #modal_box .single FIGCAPTION, #modal_box .single .figcaption { margin-left: -320px; padding: 4px 40px 0; position: absolute; top: 60px; left: 50%}
+		#modal_box HEADER H2, #modal_box .header H2, #modal_box .single FIGCAPTION, #modal_box .single .figcaption { color: #FFF; font-size: 13px; font-weight: bold; line-height: 36px; text-align: left; text-transform: uppercase; height: 36px; width: 560px}
+		#modal_box HEADER H2, #modal_box .header H2 { margin: 0; padding: 4px 0 0 40px}
+        #modal_box .close { background: #FCC url(/a/projects/sakh-invest-portal/img/base-graphics.png) no-repeat -40px 0; border: 0 none; cursor: pointer; display: block; text-indent: -4000em; position: absolute; top: 14px; right: 20px; height: 15px; width: 15px; z-index: 2}
+
+#modal_box .tabs { list-style-image: none; list-style-type: none; margin: 0; padding: 0; position: absolute; top: 12px; right: 40px; height: 40px}
+	#modal_box .tabs LI, #modal_box .tabs A {  display: block; float: left}
+    #modal_box .tabs LI { margin: 0 0 0 1px}
+		#modal_box .tabs A { color: #FFF; font-weight: normal; line-height: 20px; text-decoration: none; padding: 0 10px; /* test it in IE — position: static */; height: 20px}
+    	.tabs LI:hover A, .tabs .current A { background: #888B8F; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px}
+
+#modal_box ARTICLE, #modal_box .article, #modal_box .pane, #modal_box .single { background: #FFF; text-align: left; padding: 40px 40px 0; overflow: auto; max-height: 64%; width: 560px}
+#modal_box ARTICLE, #modal_box .article, #modal_box .pane { margin: 0 auto}
+    #modal_box ARTICLE, #modal_box .article, #modal_box .pane { *margin-top: -3px; _height: 430px}
+#modal_box .single { margin: 100px auto 0}
+	#modal_box .single IMG { max-width: 560px}
+#modal_box FOOTER, #modal_box .footer { background: #FFF; -moz-border-radius-bottomright: 14px; -moz-border-radius-bottomleft: 14px; -webkit-border-bottom-right-radius: 14px; -webkit-border-bottom-left-radius: 14px; border-bottom-right-radius: 14px; border-bottom-left-radius: 14px; margin: 0 auto; height: 60px; width: 640px}
+
+/* 
+#modal_box IFRAME { border: 0 none; overflow: auto; overflow-x: hidden; overflow-y: auto; margin: 0 auto; height: 70px; width: 640px}
+	.ie6 #modal_box IFRAME { height: 430px}
+There is unsolved problem in FF with render iframe. So, we use just AJAX content. But jQuery clean up head section. So, everything is ok
+
+*/
+
+#modal_box H1 { margin: 0; padding-top: 0}
+
+#overlay { background: #000; display: none; -moz-opacity: 0.64; opacity: .64; filter: alpha(opacity=64); position: fixed; top: 0; left:0; height: 100%; width: 100%; z-index: 34}
+	*HTML #overlay { position: absolute; top: expression((ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop) + 'px')}
+/*We can try use IFRAME#overlay if we need to execute modal boxes over flash content*/

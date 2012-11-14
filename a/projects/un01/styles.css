@@ -1,0 +1,16 @@
+.bottomrow { background: #E5D9CC}
+.content { background: #FFF3E5}
+.middlerow { background: #F3E5D9}
+.border { background: #597FA6}
+.toprow { background: #D9CCBF}
+.toprow a:visited { color: #8C5959}
+a { color: #8C5959}
+a:visited { color: #BF8C8C}
+a:hover { color: #264C73}
+address { font-style: normal} 
+body { background: #E5D9CC; margin: 0; padding: 0}
+h1 {  font-family: Verdana, Arial, Helvetica, sans-serif; color: #BF8C8C; font-size: 18px; margin-left: 10px; margin-right: 10px} 
+IMG { border: 0 none}
+p { font-family: Verdana, Arial, Helvetica, sans-serif; color: #264C73; font-size: 12px; margin-left: 10px; margin-right: 10px}
+td { font-family: Verdana, Arial, Helvetica, sans-serif; color: #264C73; font-size: 10px}
+th { font-family: Verdana, Arial, Helvetica, sans-serif; color: #264C73; font-size: 10px; text-align: left}

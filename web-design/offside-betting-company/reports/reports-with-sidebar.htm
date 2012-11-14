@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Reports / Offside</title>
+
+<style type="text/css">
+<!--
+HTML, BODY { height: 100%}
+HTML { text-align: center}
+BODY { background: #FFF; color: #525559; font: .813em/140% Arial, Helvetica, sans-serif; text-align: left; margin: 0 auto 1px; padding: 60px 0 0; width: 90% }
+
+/*Colors
+.blue { background: #0080D9}
+.blue_violet { background: #5900D9}
+.green_foliage { background: #00D980}
+.green { background: #33D933}
+.yellow { background: #D9BF00}
+.red { background: #D93300}
+.violet { background: #D933D9}
+*/
+
+A { color: #0080D9}
+A:visited { color: #800080}
+A:hover { color: #FF3333}
+H1 { font: normal 185%/110% Georgia, "Times New Roman", Times, serif}
+H2 { font: normal 135% Georgia, "Times New Roman", Times, serif; margin: 1.25em 0 .25em}
+H3 { color: #2C2F33; font-size: 100%; margin: 0 }
+IMG { border: 0}
+P { margin: 0 0 1.4em}
+
+/* Layout -------------------------------------------------------------------------------------------------------------------*/
+#sidebar { /*background: #EEF1F5;*/ border: 1px solid #D9DCE0; float: right; padding: 15px 15px 15px 30px; width: 195px}
+	#sidebar DT { position: relative}
+		#sidebar DT EM { background: url(/a/projects/offside/img/greys.png) no-repeat; display: block; text-indent: -430em; position: absolute; top: .3em; left: -1.1em; height: 10px; width: 10px}
+			#sidebar DT.open EM { background-position: -10px 0}
+
+#main { margin-right: 300px}
+
+/* Tables -------------------------------------------------------------------------------------------------------------------*/	
+TABLE { background: #FFF; border: 1px solid #D9DCE0; border-collapse: collapse; empty-cells: show; line-height: normal; margin: 0 auto 1.33em; width: 100% }
+	CAPTION { font-weight: bold; margin: 0 auto; padding-bottom: 0.5em}
+	THEAD { background-color: #525559}
+			.even { background: #EEF1F5}
+			TD, TH { border-right: 1px solid #CCCFD3; font-size: 100%; font-weight: normal; vertical-align: top; padding: 6px}
+				THEAD TH { color: #EEF1F5; font: 85% Tahoma, Geneva, Arial, sans-serif; padding: 5px 6px 4px}
+				
+/* Lists --------------------------------------------------------------------------------------------------------------------*/
+DL, DD.last { margin: 0 0 1.4em}
+	DT { font-weight: bold}
+    	DT A { color: #535559}
+	DT, DD { margin: 0 0 .4em}
+
+LI { margin-bottom: .4em}
+
+OL { margin: 0 0 1em 1.5em; padding: 0}
+
+UL { list-style-image: url(/a/projects/offside/img/bullet.gif); margin: 0 0 1.4em; padding: 0}
+
+
+-->
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div id="sidebar">
+<dl>
+<dt class="open"><em title="Bets reports">Отчеты по ставкам </em>Bets</dt>
+<dd class="open">
+<ul>
+<li><a href="/reports/bets_by_period">By Peruiod</a></li>
+<li><a href="/reports/users_by_period">By Users</a></li>
+<li><a href="/reports/bets_settledusers_by_period">Settled Users by Period</a></li>
+<li><a href="/reports/bts_by_sports">By Sports</a></li>
+<li><a href="/reports/bts_by_subtypes">By Subtypes</a></li>
+<li><a href="/reports/bts_by_markettypes">By Market Types</a></li>
+<li><a href="/reports/bets_by_range">By Range</a></li>
+<li><a href="/reports/lives_stat_all">Lives Stats</a></li>
+<li><a href="/reports/lives_by_period">Lives by Period</a></li>
+<li><a href="/reports/bets_lives_stat_bypass">Lives Stats by Pass</a></li>
+<li><a href="/reports/live_expresses">Live Expresses</a></li>
+<li><a href="/reports/live_traiders_stat">Live Traders Stats</a></li>
+<li><a href="/reports/bets_live_traiders_stat_bypass">Live Traders Stats by Pass</a></li>
+<li><a href="/reports/night_bts_by_period">Night Bets by Period</a></li>
+<li><a href="/reports/night_bts_by_users">Night Bets by Users</a></li>
+<li><a href="/reports/bts_on_changed_price">On Changed Price</a></li>
+<li><a href="/reports/late_bts">Late</a></li>
+<li><a href="/reports/dangerous_bts">Dangerous</a></li>
+<li><a href="/reports/rejected_bets">Rejected</a></li>
+<li><a href="/reports/voided_bets">Voided</a></li>
+</ul>
+</dd>
+
+<dt><em title="Transactions Reports">Transactions Reports </em>Transactions</dt>
+<!--<dd>
+<ul>
+<li></li>
+</ul>
+</dd>-->
+
+
+<dt><em title="Users Reports">Users Reports </em>Users</dt>
+<!--<dd>
+<ul>
+<li></li>
+</ul>
+</dd>-->
+
+<dt><em title="Events Reports">Events Reports </em>Events</dt>
+<!--<dd>
+<ul>
+<li></li>
+</ul>
+</dd>-->
+</dl>
+
+</div>
+
+<div id="main">
+<table cellspacing="0">
+<thead>
+<tr>
+<th scope="col"></th>
+<th scope="col">Account #</th>
+<th scope="col">User</th>
+<th scope="col">First Name</th>
+<th scope="col">Second Name</th>
+<th scope="col">Email</th>
+<th scope="col">Cell Phone</th>
+<th scope="col">Sign Up Date</th>
+<th scope="col">Bonus Code</th>
+<th scope="col">Address</th>
+<th scope="col">IP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Tatyana</td>
+<td>Bardeeva</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>4 Bashidze Str., Apt. 4, Vladivostok, Russia</td>
+<td>92.112.103.234</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Tatyana</td>
+<td>Bardeeva</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>4 Bashidze Str., Apt. 4, Vladivostok, Russia</td>
+<td>92.112.103.234</td>
+</tr>
+<tr>
+<td>3</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Tatyana</td>
+<td>Bardeeva</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>4 Bashidze Str., Apt. 4, Vladivostok, Russia</td>
+<td>92.112.103.234</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Tatyana</td>
+<td>Bardeeva</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>4 Bashidze Str., Apt. 4, Vladivostok, Russia</td>
+<td>92.112.103.234</td>
+</tr>
+<tr>
+<td>5</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Tatyana</td>
+<td>Bardeeva</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>4 Bashidze Str., Apt. 4, Vladivostok, Russia</td>
+<td>92.112.103.234</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Tatyana</td>
+<td>Bardeeva</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>4 Bashidze Str., Apt. 4, Vladivostok, Russia</td>
+<td>92.112.103.234</td>
+</tr>
+<tr>
+<td>7</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Tatyana</td>
+<td>Bardeeva</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>4 Bashidze Str., Apt. 4, Vladivostok, Russia</td>
+<td>92.112.103.234</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Tatyana</td>
+<td>Bardeeva</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>4 Bashidze Str., Apt. 4, Vladivostok, Russia</td>
+<td>92.112.103.234</td>
+</tr>
+<tr>
+<td>9</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Tatyana</td>
+<td>Bardeeva</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>4 Bashidze Str., Apt. 4, Vladivostok, Russia</td>
+<td>92.112.103.234</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Tatyana</td>
+<td>Bardeeva</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>4 Bashidze Str., Apt. 4, Vladivostok, Russia</td>
+<td>92.112.103.234</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

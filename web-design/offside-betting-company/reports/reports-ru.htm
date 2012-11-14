@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Отчеты / Офсайд</title>
+
+<style type="text/css">
+<!--
+HTML, BODY { height: 100%}
+HTML { text-align: center}
+BODY { background: #FFF; color: #525559; font: .813em/140% Arial, Helvetica, sans-serif; text-align: left; margin: 0 auto 1px; padding: 60px 0 0; width: 90% }
+
+/*Colors
+.blue { background: #0080D9}
+.blue_violet { background: #5900D9}
+.green_foliage { background: #00D980}
+.green { background: #33D933}
+.yellow { background: #D9BF00}
+.red { background: #D93300}
+.violet { background: #D933D9}
+*/
+
+A { color: #0080D9}
+A:visited { color: #800080}
+A:hover { color: #FF3333}
+H1 { font: normal 185%/110% Georgia, "Times New Roman", Times, serif}
+H2 { font: normal 135% Georgia, "Times New Roman", Times, serif; margin: 1.25em 0 .25em}
+H3 { color: #2C2F33; font-size: 100%; margin: 0 }
+IMG { border: 0}
+P { margin: 0 0 1.4em}
+
+/* Layout -------------------------------------------------------------------------------------------------------------------*/
+#sidebar { /*background: #EEF1F5;*/ border: 1px solid #D9DCE0; float: right; padding: 15px 15px 15px 30px; width: 195px}
+	#sidebar DT { position: relative}
+		#sidebar DT EM { background: url(/a/projects/offside/img/greys.png) no-repeat; display: block; text-indent: -430em; position: absolute; top: .3em; left: -1.1em; height: 10px; width: 10px}
+			#sidebar DT.open EM { background-position: -10px 0}
+
+#main { margin-right: 300px}
+
+/* Tables -------------------------------------------------------------------------------------------------------------------*/	
+TABLE { background: #FFF; border: 1px solid #D9DCE0; border-collapse: collapse; empty-cells: show; line-height: normal; margin: 0 auto 1.33em; width: 100% }
+	CAPTION { font-weight: bold; margin: 0 auto; padding-bottom: 0.5em}
+	THEAD { background-color: #525559}
+			.even { background: #EEF1F5}
+			TD, TH { border-right: 1px solid #CCCFD3; font-size: 100%; font-weight: normal; vertical-align: top; padding: 6px}
+				THEAD TH { color: #EEF1F5; font: 85% Tahoma, Geneva, Arial, sans-serif; padding: 5px 6px 4px}
+				
+/* Lists --------------------------------------------------------------------------------------------------------------------*/
+DL, DD.last { margin: 0 0 1.4em}
+	DT { font-weight: bold}
+    	DT A { color: #535559}
+	DT, DD { margin: 0 0 .4em}
+
+LI { margin-bottom: .4em}
+
+OL { margin: 0 0 1em 1.5em; padding: 0}
+
+UL { list-style-image: url(/a/projects/offside/img/bullet.gif); margin: 0 0 1.4em; padding: 0}
+
+
+-->
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div id="sidebar">
+<dl>
+<dt class="open"><em title="Отчеты по ставкам">Отчеты по ставкам </em>Ставки</dt>
+<dd class="open">
+<ul>
+<li><a href="/reports/bets_by_period">За период</a></li>
+<li><a href="/reports/users_by_period">По игрокам</a></li>
+<li><a href="/reports/bets_settledusers_by_period">Рассчитано по игрокам</a></li>
+<li><a href="/reports/bts_by_sports">По видам спорта</a></li>
+<li><a href="/reports/bts_by_subtypes">По типам ставок</a></li>
+<li><a href="/reports/bts_by_markettypes">По типам маркетов</a></li>
+<li><a href="/reports/bets_by_range">По диапазонам сумм ставок</a></li>
+<li><a href="/reports/late_bts">Ставки на закрытые маркеты</a></li>
+<li><a href="/reports/dangerous_bts">Опасные</a></li>
+<li><a href="/reports/rejected_bets">Отклоненные системой</a></li>
+<li><a href="/reports/bts_on_changed_price">С изменившимися коэффициентами</a></li>
+<li><a href="/reports/lives_stat_all">Статистика по лайвам</a></li>
+<li><a href="/reports/lives_by_period">Лайвы за период</a></li>
+<li><a href="/reports/bets_lives_stat_bypass">Индивидуальная статистика по лайвам</a></li>
+<li><a href="/reports/live_expresses">Экспрессы на лайвы</a></li>
+<li><a href="/reports/live_traiders_stat">Статистика по лайвистам</a></li>
+<li><a href="/reports/bets_live_traiders_stat_bypass">Индивидуальная статистика по лайвистам</a></li>
+<li><a href="/reports/night_bts_by_period">Ночные за период</a></li>
+<li><a href="/reports/night_bts_by_users">Ночные по игрокам</a></li>
+<li><a href="/reports/voided_bets">Возвраты</a></li>
+</ul>
+</dd>
+
+<dt><em title="Отчеты по транзакциям">Отчеты по транзакциям </em>Операции по счетам</dt>
+<!--<dd>
+<ul>
+<li><a href="/reports/bonuses">Бонусы</a></li>
+<li><a href="/reports/money_inout_all">Ввод/вывод средств</a></li>
+<li><a href="/reports/money_inout_pps">Ввод/вывод средств в ППС</a></li>
+<li><a href="/reports/money_inout_bytype">Ввод/вывод средств по типам</a></li>
+<li><a href="/reports/cur_payments">Заказы на выплату</a></li>
+<li><a href="/reports/cc_deposits">Депозиты с кред. карт</a></li>
+<li><a href="/reports/cc_casino_alerts">Опасные переводы с кред. карт в казино</a></li>
+<li><a href="/reports/account_hist">История</a></li>
+<li><a href="/reports/fin_sheet">Финансовая ведомость</a></li>
+<li><a href="/reports/commissions">Комиссионные</a></li>
+<li><a href="/reports/tms_summary">Сводка по TMS</a></li>
+<li><a href="/reports/tms_fin">Финансы TMS</a></li>
+</ul>
+</dd>-->
+
+
+<dt><em title="Отчеты по игрокам">Отчеты по игрокам </em>Игроки</dt>
+<!--<dd>
+<ul>
+<li><a href="/reports/player_summary">Сводка</a></li>
+<li><a href="/reports/new_accounts_all">Новые счета</a></li>
+<li><a href="/reports/funded_accounts_all">Профинансированные регистрации</a></li>
+<li><a href="/reports/dup_emails">Повторяющиеся email-адреса</a></li>
+<li><a href="/reports/negative_bal">Счета с отрицательным балансом</a></li>
+<li><a href="/reports/closed_susp_accounts_all">Закрытые/приостановленные счета</a></li>
+<li><a href="/reports/funds_closed_acc">Баланс закрытых счетов</a></li>
+<li><a href="/reports/lapsed_players">Игроки, прекратившие ставить</a></li>
+</ul>
+</dd>-->
+
+<dt><em title="Отчеты по событиям">Отчеты по событиям </em>События</dt>
+<!--<dd>
+<ul>
+<li><a href="/reports/bets_events_summary">Сводка</a></li>
+<li><a href="/reports/bets_unsettled_events">Нерасчитанные</a></li>
+<li><a href="/reports/reresult">Изменившиеся результаты</a></li>
+<li><a href="/reports/event_hist">История</a></li>
+</ul>
+</dd>-->
+</dl>
+
+<!--<h2>Russian</h2>
+<dl>
+<dt>Ставки</dt>
+<dd>
+<ul>
+<li><a href="/reports/bts_by_period_ru">За период</a></li>
+<li><a href="/reports/users_by_period_ru">По игрокам</a></li>
+<li><a href="/reports/settledusers_by_period_ru">Рассчитано по игрокам</a></li>
+<li><a href="/reports/lives_stat_ru">Статистика по лайвам</a></li>
+<li><a href="/reports/bts_by_sports_ru">По видам спорта</a></li>
+<li><a href="/reports/bts_by_markettypes_ru">По типам маркетов</a></li>
+<li><a href="/reports/dangerous_bts_ru">Опасные</a></li>
+</ul>
+</dd>
+
+<dt>Операции по счетам</dt>
+<dd>
+<ul>
+<li><a href="/reports/bonuses_ru">Бонусы</a></li>
+<li><a href="/reports/money_inout_ru">Ввод/вывод средств</a></li>
+<li><a href="/reports/money_inout_bytype_ru">Ввод/вывод средств по типам</a></li>
+<li><a href="/reports/cur_payments_ru">Заказы на выплату</a></li>
+<li><a href="/reports/cc_deposits_ru">Депозиты с кред. карт</a></li>
+<li><a href="/reports/cc_casino_alerts_ru">Опасные переводы с кред. карт в казино</a></li>
+<li><a href="/reports/cash_trans_ru">Наличный расчет</a></li>
+<li><a href="/reports/cur_liability_ru">Задолженность</a></li>
+<li><a href="/reports/rej_unsuc_ugs_ru">Неполучившиеся операции</a></li>
+<li><a href="/reports/commissions_ru">Комиссионные</a></li>
+</ul>
+</dd>
+
+<dt>Игроки</dt>
+<dd>
+<ul>
+<li><a href="/reports/player_summary_ru">Сводка</a></li>
+<li><a href="/reports/accounts_by_group_ru">Игроки по группам</a></li>
+<li><a href="/reports/new_accounts_ru">Новые счета</a></li>
+<li><a href="/reports/accounts_by_group_ru"></a></li>
+<li><a href="/reports/funded_accounts_ru">Профинансированные регистрации</a></li>
+<li><a href="/reports/dup_emails_ru">Повторяющиеся email-адреса</a></li>
+<li><a href="/reports/negative_bal_ru">Счета с отрицательным балансом</a></li>
+<li><a href="/reports/closed_susp_accounts_ru">Закрытые/приостановленные счета</a></li>
+<li><a href="/reports/funds_closed_acc_ru">Баланс закрытых счетов</a></li>
+<li><a href="/reports/lapsed_players_ru">Игроки, прекратившие ставить</a></li>
+</ul>
+</dd>
+
+
+<dt><a href="/reports/events_summary_ru" title="Сводка">События</a></dt>
+</dl>
+
+<h2>Turkish</h2>
+<dl>
+<dt>Bets</dt>
+<dd>
+<ul>
+<li><a href="/reports/bts_by_period_tr">By period</a></li>
+<li><a href="/reports/users_by_period_tr">By players</a></li>
+<li><a href="/reports/settledusers_by_period_tr">Settled by players</a></li>
+<li><a href="/reports/lives_stat_tr">Lives statistics</a></li>
+<li><a href="/reports/bts_by_sports_tr">Sports summary</a></li>
+<li><a href="/reports/bts_by_markettypes_tr">Markets types summary</a></li>
+<li><a href="/reports/dangerous_bts_tr">Dangerous</a></li>
+</ul>
+</dd>
+<dt>Transactions</dt>
+<dd>
+<ul>
+<li><a href="/reports/bonuses_tr">Bonuses</a></li>
+<li><a href="/reports/money_inout_tr">Money in/out</a></li>
+<li><a href="/reports/money_inout_bytype_tr">Money in/out by type</a></li>
+<li><a href="/reports/cur_payments_tr">Payout requests</a></li>
+<li><a href="/reports/cc_deposits_tr">Credit cards deposits</a></li>
+<li><a href="/reports/cc_casino_alerts_tr">CC+casino alerts</a></li>
+<li><a href="/reports/cash_trans_tr">Cash transactions over certain amount</a></li>
+<li><a href="/reports/cur_liability">Current liability [win/draw/win market]</a></li>
+<li><a href="/reports/rej_unsuc_ugs_tr">Rejected/unsuccessful UGS transactions</a></li>
+<li><a href="/reports/commissions_tr">Commission</a></li>
+</ul>
+</dd>
+<dt>Players</dt>
+<dd>
+<ul>
+<li><a href="/reports/player_summary_tr">Summary</a></li>
+<li><a href="/reports/accounts_by_group_tr">Players by group</a></li>
+<li><a href="/reports/new_accounts_tr">New accounts</a></li>
+<li><a href="/reports/funded_accounts_tr">Funded Accounts</a></li>
+<li><a href="/reports/dup_emails_tr">Duplicate emails</a></li>
+<li><a href="/reports/negative_bal_tr">Negative accounts balances</a></li>
+<li><a href="/reports/closed_susp_accounts_tr">Closed/suspended accounts</a></li>
+<li><a href="/reports/funds_closed_acc_tr">Funds on closed accounts</a></li>
+<li><a href="/reports/lapsed_players_tr">Lapsed players</a></li>-->
+<!--Turkish Extra-->
+<!--<li><a href="/reports/ugs_cust_tr">UGS Customers</a></li>
+<li><a href="/reports/speedcard_cust_tr">SpeedCard Customers</a></li>
+<li><a href="/reports/speedcard_signups_tr">Speedcard signups</a></li>-->
+<!--/Turkish Extra-->
+<!--</ul>
+</dd>
+<dt><a href="/reports/events_summary_tr" title="Summary">Events</a></dt>
+</dl>-->
+
+</div>
+
+<div id="main">
+<table cellspacing="0">
+<thead>
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">Номер счета</th>
+<th scope="col">Игрок</th>
+<th scope="col">Имя</th>
+<th scope="col">Фамилия</th>
+<th scope="col">Email</th>
+<th scope="col">Moб. телефон</th>
+<th scope="col">Зарегистрирован</th>
+<th scope="col">Код бонуса</th>
+<th scope="col">Адрес</th>
+<th scope="col">IP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Татьяна</td>
+<td>Бардеева</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>Россия, Владивосток, ул. Башидзе 4, кв. 3</td>
+<td>92.112.103.234</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Татьяна</td>
+<td>Бардеева</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>Россия, Владивосток, ул. Башидзе 4, кв. 3</td>
+<td>92.112.103.234</td>
+</tr>
+<tr>
+<td>3</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Татьяна</td>
+<td>Бардеева</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>Россия, Владивосток, ул. Башидзе 4, кв. 3</td>
+<td>92.112.103.234</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Татьяна</td>
+<td>Бардеева</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>Россия, Владивосток, ул. Башидзе 4, кв. 3</td>
+<td>92.112.103.234</td>
+</tr>
+<tr>
+<td>5</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Татьяна</td>
+<td>Бардеева</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>Россия, Владивосток, ул. Башидзе 4, кв. 3</td>
+<td>92.112.103.234</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Татьяна</td>
+<td>Бардеева</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>Россия, Владивосток, ул. Башидзе 4, кв. 3</td>
+<td>92.112.103.234</td>
+</tr>
+<tr>
+<td>7</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Татьяна</td>
+<td>Бардеева</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>Россия, Владивосток, ул. Башидзе 4, кв. 3</td>
+<td>92.112.103.234</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Татьяна</td>
+<td>Бардеева</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>Россия, Владивосток, ул. Башидзе 4, кв. 3</td>
+<td>92.112.103.234</td>
+</tr>
+<tr>
+<td>9</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Татьяна</td>
+<td>Бардеева</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>Россия, Владивосток, ул. Башидзе 4, кв. 3</td>
+<td>92.112.103.234</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>41865</td>
+<td>TANYA43</td>
+<td>Татьяна</td>
+<td>Бардеева</td>
+<td>tanya43@yandex.ru</td>
+<td>+79193456789</td>
+<td>12.01.08</td>
+<td>cgbonus</td>
+<td>Россия, Владивосток, ул. Башидзе 4, кв. 3</td>
+<td>92.112.103.234</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<div class="caption">
+<h2>Sign-In Options</h2>
+<a href="javascript:;" onclick="closeModal()" class="btn_close">Close</a>
+</div>
+
+<form id="form_sign_in_options" name="form_sign_in_options" method="post" action="" class="modal">
+<label>Time Out:
+<select name="timeout" size="1" height="12">
+<option value="15" selected="selected">15 minutes</option>
+<option value="30">30 minutes</option>
+<option value="60">1 hour</option>
+<option value="0">Unlimited</option>
+</select>
+</label>
+
+<br /><br />
+<label><input type="checkbox" name="remember" id="remember" />Remember Me on This Computer?</label>
+<br /><br />
+<label><input type="checkbox" name="save" id="save" />Save Session when the Browser Closes?</label>
+<br /><br />
+<span class="btn"><input name="submit" type="submit" id="submit" tabindex="3" value="Save and Back to Sign-In Form" /></span><span class="btn"><a class="loadinto-modal_box" href="/web-design/vega/en/_snippets/admission/sign-in.htm" title="Back to Sign-In Form">Cancel</a></span><br />
+
+</form>

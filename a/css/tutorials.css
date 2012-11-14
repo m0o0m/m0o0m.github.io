@@ -1,0 +1,60 @@
+﻿A { color: #0080D9}
+A:visited { color: #545859}
+A:hover { color: #D93300}
+BODY { background: #FFF; color: #545859; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: small; font-size/**/:/**/ small; text-align: center; margin: 40px; padding: 0}
+CODE { font-size: 100%}
+DFN { background: url(/a/img/ico-ques.gif) no-repeat right center; cursor: help; font-style: normal; padding-right: 1.2em}
+DFN.self_dfn { background: none; cursor: text; padding-right: 0}
+H1 { font: 135% Tahoma, Geneva, Arial, sans-serif}
+H1 A, H1 A:hover { color: #545859; cursor: text; text-decoration: none}
+H2 { font-size: 110%; border-top: 1px solid #C6C8CC; padding-top: 1em}
+H2.kicker { font-size: 110%; border-top: 0 none; margin: 0; padding-top: 0}
+H3 { color: #D93300}
+H3, H4 { font-size: x-small; font-weight: bold; font-size/**/:/**/ small}
+H4 { margin-bottom: 0}
+HR { border: none 0; border-top: 1px solid #CCC; margin-bottom: 1em; height: 1px} 
+IMG { border: 0}
+	IMG.left { margin: 2px 10px 5px 0}
+	IMG.right { margin: 2px 0 5px 10px}
+P { margin: 0 0 1em}
+SUP { margin-left: -.3em}
+
+/* Layout - Blocks ***********************************************************************************************************/
+#container { text-align: left; margin: 0 auto; width: 620px}
+
+/* Copy Body ***********************************************************************************************************/
+.box_out { background: #ECEEF2; padding: 20px; margin-bottom: 1em}
+.margin_b0 { margin-bottom: 0}
+.margin_t0 { margin-top: 0}
+.nowrap { white-space: nowrap}
+
+/* Tables */
+TABLE { border: 0; width: 100%}
+	.table { margin: 0 0 1em}
+		.table TD, .table TH { padding: 6px}
+	.table_border { border: 1px solid #ACAEB2; border-collapse: collapse; margin: 0 0 1em}
+		.table_border TD, .table_border TH { padding: 6px; border-right: 1px solid #ACAEB2}
+	CAPTION { color: #0080D9; font-size: x-small; font-weight: bold; font-size/**/:/**/ small; font-weight: bold; padding-bottom: 0.5em}
+	CAPTION, TD, TH { font-size: x-small; font-size/**/:/**/ small; text-align: left; vertical-align: top}
+		.bg_content { background: #FFF}
+		.bg_odd { background: #EBEEF2}
+		.bg_tfoot { background: #E5E7EB}
+		.bg_trow { background: #DFE1E5}
+		.cell_border_b { border-bottom: 1px solid #ACAEB2}
+		.cell_border_r_none { border-right: 0 !important}
+		.cell_border_t { border-top: 1px solid #ACAEB2}
+		.indent_1 { padding-left: 2em}
+		.indent_2 { padding-left: 4em}	
+
+
+/* Lists ***********************************************************************************************************/
+OL { list-style: decimal; margin: 0 0 1em; padding: 0 0 0 1.7em}
+	.list_type_none { list-style-type: none; padding-left: 0}
+		.list_type_none SUP { margin-left: 0}
+	OL OL { list-style-type: lower-alpha}
+	OL OL, OL P, OL UL, UL OL, UL P { margin-bottom: 0 !important}
+LI { padding-bottom: 0.3em}
+UL { list-style: disc outside; margin: 0 0 1em 16px; padding: 0}
+	.list_unmarked { list-style: none none; margin: 0 0 1em; padding: 0}
+		.list_unmarked LI { background: none; padding: 0}
+	UL UL {	list-style-type: square; margin-bottom: 0}

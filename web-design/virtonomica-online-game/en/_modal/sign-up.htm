@@ -1,0 +1,37 @@
+<h2 id="modal_box_h">Sign Up<a href="javascript:;" onClick="closeModal()">Close</a></h2>
+
+<form action="" method="post" name="form_user" id="form_user">
+
+<label for="email">Email</label>
+<input name="email" type="text" id="email" maxlength="50" />
+<a href="#" class="a_info"><span>You will use email address as the username.</span></a><br />
+
+<label for="password">Password</label>
+<input name="password" type="password" id="password" maxlength="9" />
+<a href="#" class="a_info"><span>Please enter desired password. It can only contain English letters, the underscore (_) character and numbers with no spaces - 3-9 characters total.</span></a><br />
+
+<label for="password_confirm">Confirm password</label>
+<input name="password" id="password_confirm" type="password" maxlength="9" /><br />
+
+<label for="firstname">First name</label>
+<input name="firstname" id="firstname" type="text" maxlength="30" /><br />
+
+<label for="lastname">Last name</label>
+<input name="lastname" id="lastname" type="text" maxlength="50" /><br />
+
+<label for="security_image">Verification code</label>
+<div>
+<img src="/a/projects/virtonomica/img/noise.png" alt="" class="f_left" style="margin-top: 0" />
+<input name="security_image" type="text" id="security_image" maxlength="6" />
+</div>
+<a href="#" class="a_info"><span>Please enter the 6-digit number you see in the picture.</span></a><br />
+
+<label for="terms">You accept</label>
+<div><input name="terms" type="checkbox" class="checkbox" id="terms" value="terms" />
+with <a href="#" title="Open in same window">the Terms and conditions</a> of Virtonomica.</div>
+<br />
+<div class="alert"><p>You have to accept the Terms and conditions.</p></div>
+
+<input name="submit" type="submit" class="btn" id="submit" tabindex="3" value="Sign up" /><br />
+
+</form>

@@ -1,0 +1,27 @@
+# Souce Folders
+_notes/
+*.webarchive
+a/less
+
+#Source Files
+.esproj
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+_temp/index.htm
+
+*.sublime-workspace
+
+*.sublime-projectcompletions
+
+*.sublime-project
+
+.nojekyll

@@ -1,0 +1,22 @@
+#logo { background:   url(/a/projects/virtonomica/img/en/logo.png) no-repeat 0 20px}
+
+/* Global Menu -------------------------------------------------------------------------------------------------------------------------------*/
+#li_game { background:  url(/a/projects/virtonomica/img/en/btn-game.png) no-repeat; width: 47px}
+#li_help { background:  url(/a/projects/virtonomica/img/en/btn-help.png) no-repeat; width: 46px}
+#li_news { background:  url(/a/projects/virtonomica/img/en/btn-news.png) no-repeat; width: 130px}
+#li_communication { background:  url(/a/projects/virtonomica/img/en/btn-community.png) no-repeat; width: 79px}
+
+/* Front -------------------------------------------------------------------------------------------------------------------------------------*/
+#billboard H1 { background: url(/a/projects/virtonomica/img/en/front/h1.png) no-repeat}
+#billboard #target_tour OL { background: transparent url(/a/projects/virtonomica/img/en/front/billboard.png) no-repeat left top}
+
+.li_a { background-image:  url(/a/projects/virtonomica/img/ru/front/li-a.gif) !important}
+.li_b { background-image:  url(/a/projects/virtonomica/img/en/front/li-b.png) !important}
+.li_c { background-image:  url(/a/projects/virtonomica/img/en/front/li-c.png) !important}
+.li_d { background-image:  url(/a/projects/virtonomica/img/en/front/li-d.png) !important; line-height: normal !important}
+.li_e { background-image:  url(/a/projects/virtonomica/img/en/front/li-e.png) !important; line-height: normal !important}
+
+#teaser_ratings H2 SPAN { background:  url(/a/projects/virtonomica/img/en/front/h-ratings.png) no-repeat left center}
+#teaser_advertisers H2 SPAN { background:  url(/a/projects/virtonomica/img/en/front/h-advertisers.png) no-repeat left center}
+#teaser_news_game H2 SPAN { background:  url(/a/projects/virtonomica/img/en/front/h-news-game.png) no-repeat left center}
+#teaser_news H2 SPAN { background:  url(/a/projects/virtonomica/img/en/front/h-news.png) no-repeat left center}

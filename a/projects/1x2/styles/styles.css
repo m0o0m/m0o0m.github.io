@@ -1,0 +1,288 @@
+A { color: #636}
+A:visited { color: #002600}
+A:hover { color: #009}
+BODY { background: #013401 url(/a/projects/1x2/img/bg.gif) repeat-x; color: #002600; font-family: Arial, Geneva, Helvetica, sans-serif; font-size: x-small; text-align: center; margin: 0 0 60px; padding: 0; voice-family: "\"}\""; voice-family: inherit; font-size: small}
+.ie5-hack {}
+CAPTION { font-weight: bold; padding-bottom: 0.5em}
+CAPTION, TD, TH { font-size: x-small; voice-family: "\"}\""; voice-family: inherit; font-size: small}
+.ie5-hack {}
+CAPTION, TH { text-align: left}
+CODE { font-family: Courier, monospace; font-size: x-small; voice-family: "\"}\""; voice-family: inherit; font-size: small}
+.ie5-hack {}
+DFN, EM { color: #636; font-style: normal}
+H1 { font-size: 130%; margin-top: 0}
+H2 { font-size: 110%}
+H2.kicker, H3, .like-h3 { color: #663; font-size: x-small; margin: 1em 0 0; padding: 0; voice-family: "\"}\""; voice-family: inherit; font-size: small}
+.ie5-hack {}
+H2.kicker A:visited { color: #00F}
+HR { border: none 0; border-top: 1px solid #CCC; margin-bottom: 1em; height: 1px} 
+IMG { border: 0}
+IMG.left, INPUT.left { float: left; margin: 2px 10px 5px 0}
+IMG.right, OBJECT.right { float: right; margin: 2px 0 5px 10px}
+P { margin: 0 0 1em}
+TABLE { border: 0; width: 100%}
+
+/* Header */
+#meta { margin: 0 auto; padding-top: 20px; height: 60px; width: 720px; voice-family: "\"}\""; voice-family: inherit; height: 40px}
+.ie5-hack {}
+#meta A { color: #4C804C; display: block; text-decoration: none; display: block; padding: 1px 0 3px 10px}
+#meta A STRONG { padding: 1px 10px 3px 0}
+#meta A:hover, #front A#meta_casino { background: url(/a/projects/1x2/img/bg_meta_a_l.gif) no-repeat left center}
+#meta A:hover STRONG, #front A#meta_casino STRONG { background: url(/a/projects/1x2/img/bg_meta_a_r.gif) no-repeat right center}
+#meta LI { float: left; margin: 0 3px 0 0; padding: 0}
+#meta UL { float: left; list-style: none none; margin: 0; padding: 2px 0 0; width: 320px}
+#nameplate { background: url(/a/projects/1x2/img/bg_nameplate.jpg) no-repeat right top; margin: 0}
+.header-sys #nameplate { background-color: #A6BFA6; padding-bottom: 4px}
+.header-sys { background: url(/a/projects/1x2/img/bg_header_sys.gif) no-repeat; margin: 60px auto 0; padding-top: 4px; width: 700px}
+.wrapper#header { background: url(/a/projects/1x2/img/bg_header.gif) no-repeat; margin: 0 auto; padding-top: 4px; width: 760px}
+.user { color: #B2CCB2; float: right; text-align: right; width: 320px}
+
+/* Menu */
+#nav { background: url(/a/projects/1x2/img/bg_nav.gif) repeat-x; text-align: center; list-style: none; margin: 0; padding: 0; height: 30px}
+#nav A.nav-level1 { background-position: center center; background-repeat: no-repeat; display: block; text-decoration: none; text-indent: -6400px; height: 30px}
+#nav LI { float: left; margin: 0; padding: 0; position: relative; width: 250px}
+#nav LI:hover, #nav LI.pc-hover { background:  url(/a/projects/1x2/img/bg_nav_hover.gif) repeat-x}
+#nav LI:hover LI, #nav LI.pc-hover LI { background: none}
+#nav LI#nav-4money { width: 252px}
+
+/* Menu - Dropdowns */
+.subnav { background: url(/a/projects/1x2/img/bg_dropdown.gif) repeat-y 16px 0; display: none; list-style: none; margin: 0 0 0 -125px; padding: 0; position: absolute; top: 100%; left: 50%; voice-family: "\"}\""; voice-family: inherit; background-image: none}
+LI>.subnav { top: auto}
+.subnav LI { width: 250px}
+.subnav A { background: #363 none; border-right: 1px solid #265926; border-left: 1px solid #265926; color: #B2CCB2; display: block; font-weight: bold; text-decoration: none; text-indent: 0; padding: 5px}
+.subnav A:visited { color: #B2CCB2}
+#nav LI LI A:hover { color: #FFF !important; background: #407340}
+#nav LI LI.li-bottom A { border-bottom: 3px solid #265926; color: #B2CCB2}
+#nav LI:hover UL.subnav, #nav LI.pc-hover UL.subnav { display: block}
+
+/* Menu - Opened submenu */
+#thistory #nav, #whistory #nav, #withdraw #nav { background-image: url(/a/projects/1x2/img/bg_subnav_opened.gif); padding-bottom: 26px}
+#thistory .subnav, #whistory .subnav, #withdraw .subnav { background: none; display: block; top: 26px; margin: 0; left: -33%; width: 760px}
+#thistory .subnav LI, #whistory .subnav LI, #withdraw .subnav LI { width: auto}
+#thistory .subnav A, #whistory .subnav A, #withdraw .subnav A { background: none !important; border: 0 none !important; color: #E5CCCC !important; line-height: 26px; padding: 2px 10px 0}
+
+/* Layout - wrappers */
+.container { background: #B2CCB2 url(/a/projects/1x2/img/bg_content.gif) repeat-y; text-align: left; margin: 0 auto; padding: 0 4px; width: 760px; voice-family: "\"}\""; voice-family: inherit; width: 752px}
+.ie5-hack {}
+.container-sys { background: #B2CCB2 url(/a/projects/1x2/img/bg_content_sys.gif) repeat-y; text-align: left; margin: 0 auto; padding: 0 4px; width: 700px; voice-family: "\"}\""; voice-family: inherit; width: 692px}
+.ie5-hack {}
+.cnt-for-two { padding: 20px 20px 1em; voice-family: "\"}\""; voice-family: inherit; width: 720px}
+.ie5-hack {}
+.cnt-narrow { padding: 20px 110px 1em 30px; voice-family: "\"}\""; voice-family: inherit; width: 620px}
+.ie5-hack {}
+.cnt-sys { padding: 20px 40px 1em; voice-family: "\"}\""; voice-family: inherit; width: 620px}
+.ie5-hack {}
+.cnt-wide { padding: 20px 30px 1em; voice-family: "\"}\""; voice-family: inherit; width: 700px}
+.ie5-hack {}
+
+/* Layout - Columns */
+.column1-2, .column2-2 { width: 340px}
+.column1-2 { float: left}
+.column2-2 { float: right}
+.column1-3, .column2-3, .column3-3 { float: left; width: 226px}
+.column1-3, .column2-3 { margin-right: 20px}
+.content { width: 530px}
+.sidebar { background: url(/a/projects/1x2/img/dtl_vr.gif) no-repeat left bottom; padding: 0 0 0 20px; width: 170px; voice-family: "\"}\""; voice-family: inherit; width: 150px}
+.ie5-hack {}
+
+/* Layout - Clearers */
+.cfx:after, .help-common:after, .reports-select-t:after, .tr:after, DIV.bg-tfoot:after { content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.cfx, .help-common, .reports-select-t, .tr, DIV.bg-tfoot { display: inline-table}
+/* Hides from IE-mac \*/
+* html .cfx, * html .help-common, * html .reports-select-t, * html .tr, * html DIV.bg-tfoot { height: 1%}
+.cfx, .help-common, .reports-select-t, .tr, DIV.bg-tfoot { display: block}
+/* End hide from IE-mac */
+
+/* Front */
+#front .content { width: 566px}
+#front .sidebar { background-image: none; padding: 20px 20px 0 16px; width: 186px; voice-family: "\"}\""; voice-family: inherit; width: 150px}
+.ie5-hack {}
+.container-front { background-image: url(/a/projects/1x2/img/bg_content_front.gif)}
+.games-uls { background: #336633 url(/a/projects/1x2/img/bg_games_list.gif) no-repeat left top; color: #FFE500; padding: 30px 0 0 20px}
+.games-uls A, .games-uls A:visited { color: #FFF; text-decoration: none}
+.games-uls A:hover { color: #FFF; text-decoration: underline}
+.games-uls H3 { color: #FFE500; display: inline; margin: 0; padding-right: 0.3em}
+.games-uls UL { display: inline; margin: 0; padding: 0}
+.games-uls LI { border-left: 1px solid #FFE500; display: inline; line-height: 200%; list-style: none; margin-left: -5px; padding: 0 6px 0 5px}
+.games-uls LI.first { border-left: none}
+.h2-invert { background: #0D400D; color: #B2CCB2; padding: 22px 26px 0 20px; height: 60px; voice-family: "\"}\""; voice-family: inherit; height: 38px}
+.ie5-hack {}
+.h2-invert H2 { float: left; margin: 0; width: 255px}
+.h2-invert H2 SPAN { text-indent: -6400px}
+.h2-invert P { float: right; text-align: right; margin: 0; width: 255px}
+.most-p { background: #265926}
+.most-p H3 { background: #194C19; color: #D1DBD1; line-height: 30px; margin: 0; padding-left: 20px; height: 30px}
+.most-p A, .most-p A:visited { color: #FFF !important; text-decoration: none}
+.most-p A:hover { text-decoration: underline}
+.most-p LI { float: left; font: bold 85% Tahoma, Geneva, Arial, sans-serif; text-align: center; margin: 0; padding: 0 10px; width: 90px; voice-family: "\"}\""; voice-family: inherit; width: 70px}
+.ie5-hack {}
+.most-p LI SPAN { display: block; padding-top: 6px}
+.most-p UL { list-style: none; margin: 0; padding: 20px 0 0 10px; height: 150px; voice-family: "\"}\""; voice-family: inherit; height: 130px}
+.ie5-hack {}
+
+/* Noscript / Noflash */
+.noflash-nojs { background: #FC0; color: #000; font-size: 85% !important; padding: 1em 0}
+.noflash-nojs A, .noflash-nojs A:visited { color: #00F}
+.noflash-nojs A:hover { color: #F00}
+.noflash-nojs H1 { font-size: 100%; margin: 0 0 0.5em; padding: 0}
+.noflash-nojs DIV { background: url(/a/projects/1x2/img/dtl_alert_big.gif) no-repeat left top; text-align: left; margin: 0 auto; padding-left: 50px; min-height: 30px; width: 760px; voice-family: "\"}\""; voice-family: inherit; width: 710px}
+.ie5-hack {}
+
+/* Body Copy */
+#boxout-right-half-page { float: right; margin: 0 0 10px 10px; width: 280px}
+#bonus-record01 { display: none}
+TR>#bonus-record02, TR>#bonus-record03 { display: none}
+#news H2 { margin-bottom: 0}
+#news P.txt-small { margin-top: 0}
+.alert { background: url(/a/projects/1x2/img/dtl_alert.gif) no-repeat left top; text-indent: 1.2em}
+.arrow-back { background: url(/a/projects/1x2/img/dtl_arrow_back.gif) no-repeat left center; font: 85% Tahoma, Geneva, Arial, sans-serif; padding-left: 1.2em}
+.arrow-back A, .arrow-forward A, .arrow-up A { background: #B2CCB2}
+.arrow-up A:visited { color: #00F}
+.boxout-right { background: #BFD9BF; float: right; margin: 0 0 1em 10px; padding: 20px; width: 240px; voice-family: "\"}\""; voice-family: inherit; width: 200px}
+.ie5-hack {}
+.certificate { float: right; margin: 2px 0 5px 10px; width: 80px}
+.help-common { padding-bottom: 10px}
+.help-common DIV { float: left; text-align: right; padding-right: 10px; width: 150px}
+.help-common P { float: left; width: 370px}
+.hidden-link A, .hidden-link A:visited { color: #000; text-decoration: none}
+.hidden-link A:hover { color: #000; text-decoration: underline}
+.hidden-link H2 A, .hidden-link H2 A:visited { color: #FF4040; text-decoration: none}
+.hidden-link H2 A:hover { color: #FF4040; text-decoration: underline}
+.lead { line-height: 1.5em}
+.margin-b0 { margin-bottom: 0 !important}
+.margin-b1em { margin-bottom: 1em !important}
+.margin-t0 { margin-top: 0}
+.margin-t1em-b0 { margin-top: 1em; margin-bottom: 0}
+.l-height160 { line-height: 160%}
+.nowrap { white-space: nowrap}
+.padding-t0d5em { padding-top: 0.5em}
+.txt-decoration0 { text-decoration: none}
+A.txt-decoration0:visited  { color: #636}
+A.txt-decoration0:hover  { color: #009}
+.txt-em { color: #C30 !important}
+.txt-left { text-align: left !important}
+.txt-normal-weight { font-weight: normal}
+.txt-right, .txt-right TH { text-align: right}
+.txt-small { font: 85% Tahoma, Geneva, Arial, sans-serif}
+TD.txt-small { font-size: 70%; voice-family: "\"}\""; voice-family: inherit; font-size: 85%}
+.ie5-hack {}
+.txt-small-fixed { font-size: 11px}
+.txt-soft { color: #668066}
+P.txt-small { margin-top: 1em}
+
+/* Tables */
+.bg-content { background: #CCE5CC}
+.bg-odd { background: #BFD9BF}
+.bg-tfoot { background: #ABC5AB}
+.bg-trow { background: #A6BFA6}
+.cell-border-b { border-bottom: 1px solid #8CA68C}
+.cell-border-r-none { border-right: 0 !important}
+.cell-border-t { border-top: 1px solid #8CA68C}
+.table { margin: 0 0 1em}
+.table TD, .table TH { padding: 6px}
+.table-border { border: 1px solid #8CA68C; border-collapse: collapse; margin: 0 0 1em}
+.table-border TD, .table-border TH { padding: 6px; border-right: 1px solid #8CA68C}
+
+/* Lists */
+.list-break { padding-bottom: 1em}
+.list-caption { margin-bottom: 0}
+.list-inline { display: inline; margin: 0; padding: 0}
+.list-inline LI { border-left: 1px solid #000; display: inline; line-height: 160%; list-style: none; margin-left: -5px; padding: 0 6px 0 5px}
+.list-inline LI.first { border-left: none}
+.list-trs LI { padding: 7px}
+DD { margin: 0 0 1em}
+DD OL, DT { margin: 1em 0}
+DT IMG { float: right; margin: 2px 0 5px 10px}
+LI UL { margin: 0 0 0 16px}
+OL { list-style-type: none; margin: 0 0 1em 0; padding: 0}
+OL LI {	background: transparent 0 5px no-repeat; padding-left: 23px}
+OL LI.li01 { background-image: url(/a/projects/1x2/img/dtl_01.gif)}
+OL LI.li02 { background-image: url(/a/projects/1x2/img/dtl_02.gif)}
+OL LI.li03 { background-image: url(/a/projects/1x2/img/dtl_03.gif)}
+OL LI.li04 { background-image: url(/a/projects/1x2/img/dtl_04.gif)}
+OL LI.li05 { background-image: url(/a/projects/1x2/img/dtl_05.gif)}
+OL LI.li06 { background-image: url(/a/projects/1x2/img/dtl_06.gif)}
+OL LI.li07 { background-image: url(/a/projects/1x2/img/dtl_07.gif)}
+OL LI.li08 { background-image: url(/a/projects/1x2/img/dtl_08.gif)}
+OL LI.li09 { background-image: url(/a/projects/1x2/img/dtl_09.gif)}
+OL LI.li10 { background-image: url(/a/projects/1x2/img/dtl_10.gif)}
+OL LI.li11 { background-image: url(/a/projects/1x2/img/dtl_11.gif)}
+OL LI.li12 { background-image: url(/a/projects/1x2/img/dtl_12.gif)}
+OL LI.li13 { background-image: url(/a/projects/1x2/img/dtl_13.gif)}
+OL LI.li14 { background-image: url(/a/projects/1x2/img/dtl_14.gif)}
+OL LI.li15 { background-image: url(/a/projects/1x2/img/dtl_15.gif)}
+OL LI.li16 { background-image: url(/a/projects/1x2/img/dtl_16.gif)}
+UL { list-style:  url(/a/projects/1x2/img/dtl_bullet.gif) outside; margin: 0 0 1em 16px; padding: 0}
+UL.nested { list-style: url(/a/projects/1x2/img/dtl_bullet_nested.gif)}
+UL LI { padding: 0}
+
+/* Forms */
+.form-box { margin-bottom: 1em}
+.form-box .bg-tfoot, .form-box .bg-trow { padding: 7px}
+.form-box .padding-b0d2 { padding-bottom: 0.2em}
+.form-box .padding-t0 { padding-top: 0}
+.form-box H2 { font-size: x-small; margin: 0; padding: 7px; voice-family: "\"}\""; voice-family: inherit; font-size: small}
+.ie5-hack {}
+.input>INPUT.radio { vertical-align: text-bottom}
+.phone { float: left; margin-right: 5px}
+.tr { background: #BFD9BF; padding: 7px}
+.tr .input { float: left}
+.tr INPUT, .tr SELECT { vertical-align: middle}
+.tr LABEL { float: left; font-weight: bold; padding: 0.2em 9px 0 0}
+.tr LABEL.default-label { display: inline; float: none; font-weight: normal; padding: 0; width: auto !important}
+.two-polar-blocks LABEL, DIV.bg-tfoot SPAN { text-align: left; width: 400px}
+.two-polar-blocks { text-align: right}
+DIV.bg-tfoot { clear: both; text-align: right}
+DIV.bg-tfoot SPAN { float: left}
+DIV.bg-tfoot P { margin: 0}
+FORM { margin: 0; padding: 0}
+INPUT { color: #000; font-size: 13px; width: 160px}
+LABEL SPAN { display: block; font: normal 85%}
+TEXTAREA { width: 420px}
+
+#form-period { font-size: 13px}
+#form-period INPUT, #form-period SELECT { vertical-align: middle}
+#form-period INPUT#OK, #subscriberu INPUT#OK { margin-left: 5px}
+#thistory SELECT#period { /* width: 120px */}
+.reports-select-t { padding-bottom: 0.3em}
+.reports-select-t .column1-2 { padding-right: 40px}
+.reports-select-t .column1-2, .reports-select-t .column2-2 { float: left; width: auto}
+.reports-select-t DIV { margin-bottom: 0.5em}
+.reports-select-b { margin: 1em 0; white-space: nowrap}
+INPUT#type-custom, INPUT#type-predefined { margin-left: -5px}
+OPTGROUP { font-style: normal}
+SELECT#game { width: 150px}
+
+#form-lang { float: right; text-align: right; width: 160px}
+#form-lang SPAN { background: url(/a/projects/1x2/img/bg_flags.gif) no-repeat left center; padding-left: 30px}
+
+#form-play .bg-tfoot { text-align: left}
+#form-play LABEL { float: none}
+#form-play INPUT#login { margin-right: 20px}
+
+INPUT#amount { margin-left: 5px}
+INPUT#OK { border: 0; height: 30px; width: 40px}
+INPUT#play, INPUT#submit { border: 0; height: 30px; width: 140px}
+INPUT.checkbox, INPUT.radio { width: auto}
+
+/* Footer */
+#footer { background: url(/a/projects/1x2/img/bg_footer.gif) no-repeat center bottom; margin: 0 auto; height: 70px; width: 760px}
+.counters { margin: 0 auto; padding: 20px 0; width: 760px}
+.footer-sys { background: url(/a/projects/1x2/img/bg_footer_sys.gif) !important; width: 700px !important}
+
+/* Customization */
+#front #a-logo { cursor: default}
+#front #footer { background-image: url(/a/projects/1x2/img/bg_footer_front.gif)}
+#front #meta_casino { cursor: text}
+#front #nameplate A, #front #nav-home A, #help-index #nav-help A { cursor: default}
+#front #nav-home, #help-index #nav-help { background: url(/a/projects/1x2/img/bg_nav_down.gif) repeat-x}
+#thistory #nav-account, #whistory #nav-account, #withdraw #nav-account { background: url(/a/projects/1x2/img/bg_daddy_opened.gif) repeat-x}
+#thistory #nav-account A.nav-level1, #whistory #nav-account A.nav-level1, #withdraw #nav-account A.nav-level1 { cursor: default}
+#thistory #a-thistory, #whistory #a-whistory, #withdraw #a-withdraw { color: #C37777 !important; cursor: text}
+#help-baccarat #li-h-baccarat A, #help-bj #li-h-bj A, #help-caribbean #li-h-caribbean A, #help-common #li-h-common A, #help-craps #li-h-craps A, #help-dog #li-h-dog A, #help-gstart #li-h-4fun A, #help-gstart #li-h-4money A, #help-keno #li-h-keno A, #help-lir #li-h-lir A, #help-pai-gow #li-h-pai-gow A, #help-roulette #li-h-roulette A, #help-secretariat #li-h-thistory A, #help-secretariat #li-h-whistory A, #help-sic-bo #li-h-sic-bo A, #help-slots #li-h-slots A, #help-vp #li-h-vp A, #help-war #li-h-war A, #help-withdraw #li-h-withdraw A { color: #002600; cursor: text; text-decoration: none}
+#help-baccarat #p-full-help, #help-bj #p-full-help, #help-caribbean #p-full-help, #help-common #p-full-help, #help-craps #p-full-help, #help-dog #p-full-help, #help-gstart #p-full-help, #help-keno #p-full-help, #help-lir #p-full-help, #help-pai-gow #p-full-help, #help-roulette #p-full-help,
+#help-js #ul-h-games, #help-js #h3-h-rules, #help-js #li-h-whistory,
+#help-s-air #p-full-help, #help-s-caribbean #p-full-help, #help-s-fresh #p-full-help, #help-s-mask #p-full-help, #help-s-sweetest #p-full-help,
+#help-s-train #li-h-dog, #help-s-train #li-h-pai-gow, #help-s-train #li-h-roulette, #help-s-train #li-h-sic-bo, #help-s-train #li-h-slots, #help-s-train #li-h-vp,
+#help-options #li-h-pai-gow, #help-options #li-h-roulette, #help-options #li-h-sic-bo, #help-options #li-h-slots, #help-options #li-h-vp,
+#help-secretariat #p-full-help, #help-sic-bo #p-full-help, #help-slots #p-full-help, #help-vp #p-full-help, #help-war #p-full-help, #help-withdraw #li-h-roulette, #help-withdraw #li-h-sic-bo, #help-withdraw #li-h-slots, #help-withdraw #li-h-vp { display: none}

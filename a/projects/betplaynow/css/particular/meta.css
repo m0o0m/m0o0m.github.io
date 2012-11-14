@@ -1,0 +1,11 @@
+@charset "UTF-8";
+#header, #header .menu .label A, #header .menu .label EM, #header .extra:hover .label EM { background-image: url(/a/projects/betplaynow/img/orange.png)}
+	.account #header H1 { background-position: -300px -240px}
+    .meta #header H1, .solid #header H1 { background-position: 0 0}
+    #m_sport .label A { background-position: -360px -160px}
+
+/* Forms -----------------------------------------------------------------------------------------------------------------*/
+#f_history { position: relative; width: 100%}
+	#f_history H3 { font-weight: normal; position: absolute; top: -3.15em; right: 0}
+    
+	.solid #s_core { margin: 0 40px}

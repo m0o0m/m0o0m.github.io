@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* Firefox & IE */
+.btn, .btn STRONG,  BUTTON STRONG, #footer UL UL LI, #f_slip DIV LABEL, #f_slip FIELDSET.batch_controls LABEL, #pages A, #pages LI
+{ display: -moz-inline-stack;  *display: inline; _overflow: hidden; zoom: 1}
+
+/* Firefox ------------------------------------------------------------------------------------------------------------------*/
+BUTTON::-moz-focus-inner { border: none /* overrides extra padding */}
+@-moz-document url-prefix() {
+BUTTON STRONG { line-height: 30px; margin-left: -2px}
+.casual LABEL { padding-top: .44em}
+FIELDSET.radio INPUT.rb {  top: .54em}
+#f_slip INPUT.txt { margin-top: -1px}
+ #f_slip FIELDSET.batch_controls BUTTON.close { padding-top: 2px}
+#f_sign_in BUTTON STRONG { line-height: 32px}
+.tabs { margin: 0 0 1px -1px}
+.sports .zebra .btn STRONG, .live .zebra .btn STRONG { display: block}
+.dp_prev, .dp_next { top: 12px}
+}
+
+/* Opera, Safari, Chrome ----------------------------------------------------------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+BUTTON STRONG { margin: -1px 0 0 -3px}
+}
+
+/* Opera --------------------------------------------------------------------------------------------------------------------*/
+HTML:first-child BUTTON STRONG { margin: 0}
+HTML:first-child #f_sign_in LABEL { left: -430em}
+
+/* IE --------------------------------------------------------------------------------------------------------------------*/
+.alert,  .games_set { zoom: 1}
+ 
+.floating_submit_overlay DIV { *display: none}
+.floating_submit DIV { *background: #000; *filter: alpha(opacity=64)}
+
+*HTML .f_error .f_error_arrow { bottom: -1px}
+
+
+*HTML .aside { margin-right: 20px}
+*HTML .aside .nav LI { float: left; width: 180px}
+*HTML #billboard .figcaption { background: #000 none; filter: alpha(opacity=64); top: 240px; height: 30px}
+*HTML  #billboard .top_bet A EM { display: block}
+*HTML  BUTTON, *HTML  .btn { width: 1px}
+*HTML .casino #billboard H1 { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/img/32/casino-h1.png'), sizingMethod='scale')}
+*HTML  .casual .txt INPUT { width: 300px}
+*HTML  #f_sign_up  .txt INPUT { width: 260px}
+*HTML .casual .options LABEL { margin-right: 27px; padding: 0 0 0 20px; width: 119px}
+
+*HTML .live, *HTML .fluid { height: expression(minY=(this.scrollHeight < parseInt(this.currentStyle.minHeight)+1)? this.currentStyle.minHeight : maxY=(this.scrollHeight > parseInt(this.currentStyle.maxHeight)+1)? this.currentStyle.maxHeight : "auto"); width: expression(minX=(document.body.clientWidth < parseInt(this.currentStyle.minWidth)+1)? this.currentStyle.minWidth : maxX=(document.body.clientWidth > parseInt(this.currentStyle.maxWidth)+1)? this.currentStyle.maxWidth : "auto")}
+	*HTML .live, *HTML .fluid { maxWidth: 90em; minWidth: 950px}
+
+*HTML #content { padding-bottom: 40px}
+*HTML .floating_submit, *HTML .floating_submit_overlay { position: absolute; top: expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop +(documentElement.clientHeight-this.clientHeight) : document.body.scrollTop +(document.body.clientHeight-this.clientHeight))}
+*HTML #footer { position: static; margin: 0}
+*HTML #f_payments { margin-left: 20px}
+*HTML #f_settings H3 { top: -3.23em}
+*HTML #f_slip, *HTML  #f_slip FIELDSET.batch_controls BUTTON.close { font: 11px Tahoma, Geneva, sans-serif}
+	*HTML #f_slip .alert P EM { right: 15px}
+	*HTML #f_slip H2 { font: 163.6% Arial, Helvetica, sans-serif}
+    *HTML #f_slip INPUT.txt { margin-top: 0}
+    *HTML #f_slip	BUTTON.close { top: -2px}
+    *HTML #f_slip FIELDSET.batch_controls .cbx { left: 7px}
+    *HTML #f_slip FIELDSET.multiples DIV { padding-top: 13px}
+    *HTML #f_slip FIELDSET.multiples H3 { padding-top: 8px}
+    *HTML #f_slip .on_demand H3 EM { left: -17px}
+    *HTML #f_slip FIELDSET.multiples LABEL { margin-top: -5px}
+    *HTML #f_slip LABEL .cbx { top: -3px; left: -23px}
+    *HTML #f_slip .steps { font: 118.2% Arial, Helvetica, sans-serif}
+*HTML .games #billboard H1 { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/img/32/games-h1.png'), sizingMethod='scale')}
+*HTML #header H1 A { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/img/32/logo.png'), sizingMethod='scale')}
+*HTML #header #m_promotions { margin-top: -3px; width: 125px}
+       *HTML #m_promotions .label { padding-top: 10px}
+			*HTML #header .extra .label EM SPAN { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/img/32/promotions.png'), sizingMethod='scale')}
+*HTML #header .nav .extra  { margin-top: 7px}
+
+*HTML  #s_core { margin: 0 307px 0 37px}
+*HTML  .sports #s_core { margin: 0 307px 0 187px}
+*HTML  .system #s_core { margin: 0 37px}
+*HTML  .tabs { margin-left: 2px}
+*HTML TABLE { width: 99%}
+
+*HTML #user .menu { margin-right: 35px; width: 180px}
+
+*+HTML #m_promotions { min-width: 10em}
+*+HTML BUTTON STRONG, *+HTML .btn STRONG { float: left}
+
+LEGEND { margin-left: -7px}

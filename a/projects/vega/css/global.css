@@ -1,0 +1,330 @@
+HTML, BODY { height: 100%}
+BODY { background: #ECEEF2 url(/a/projects/vega/img/bg/bg.gif) repeat-x; color: #535559; font-family: Arial, Geneva, Helvetica, sans-serif; text-align: center; margin: 0; padding: 0}
+
+A { color: #0D66B2; outline: 0 !important}
+A:visited { color: #535559}
+A:hover { color: #E54040}
+DFN { background: url(/a/projects/vega/img/ico/q-mark.gif) no-repeat 98% 50%; cursor: help; font-style: normal; padding-right: 18px}
+	DFN A { color: #535559; cursor: help; text-decoration: none}
+	DFN A:hover { color: #E54040; text-decoration: underline}
+	DFN.non_marked { background: none; cursor: text; padding-right: 0}
+H1 { font: normal 180% Tahoma, Geneva, Arial, sans-serif}
+H2 { font: normal 131% Tahoma, Geneva, Arial, sans-serif; margin: 1em 0 0}
+H3 { font-size: 110%; margin: 1em 0 0}
+IMG { border: 0}
+P { margin: 0 0 1em}
+
+/* Containers ------------------------------------------------------------------------------------------------------*/
+	#container { background: #FFF; font-size: x-small; font-size/**/:/**/ small; line-height: 140%; text-align: left; margin: 0 auto; position: relative; min-height: 100%; max-width: 980px; min-width: 770px; width: 99%}
+	/* Hacks for IE6- see in ie.css */
+		#content { padding: 0 30px 8em}
+			.main { margin: 30px 240px 0 0}			
+			.sidebar { float: right; padding-top: 30px; width: 220px}				
+				.align_h2_to_h1 { margin-top: .35em; *margin-top: 2.1em}
+				.align_h3_to_h1 { margin-top: 1.1em; *margin-top: 3.9em}
+			.col1_2 { float: left; width: 48.5%}
+			.col2_2 { float: right; width: 48.5%}
+			.col1_3, .col2_3, .col3_3 { float: left; width: 33%}
+
+/* Noscript --------------------------------------------------------------------------------------------------------*/
+.noscript { background: #535559; color: #FFF; padding: 1em 0}
+	.noscript P { background:  url(/a/projects/vega/img/dtls/alert-big.gif) no-repeat 30px 50%; font-weight: bold; margin: 0 auto; padding: 30px 30px 0 130px; min-height: 50px}
+		* HTML .noscript P { height: 80px}
+		.noscript A, .noscript A:visited { color: #E5E540}
+		.noscript A:hover { color: #FFF}
+
+/* Meta ------------------------------------------------------------------------------------------------------------*/
+#meta { background: url(/a/projects/vega/img/header/meta/bg.gif)}
+	.meta_nav { margin-right: 201px}
+		.meta_nav H1 { float: left; margin: 0; padding: 0; height: 60px; width: 171px}
+			.meta_nav H1 A { background: url(/a/projects/vega/img/header/logo-vega-in-bar.gif) no-repeat 0 0; display: block; text-indent: -6400px; height: 60px}
+			.meta_nav H1 A:hover { background-position: 0 -60px}
+				*+HTML .meta_nav H1 A { background: url(/a/projects/vega/img/header/logo-vega-in-bar-ie7.gif) no-repeat}
+		.meta_nav UL { list-style-image: none; list-style-type: none; margin: 0 0 0 171px; padding: 0; height: 60px}
+			.meta_nav LI { float: left; text-align: center; margin-right: 1px}
+				.meta_nav LI A { color: #636569; display: block; float: left; font-weight: bold; text-decoration: none; padding: 0 9px; height: 60px}
+				.meta_nav LI A:hover { background: url(/a/projects/vega/img/header/meta/hover.gif) repeat-x; color: #FFF}
+					.meta_nav LI A SPAN { color: #88898C; display: block; font: normal 11px Tahoma, Geneva, Arial, sans-serif; padding: 6px 0 13px; *padding-bottom: 12px}
+						.meta_nav LI A:hover SPAN { color: #FFF}
+
+/* Meta Drop-down --------------------------------------------------------------------------------------------------*/	
+.meta_nav #more_meta { background: url(/a/projects/vega/img/header/meta/more-l.gif) no-repeat 0 0; padding: 0 0 0 15px; margin: 17px 0 0 3px}
+.meta_nav #more_meta:hover, .meta_nav .pc_hover#more_meta { background-position: 0 -60px}
+	.meta_nav #more_meta A { background: url(/a/projects/vega/img/header/meta/more-r.gif) no-repeat 100% 0; color: #FFF; display: block; padding: 0 15px 0 0; height: 24px}
+	.meta_nav #more_meta:hover A, .meta_nav .pc_hover#more_meta A { background-position: 100% -60px}
+		.meta_nav #more_meta SPAN { background: url(/a/projects/vega/img/header/meta/more-arrow.gif) no-repeat 100% 10px; color: #FFF; line-height: 23px; padding: 0 .8em 0 0}
+		.meta_nav #more_meta UL { top: 24px; left: 0}
+			.meta_nav #more_meta LI { background: none; display: table; text-align: left; margin: 0; padding: 0}
+				.meta_nav #more_meta LI A { background: none; font-weight: normal; margin: 0; height: auto}
+
+/* Meta Admission --------------------------------------------------------------------------------------------------*/	
+.admission, .user_card { background: url(/a/projects/vega/img/header/bg-admission.gif) no-repeat; float: right; font: 85% Tahoma, Geneva, Arial, sans-serif; list-style-image: none; list-style-type: none; margin: 0; padding: 12px 30px 0 0; height: 60px; height/**/:/**/ 48px; width: 201px; width/**/:/**/ 171px}
+	/* .user_card { padding-top: 3px; height//:// 57px} */
+	.admission LI, .user_card LI { display: table; white-space: nowrap; width: 100%}
+	/*.user_card LI { padding-top: .35em; *padding-top: .2em} */
+		.admission A, .user_card A { float: right; font-weight: bold; text-decoration: none; padding-left: 23px; min-width: 77px; _width: 100px; _width/**/:/**/ 77px}
+		.admission A:hover, .user_card A:hover { text-decoration: underline}
+			#li_sign_up, #li_user { padding-bottom: 8px; *padding-bottom: 6px}
+				#li_sign_up A { background: url(/a/projects/vega/img/ico/sign-up.gif) no-repeat 0 .1em; color: #7E7F83}
+				#li_user A { background: url(/a/projects/vega/img/ico/user.gif) no-repeat 0 0; color: #7E7F83}
+				#li_sign_in A { background: url(/a/projects/vega/img/ico/sign-in.gif) no-repeat 0 .35em; color: #636569}
+				#li_finance A { background: url(/a/projects/vega/img/ico/finance.gif) no-repeat 3px .2em; color: #636569}
+				#li_sign_out A { background: url(/a/projects/vega/img/ico/sign-out.gif) no-repeat 2px .2em; color: #636569}
+
+/* Drop-downs ------------------------------------------------------------------------------------------------------*/
+.drop_down LI { position: relative}
+	.drop_down LI UL, .drop_down LI .chooser { background: #ECEEF2; border: 1px solid #DFE1E5; border-bottom: 2px solid #DFE1E5; display: none; font: 11px/normal Tahoma, Geneva, Arial, sans-serif !important; margin: 0; padding: .5em 0 !important; position: absolute; top: 1.1em; left: 0; height: auto !important; width: 180px !important; width/**/:/**/ auto !important}
+		.drop_down LI .chooser { text-align: left; padding: 15px !important; top: 1.1em; left: 0; width: 220px; width/**/:/**/ 188px}
+				.drop_down LI:hover UL UL, .drop_down LI.pc_hover UL UL { display: none}
+				.drop_down LI:hover UL, .drop_down LI:hover .chooser, .drop_down LI LI:hover UL, .drop_down LI.pc_hover UL, .drop_down LI.pc_hover .chooser, #nav LI LI.pc_hover UL { display: block}
+	.drop_down LI LI { background: transparent none !important; float: left !important; text-indent: 0; margin: 0 !important; padding: 0 !important; height: auto}
+		.drop_down LI LI A { background: transparent none !important; color: #535559 !important; display: block; text-decoration: none; height: auto; padding: 2px 8px 5px !important; height: auto; width: 180px; width/**/:/**/ 162px}
+			.drop_down LI LI A:hover { background: #DFE1E5 !important}
+
+.drop_down .daddy { background: url(/a/projects/vega/img/dtls/arrow-down.gif) no-repeat 100% .1em  !important; cursor: pointer; cursor: hand; padding-right: 1em}
+
+/* Menus ------------------------------------------------------------------------------------------------------*/
+/* Main */
+#nav { background: url(/a/projects/vega/img/header/bg-nav-r.gif) no-repeat right center}
+	#nav UL { float: right; line-height: 40px; list-style-image: none; list-style-type: none; margin: 0; padding-right: 1.7em; height: 40px; width: 19em; width/**/:/**/ 17em}
+		#nav LI { cursor: pointer; cursor: hand; float: right; padding-left: 11px}
+			#nav UL A { color: #636569; display: block; font-weight: bold; text-decoration: none; padding-right: 11px}
+
+#nav LI:hover, #nav LI.pc_hover { background: url(/a/projects/vega/img/header/btn-hover-l.gif) left center no-repeat}
+	#nav LI:hover A, #nav LI.pc_hover A { background: url(/a/projects/vega/img/header/btn-hover-r.gif) right center no-repeat}
+
+/* Drop-downs */
+#nav LI UL { top: 32px}
+	#nav LI LI A { font-weight: normal}
+	
+/* Ticker */		
+	
+#ticker_home { background: url(/a/projects/vega/img/header/bg-nav-l.gif) no-repeat left center; margin-right: 20em; margin-right/**/:/**/ 18em; padding: 7px 0 0 25px; height: 40px; height/**/:/**/ 33px}
+	#btn_home { background: url(/a/projects/vega/img/header/btn-home.gif) no-repeat 0 0; display: block; float: left; text-indent: -6400px; margin-top: 1px; height: 24px; width: 24px}
+	#btn_home:hover { background-position: 0 -24px}	
+
+	#ticker_home H2 { background: url(/a/projects/vega/img/header/bg-ticker-l.gif) no-repeat left center; float: left; font: bold 11px/26px Tahoma, Geneva, Arial, sans-serif; margin: 0; padding: 0 .6em 0 15px}
+	#tic_item { background: url(/a/projects/vega/img/header/bg-ticker-r.gif) no-repeat right center; margin-left: 40px; padding-right: 15px}
+	#tic_item DIV { color: 313618; font: 11px/26px Tahoma, Geneva, Arial, sans-serif; white-space/**/:/**/ nowrap; overflow: hidden; height: 26px}
+		#tic_item A { color: #313618; text-decoration: none}
+		#tic_item A:hover { text-decoration: underline}	
+
+/* Sidebar */
+.level_01 { font: bold 85% Tahoma, Geneva, Arial, sans-serif; margin: 0}
+	.level_01 A { color: #535559; text-decoration: none}
+	.level_01 A:hover { text-decoration: underline}
+
+.r_menu, .r_menu UL { font: 11px Tahoma, Geneva, Arial, sans-serif; list-style-image: none; list-style-type: none; margin: 0}
+	.submenu { margin-left: 13px}
+	.r_menu LI { background: url(/a/projects/vega/img/dtls/bullet.gif) no-repeat 0 .5em; *background-position: 0 .3em; *background-position/**/:/**/ 0 .4em; padding: .73em 0 0 13px; *padding-top: .3em}
+		.r_menu LI.add { background: url(/a/projects/vega/img/dtls/add.gif) no-repeat 0 .5em; *background-position: 0 .3em; *background-position/**/:/**/ 0 .5em; padding-left: 20px}
+		.r_menu LI.current { font-weight: bold}
+		.r_menu LI.current_daddy { background: url(/a/projects/vega/img/dtls/arrow-down.gif) no-repeat 0 .6em; *background-position: 0 .4em; *background-position/**/:/**/ 0 .5em; font-weight: bold}
+			.r_menu LI.childless A { cursor: text; text-decoration: none}
+				.r_menu LI.childless LI A { cursor: pointer; cursor: hand; text-decoration: underline}
+		.r_menu LI.daddy { background: url(/a/projects/vega/img/dtls/arrow-forward.gif) no-repeat 0 1em; *background-position: 0 .7em; *background-position/**/:/**/ 0 1em}
+		.r_menu LI A { color: #0D66B2}
+		.r_menu LI LI { font-weight: normal}
+			.r_menu LI LI.current { background: transparent none; margin: .3em 0 0}
+				.r_menu LI LI.current A { background: #E5E540; color: #000; cursor: text; display: inline-block; font-weight: normal; text-decoration: none; margin-left: -13px; padding: .3em 10px .3em 13px}
+
+/* Lists ------------------------------------------------------------------------------------------------------*/
+DT:target, LI:target { background: #FFF2B2; color: #000; padding: .3em 10px .3em 13px}
+
+OL { margin: 0 0 1em 0; padding: 0}
+	OL LI { margin-left: 2.2em}
+UL { list-style:  url(/a/projects/vega/img/dtls/bullet.gif) outside; margin: 0 0 1em 16px; padding: 0}
+	LI UL { margin: 0 0 0 16px}
+
+UL.inline { margin: 0; padding: 0}
+	UL.inline LI { border-left: 1px solid #535559; display: inline; white-space: nowrap; list-style-image: none; list-style-type: none; margin-left: -7px; padding: 0 8px 0 7px}
+		HTML + HTML UL.inline LI { border-left: none}
+		UL.inline LI.first { border-left: none}
+
+.bread_crumbs { font: 85% Tahoma, Geneva, Arial, sans-serif; list-style-image: none; list-style-type: none; margin: 0; padding: 0}
+	.bread_crumbs LI { display: inline; margin: 0 .3em 0 0; padding-left: .2em}
+		.bread_crumbs A, .bread_crumbs A:visited { background:  url(/a/projects/vega/img/dtls/arrow-forward.gif) no-repeat 100% .35em; color: #535559; padding-right: 1.2em}
+		.bread_crumbs A:hover { color: #E54040}
+			.bread_crumbs .last	A { background: none !important; cursor: default; text-decoration: none}
+			.bread_crumbs .next_to_last	A { background: none !important}
+			.bread_crumbs .last	A:hover { color: #535559}
+			
+.tbn32 { list-style-image: none; list-style-type: none; margin: 0 0 1em; padding: 0}
+	.tbn32 LI { padding-left: 46px; min-height: 32px; margin-bottom: .3em}
+		.tbn32 .mastername { background: url(/a/projects/vega/img/ico/logos/mastername-32.gif) no-repeat left center}
+		.tbn32 .masterhost { background: url(/a/projects/vega/img/ico/logos/masterhost-32.gif) no-repeat  left center}
+		.tbn32 .spylog { background: url(/a/projects/vega/img/ico/logos/spylog-32.gif) no-repeat left center}		
+
+/* Footer ----------------------------------------------------------------------------------------------------------*/
+#footer { border-top: 1px solid #A0A2A6; clear: left; font: 85% Tahoma, Geneva, Arial, sans-serif; text-align: left; margin: 0 4%; padding: 2.4em 0 3.45em; position: absolute; bottom: 0; left: 0; width: 92%; *z-index:-1}
+
+/* Clearing --------------------------------------------------------------------------------------------------------*/
+.cfx:after { clear: both}
+.cfx_left:after { clear: left}
+.cfx:after, .cfx_left:after { content: "."; display: table; font-size: 0; line-height: 0; height: 0; visibility: hidden}
+.cfx, .cfx_left { display: inline-block}
+/* Hides from IE-mac \*/
+* HTML .cfx, * HTML .cfx_left { height: 1%}
+.cfx, .cfx_left { display: block}
+/* End hide from IE Mac */
+
+.clearer { clear: both; font-size: 1px; line-height: 0; height: 0}
+
+/* Body copy -------------------------------------------------------------------------------------------------------*/
+.alert { background: url(/a/projects/vega/img/dtl-alert-on-grey.gif) no-repeat 0 .2em; text-indent: 1.2em}
+.alert_span { background: #E54040; color: #FFF}
+.bold { font-weight: bold !important}
+
+.f_left { float: left}
+	IMG.f_left { margin: 2px 15px 5px 0}
+.f_right { float: right !important}
+	IMG.f_right { margin: 2px 0 5px 15px}
+
+.indent_like_li { padding-left: 16px}
+.invert { background: #0D66B2; color: #FFF; padding: 0 .2em .1em}
+.like_h3 { font-weight: bold; font-size: 110%}
+.margin_b0 { margin-bottom: 0}
+.margin_t0 { margin-top: 0}
+.margin_t0_b1em { margin-top: 0; margin-bottom: 1em}
+.margin_t30 { margin-top: 30px}
+.nowrap { white-space: nowrap}
+	H2.petite { font-weight: bold}
+.petite-fixed { font: 11px Tahoma, Geneva, Arial, sans-serif}
+.pseudo_a { color: #0D66B2; text-decoration: underline}
+
+/* Forms -----------------------------------------------------------------------------------------------------------*/
+FORM { margin: 0; padding: 0}
+	FIELDSET { border: 0 none; margin: 0; padding: 1em 0 0}	
+	INPUT, SELECT { vertical-align: middle}
+	LABEL { cursor: pointer; cursor: hand}
+		LABEL.for_checkbox { padding-top: 0 !important}
+	SELECT {  background: #ECEEF2 !important; border: 1px solid #A0A2A6; color: #535559; padding: 6px}
+	FORM BR { clear: left}
+	
+.input_align { padding-bottom: 0.5em}
+	.inputs_line { float: left; position: relative}
+		.inputs_line .field { float: none !important}
+		.inputs_line SPAN { position: absolute}
+.label_auto { padding-right: .5em; width: auto !important}	
+
+FORM.standart LABEL { display: block; float: left; margin-bottom: 1em; padding: .6em 20px 0 0; width: 180px; width/**/:/**/ 160px}
+FORM.standart SELECT { margin: .5em 0 1em}
+FORM.standart .field { float: left; margin-bottom: 1em; width: 480px; width/**/:/**/ 55%}
+	.main FORM.standart .field { width: 280px; width/**/:/**/ 55%}
+	FORM.standart SPAN.submit { float: left; *float: none; margin-left: 180px}
+
+/* Customization ---------------------------------------------------------------------------------------------------*/
+/* Control center */
+#account #li_user A SPAN  { background: #ECEEF2; display: table; *display: inline-block; padding: 0 4px; margin-left: -4px}
+
+.product_item { margin-bottom: 2em; padding-left: 50px; min-height: 40px; height: 40px}
+	HTML>BODY .product_item { height: auto}
+	#control_domens { background: url(/a/projects/vega/img/ico/domens-32.gif) no-repeat}
+	#control_hosting { background: url(/a/projects/vega/img/ico/hosting-32.gif) no-repeat}
+	#control_stats { background: url(/a/projects/vega/img/ico/stats-32.gif) no-repeat}
+		.product_item DIV { margin-right: 11em}
+			.product_item H2 { font: 100% Arial, Geneva, Helvetica, sans-serif; margin: 0; padding-top: .1em}
+			.product_item UL { float: right; list-style-image: none; list-style-type: none; margin: 0; width: 10em}
+				.product_item LI { background: url(/a/projects/vega/img/btns/small-r.gif) left center no-repeat; float: right; font: 11px Tahoma, Geneva, Arial, sans-serif; padding-right: 11px}
+					.product_item .right { background-position: right center}
+					.product_item LI A { background: url(/a/projects/vega/img/btns/small-divider.gif) left center no-repeat; color: #636569; display: block; float: left; line-height: 20px; text-decoration: none; padding-left: 11px; height: 20px}
+						.product_item .left A { background: url(/a/projects/vega/img/btns/small-l.gif) left center no-repeat}
+
+/* Front page */
+BODY#front { background: #FFF none}
+#front .meta_nav H1 A:hover, #front .meta_nav H1 A:hover { background-position: 0 0; cursor: default}
+
+#front .sidebar { padding-top: 30px; width: 205px}
+#front .sidebar H2 { font: bold 110% Arial, Geneva, Helvetica, sans-serif; margin: 0}
+		
+#front .main { margin-right: 235px}
+	#billboard { background:url(/a/projects/vega/img/front-page/entrance.gif) no-repeat; position: relative; height: 324px}
+		#billboard #concierge { position: absolute; top: 59px; left: 9px; height: 260px; width: 90px}
+			.concierge { background: url(/a/projects/vega/img/front-page/concierge.png) no-repeat}
+			*HTML .concierge { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/projects/vega/img/front-page/concierge.png'), sizingMethod='scale')}
+		#billboard #girl  { position: absolute; top: 51px; right: 20px; height: 273px; width: 92px}
+			#billboard .girl  { background: url(/a/projects/vega/img/front-page/girl.png) no-repeat; z-index: 2}
+			*HTML #billboard .girl { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/projects/vega/img/front-page/girl.png'), sizingMethod='scale')}
+		#billboard #title  { position: absolute; top: 78px; right: 127px; _right: 74px; height: 109px; width: 194px}
+			#billboard .title  { background: url(/a/projects/vega/img/front-page/title.png) no-repeat; text-indent: -6400px}
+			*HTML #billboard .title { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/projects/vega/img/front-page/title.png'), sizingMethod='scale')}
+
+#front .banner_blue { background: #1973BF url(/a/projects/vega/img/front-page/banner-blue-tr.gif) no-repeat right top; margin-bottom: 30px}
+	#front .banner_blue .col1_2, #front .banner_blue .col2_2 { width: 49%}
+		#front .banner_blue A { display: block; color: #C1D7EA; font-weight: bold; text-decoration: none; padding: 30px 20px 0 100px; min-height: 78px; height: 108px; height/**/:/**/ 78px}
+		HTML>BODY#front .banner_blue A { height: auto}
+		#front .banner_blue A:hover { text-decoration: underline}
+			#front .banner_blue .discount_15 { background: url(/a/projects/vega/img/front-page/tag-on-blue-15.gif) no-repeat}
+			#front .banner_blue .discount_10 { background: url(/a/projects/vega/img/front-page/tag-on-blue-10.gif) no-repeat}
+			#front .banner_blue .gift_inner { background: url(/a/projects/vega/img/front-page/gift-on-blue-inner.gif) no-repeat}
+	#front .banner_blue .box_footer	{ background: url(/a/projects/vega/img/front-page/banner-blue-bl.gif) no-repeat left bottom; clear: left; height: 12px; width: 100%}
+		#front .banner_blue .box_footer DIV	{ background: url(/a/projects/vega/img/front-page/banner-blue-br.gif) no-repeat right bottom; height: 12px}
+
+#front #btn_home { background-position: 0 -24px; cursor: default}
+
+/* Modal box -------------------------------------------------------------------------------------------------------------------*/
+#modal_box_wrapper { display: none; position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: 64}
+#modal_box { background: #E6E8EC; border: 5px solid #FFF; color: #57534A; font: x-small/140% Arial, Geneva, Helvetica, sans-serif; font-size/**/:/**/ small; text-align: left; padding-bottom: 1em}
+	*+HTML #modal_box { background: #E6E8EC url(/a/projects/vega/img/bg/modal.gif) repeat-x; position: relative}
+	.modal_min_max { margin: 40px auto 0; overflow: auto; max-height: 80%; max-width: 980px; min-width: 760px}
+	.modal_small { margin: 40px auto 0; overflow: auto; max-height: 80%; width: 400px !important; width/**/:/**/ 390px !important}
+	#modal_box .caption { background: #2680CC; text-align: left; padding: 0 15px; position: relative; height: 40px}
+		#modal_box .caption H1, #modal_box .caption H2 { color: #EAF3FA; font: normal 131%/40px Tahoma, Geneva, Arial, sans-serif; margin: 0 !important}
+		#modal_box .btn_close { background:  url(/a/projects/vega/img/btns/close-caption.gif) no-repeat left top; display: block; text-indent: -6400px; margin-top: -7px; position: absolute; top: 50%; right: 15px; height: 15px; width: 15px}
+		#modal_box .caption UL { color: #004C99; position: absolute; top: 0; right: 40px}
+			#modal_box .caption LI { border-left: 1px solid #004C99; line-height: 40px}
+				#modal_box .caption UL A { color: #FFF !important}
+	#modal_box FORM { padding: 20px 15px}
+
+#overlay { background: #000; display: none; -moz-opacity: 0.6; opacity: .60; filter: alpha(opacity=60); position: fixed; top: 0; left:0; height: 100%; width: 100%; z-index: 46}
+
+.extra_padding { padding: 1em 15px}
+
+/* Forms */
+SPAN.btn { background: url(/a/projects/vega/img/btns/r.gif) no-repeat right center; display: table-cell; padding-right: 10px}
+	SPAN.btn INPUT, SPAN.btn A { background: url(/a/projects/vega/img/btns/l.gif) no-repeat left center; border: 0 none; color: #535559; cursor: pointer; cursor: hand; font: 13px/30px Arial, Geneva, Helvetica, sans-serif; text-align: center; padding-left: 15px; *padding-left: 10px; height: 30px}
+	SPAN.btn A { display: block; *display: inline-block; text-decoration: none; padding: 0 5px 0 15px}
+
+A.tooltip, #tooltip_01 { background: url(/a/projects/vega/img/dtls/question.gif) no-repeat left center; display: block; float: left; text-decoration: none; margin-left: 6px; position: relative; height: 1.4em; width: 15px}
+	A.tooltip SPAN, #tooltip_01 SPAN { display: none}
+	A.tooltip:hover SPAN, #tooltip_01:hover SPAN { background: #FFFFE1; border: 1px solid #C8C8B4; color: #46484C; display: block !important; padding: 15px; position: absolute; top: 30px; right: 21px; width: 320px; width/**/:/**/ 288px; z-index: 2}
+
+.field { background: #ECEEF2 url(/a/projects/vega/img/bg/input.gif) repeat-x left top  !important; border: 1px solid #A0A2A6; color: #535559; margin: 0; padding: 6px; height: 30px; height/**/:/**/ auto; width: 80%}
+
+FORM.modal LABEL { display: block; float: left; margin-bottom: .6em; padding: .3em 10px 0 0}
+	FORM.narrow LABEL { font-weight: bold; width: 100px; width/**/:/**/ 90px}
+FORM.modal .field { background: #FFF url(/a/projects/vega/img/bg/input-white.gif) repeat-x left top  !important; float: left; margin-bottom: .6em}
+	FORM.narrow .field { width: 230px}
+	FORM.with_hints .field { width: 210px}
+		#content FORM.with_hints .field { width: 55%}
+FORM.modal SPAN.btn { float: left}
+	FORM.modal SPAN.submit { margin-left: 100px}
+FORM.modal SPAN.btn INPUT, FORM.modal SPAN.btn A { background: url(/a/projects/vega/img/btns/l-grey.gif) no-repeat left center}
+
+#form_sign_in UL { list-style-image: none; list-style-type: none; margin: 0; padding: 3em 0 0}
+	#content #form_sign_in UL { margin-left: 160px}
+	#form_sign_in LI { float: left; text-align: center; width: 30%; width/**/:/**/ 33%}
+		#content #form_sign_in LI { text-align: left; padding: 0 2em 1em 0; width: auto}
+	
+#form_sign_in_options .btn { float: left; margin-right: 10px}
+
+DIV.alert { background:  url(/a/projects/vega/img/bg/alert.gif) no-repeat left top; display: none; text-indent: 0; margin-bottom: 1em; padding: 10px 0 0; width: 76%}
+	#modal_box DIV.alert { width: auto}
+	DIV.alert P { background: #FFFFE1 url(/a/projects/vega/img/dtls/alert-on-yellow.gif) no-repeat 15px 1.2em; border: 1px solid #C8C8B4; border-top: 0 none; padding: 1em 15px 1em 40px}
+
+/* IE --------------------------------------------------------------------------------------------------------------*/
+*HTML #container { height: 100%; width: expression((document.documentElement.offsetWidth) >960 * (parseInt(document.body.currentStyle.fontSize) / parseInt(document.body.currentStyle.fontSize))? "930px" : ((document.documentElement.offsetWidth) < 760? "750px" : "99%"))}
+*HTML #footer_wrapper #footer { margin: 0 30px}
+*HTML .min_max { height: expression(minY=(this.scrollHeight < parseInt(this.currentStyle.minHeight)+1)? this.currentStyle.minHeight : maxY=(this.scrollHeight > parseInt(this.currentStyle.maxHeight)+1)? this.currentStyle.maxHeight : "auto"); width: expression(minX=(document.body.clientWidth < parseInt(this.currentStyle.minWidth)+1)? this.currentStyle.minWidth : maxX=(document.body.clientWidth > parseInt(this.currentStyle.maxWidth)+1)? this.currentStyle.maxWidth : "auto")}
+
+/* Forms */
+*HTML A.tooltip:hover, #tooltip_01:hover { cursor: pointer; cursor: hand}
+
+/* Modal-box */
+*HTML .modal_min_max, .modal_small { height: expression(minY=(this.scrollHeight < parseInt(this.currentStyle.minHeight)+1)? this.currentStyle.minHeight : maxY=(this.scrollHeight > parseInt(this.currentStyle.maxHeight)+1)? this.currentStyle.maxHeight : "auto"); width: expression(minX=(document.body.clientWidth < parseInt(this.currentStyle.minWidth)+1)? this.currentStyle.minWidth : maxX=(document.body.clientWidth > parseInt(this.currentStyle.maxWidth)+1)? this.currentStyle.maxWidth : "auto")}
+*HTML .modal_min_max { maxHeight: 80%; maxWidth: 980px; minWidth: 760px}
+*HTML .modal_small { maxHeight: 80%; height: auto}
+
+*HTML #modal_box_wrapper { position: absolute}
+	*HTML #modal_box { margin-bottom: 4em}
+*HTML #overlay { position: absolute; top: expression((ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop) + 'px')}

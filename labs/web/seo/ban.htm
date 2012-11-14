@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Если сайт исключили из баз поисковых систем | &laquo;Полилог&raquo;: маркетинговые коммуникации &mdash; пиар, BTL и пр.</title>
+
+<link href="/labs/a/css/global.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+<!--
+H4 { float: none; font-size: 100%; margin: 0}
+OL { margin: 0 0 1em 2.2em; padding: 0}
+-->
+</style>
+</head>
+<body>
+<div id="container">
+<h1>Если возникли подозрения, что сайт исключили из баз поисковых систем</h1>
+<h2>Яндекс</h2>
+<p class="caption">Проверяем опасения:</p>
+<ul>
+<li><a href="http://webmaster.yandex.ru/check.xml" target="_blank">Яндекс.Вебмастер: Проверить сайт</a>;</li>
+<li><a href="http://yaback.net/" target="_blank">Yaback</a> - сервис проверки обратных ссылок.</li>
+</ul>
+<p>Если сайт в базе не находим, <a href="mailto:addurl@yandex-team.ru">пишем письмо</a>, с вопросом &laquo;в чем дело?&raquo;. Если отвечают, что <strong>сайт <dfn><span class="dt">забанен</span> <span class="title">(англ. ban  &mdash; запрещать) &mdash; наказание, которое поисковые системы налагают на нарушителей их правил &mdash; запрет индексации сайта и удаление его из базы.</span></dfn></strong>, то ищем в логах сервера вот такую строку <code>sb.yandex.ru/verify.xml</code>.</p>
+<p>Именно с этого адреса модераторы проверяют сайты. Обращаем внимание на все страницы, которые были просмотрены с этого адреса. Пытаемся понять, что именно не понравилось &laquo;Яндексу&raquo; на этих страницах. Исправляем. После этого пишем новое <strong>письмо в &laquo;Яндекс&raquo;</strong>: мол, причина, нарушавшая п. 3.5 Лицензии устранена. Если все верно сделали, приходит письмо, что окончательно вопрос о снятии санкций с сайта будет решаться примерно месяц.</p>
+<h2>Google</h2>
+<p class="caption">Проверяем опасения следующими поисковыми запросами.</p>
+<ul>
+<li><code>site:www.polylog.ru</code> &mdash; есть ли сайт в индексе;</li>
+<li><code>cache:www.polylog.ru</code> &mdash; был ли сайт в индексе;</li>
+<li><code>link:www.polylog.ru</code> &mdash; есть ли в индексе ссылки на сайт.</li>
+</ul>
+<p>В случае бана, списываемся с модераторами поисковых систем.</p>
+<p>Примерно тот же алгоритм по исправлению причин бана.</p>
+<p>Исправив страницы-нарушители, заполняем форму <a href="https://www.google.com/webmasters/tools/reconsideration?hl=en" target="_blank">Reinclusion request</a> (или <a href="https://www.google.com/webmasters/tools/" target="_blank">Google Webmasters Tools</a> &gt; список Tools в правой колонке &gt; Request reconsideration).</p>
+<h3>Шаблон для английской версии</h3>
+<div class="box">
+<p>Hello Google,<br />
+My website <a href="http://www.polylog.ru/">http://www.polylog.ru/</a> was banned :-(. Now I redesign structure of it, and I hope Google reinclude my site.</p>
+<p>Regards, <br />
+Vladimir Nikishin<br />
+<a href="mailto:nikishin@polylog.ru">nikishin@polylog.ru</a></p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+@charset "UTF-8";
+HTML, BODY { height: 100%}
+HTML { text-align: center}
+BODY { background: #EEF1F5; color: #525559; font: .813em/140% Arial, Helvetica, sans-serif; text-align: left; margin: 60px auto 1px; padding: 0; width: 90% }
+
+A { color: #0080D9; outline: none}
+A:visited { color: #800080}
+A:hover { color: #FF3333}
+H1 { font-size: 200%; font-weight: normal}
+H2 { font-size: 138.5%; margin: 1.25em 0 .25em}
+H3 { color: #2C2F33; font-size: 100%; margin: 0 }
+IMG { border: 0}
+P { margin: 0 0 1.4em}
+
+/* Layout -------------------------------------------------------------------------------------------------------------------*/
+#sidebar { /*background: #EEF1F5;*/ border: 1px solid #D9DCE0; float: right; padding: 15px 15px 15px 30px; width: 195px}
+	#sidebar DT { position: relative}
+		#sidebar DT EM { background: url(/a/projects/offside/img/greys.png) no-repeat; display: block; text-indent: -430em; position: absolute; top: .3em; left: -1.1em; height: 10px; width: 10px}
+			#sidebar DT.open EM { background-position: -10px 0}
+
+#main { margin-right: 300px}
+
+/* Windows ------------------------------------------------------------------------------------------------------------------*/
+
+.window.wide { margin: 0 auto; padding: 0; width: 960px}
+.window.wide .header { background: url(/a/projects/offside/img/blues.png) no-repeat 0 0; color: #FFF; padding: 24px 40px 0; height: 36px; width: 880px}
+	.window .header H1 { font-size: 138.5%; margin: 0}
+.window.wide .footer { background: url(/a/projects/offside/img/greys.png) no-repeat 0 -20px; height: 60px; width: 960px}
+
+.window.narrow { margin: 0 auto; padding: 0; width: 730px}
+.window.narrow .header { background: url(/a/projects/offside/img/blues.png) no-repeat 0 -60px; color: #FFF; padding: 24px 40px 0; height: 36px; width: 650px}
+.window.narrow .footer { background: url(/a/projects/offside/img/greys.png) no-repeat 0 -80px; height: 60px; width: 730px}
+
+
+/* Forms --------------------------------------------------------------------------------------------------------------------*/
+FORM { margin: 0; padding: 0}
+	BUTTON, INPUT, TEXTAREA { font: 100% Arial, Helvetica, sans-serif; vertical-align: middle}
+    LABEL { cursor: pointer}
+	FIELDSET { border: 0 none; margin: 0; padding: 0 0 .6em; position: relative}
+    
+BUTTON { background: url(/a/projects/offside/img/blues.png) no-repeat 100% -160px; border: 0 none; color: #FFF; cursor: pointer; padding: 0 10px 0 0; overflow: visible !important; position: relative; height: 40px; width: auto}
+	BUTTON STRONG { background: url(/a/projects/offside/img/blues.png) no-repeat 0 -120px; display: block; font-weight: normal; line-height: 39px; white-space: nowrap; position: relative; padding-left: 10px; height: 40px}
+
+.alert {  background: #FFFFE1; display: block; padding: 20px 20px 20px 60px; position: relative}
+	HTML>BODY .alert { height: auto !important}
+    .alert EM { background: url(/a/projects/offside/img/png-24.png) no-repeat -120px 0; display: block; text-indent: -4300em; position: absolute; top: 0; left: -10px; height: 40px; width: 60px}
+
+#f_reports { background: #FFF; padding: 30px 20px 0}
+	#f_reports .bets, #f_reports .transacrions, #f_reports .users, #f_reports .events, #f_reports .ag, #f_reports .en,
+    #f_reports .ru, #f_reports .es, #f_reports .de, #f_reports .tr, #f_reports .bg
+    { margin-bottom: 1.4em}
+	#f_reports BUTTON { margin-top: 20px; width: 190px}
+		#f_reports BUTTON STRONG { width: 180px}
+	#f_reports .fieldset { border: 1px solid #D9DCE0; float: left; margin: 0 20px; padding-top: .35em; overflow: auto; overflow-y: scroll; overflow-x: hidden; position: relative; height: 23.1em; width: 188px}
+    	#f_reports .fieldset.last { border: 0 none; padding-top: 0; overflow-y: auto; width: 190px}
+	#f_reports H2, #f_reports H3 { margin: 0; padding-left: 5px}
+    #f_reports INPUT { position: absolute; left: -4300em}
+    	#f_reports .fieldset.last INPUT { text-align: right; margin-top: -15px; top: 50%; right: 0; left: auto; width: 118px}
+    #f_reports LABEL { background: url(/a/projects/offside/img/arrows.png) no-repeat 95% .5em; display: block; margin-bottom: 1px; padding: 2px 20px 2px 5px; position: relative}
+    	#f_reports LABEL.active { background-color: #0080D9; background-position: 95% -983px; color: #FFF}
+        #fs_markets LABEL { padding: 2px 20px 2px 30px}
+        	#fs_markets EM { background: url(/a/projects/offside/img/png-24.png) no-repeat; display: block; line-height: 15px; text-indent: -4300em; margin-top: -8px; position: absolute; top: 50%; left: 5px; height: 15px; width: 20px}
+			#fs_markets #l_ag EM { background: url(/a/projects/offside/img/alpha/globe.png) no-repeat; margin-top: -10px; height: 20px}
+            #fs_markets #l_ru EM { background-position: -20px 0}
+            #fs_markets #l_es EM { background-position: -40px 0}
+            #fs_markets #l_de EM { background-position: -60px 0}
+            #fs_markets #l_tr EM { background-position: -80px 0}
+            #fs_markets #l_bg EM { background-position: -100px 0}
+        #f_reports .fieldset.last LABEL { background: none; margin-bottom: 10px; padding: 6px 0 0; min-height: 24px}
+
+#f_login { background: #FFF; padding: 30px 40px 0}
+	#f_login .a_forgot { float: right; margin-top: .85em}
+    #f_login .alert { float: right; margin-top: 1.77em; padding: 12px 20px 12px 60px; height: 20px; max-height: 16px; min-height: 16px; width: 220px}
+    #f_login FIELDSET { width: 320px}
+	#f_login .txt { display: block; font-size: 138.5%; margin: 5px 0 20px; padding: 8px 7px; height: auto; width: 304px} 
+        
+INPUT.txt { background: url(/a/projects/offside/img/bg-input.png) repeat-x; border: 1px solid #D9DCE0; padding: 7px 4px 0; height: 21px}
+ 	.txt:focus { background: none #F5F5FF}
+
+/* Date Picker */
+#dp_div { background: #FFF url(/a/projects/offside/img/bg-datepick.png) repeat-x; border: 1px solid #D9DCE0; display: none; text-align: center; padding: 0 20px 20px; right: 40px; z-index: 100}
+    #dp_div A { cursor: pointer; text-decoration: none}
+
+.dp_control { display: none}
+.dp_links { position: absolute; top: 0; left: 0}
+	.dp_current { display: none}
+    .dp_prev, .dp_next { position: absolute; top: 5px; height: 16px; width: 16px; z-index: 100}
+    	.dp_prev A, .dp_next A { background: url(/a/projects/offside/img/greys.png) no-repeat; display: block; text-indent: -430em; height: 16px; width: 16px}
+		.dp_prev A { background-position: -30px 0}
+		.dp_next A { background-position: -50px 0}
+	.dp_prev { left: 7px}
+	.dp_next { right: 7px}
+
+.dp_header { font: 85% Tahoma, Geneva, Arial, sans-serif; padding: 4px 0; min-height: 1.75em}
+	.dp_header SELECT { font-size: 100%; margin: 0 .2em}
+	.dp_header SPAN { position: relative; top: 3px}
+
+.dp_one_month { float: left; width: 15em}
+.dp_new_row { clear: left}
+
+.dp { border: 0 none; margin: 0}
+.dp, .dp_control, .dp_links, .dp_header { clear: both; color: #fff; float: left; width: 100%}
+	.dp THEAD { background: #FFF}
+		.dp THEAD TH { color: #0080D9; font-weight: bold; padding: 6px}
+    .dp TD, .dp TH { border-right: none; text-align: center}
+        .dp A { display: block; color: #525559; width: 100%}
+		.dp_today { background: #EEF1F5}
+		.dp_current_day, .dp_current_day A { background: #525559; color: #FFF !important}
+.dp_disabled { background: white; filter: alpha(opacity=50); opacity: 0.5; position: absolute; z-index: 100}
+
+/* Tables -------------------------------------------------------------------------------------------------------------------*/	
+TABLE { background: #FFF; border: 1px solid #D9DCE0; border-collapse: collapse; empty-cells: show; line-height: normal; margin: 0 auto 1.33em; width: 100% }
+	CAPTION { font-weight: bold; margin: 0 auto; padding-bottom: 0.5em}
+	THEAD { background-color: #525559}
+			.even { background: #EEF1F5}
+			TD, TH { border-right: 1px solid #CCCFD3; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top; padding: 6px}
+				THEAD TH { color: #EEF1F5; font: 85% Tahoma, Geneva, Arial, sans-serif; padding: 5px 6px 4px}
+                
+.sortable THEAD TH { cursor: pointer}
+.sorttable_sorted, .sorttable_sorted_reverse { background: #6E7074; color: #ECEEF2}
+#sorttable_sortrevind { background: url(/a/projects/offside/img/greys.png) no-repeat -90px 0; float: right; padding: 0 .3em}
+#sorttable_sortfwdind { background: url(/a/projects/offside/img/greys.png) no-repeat -70px 0; float: right; padding: 0 .3em}
+				
+/* Lists --------------------------------------------------------------------------------------------------------------------*/
+DL, DD.last { margin: 0 0 1.4em}
+	DT { font-weight: bold}
+    	DT A { color: #535559}
+	DT, DD { margin: 0 0 .4em}
+
+LI { margin-bottom: .4em}
+
+OL { margin: 0 0 1em 1.5em; padding: 0}
+
+UL { list-style-image: url(/a/projects/offside/img/bullet.gif); margin: 0 0 1.4em; padding: 0}
+
+/* Clearers -----------------------------------------------------------------------------------------------------------------*/
+.cfx:after { clear: both; content: "."; display: block; font-size: 0; line-height: 0; height: 0; visibility: hidden}
+.cfx { display: inline-block}
+/* Hides from IE-mac \*/
+*HTML .cfx { height: 1%}
+.cfx { display: block}
+/* End hide from IE Mac */
+
+/* Firefox & IE -------------------------------------------------------------------------------------------------------------*/
+BUTTON STRONG
+{ display: -moz-inline-stack;  *display: inline; _overflow: hidden; zoom: 1}
+
+/* Firefox ------------------------------------------------------------------------------------------------------------------*/
+/* Forms */
+BUTTON::-moz-focus-inner { border: none /* overrides extra padding */}
+@-moz-document url-prefix() {
+BUTTON STRONG { line-height: 40px; margin-left: -2px}
+}
+
+/* Opera, Safari, Chrome ----------------------------------------------------------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+BUTTON STRONG { margin-top: -1px}
+}
+
+/* Opera --------------------------------------------------------------------------------------------------------------------*/
+HTML:first-child BUTTON STRONG { margin-top: 0}
+
+/* IE -----------------------------------------------------------------------------------------------------------------------*/
+#f_reports .fieldset#fs_markets LABEL { zoom: 1}
+#f_reports .fieldset.last LABEL { _height: 24px}
+
+*HTML #f_reports { padding: 30px 0 0}
+
+*HTML .dp_prompt { width: 15em}
+.dp_cover { display: none; display/**/: block; filter: mask(); position: absolute; top: -1px; left: -1px; height: 187px; width: 187px; z-index: -1}
+
+/* Png */
+*HTML #f_reports #l_aggregate EM { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/projects/offside/img/alpha/globe.png'), sizingMethod='scale')}

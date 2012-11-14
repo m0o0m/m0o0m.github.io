@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* Hide -----------------------------------------------------------------------------------------------------------------------------*/
+#front #header A, #header DIV, #sidebar .pull_quote, #footer, DIV.cap, #archive, #phone, #sidebar .box, #sidebar H3 { display: none}
+#front #sidebar .box, #front #sidebar H3, #clients #sidebar .box, #clients #sidebar H3, #company #sidebar .box, #company #sidebar H3, #community #sidebar .box, #community #sidebar H3, #services #sidebar .box, #services #sidebar H3
+{ display: block}
+
+BODY { background: #F2F2F5 none !important; color: #565659; font: x-small/140% Tahoma, Geneva, Arial, sans-serif; font-size/**/:/**/ small; text-align: left; margin: 0; padding: 0}
+H1 { font: bold 120% Arial, Geneva, Helvetica, sans-serif}
+	#header A H1 { display: inline}
+H2 { font: bold 105% Arial, Geneva, Helvetica, sans-serif; text-transform: none}
+H3 { font-size: 85%}
+DL, LI, P, TABLE { font-size: 85%}
+
+/* Blocks ---------------------------------------------------------------------------------------------------------------------------*/
+#container { margin: 5%; max-width: none; min-width: 10%; width: 90%}
+	#main { margin-right: 0; padding-left: 0}
+		.col1_2, .col2_2 { float: none; width: 100%}
+		.col1_3, .col2_3, .col3_3 { float: none; width: 100%}
+
+/* Sidebar --------------------------------------------------------------------------------------------------------------------------*/
+#sidebar { float: none; padding: 0; width: auto}
+
+#sidebar H1 { color: #89898C; text-align: left; padding: /*0 0 5.5em*/ 0 0 4em; height: auto}
+#sidebar H1 A { background: url(/a/projects/polylog/img/handheld/logo.gif) no-repeat; /**/ display: block; text-indent: -4600em; margin: 0 0 10px; /**/ height: 27px; width: 98px}
+#sidebar H1 SPAN { white-space: normal}
+
+#sidebar H3 { background: transparent; color: #565659; margin-top: 1.33em}
+	#sidebar H3 A, #sidebar H3 SPAN, #front #sidebar H3 A { background: none; color: #565659; padding: 0}
+
+/* Main menu ------------------------------------------------------------------------------------------------------------------------*/
+#main_menu { background: #4066B2 none; padding: 0; position: absolute !important; top: 5.5em; left: 0; height: auto; width: 100%}
+	#main_menu .btn, #main_menu .btn:hover { background: none !important; margin: 0; padding: 0; height: auto}
+		#main_menu .btn A, #main_menu .btn A:visited { background: none !important; color: #F2F2F5; text-align: left; text-decoration: none; margin: 0 !important; padding: .3em; width: auto !important}
+		#main_menu .btn A:hover { background: #5980CC !important}
+		#main_menu .btn:hover A { background: none}
+			#main_menu .btn SPAN { background: none !important; display: inline; text-indent: 0; height: auto}
+
+#main_menu .btn:hover UL { display: none}
+
+#front .btn#btn_home, .services .btn#btn_services, .company .btn#btn_company, .press .btn#btn_company, .news .btn#btn_company, .clients .btn#btn_clients, .community .btn#btn_community
+{ background: none; font-weight: bold}
+
+#btn_home, #btn_services, #btn_clients, #btn_company, #btn_community { width: auto !important}
+
+/* Header ---------------------------------------------------------------------------------------------------------------------------*/
+#header { background: none; display: block; height: auto}
+	#header H1 { display: block; padding-right: 0; position: static}
+			#header H1 A { color: #565659; text-decoration: none; padding: 0; position: static}
+
+/* Body Copy ------------------------------------------------------------------------------------------------------------------------*/
+P.lead { font-size: 85%}
+STRONG.h2 { color: #727274; font-size: 100%; text-transform: none}
+
+.box { background: transparent none}
+	#main .box { float: left; margin: 2px 20px 10px 0; width: 203px}
+		#main .box H2 { background: url(/a/projects/polylog/img/handheld/box-h2.gif) no-repeat; margin: 0; padding: 16px 15px 3px}
+		#main .box P { margin: 0 15px 1.33em}
+
+.enlarged_click_area A SPAN { background: url(/a/projects/polylog/img/handheld/arrow-fwd.gif) right center no-repeat}
+
+/* Lists ----------------------------------------------------------------------------------------------------------------------------*/		
+UL.clients, UL.box { list-style: url(/a/projects/polylog/img/bullet.gif) outside                                                                !important; list-style-type: none; margin: 0 0 1.33em 16px; padding: 0}
+	UL.clients LI { background-image: none !important; padding: 0 !important}
+	UL.ul LI { background: none; padding: 0 0 .3em}

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+BODY { line-height: 140%}
+*HTML BODY { behavior: url("/a/js/csshover.htc")}
+BLOCKQUOTE, .box, .pull-quote { background: #FFF; margin: 0 0 1.33em; padding: 15px}
+CODE, PRE { font-size: 110%}
+DFN { background: url(/a/img/concepts/ico-help.gif) no-repeat right center; cursor: help; font-style: normal; font-style: normal; padding-right: 1em; position: relative}
+	DFN SPAN.dt, DFN STRONG.dt { border-bottom: 1px dotted #535559}
+		A DFN SPAN.dt { border-bottom: 0 none}
+	DFN .title { background: #FFF; border: 1px solid #E1E3E7; border-bottom-width: 2px; display: none; font: 11px Tahoma, Geneva, Arial, sans-serif; padding: 15px; position: absolute; top: 1.6em; left: 0; width: 200px; width/**/:/**/ 168px}
+	DFN:hover .title { display: block; z-index: 2}
+	DFN.self_dfn { background: none; cursor: default; padding-right: 0}
+EM { background: #FFC; font-style: normal; padding:	.1em .4em}
+H4 { color: #86888C; float: none; margin: 0 0 .4em}
+H5 { font-weight: normal; font-size: 100%; text-transform: uppercase; margin: 0}
+HR { border: none 0; border-top: 1px solid #C6C8CC; height: 1px; margin: 1.33em 0} 
+INPUT { vertical-align: middle}
+P:target, LI:target { background: #FFC}
+PRE { white-space: normal}
+Q:before{ content: no-open-quote}
+Q:after{ content: no-close-quote}
+STRONG { color: #4F6800}
+SUP { font-size: 80% !important; *font-size: 100% !important; line-height: 1; position: relative; bottom: 1.6ex; bottom/**/:/**/ 1ex; vertical-align: baseline; _vertical-align: bottom; height: 0}
+
+/* Lists -----------------------------------------------------------------------------------------------------------*/
+DL, DD { margin: 0 0 1.33em}
+	DT { float: left; font-weight: bold; margin: 0 .4em 0 0}
+		DD UL LI { margin-bottom: 0}
+
+OL { margin: 0 0 1.33em; padding: 0}
+	LI OL { margin-bottom: 0}
+    OL LI { margin-left: 2em}
+	OL OL { list-style-type: lower-alpha}
+    OL.unmarked { list-style-type: none}
+	TFOOT OL { *margin-left: 1.8em}
+
+	LI P.last { margin-bottom: 0}
+	LI UL { margin-bottom: .4em}
+    UL LI { margin-left: 0}
+    UL.unmarked, UL.titled { list-styl-image: none; list-style-type: none}
+	.inline LI	{ display: inline; margin: 0 .3em 0 0}
+    
+/* Body Copy -------------------------------------------------------------------------------------------------------*/
+.byline, .comment, .footnote { color: #7A7C80}
+.caption { margin-bottom: .4em}
+
+.left { float: left}
+.right { float: right}
+
+.nowrap { white-space: nowrap}
+
+/* Tables ----------------------------------------------------------------------------------------------------------*/	
+TABLE { background: #FFF; border: 1px solid #CDCFD3; border-collapse: collapse; empty-cells: show; line-height: normal; margin: 0 0 1.33em 1px; width: 99%}
+LI TABLE { margin: 1em 0}
+	TABLE * { font-size: 100%; text-align: left}
+	.bobtail { table-layout: fixed}
+	CAPTION { font-weight: bold; margin: 0 auto; padding-bottom: 0.5em}
+	THEAD { background: #E1E3E7}
+			.even { background: #EEF0F4}
+            .th { background: #DFE1E5}
+			TD, TH { border-right: 1px solid #CDCFD3; font-weight: normal; vertical-align: top; padding: 5px}
+				THEAD TH, .txt-small { font: 85% Tahoma, Geneva, Arial, sans-serif}				
+				TFOOT TD { border: 0 none; border-top: 1px solid #CCC; text-align: left !important}
+				TR.caption TH { background: #E7E9ED; border-top: 1px solid #CDCFD3; font-weight: bold}
+				.resume TH { font-weight: bold}
+					.resume THEAD TH { font-weight: normal}
+				.alpha-num TD, .alpha-num THEAD TH, .num { text-align: right}
+				.alpha-num TD.alpha, .alpha-num TH.alpha, .alpha-num TD.date, .alpha-num TFOOT TD { text-align: left}
+				.bobtail TD, TD.bobtail, TH.bobtail { text-align: left !important; white-space: nowrap; overflow: hidden}
+				.border-b { border-bottom: 1px solid #CDCFD3}
+				.chart TD, .chart TH { border-bottom: 1px solid #CDCFD3}
+				.indent { padding-left: 2em}

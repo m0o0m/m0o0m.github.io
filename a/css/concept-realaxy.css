@@ -1,0 +1,170 @@
+BODY {
+  behavior: url("/a/js/csshover.htc");
+  color: #535559;
+  font: 87.5%/1.5em Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#container {
+  text-align: left;
+  margin: 0 auto;
+  padding: 51px 30px 6em;
+  width: 640px;
+}
+A {
+  color: #336699;
+}
+BLOCKQUOTE,
+.box {
+  background: #ECEEF2;
+  margin: 0 0 1.5em;
+  padding: 15px;
+}
+BLOCKQUOTE {
+  font-size: 114.3%;
+}
+H1,
+H2 {
+  font-weight: normal;
+  line-height: 120%;
+}
+H1 {
+  font-size: 186%;
+  margin: 1.28em 0 0.35em;
+}
+H2 {
+  font-size: 128.6%;
+  margin-bottom: 0.1em;
+}
+H3 {
+  font-size: 100%;
+  margin: 0;
+}
+IMG {
+  border: 0;
+}
+P {
+  margin: 0 0 1.5em;
+}
+P.caption {
+  margin-bottom: 0.4em;
+}
+STRONG.caption {
+  text-transform: uppercase;
+}
+.button,
+.lead,
+BLOCKQUOTE {
+  font-weight: bold;
+}
+.comment,
+.small {
+  color: #7a7c80;
+}
+.company_name {
+  text-transform: uppercase;
+}
+.small {
+  font-size: 92.9%;
+  line-height: 150%;
+}
+/* Lists -----------------------------------------------------------------------------------------------------------*/
+OL,
+UL {
+  margin: 0 0 1.5em -2.85em;
+  *margin-left: 0;
+}
+OL UL {
+  margin-bottom: 0;
+}
+TD OL {
+  margin: 0 0 1.33em 1.5em;
+  padding: 0;
+}
+UL UL {
+  margin: 0 0 0 -1.85em;
+  *margin-left: 1.15em;
+}
+UL {
+  list-style-type: disc;
+}
+LI {
+  margin-bottom: 0.4em;
+}
+.unmarked {
+  list-style-image: none;
+  list-style-type: none;
+}
+/* Tables ----------------------------------------------------------------------------------------------------------*/TABLE {
+  background: #FFF;
+  border: 1px solid #CDCFD3;
+  border-collapse: collapse;
+  empty-cells: show;
+  margin: 0 auto 1.5em 0;
+  width: 569px;
+}
+TABLE * {
+  font: 14px;
+  font: 100%;
+  text-align: left;
+}
+.bobtail {
+  table-layout: fixed;
+}
+CAPTION {
+  font-weight: bold;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+}
+THEAD {
+  background: #a0a2a6;
+}
+.even {
+  background: #eef0f4;
+}
+TD,
+TH {
+  border-right: 1px solid #CDCFD3;
+  font-weight: normal;
+  vertical-align: top;
+  padding: 6px;
+}
+THEAD TH {
+  color: #f2f2f5;
+}
+TFOOT TD {
+  border: 0 none;
+  border-top: 1px solid #CCC;
+  text-align: left !important;
+}
+TR.caption TH {
+  background: #E7E9ED;
+  border-top: 1px solid #CDCFD3;
+  font-weight: bold;
+}
+.alpha-num TD,
+.alpha-num THEAD TH,
+.num {
+  text-align: right;
+}
+.alpha-num TD.alpha,
+.alpha-num TH.alpha,
+.alpha-num TD.date,
+.alpha-num TFOOT TD {
+  text-align: left;
+}
+.bobtail TD,
+TD.bobtail,
+TH.bobtail {
+  text-align: left !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.border-b {
+  border-bottom: 1px solid #cdcfd3;
+}
+.chart TD,
+.chart TH {
+  border-bottom: 1px solid #cdcfd3;
+}

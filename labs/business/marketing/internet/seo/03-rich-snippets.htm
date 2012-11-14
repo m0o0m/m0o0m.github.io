@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Расширенные описания</title>
+<link href="/labs/a/css/business.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Расширенные описания веб-страниц</h1>
+<a href="http://schema-creator.org/" target="_blank"> Генератор расширенных описаний
+</a>
+<p>Расширенные описания — это дополнительная информация, которая вместе с фрагментом текста отображается под названием страниц в результатах поиска. Например, в расширенном описании страницы с рецептом может отображаться время приготовления блюда, его фотография и оценка. В расширенном описании ресторана — средняя оценка и диапазон цен, а в расширенном описании музыкального альбома — список песен и ссылка для воспроизведения каждой из них. ПС создают расширенные описания на основе содержания веб-страниц и специальной разметки. <strong>Расширенные описания увеличивают CTR результатата поиска до 30%.</strong></p>
+<img src="/labs/a/img/marcom/rich_snippets.png" width="500" height="237" alt="" />
+<p class="caption">Для специальной разметки материалов рекомендуется формат микроданных по стандартам <a href="http://help.yandex.ru/webmaster/?id=1122752" target="_blank">schema.org</a> и <a href="http://www.schema.org/" target="_blank">schema.org</a> для видео. Можно помечать:<a href="http://support.google.com/webmasters/bin/answer.py?answer=146750"></a></p>
+<ul>
+<li><a href="http://support.google.com/webmasters/bin/answer.py?answer=146861">Компании и организации</a></li>
+<li><a href="http://support.google.com/webmasters/bin/answer.py?answer=146750">Товары</a></li>
+<li><a href="http://support.google.com/webmasters/bin/answer.py?answer=146646">Люди</a></li>
+<li><a href="http://support.google.com/webmasters/bin/answer.py?answer=1408986">Информация об авторе</a></li>
+<li><a href="http://support.google.com/webmasters/bin/answer.py?answer=164506">Мероприятия</a></li>
+<li><a href="http://support.google.com/webmasters/bin/answer.py?answer=146645">Отзывы</a></li>
+<li><a href="http://support.google.com/webmasters/bin/answer.py?answer=173379">Рецепты</a></li>
+<li><a href="http://support.google.com/webmasters/bin/answer.py?answer=1623047">Музыка</a></li>
+<li><a href="http://support.google.com/webmasters/bin/answer.py?answer=162163">Видео</a>.</li>
+</ul>
+<h2>Специальная разметка — микроданные</h2>
+<p><a href="http://dev.w3.org/html5/md/" title="Спецификация микроданных HTML5">Спецификация микроданных HTML5</a> и ее развитие в проекте <a href="http://help.yandex.ru/webmaster/?id=1122752">schema.org</a> — это способ выделения специального типа информации: отзывов, мероприятий, личных данных и т.п. — а также их свойств (например, место проведения, время начала, название и категория). Микроданные добавляются с помощью атрибутов в простых тегах HTML (часто <code>&lt;span&gt;</code> или <code>&lt;div&gt;</code>).</p>
+<pre>
+&lt;div itemscope itemtype=&quot;http://data-vocabulary.org/Person&quot;&gt;
+   Мое имя &lt;span itemprop=&quot;name&quot;&gt;Боб Смит&lt;/span&gt;, 
+   но друзья зовут меня &lt;span itemprop=&quot;nickname&quot;&gt;Смитти&lt;/span&gt;.
+  Вот мой сайт: 
+   &lt;a href=&quot;http://www.example.com&quot; itemprop=&quot;url&quot;&gt;www.example.com&lt;/a&gt;.
+   Я живу в 
+   &lt;span itemprop=&quot;address&quot; itemscope itemtype=&quot;http://data-vocabulary.org/Address&quot;&gt;
+      &lt;span itemprop=&quot;locality&quot;&gt;Альбукерке&lt;/span&gt;, 
+      &lt;span itemprop=&quot;region&quot;&gt;Нью-Мексико&lt;/span&gt; 
+   &lt;/span&gt;
+   и работаю &lt;span itemprop=&quot;title&quot;&gt;инженером&lt;/span&gt;
+  в &lt;span itemprop=&quot;affiliation&quot;&gt;ACME Corp&lt;/span&gt;.
+&lt;/div&gt;
+</pre>
+<ul>
+<li>В первой строке <code>itemscope</code> указывает, что <code>&lt;div&gt;</code> является элементом. <code>itemtype=&quot;http://data-vocabulary.org/Person</code> указывает, что это элемент &quot;человек&quot;.</li>
+<li>Каждое свойство элемента &quot;человек&quot; отмечается атрибутом <code>itemprop</code>. Например, <code>itemprop=&quot;name&quot;</code>.</li>
+<li>Свойство <code>address</code> является также и вложенным элементом (атрибут <code>itemscope</code>), содержащим собственный набор свойств.</li>
+</ul>
+<h3>Информация о дате и времени</h3>
+<p>Элемент <code>time</code> с атрибутами <code>itemprop=&quot;startDate&quot;</code> и <code>datetime</code>, значение которого записывается в <a href="http://www.w3.org/QA/Tips/iso-date">формате даты ISO</a>. В удобном для для человека виде дата записывается между дескрипторами time.</p>
+<pre>&lt;time itemprop=&quot;startDate&quot; datetime=&quot;2009-10-15T19:00-08:00&quot;&gt;15 октября 2009 г., 19:00&lt;/time&gt;</pre>
+<h3>Невидимое содержание</h3>
+<p>Некоторая информация (например, максимальный балл в рейтингах) указывается с помощью элемента meta</p>
+<pre>
+&lt;div itemprop=&quot;rating&quot; itemscope itemtype=&quot;http://data-vocabulary.org/Rating&quot;&gt;
+   Оценка: &lt;span itemprop=&quot;value&quot;&gt;8,5&lt;/span&gt;
+   &lt;meta itemprop=&quot;best&quot; content=&quot;10&quot; /&gt;
+&lt;/div&gt;</pre>
+<p>Подобным же образом поисковым системам сообщается о продолжительности мероприятия в понятном им <a href="http://en.wikipedia.org/wiki/ISO_8601">формате ISO</a>.</p>
+<div class="action">
+<pre>
+Продолжительность: &lt;span&gt;1 час 30 минут&lt;meta itemprop=&quot;duration&quot; content=&quot;PT1H30M&quot; /&gt;&lt;/span&gt;
+</pre>
+</div>
+<h2>Типичные случаи использования разметки для расширенных описаний </h2>
+<p></p>
+<ul>
+<li><strong>Компании</strong> — адрес и отзыв клиента.</li>
+<li><strong>Люди</strong> — телефон, фотография.</li>
+<li><strong>Автор</strong> — фотография, имя, ссылка на другие материалы.</li>
+<li><strong>Товар</strong> — фотография, рейтинг, ценовой диапозон.</li>
+<li><strong>Событие</strong> — дата, место и время.</li>
+<li><strong>Рестораны</strong> — средний рейтинг, ценовой диапазон, звёзды.</li>
+<li><strong>Рецепты</strong> — фото, рейтинг, время приготовления.</li>
+<li><strong>Видео</strong> — миниатюра.</li>
+<li><strong>Музыкальные альбомы</strong> — ссылки на слова песен и ознакомительные фрагменты для прослушивания.</li>
+</ul>
+<h2>Компании и организации</h2>
+<p>Можно передать в расширенные описания  название, адрес, URL и телефонный номер. </p>
+<table>
+<tbody>
+<tr>
+<td><strong>Свойство<br />
+(выделенные <strong>жирным</strong>,&nbsp;являются обязательными)</strong></td>
+<td><strong>Описание</strong></td>
+</tr>
+<tr>
+<td><code><strong>name</strong></code></td>
+<td>Название компании.</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>Ссылка на главную страницу организации.</td>
+</tr>
+<tr>
+<td valign="top"><code>address</code></td>
+<td valign="top">Местонахождение компании. Может содержать вложенные свойства <code>street-address</code>, <code>locality</code>, <code>region</code>, <code>postal-code</code> и <code>country-name</code>.</td>
+</tr>
+<tr>
+<td><code>tel</code></td>
+<td>Телефонный номер компании или организации. </td>
+</tr>
+<tr>
+<td><code>geo</code></td>
+<td>Указывает географические координаты. Включает два элемента: <code>latitude</code> и <code>longitude</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3>Пример</h3>
+<pre>&lt;div itemscope itemtype=&quot;http://data-vocabulary.org/Organization&quot;&gt; 
+    &lt;span itemprop=&quot;name&quot;&gt;L'Amourita Pizza&lt;/span&gt;
+    Адрес: 
+    &lt;span itemprop=&quot;address&quot; itemscope 
+      itemtype=&quot;http://data-vocabulary.org/Address&quot;&gt;
+      &lt;span itemprop=&quot;street-address&quot;&gt;123 Мэйн-стрит&lt;/span&gt;, 
+      &lt;span itemprop=&quot;locality&quot;&gt;Альбукерке&lt;/span&gt;, 
+      &lt;span itemprop=&quot;region&quot;&gt;Нью-Мексико&lt;/span&gt;.
+    &lt;/span&gt;
+    Телефон: &lt;span itemprop=&quot;tel&quot;&gt;206-555-1234&lt;/span&gt;.
+    &lt;a href=&quot;http://www.example.com&quot; itemprop=&quot;url&quot;&gt;http://pizza.example.com&lt;/a&gt;.
+&lt;/div&gt;
+</pre>
+<h2>Люди</h2>
+<p>Можно передать в расширенные описания имя, должность и адрес. </p>
+<table>
+<tbody>
+<tr>
+<td valign="top"><p><strong>Свойство<br />
+</strong>Свойства, выделенные <strong>жирным</strong>, являются обязательными. Кроме того, должны присутствовать как минимум два из следующих компонентов:</p>
+<ul>
+<li><code>title</code> или <code>role</code></li>
+<li><code>affiliation</code> (<code>org</code>)</li>
+<li> <code>address</code></li>
+</ul></td>
+<td valign="top"><strong>Описание</strong></td>
+</tr>
+<tr>
+<td valign="top"><code><strong>name</strong></code></td>
+<td valign="top">Имя</td>
+</tr>
+<tr>
+<td valign="top"><code>nickname</code></td>
+<td valign="top">Псевдоним</td>
+</tr>
+<tr>
+<td valign="top"><code>photo</code></td>
+<td valign="top">Ссылка на изображение</td>
+</tr>
+<tr>
+<td valign="top"><code>title</code></td>
+<td valign="top">Должность (например, финансовый менеджер)</td>
+</tr>
+<tr>
+<td valign="top"><code>role</code></td>
+<td valign="top">Специализация (например, бухгалтер) </td>
+</tr>
+<tr>
+<td valign="top"><code>url</code></td>
+<td valign="top">Ссылка на веб-страницу, например на личный сайт этого человека.</td>
+</tr>
+<tr>
+<td valign="top"><code>affiliation</code></td>
+<td valign="top">Название организации, с которой связан этот человек (например, место работы).</td>
+</tr>
+<tr>
+<td><code>friend</code></td>
+<td>Указывает на социальное отношение между этим и другим человеком. </td>
+</tr>
+<tr>
+<td><code>contact</code></td>
+<td> Указывает на социальное отношение между этим и другим человеком. </td>
+</tr>
+<tr>
+<td><code>acquaintance</code></td>
+<td>Указывает на социальное отношение между этим и другим человеком. </td>
+</tr>
+<tr>
+<td valign="top"><code>address</code></td>
+<td valign="top">Местонахождение человека. Может иметь вложенные свойства <code>street-address</code>, <code>locality</code>, <code>region</code>, <code>postal-code</code> и <code>country-name</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3>Разметка содержания</h3>
+<pre>&lt;div itemscope itemtype=&quot;http://data-vocabulary.org/Person&quot;&gt;
+  Мое имя &lt;span itemprop=&quot;name&quot;&gt;Боб Смит&lt;/span&gt;, 
+  но друзья зовут меня &lt;span itemprop=&quot;nickname&quot;&gt;Смитти&lt;/span&gt;.
+  Вот моя главная страница: 
+  &lt;a href=&quot;http://www.example.com&quot; itemprop=&quot;url&quot;&gt;www.example.com&lt;/a&gt;.
+  Я живу в 
+  &lt;span itemprop=&quot;address&quot; itemscope
+    itemtype=&quot;http://data-vocabulary.org/Address&quot;&gt;
+    &lt;span itemprop=&quot;locality&quot;&gt;Альбукерке&lt;/span&gt;, 
+    &lt;span itemprop=&quot;region&quot;&gt;Нью-Мексико&lt;/span&gt; 
+  &lt;/span&gt;
+  и работаю &lt;span itemprop=&quot;title&quot;&gt;инженером&lt;/span&gt;
+  в &lt;span itemprop=&quot;affiliation&quot;&gt;ACME Corp&lt;/span&gt;.
+  Мои друзья:
+  &lt;a href=&quot;http://darryl-blog.example.com&quot; rel=&quot;friend&quot;&gt;Дэррил&lt;/a&gt;, 
+  &lt;a href=&quot;http://edna-blog.example.com&quot; rel=&quot;friend&quot;&gt;Эдна&lt;/a&gt;
+&lt;/div&gt;</pre>
+<h2>Товары</h2>
+<p>Можно передать в расширенные описания цену, наличие, оценки и отзывы покупателей. (В марте 2012 расширенные описания торговых страниц доступны только в США.)</p>
+<ul>
+<li>Разметка должна осуществляться на странице конкретного товара. Разметка на страницах со списками товаров не поддерживается.</li>
+<li>Категория товаров только для взрослых не поддерживается.</li>
+<li>При наличии единственного отзыва о товаре в качестве имени автора должно быть указано реальное имя человека (например, &quot;Иван Петров&quot;) или название организации (например, &quot;CNET Reviewers&quot;).</li>
+</ul>
+<h3 id="products">Товарные предложения</h3>
+<p>Товарное предложение включает элемент <a href="#product_properties">Product</a> (содержащий информацию о товаре, например его название, бренд и модель), а также <em>один</em> из следующих элементов:</p>
+<ul>
+<li><a href="#offer_properties">Offer</a> (содержит цену и другие сведения о предложении);</li>
+<li><a href="#offer-aggregate_properties">Offer-aggregate</a> (сводная информация о нескольких предложениях одного товара с указанием самой низкой и самой высокой цены).</li>
+</ul>
+<p>Элемент Product может включать элемент Offer или Offer-aggregate; равно как и элементы Offer или Offer-aggregate могут содержать один или несколько элементов Product. Можно выбрать тот вариант, который  больше подходит.</p>
+<h3 id="product_properties">Product</h3>
+<br />
+<table>
+<tbody>
+<tr>
+<th>Свойство<br />
+Свойства, выделенные <strong>жирным</strong>, являются обязательными. </th>
+<th>Описание</th>
+</tr>
+<tr>
+<td><code><strong>name</strong></code></td>
+<td>Название товара.</td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td>URL фотографии товара.</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>Описание товара.</td>
+</tr>
+<tr>
+<td><code>brand</code></td>
+<td>Бренд товара. Может содержать вложенные данные об организации (см. выше). Google рекомендует указывать <code>бренд</code> и как минимум один <code>идентификатор</code> (см. ниже) для каждого товара.</td>
+</tr>
+<tr>
+<td><code>identifier</code></td>
+<td>Идентификатор товара. Google рекомендует указывать <code>бренд</code> и как минимум один <code>идентификатор</code> для каждого товара.
+<p>Допустимые типы идентификаторов</p>
+<ul>
+<li><code>asin</code></li>
+<li><code>isbn</code></li>
+<li><code>mpn</code></li>
+<li><code>sku</code></li>
+<li><code>upc</code></li>
+</ul></td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>Категория товара, например &quot;<code>Books-Fiction</code>&quot;, &quot;<code>Tools</code>&quot; или &quot;<code>Cars</code>&quot;. Можно указать несколько категорий. Можно использовать собственную систему классификации, однако Google принимает категории, описанные <a href="http://www.google.com/support/merchants/bin/answer.py?answer=160081">в этой статье</a>.</td>
+</tr>
+<tr>
+<td><code>review</code></td>
+<td>Вложенный элемент <a href="../../../../../pro/marketing/internet/answer.py?answer=146645">Review-aggregate</a> содержит отзывы о товаре (например, среднюю оценку). Если товар получил несколько отзывов, нужно разметить с помощью элемента Review-aggregate сводные данные (например, среднюю оценку), а не отдельные отзывы. </td>
+</tr>
+<tr>
+<td><code>offerDetails</code></td>
+<td>Предложение о продаже товара. Содержит вложенный элемент <a href="#offer_properties">Offer</a> или <a href="#offer-aggregate_properties">Offer-aggregate</a>.</td>
+</tr>
+</tbody>
+</table>
+<br />
+<h3 id="offer_properties">Offer и Offer-aggregate</h3>
+<br />
+<table>
+<tbody>
+<tr>
+<th>Свойство</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td><code><strong>price<br />
+</strong>(только Offer) </code></td>
+<td>Цена товара. Число с плавающей точкой. Цену можно указать не только в содержании тега, но также в дополнительном атрибуте содержания в автоматически считываемом формате (в этом случае в качестве разделителя следует использовать только десятичную точку).</td>
+</tr>
+<tr>
+<td><code><b>lowPrice </b>(только Offer-aggregate) </code></td>
+<td>Самая низкая цена среди всех доступных предложений. Число с плавающей точкой.</td>
+</tr>
+<tr>
+<td><code>highPrice (только Offer-aggregate) </code></td>
+<td>Самая высокая цена среди всех доступных предложений. Число с плавающей точкой.</td>
+</tr>
+<tr>
+<td><strong><code>currency</code></strong></td>
+<td>Валюта, в которой указана цена товара, в <a href="http://www.iso.org/iso/support/faqs/faqs_widely_used_standards/widely_used_standards_other/currency_codes.htm">трехбуквенном формате ISO</a>.</td>
+</tr>
+<tr>
+<td><code>offerCount<br />
+(только Offer-aggregate)</code></td>
+<td>Общее количество предложений данного товара.</td>
+</tr>
+<tr>
+<td><code>priceValidUntil (только Offer) </code></td>
+<td>Дата (в <a href="http://www.iso.org/iso/date_and_time_format">формате ISO</a>), после которой товар перестанет продаваться по заявленной цене. </td>
+</tr>
+<tr>
+<td><code>seller (только Offer) </code></td>
+<td>Продавец товара. Может содержать информацию о человеке или информацию об организации (см. выше).</td>
+</tr>
+<tr>
+<td><code>condition</code></td>
+<td>Допустимы любые текстовые значения. Однако если используется атрибут <code>condition</code>, то для атрибута <code>content</code> нужно выбрать одно из следующих распознаваемых значений:
+<ul>
+<li><code>new</code>;</li>
+<li><code>used</code>;</li>
+<li><code>refurbished</code>.</li>
+</ul>
+<p>Например:</p>
+<pre>&lt;span itemprop=&quot;condition&quot; content=&quot;new&quot;&gt;Совершенно новый!&lt;/span&gt;</pre></td>
+</tr>
+<tr>
+<td><code>availability (только Offer) </code></td>
+<td>Может быть указан любой текст, однако атрибут <code>content</code> может принимать только одно из следующих распознаваемых значений:
+<ul>
+<li><code>out_of_stock</code>;</li>
+<li><code>in_stock</code>;</li>
+<li><code>instore_only</code>;</li>
+<li><code>preorder</code>.</li>
+</ul></td>
+</tr>
+<tr>
+<td><code>quantity (только Offer) </code></td>
+<td>Количество товаров, доступных в рамках данного предложения.</td>
+</tr>
+<tr>
+<td><code>offerURL</code></td>
+<td>URL веб-страницы товара (с элементом Offer). (Не используйте <code>offerURL</code> для разметки, отображающейся непосредственно на странице товара.) </td>
+</tr>
+<tr>
+<td><code>identifier</code></td>
+<td>Идентификатор товара. Google рекомендует указывать <code>бренд</code> и как минимум один <code>идентификатор</code> для каждого товара.
+<p>Допустимые типы идентификаторов</p>
+<ul>
+<li><code>asin</code></li>
+<li><code>isbn</code></li>
+<li><code>mpn</code></li>
+<li><code>upc</code></li>
+<li><code>sku</code></li>
+</ul></td>
+</tr>
+<tr>
+<td><code>itemOffered</code></td>
+<td>Товар, выставленный на продажу. Это свойство обычно имеет вложенный элемент Product, однако может включать также другие элементы и свободный текст.</td>
+</tr>
+</tbody>
+</table>
+<br />
+<h3 id="offer-aggregate_properties"><br />
+</h3>
+<h3>Пример cтраницы одного товара</h3>
+<pre>&lt;div itemscope itemtype=&quot;http://data-vocabulary.org/Product&quot;&gt;
+  &lt;span itemprop=&quot;brand&quot;&gt;ACME&lt;/span&gt; &lt;span itemprop=&quot;name&quot;&gt;Эксклюзивная
+    наковальня&lt;/span&gt;
+  &lt;img itemprop=&quot;image&quot; src=&quot;anvil_executive.jpg&quot; /&gt;
+
+  &lt;span itemprop=&quot;description&quot;&gt;Эксклюзивная наковальня ACME отличается от классических моделей более стильным дизайном.
+    Она идеально подходит для мобильных предпринимателей,
+    которым нужно что-нибудь тяжелое, чтобы уронить с высоты.
+  &lt;/span&gt;
+  Категория: &lt;span itemprop=&quot;category&quot; content=&quot;Hardware &gt; Tools &gt; Anvils&quot;&gt;наковальни&lt;/span&gt;
+  Номер изделия: &lt;span itemprop=&quot;identifier&quot; content=&quot;mpn:925872&quot;&gt;
+    925872&lt;/span&gt;
+  &lt;span itemprop=&quot;review&quot; itemscope itemtype=&quot;http://data-vocabulary.org/Review-aggregate&quot;&gt;
+    &lt;span itemprop=&quot;rating&quot;&gt;4.4&lt;/span&gt; stars на основе &lt;span itemprop=&quot;count&quot;&gt;89
+      &lt;/span&gt; отзывов
+  &lt;/span&gt;
+
+  &lt;span itemprop=&quot;offerDetails&quot; itemscope itemtype=&quot;http://data-vocabulary.org/Offer&quot;&gt;
+    Обычная цена: 179.99 долл. США
+    &lt;meta itemprop=&quot;currency&quot; content=&quot;USD&quot; /&gt;
+    $&lt;span itemprop=&quot;average&quot;&gt;119.99&lt;/span&gt;
+    (только до &lt;time itemprop=&quot;priceValidUntil&quot; datetime=&quot;2010-11-05&quot;&gt;
+      5 ноября&lt;/time&gt;)
+    Продавец: &lt;span itemprop=&quot;seller&quot;&gt;Эксклюзивные товары&lt;/span&gt;
+    Состояние: &lt;span itemprop=&quot;condition&quot; content=&quot;used&quot;&gt;б/у, 
+      в отличном состоянии&lt;/span&gt;
+    &lt;span itemprop=&quot;availability&quot; content=&quot;in_stock&quot;&gt;В наличии! Закажите прямо сейчас!&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+</pre>
+<h3>Идентификаторы товара</h3>
+<p>В атрибуте <code>content</code> указать через двоеточие тип идентификатора (например, SKU или MPN) и его значение, например:</p>
+<pre>&lt;span itemprop=&quot;identifier&quot; content=&quot;mpn:12345-6789&quot;&gt;
+  Фабричный номер изделия: 12345-6789&lt;/span&gt;</pre>
+<h3>Невидимый текст</h3>
+<p>Чтобы выделить содержание, которое не должно отображаться на странице, применяется тег <code>meta</code>. Например, следующая запись сообщает Google, что цена указана в долларах США:</p>
+<pre>&lt;meta itemprop=&quot;currency&quot; content=&quot;USD&quot; /&gt;
+</pre>
+<h3>Страница сводного предложения (один товар – несколько продавцов, разные цены) </h3>
+<pre>&lt;div itemscope itemtype=&quot;http://data-vocabulary.org/Product&quot;&gt;
+ &lt;span itemprop=&quot;brand&quot;&gt;ACME&lt;/span&gt; &lt;span itemprop=&quot;name&quot;&gt;Эксклюзивная наковальня&lt;/span&gt;
+ &lt;img itemprop=&quot;image&quot; src=&quot;anvil_executive.jpg&quot; /&gt;
+
+ &lt;span itemprop=&quot;review&quot; itemscope
+    itemtype=&quot;http://data-vocabulary.org/Review-aggregate&quot;&gt;
+  Средняя оценка: &lt;span itemprop=&quot;rating&quot;&gt;4.4&lt;/span&gt; на основе
+  &lt;span itemprop=&quot;count&quot;&gt;89&lt;/span&gt; отзывов
+ &lt;/span&gt;
+
+ &lt;span itemprop=&quot;offerDetails&quot; itemscope itemtype=&quot;http://data-vocabulary.org/Offer-aggregate&quot;&gt;
+  от $&lt;span itemprop=&quot;lowPrice&quot;&gt;119,99&lt;/span&gt; до 
+  $&lt;span itemprop=&quot;highPrice&quot;&gt;199,99&lt;/span&gt;
+  &lt;meta itemprop=&quot;currency&quot; content=&quot;USD&quot; /&gt;
+ &lt;/span&gt;
+&lt;/div&gt;
+</pre>
+<h4>Для проверки правильности разметки существует <a href="http://www.google.com/webmasters/tools/richsnippets" target="new">специальный инструмент</a>.</h4>
+</body>
+</html>

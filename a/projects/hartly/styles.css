@@ -1,0 +1,21 @@
+.bg-menu { background-color: #CCD9E5}
+.bg-vr { background-color: #7F8C73}
+.bg-page { background-color: #D9E5CC}
+.bottomrow { background-color: #CCD9BF}
+.footer { font-family: Verdana, Tahoma, Arial, sans-serif; color: #4C997F; font-size: 11px; font-style: normal}
+.footer a { color: #4C997F}
+.footer a:hover { color: #4C997F}
+.height100pr { height: 100%}
+.middlerow { background-color: #E5F3D9}
+.toprow { background-color: #BFCCB2}
+.underline-none a { color: #005933; text-decoration: none}
+.underline-none a:visited { color: #005933; text-decoration: none}
+.underline-none a:hover { color: #596673; text-decoration: none}
+ADDRESS { font-family: Verdana, Tahoma, Arial, sans-serif; color: #4C997F; font-size: 11px; font-style: normal}
+A { color: #596673}
+A:visited { color: #4C997F}
+A:hover { color: #005933}
+BODY { background-color: #CCD9BF; margin: 0; padding: 0}
+IMG { border: 0 none}
+P { font-family: Verdana, Tahoma, Arial, sans-serif; color: #005933; font-size: 11px; margin-right: 4px; margin-left: 4px}
+TD, TH { font-family: Verdana, Tahoma, Arial, sans-serif; color: #005933; font-size: 11px}

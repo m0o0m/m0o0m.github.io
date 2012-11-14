@@ -1,0 +1,16 @@
+#footer { background: #E0E0D6; border: 1px solid #D6D6CC; border-bottom: 0 none; margin: 0 0 0 -480px; padding-top: 24px; position: absolute; bottom: 0; left: 50%; min-height: 296px; height: 296px; width: 958px}
+HTML>BODY #footer { height: auto}
+	#footer NAV { position: relative}
+		#footer .span { float: left; padding-bottom: 2em} 
+    		#footer .copy { margin: 0; position: absolute; bottom: 1.54em; left: 20px}
+			#footer .col { margin: 0; padding: 0 20px; width: 200px} 
+    		#footer DIV.first { padding-left: 19px}
+    		#footer DIV.last { padding-right: 19px}
+    		#footer .col UL { margin: 0; padding: 0}
+
+#footer .bnr A { background: url(/a/projects/sakh-invest-portal/img/banners/footer-01.png) no-repeat; display: block; text-indent: -4000em; margin-top: 1.54em; height: 60px; width: 200px}
+#footer .bnr_sakh_adm A { background-position: 0 0}
+#footer .bnr_investment_ministry A { background-position: 0 -60px}
+
+#footer H3 { margin-top: 1.54em}
+           

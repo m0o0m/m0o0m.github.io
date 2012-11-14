@@ -1,0 +1,65 @@
+@charset "UTF-8";
+FORM { margin: 0; padding: 0}
+	BUTTON,  .btn STRONG { cursor: pointer}
+	BUTTON, INPUT, SELECT, TEXTAREA { font: 107.7% Arial, Helvetica, sans-serif; vertical-align: middle}
+	BUTTON, INPUT.txt, .txt INPUT, LABEL, FORM SPAN.label, SELECT, TEXTAREA { display: block; margin-bottom: 20px}
+	FORM BR { clear: left; font-size: 20px; line-height: 20px}
+	INPUT.txt, .txt INPUT, TEXTAREA { border: 1px solid #626468; padding: 5px 7px 6px}
+	SELECT { border: 1px solid #626468; padding: 5px}
+
+/* Custom properties: BUTTON, .btn - background, height; BUTTON STRONG, .btn STRONG - background, line-height (height -1px), height */
+BUTTON, .btn { background: url(/a/projects/betplaynow/img/grey.png) no-repeat 100% -490px; border: 0 none; color: #BBBEC2; padding: 0 15px 0 0; overflow: visible !important; position: relative; height: 30px; width: auto}
+	.btn { display: inline-block; text-align: center; text-decoration: none !important}
+	BUTTON STRONG, .btn STRONG { background: url(/a/projects/betplaynow/img/grey.png) no-repeat 0 -450px; display: block; font-weight: normal; line-height: 29px; white-space: nowrap; position: relative; padding-left: 15px; height: 30px}
+  	  .small { background: url(/a/projects/betplaynow/img/grey.png) no-repeat 100% -420px; padding-right: 6px; height: 20px}
+      .small STRONG { background: url(/a/projects/betplaynow/img/grey.png) no-repeat 0 -390px; line-height: 19px; padding-left: 6px; height: 20px}
+      .btn:hover { color: #FFF}
+	BUTTON.close, BUTTON.view { text-indent: -4300em; padding: 0; height: 15px; width: 15px}
+    	BUTTON.close { background-position: 100% -1050px}
+		BUTTON.view { background-position: -1050px -1020px}
+		.closed BUTTON.view { background-position: -1080px -1020px}
+
+FIELDSET { border: 0 none; margin: 0; padding: 0 0 .6em; position: relative}
+
+FIELDSET.radio LABEL { margin-bottom: 0; width: auto}
+	FIELDSET.radio INPUT.date { margin-bottom: 0; width: 120px}
+    FIELDSET.radio INPUT.rb { position: absolute; top: .08em; left: -28px}
+
+LEGEND { color: #FC0; font-weight: bold; text-align: left; padding: 0 0 1em}
+
+LABEL { cursor: pointer}
+LABEL, FORM SPAN.label { display: block; margin-bottom: .6em}
+
+.alert { background: #46494D; margin-bottom: 1.5em; padding: 10px 30px 10px 130px; position: relative}
+	.alert EM { background: url(/a/projects/betplaynow/img/24.png) no-repeat -190px  -360px; display: block; text-indent: -4300em; position: absolute; top: 1.4em; left: 30px; height: 30px; width: 30px}
+
+.casual BUTTON { margin: 0 0 40px 130px}
+.casual FIELDSET.radio { margin-left: 130px}
+.casual INPUT.second { margin-left: 130px}
+.casual LABEL, .casual SPAN.label { float: left; margin-bottom: 10px; padding: 0 30px 0 0; width: 100px}
+	.casual LABEL.cbx { float: none; margin-left: 130px; padding: 0; position: relative; width: 290px}
+		LABEL.cbx .cbx { position: absolute; top: 0; left: -26px}
+	.casual .txt LABEL { padding-top: .44em}
+    .casual .options LABEL { margin-right: 25px; padding: 0 0 0 23px; position: relative; width: 122px}
+    	.casual .options LABEL INPUT { position: absolute; top: 0; left: -3px}
+.casual SELECT { margin-bottom: 10px}
+.casual .txt INPUT { margin-bottom: 10px; width: 304px}
+
+FORM.options FIELDSET { margin-bottom: 1.5em}
+	FORM.options LABEL { float: left; position: relative; margin-right: 30px; width:  210px}
+    FORM.options LEGEND { color: #FC0; font-weight: bold; margin-bottom: .23em;  padding: 6px 0 5px}
+	FORM.options INPUT { position: absolute; top: 0; left: -23px}
+ 
+ .floating_submit { z-index: 20}
+ .floating_submit, .floating_submit_overlay { position: fixed; bottom: 0; left: 0; height: 60px; width: 100%}
+  .floating_submit DIV { margin: 0 auto; padding: 15px 310px 0 190px; height: 45px;  width: 450px}
+    .floating_submit_overlay DIV { background: #000; filter: alpha(opacity=64); -moz-opacity: .64; opacity: .64; margin: 0 auto; height: 60px; width: 950px; z-index: 10}
+    
+#f_sign_up FIELDSET { padding: 0; width: 420px}
+	#f_sign_up BUTTON { font-size: 138.5%; margin-top: 3em}
+	#f_sign_up IMG { margin-bottom: 10px; height: 29px}
+    #f_sign_up SELECT.single { width: 280px}
+	#f_sign_up  INPUT.txt { margin-bottom: 10px; width: 264px}
+
+.line { padding-bottom: 20px}
+	.line SELECT, .line INPUT.txt { display: inline; margin-right: 10px}
