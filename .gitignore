@@ -4,7 +4,11 @@ _notes/
 a/less
 
 #Source Files
-.esproj
+*.sublime-workspace
+*.sublime-projectcompletions
+*.sublime-project
+.nojekyll
+_temp/index.htm
 
 # OS generated files
 .DS_Store
@@ -16,12 +20,3 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-_temp/index.htm
-
-*.sublime-workspace
-
-*.sublime-projectcompletions
-
-*.sublime-project
-
-.nojekyll
