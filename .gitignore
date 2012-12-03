@@ -4,9 +4,7 @@ _notes/
 a/less
 
 #Source Files
-*.sublime-workspace
-*.sublime-projectcompletions
-*.sublime-project
+*.sublime-*
 .nojekyll
 _temp/index.htm
 
