@@ -1,9 +1,0 @@
-.txt-decor-none A { text-decoration: none}
-.margin-t10l32 { margin-top: 10px; margin-left: 32px}
-A { color: #666666}
-A:visited { color: #666666}
-A:hover { color: #E55933}
-HTML, BODY { height: 100%}
-BODY { background-color: #FFF; background-image: url(/a/projects/sitecraft/img/bg_nav.gif); background-repeat: repeat-y; margin: 0; padding: 0}
-DIV { font-family: Tahoma, Verdana, sans-serif; font-size: 11px; color: #666666}
-IMG { border: 0 none}

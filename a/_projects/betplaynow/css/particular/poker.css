@@ -1,0 +1,11 @@
+@charset "UTF-8";
+#header, #header .menu .label A, #header .menu .label EM, #header .extra:hover .label EM { background-image: url(/a/_projects/betplaynow/img/red.png)}
+	.poker #header H1 { background-position: 0 -120px}
+    
+  #billboard { background: url(/a/_projects/betplaynow/img/poker.jpg) no-repeat; color: #FFF; margin-bottom: 62px; padding-top: 40px; height: 240px}
+	#billboard H2 { font-size: 26px; line-height: 26px; margin: 0 0 15px 30px; width: 270px}
+	#billboard H1 { margin: 0 0 0 30px; height: 60px; width: 270px}
+    	#billboard A { background: url(/a/_projects/betplaynow/img/poker-btn.png) no-repeat; display: block; text-indent: -4300em; height: 60px; width: 270px}
+    #billboard P { margin: 20px 0 0 30px; width: 330px}
+    
+ THEAD { color: #FC0}

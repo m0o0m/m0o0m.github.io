@@ -1,0 +1,15 @@
+#front #header .pic { background-image: url(/a/_projects/polylog/img/ru/applause.png)}
+*HTML #front #header .pic { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/_projects/polylog/img/ru/applause.png'), sizingMethod='scale')}
+
+/* Menus ----------------------------------------------------------------------------------------------------------------------------*/
+.btn#btn_home { width: 6%}
+.btn#btn_services { width: 10%}
+.btn#btn_clients { width: 12%}
+.btn#btn_company { width: 13%}
+.btn#btn_community { min-width: 104px; width: 22%}
+#main_menu #phone { width: 156px}
+
+.btn#btn_home SPAN, .btn#btn_services SPAN, .btn#btn_services SPAN, .btn#btn_clients SPAN, .btn#btn_company SPAN, .btn#btn_community SPAN, #phone
+{ background: url(/a/_projects/polylog/img/ru/menu.png) no-repeat}
+
+	*HTML .btn#btn_community SPAN { width: 100px}

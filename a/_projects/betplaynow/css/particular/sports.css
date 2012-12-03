@@ -1,0 +1,76 @@
+@charset "UTF-8";
+#header, #header .menu .label A, #header .menu .label EM, #header .extra:hover .label EM { background-image: url(/a/_projects/betplaynow/img/orange.png)}
+	.sports #header H1, .live #header H1 { background-position: 0 0}
+    	.basketball #header H1 { background-position: -300px 0}
+		.football #header H1 { background-position: -600px 0}
+		.tennis #header H1 { background-position: -600px -120px}
+    
+.nav.left { list-style-image: none; list-style-type: none; margin: 0; padding: 26px 0 0 40px; height: 100%; width: 120px} 
+	.nav.left LI { margin-bottom: .54em}
+    	.nav.left LI.first A { color: #FC0;  font-weight: bold}
+       #n_essential, #n_results { margin-top: 2em}
+		.nav .on_demand { margin-bottom: .54em}
+			.nav .on_demand H3 { font-weight: normal; margin: 0 0 .54em}
+			.nav.left UL { list-style-image: none; list-style-type: none; margin: 0; padding: 0}
+				#today_coupons LI { float: left; margin: 5px 10px 0 0}
+                	#today_coupons #n_cpn_tennis { margin-right: 0}
+					#today_coupons LI A { background: url(/a/_projects/betplaynow/img/24.png) no-repeat; display: block; text-indent: -4300em; height: 30px; width: 30px}
+                    #today_coupons #n_cpn_football A { background-position: 0 -370px}
+                    #today_coupons #n_cpn_football.active A { background-position: -240px -370px}
+                     #today_coupons #n_cpn_basketball A { background-position: -40px -370px}
+                     #today_coupons #n_cpn_basketball.active A { background-position: -280px -370px}
+                      #today_coupons #n_cpn_tennis A { background-position:  -80px -370px} 
+                      #today_coupons #n_cpn_tennis.active A { background-position:  -320px -370px} 
+                      
+#s_core { margin: 0 310px 0 190px}
+	.live #s_core, .fluid #s_core { margin: 0 310px 0 40px}
+	#s_core H1 { padding-right: 3.4em}
+#billboard { position: relative; overflow: hidden; height: 360px; padding-bottom: 80px}
+#billboard UL { list-style-image: none; list-style-type: none; margin: 0}
+	#billboard LI { float: left; margin-bottom: 0}
+    #billboard .top_bets { position: absolute; top: 10px; right: 10px; width: 80px}
+    #billboard .top_bets A { background: #000; float: left; clip: rect(0 80px 60px 0); overflow: hidden; width: 80px}
+		#billboard .top_bets IMG { filter: alpha(opacity=64); -moz-opacity: .64; opacity: .64; height: 60px; min-width: 80px}
+            #billboard .top_bets .current IMG, #billboard .top_bets A:hover IMG { filter: alpha(opacity=100); -moz-opacity: 1; opacity: 1}
+#billboard .items { position: absolute; width: 20000em}
+    #billboard .figure { float: left; margin-bottom: 20px; position: relative; height: 280px; width: 450px}
+        #billboard .figure .focus { clip: rect(0 450px 280px 0); display: block; margin-bottom: 20px; overflow: hidden; height: 280px; width: 450px}
+            #billboard .figure IMG { height: 280px; min-width: 450px}
+            #billboard .figcaption { background: url(/a/_projects/betplaynow/img/32/overlay.png); font-size: 138.5%; text-align: center; padding: 10px 12% 0 4%; position: absolute; bottom: 0; left: 0; min-height: 30px; width: 84%}
+
+#billboard .figure UL { height: 40px; width: auto}
+#billboard .figure LI,  #billboard .figure LI A { background: url(/a/_projects/betplaynow/img/grey.png) no-repeat}
+#billboard .figure LI { background-position: 100% -160px;  margin-right: 10px}
+	#billboard .figure LI A { background-position: 0 -90px; color: #FFF; display: block; font-size: 13px; text-align: center; text-decoration: none; overflow: hidden; padding-top: 8px; height: 52px; width: 100%}
+    	#billboard .figure LI SPAN, #billboard .figure LI EM  { margin: 0 auto; font-style: normal; white-space: nowrap}
+		#billboard .figure LI SPAN  { display: block; font-size: 18px}
+	#billboard .home,  #billboard .away { width: 33%}
+	#billboard .pair { width: 44%}
+    #billboard .three { width: 28%}
+	#billboard .draw { width: 20%}
+#billboard LI.more { background: none; float: right; line-height: 60px; text-align: right; margin-right: 0; vertical-align: middle; width: 7%}
+	#billboard LI.more A {  background: none; display: inline}
+    	#billboard LI.more A:hover { text-decoration: underline}
+
+/* Tables -----------------------------------------------------------------------------------------------------------------*/
+TD, TH { text-align: center; padding: 10px 4px 10px 0}
+TD { vertical-align: middle}
+TD.th, TH.th { text-align: left; padding-left: 10px}
+TH.th { color: #FC0}
+	.zebra A, .zebra SPAN.event { display: block}
+    .zebra SPAN.event { color: #FFF}
+TD.sport { text-indent: -4300em; padding-left: 10px}
+	TD.sport SPAN { background: url(/a/_projects/betplaynow/img/icos.png) no-repeat; display: block; height: 20px; width: 20px}
+		TD.sport .football { background-position: 0 0}
+		TD.sport .basketball { background-position: -30px 0}
+		TD.sport .tennis { background-position: -60px 0}
+		TD.sport .hockey { background-position: -90px 0}
+TD.total { text-align: right}
+TD .under_total { display: block; margin-top: .5em}
+
+/* Forms -----------------------------------------------------------------------------------------------------------------*/
+#f_markets BUTTON { background: url(/a/_projects/betplaynow/img/orange.png) no-repeat 100% -240px; color: #FFF}
+	#f_markets BUTTON STRONG { background: url(/a/_projects/betplaynow/img/orange.png) no-repeat 0 -200px}
+
+#f_settings { position: relative; width: 100%}
+	#f_settings H3 { font-weight: normal; position: absolute; top: -3.15em; right: 0}

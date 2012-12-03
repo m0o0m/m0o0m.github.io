@@ -1,0 +1,65 @@
+/*Front*/
+#front { background-position: 0 0}
+#front #content { background: url(/a/_projects/sakh-invest-portal/img/bg-container-front.png) repeat-y}
+
+/*Billboard*/
+#billboard { position: relative; height: 360px; width: 960px}
+	#billboard H1 { font-size: 161.5%;  padding: 0; position: absolute; bottom: 0; left: 0; height: 60px; width: 320px; z-index: 2}
+		#billboard H1 A { background: url(/a/_projects/sakh-invest-portal/img/scratching-widgets.png) no-repeat 0 0; color: #FFF; display: block; text-shadow:  0 1px 1px #0E4D01; padding: 18px 0 0 20px; height: 42px; width: 300px}
+			#billboard H1 I { background-position: -200px -60px; margin-top: -2px; position: absolute; top: 50%; right: 20px; height: 8px; width: 7px}
+	#billboard H2 { color: #FFF; position: absolute; top: 91px; left: 20px; z-index: 2}
+	#billboard .pager { position: absolute; bottom: 70px; left: 20px; z-index: 2}
+
+    #billboard .sec { color: #FFF; display: none; padding: 134px 660px 0 20px; position: absolute; top: 0; left: 0; height: 226px; width: 280px; z-index: 1}
+		.sec_investment { background: url(/a/_projects/sakh-invest-portal/img/billboard/plants.jpg) no-repeat}
+    	 #billboard .sec_oil { background:  url(/a/_projects/sakh-invest-portal/img/billboard/oil.jpg) no-repeat; padding-top: 114px ; height: 246px}
+    	.sec_transport { background: url(/a/_projects/sakh-invest-portal/img/billboard/transport.jpg) no-repeat}
+    	.sec_turnover { background: url(/a/_projects/sakh-invest-portal/img/billboard/turnover.jpg) no-repeat}
+    #billboard .sec H3 { color: #FFF; font: 161.5%/.952 'Arial Narrow', Arial, Helvetica, sans-serif}
+    	#billboard H3 I { color: #FFF; font-size: 261.9%; letter-spacing: -.04em}
+
+/* Teasers links arrows*/
+.tsr_bnr A P:last-child:after, .tsr_inner A P:last-child:after, .tsr_primary H2.click_area:after, .tsr_primary .click_area P:after
+{ content: ''; display: inline-block; margin-left: .6em; height: 8px; width: 8px}
+.tsr_bnr A P:last-child:after, .tsr_inner A P:last-child:after
+{ background-position: -180px -60px}
+.tsr_primary H2.click_area:after, .tsr_primary .click_area P:after
+{ background-position: -380px -40px}
+
+/*Frontpage primary teasers*/
+.tsr_primary ARTICLE { padding-top: 40px; position: relative; height: 159px}
+.tsr_primary ARTICLE.first { background: url(/a/_projects/sakh-invest-portal/img/bg-h2.png) -1px 0 repeat-y; float: left; margin-left: 1px; padding-left: 299px; width: 179px}
+.tsr_primary ARTICLE.last  { background: url(/a/_projects/sakh-invest-portal/img/bg-h2.png) 160px 0 repeat-y; float: right; margin-right: 1px; padding-right: 299px; width: 180px}
+	.tsr_primary A, .tsr_primary H2 { color: #FFF}
+		.tsr_primary IMG { position: absolute; top: 40px}
+        .tsr_primary ARTICLE.first IMG { left: 20px}
+        .tsr_primary ARTICLE.last IMG { right: 20px}
+        .tsr_primary .click_area { background: #99A6E5; padding-top: 26px; height: 94px}
+        .tsr_primary ARTICLE.first .click_area { padding-right: 20px; padding-left: 40px}
+		.tsr_primary ARTICLE.last .click_area { padding-right: 20px; padding-left: 20px}
+
+/*Frontpage secondary teasers*/
+.tsr_secondary { border-top: 1px solid #D6D6CC}
+	.tsr_secondary ARTICLE { border-right: 1px solid #D6D6CC; float: left; padding: 0 19px; min-height: 299px; height: 299px; width: 280px}
+	HTML>BODY .tsr_secondary ARTICLE  { height: auto}
+    .tsr_secondary ARTICLE.first  { border-left: 1px solid #D6D6CC}
+    .tsr_secondary ARTICLE.mid { background: url(/a/_projects/sakh-invest-portal/img/bg-h2.png) repeat-x 0 -4px; padding: 0 20px}
+ 	   .tsr_secondary .header { margin-bottom: 2em; padding: 26px 0 0 0; }
+       .tsr_secondary H2.header { height: 34px}
+       
+/*Inner pages teasers*/
+.tsr_bnr { margin-bottom: 4.615em}
+
+.tsr_bnr:after { clear: both; content: ""; display: table}
+.tsr_bnr { zoom: 1}
+	.tsr_bnr H2 { margin-bottom: 1.667em}
+	.tsr_bnr IMG, .tsr_inner IMG { max-width: 280px; width: 280px}
+	HTML>BODY .tsr_bnr IMG, HTML>BODY .tsr_inner IMG { width: auto}
+	.tsr_bnr IMG { float: left; margin: 0 20px 0 0}
+
+.tsr_inner { background: url(/a/_projects/sakh-invest-portal/img/vr.gif) repeat-y 50% 0; border: 1px solid #D6D6CC; margin: 0 -20px 4.538em; position: relative; min-width: 100%; width: auto}
+	.tsr_inner ARTICLE { background: url(/a/_projects/sakh-invest-portal/img/bg-h2.png) repeat-x; float: left; padding: 0 20px 1.54em 19px; overflow-x: hidden; width: 280px}
+ 	   .tsr_inner H2 { margin-bottom: 1.583em; padding: 19px 0 0 0; height: 41px}
+       .tsr_inner IMG { display: block; margin: 0 0 1.54em}
+
+       

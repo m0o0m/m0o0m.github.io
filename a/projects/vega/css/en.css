@@ -1,5 +1,0 @@
-.admission A, .user_card A { min-width: 37px; _width: 60px; _width/**/:/**/ 37px}
-.meta_nav H1 A { background-image: url(/a/projects/vega/img/header/logo-vega-in-bar.png)}
-	*+HTML .meta_nav H1 A { background: url(/a/projects/vega/img/header/logo-vega-in-bar-ie7.png) no-repeat}
-#billboard .title  { background: url(/a/projects/vega/img/front-page/title-en.png)}
-	*HTML #billboard .title { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/projects/vega/img/front-page/title-en.png'), sizingMethod='scale')}

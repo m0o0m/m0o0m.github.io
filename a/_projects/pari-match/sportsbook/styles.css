@@ -1,0 +1,201 @@
+﻿A { color: #FF0}
+A:visited { color: #9C0}
+A:hover { color: #FFF}
+BODY { background: #004C00 url(/a/_projects/pari-match/sportsbook/img/bg.gif); color: #6F6; font-size: x-small; font-size/**/:/**/ small; text-align: center; margin: 0; padding: 0}
+BODY, HTML { height: 100%}
+H1 { color: #CFC; font: bold 100% Tahoma, Geneva, Arial, sans-serif; text-transform: uppercase; margin-top: 0}
+H2 { color: #FFF; font-size: 100%}
+IMG { border: 0}
+IMG.right, INPUT.right { margin: 0 0 5px 10px}
+P { margin: 0 0 1em}
+
+/* Header */
+#header { background: #006 url(/a/_projects/pari-match/sportsbook/img/bg_header.gif) repeat-x; color: #CCF; font: 11px Tahoma, Geneva, Arial, sans-serif; margin: 0 auto; padding: 11px 30px 0; height: 40px !important; height/**/:/**/ 29px !important; width: 760px; width/**/:/**/ 700px}
+#header A { background-position: 0 0; background-repeat: no-repeat; color: #CCF; display: block}
+#header A:hover { background-position: 0 -15px; color: #FF0}
+#header A SPAN { display: none}
+#header #meta A, #header #user A { height: 15px}
+#header UL { list-style: none; margin: 0; padding: 0; width: 340px}
+#header UL LI { padding: 0}
+#meta, #meta LI { float: right}
+#meta LI { margin: 0 0 0 20px}
+#user, #user LI, #user-logged, #user-logged LI { float: left}
+#user LI { margin: 0 20px 0 0}
+#user-logged { overflow: hidden}
+#user-logged LI { line-height: 15px; margin-right: 10px}
+
+#a_home { background:   url(/a/_projects/pari-match/sportsbook/img/btn_home.gif); height: 15px; width: 16px}
+#a_user { font-weight: bold}
+
+/*Layout - wrappers */
+#main { background: #005900 url(/a/_projects/pari-match/sportsbook/img/bg_content.gif) repeat-x; text-align: left; margin: 0 auto; padding: 20px 30px 20px; width: 760px; width/**/:/**/ 700px}
+#wrapper { background:  url(/a/_projects/pari-match/sportsbook/img/bg_wrapper.gif) repeat-y center top; min-height: 100%; height: 100%}
+HTML>BODY #wrapper { height: auto}
+.col1-3, .col2-3, .col3-3 { float: left; width: 160px}
+.col1-3, .col2-3 { margin-right: 20px}
+
+#content { float: right; font-family: Verdana, Geneva, Arial, sans-serif; width: 520px}
+#sidebar { float: left; font: 85% Tahoma, Geneva, Arial, sans-serif; width: 160px}
+
+/* Layout - Sidebar */
+#nameplate { margin: 0 0 20px}
+
+#sidebar A { text-decoration: none}
+#sidebar LI { margin: 0}
+#sidebar UL { list-style-image: none; list-style-type: none; margin: 0}
+
+#nav { background:  url(/a/_projects/pari-match/sportsbook/img/bg_nav.gif) repeat-y}
+#nav A { display: block}
+.closed { display: none}
+.open { display: block}
+
+#nav_head { background:   url(/a/_projects/pari-match/sportsbook/img/bg_nav_h.gif) no-repeat center top}
+#nav_top { background:   url(/a/_projects/pari-match/sportsbook/img/bg_nav_t.gif) no-repeat center bottom}
+#nav_top .open A, #nav_top .open A:visited { color: #CCF; text-decoration: none; padding-left: 14px}
+#nav_top .open A:hover { text-decoration: underline}
+#nav_top LI { padding: 0 14px}
+#nav_top LI LI { padding: 2px 0}
+
+#a_help, #a_news { background-repeat: no-repeat; height: 22px}
+#a_help:hover, #a_news:hover { background-position: 0 -22px}
+#a_help, #a_news, #nav_top .trigger { background-repeat: no-repeat}
+#nav_top .locked { background-repeat: no-repeat; display: block; height: 28px}
+#nav_top .trigger, #nav_top .trigger-open { background-repeat: no-repeat; height: 28px}
+#nav_top .trigger:hover { background-position: 0 -28px}
+#nav_top .trigger-open { background-position: 0 -56px}
+#nav_top .trigger-open:hover { background-position: 0 -84px}
+#a_help SPAN, #a_news SPAN, #nav_top .locked SPAN, #nav_top .trigger SPAN, #nav_top .trigger-open SPAN { display: none}
+
+#nav_bets { background:  url(/a/_projects/pari-match/sportsbook/img/bg_nav_b.gif) no-repeat center bottom; padding: 0 3px 30px}
+#nav_bets A:hover { text-decoration: underline !important}
+#nav_bets H3 { background-repeat: no-repeat; background-position: 24px 7px; margin: 0; height: 22px}
+#nav_bets H3 SPAN { display: none}
+#nav_bets .feature { color: #030; font-weight: bold}
+#nav_bets .trigger { background:   url(/a/_projects/pari-match/sportsbook/img/dtl_arrow_f_menu.gif) no-repeat left center; color: #CFC; font-weight: bold}
+#nav_bets .trigger-open { background:   url(/a/_projects/pari-match/sportsbook/img/dtl_arrow_d_menu.gif) no-repeat 0 4px; color: #CFC; font-weight: bold}
+#nav_bets .open A, #nav_bets .open A:visited { color: #030; text-decoration: none}
+#nav_bets LI { background: #090; padding: 2px 11px}
+#nav_bets LI A { background: #090; padding-left: 14px}
+#nav_bets LI LI { padding: 2px 0}
+
+/* Layout - Clearers */
+.cfx:after, #main:after, #header:after { content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.cfx, #main, #header { display: inline-table}
+/* Hides from IE-mac \*/
+* html .cfx, * html #header, * html #main { height: 1%}
+.cfx, #main, #header { display: block}
+/* End hide from IE-mac */
+
+/* Body Copy */
+.btn-proceed { margin-left: 4px}
+
+.left { float: left}
+.right { margin-right: 0  !important; float: right !important}
+
+.margin-b20 { margin-bottom: 20px}
+.margin-b0 { margin-bottom: 0}
+.nowrap { white-space: nowrap}
+.popular { border: 1px solid #004C00; border-bottom-width: 2px; width: 518px}
+.popular DIV { float: left}
+.teaser P A, .teaser P A:visited { color: #6F6; text-decoration: none}
+.teaser P A:hover { color: #FFF}
+.teaser P A SPAN { background:  url(/a/_projects/pari-match/sportsbook/img/dtl_arrow_f.gif) no-repeat right center; color: #090; padding-right: 20px}
+.txt-small { font: 85% Tahoma, Geneva, Arial, sans-serif}
+
+/* Tables */
+.border-collapse { border-right: 0 !important}
+.move-down { background:  url(/a/_projects/pari-match/sportsbook/img/dtl_arrow_d_odd.gif) no-repeat right center; padding-right: 10px}
+.move-up { background:  url(/a/_projects/pari-match/sportsbook/img/dtl_arrow_up_odd.gif) no-repeat right center; padding-right: 10px}
+.table_border { background: #9C9; border-right: 1px solid #004C00; border-bottom: 2px solid #004C00; border-left: 1px solid #004C00; border-collapse: collapse; margin-bottom: 20px}
+.table_border A, .table_border A:visited { color: #363}
+.table_border A:hover { color: #00C}
+.table_border CAPTION { border-top: 1px solid #004C00; border-right: 1px solid #004C00; border-left: 1px solid #004C00}
+.table_border TD, .table_border TH { color: #363}
+.tr-even { background: #9C9}
+.tr-odd { background: #A6D9A6}
+.tr-thead { background: #8CBF8C}
+.valign-b IMG { margin-bottom: 0 0 3px 3px}
+.valign-b TD { vertical-align: bottom}
+CAPTION { background: #060; color: #9C9; font-weight: bold; padding: 4px 7px}
+CAPTION, TD, TH { font-size: 70%; font-size/**/:/**/ 85%}
+CAPTION, TH { text-align: left}
+TABLE { border: 0; color: #005959; width: 100%}
+TD, TH { padding: 4px 7px}
+TD DIV { white-space: nowrap}
+TD LABEL { font-size: 110%}
+
+.bet-details { background: #090 url(/a/_projects/pari-match/sportsbook/img/bg_flash.gif) repeat-x 50% 300px; text-align: center; vertical-align: middle}
+.bet-details-td { padding: 0}
+
+.popular TABLE { background: #00F2F2; float: right; font-family: Tahoma, Geneva, Arial, sans-serif; width: 347px; width/**/:/**/ 349px}
+.popular TABLE .tr-thead { background: #0CC}
+.popular TABLE .tr-odd { background: #00E5E5}
+.popular CAPTION { background:  url(/a/_projects/pari-match/sportsbook/img/bg_caption.gif) repeat-x; color: #CCF; font-size: 85% !important; line-height: 26px; padding: 0 8px 0; height: 26px}
+.popular CAPTION STRONG { background-repeat: no-repeat; background-position: 2px 2px}
+.popular CAPTION SPAN { visibility: hidden}
+.popular TABLE TD, .popular TABLE TH { border-right: 1px solid #8E9399; font-size: 11px}
+.popular TABLE A, .popular TABLE A:visited { background:  url(/a/_projects/pari-match/sportsbook/img/dtl_arrow_f_tr.gif) no-repeat right center; color: #005959; display: block; text-decoration: none; padding-right: 8px}
+.popular TABLE A:hover { color: #005959; text-decoration: underline}
+.popular TABLE .tr-amfoot { background-image:   url(/a/_projects/pari-match/sportsbook/img/ico_amfoot_front.gif)}
+.popular TABLE .tr-basket { background-image:   url(/a/_projects/pari-match/sportsbook/img/ico_basket_front.gif)}
+.popular TABLE .tr-hockey { background-image:   url(/a/_projects/pari-match/sportsbook/img/ico_hockey_front.gif)}
+.popular TABLE .tr-soccer { background-image:   url(/a/_projects/pari-match/sportsbook/img/ico_soccer_front.gif)}
+.popular TABLE .tr-tennis { background-image:   url(/a/_projects/pari-match/sportsbook/img/ico_tennis_front.gif)}
+
+.tr-amfoot, .tr-basket, .tr-hockey, .tr-soccer, .tr-tennis { background-repeat: no-repeat; background-position: 8px 50%; padding-left: 35px}
+.tr-amfoot { background-image:   url(/a/_projects/pari-match/sportsbook/img/ico_amfoot.gif)}
+.tr-basket { background-image:   url(/a/_projects/pari-match/sportsbook/img/ico_basket.gif)}
+.tr-hockey { background-image:   url(/a/_projects/pari-match/sportsbook/img/ico_hockey.gif)}
+.tr-soccer { background-image:   url(/a/_projects/pari-match/sportsbook/img/ico_soccer.gif)}
+.tr-tennis { background-image:   url(/a/_projects/pari-match/sportsbook/img/ico_tennis.gif)}
+
+.user-bet { background: #B2E5B2 !important; border-bottom: 0 none; margin-bottom: 0}
+	#user_bet_area>.user-bet { margin-left: 1px; width: 519px}
+.user-bet .tr-even { background: #B2E5B2}
+.user-bet .tr-odd { background: #BFF2BF}
+.user-bet .tr-thead { background: #8CBF8C}
+H2.user-bet-caption { background: #060; border-top: 1px solid #004C00; border-right: 1px solid #004C00; border-left: 1px solid #004C00; color: #FF0; font-size: 85%; text-align: right; margin: 0; padding: 4px 7px}
+H2.user-bet-caption SPAN { float: left}
+
+/* Lists */
+.list-inline LI.li-first { border-left: none}
+.list-inline { display: inline; margin: 0; padding: 0}
+.list-inline LI { border-left: 1px solid #6F6; display: inline; list-style: none; margin-left: -7px; padding: 0 8px 0 7px}
+.list-inline LI.li-first { border-left: none}
+LI UL { margin: 0 0 0 16px}
+UL { list-style: url(/a/_projects/sportingbet/bullet.gif) outside; margin: 0 0 1em 16px; padding: 0}
+UL LI { padding: 0}
+
+/* Forms */
+FORM { margin: 0; padding: 0}
+INPUT { background: #FFF url(/a/_projects/pari-match/sportsbook/img/bg_input.gif) repeat-x; border: 1px solid #363}
+INPUT.btn { background: none transparent; border: none}
+
+#box-signin { background: #000080; border-top: 1px solid #00004C; border-right: 2px solid #00004C; border-bottom: 2px solid #00004C; border-left: 1px solid #00004C; text-align: left; margin-left: -320px; padding: 0 0 10px; position: absolute; top: 30px; left: 50%; visibility: hidden; width: 280px}
+#box-signin A, #box-signin A:visited { color: #66C}
+#box-signin A:hover { color: #FFF}
+#box-signin UL { background: #000073; font: 11px Tahoma, Geneva, Arial, sans-serif; list-style: none; margin: 0 0 0.5em; padding: 10px}
+#box-signin UL LI { float: left; margin: 0 5px 0 0; padding: 0}
+#form-signin DIV { margin-bottom: 5px}
+#form-signin LABEL { color: #FFF; float: left; font: bold 12px Verdana, Geneva, Arial, sans-serif; text-align: right; padding: 0.2em 5px 0 0; width: 130px}
+#form-signin INPUT#signin, #form-signin INPUT#password { border-color: #00004C; width: 120px}
+#form-signin INPUT#signin-btn { border: 0; margin-left: 135px; height: 30px; width: 80px}
+#overlay { background: #000; filter: alpha(opacity=60); -moz-opacity: 0.6; opacity: 0.6; position: absolute; top: 0; left: 0; visibility: hidden; height: 100%; width: 100%}
+
+#form-user-bet { border-bottom: 2px solid #004C00; margin-bottom: 1em}
+
+.bet-amount { margin: 3px 3px 0 0; vertical-align: middle; width: 40px}
+
+/*Customization*/
+#front #a_home { background-position: 0 -15px; cursor: default}
+#front #nameplate A { cursor: default}
+#front H2 { margin-bottom: 0.2em}
+
+/* Footer -----------------------------------------------------------------------------------------------------------------------------*/
+#footer { background: #001900 url(/a/_projects/pari-match/sportsbook/img/bg_footer.gif) repeat-x; font-family: Tahoma, Geneva, Arial, sans-serif; font-size: 85%; margin: 0 auto; padding-top: 14px; height: 60px; height/**/:/**/ 46px; width: 760px}
+#footer P { padding-top: 0.5em}
+#splited_counters { position: absolute; left: 0; top: 0; visibility: hidden}
+.btns { list-style-image: none; list-style-type: none; margin: 0 auto; padding: 20px 0 40px}
+	.btns LI { float: left; margin-right: 7px; width: 31px}
+	.btns>LI { min-width: 31px; width: auto}
+	.last { margin-right: 0 !important}

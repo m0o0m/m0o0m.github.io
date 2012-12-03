@@ -1,8 +1,0 @@
-/* Menu */
-#nav-account A.nav-level1 { background: url(/a/projects/1x2/img/en/nav_account.gif)}
-#nav-home A.nav-level1 { background: url(/a/projects/1x2/img/en/nav_home.gif)}
-#nav-4money A.nav-level1 { background: url(/a/projects/1x2/img/en/nav_4money.gif)}
-#nav-help A.nav-level1 { background: url(/a/projects/1x2/img/en/nav_help.gif)}
-
-/* Menu - Opened submenu */
-#profile UL#subnav-account { left: -60%}

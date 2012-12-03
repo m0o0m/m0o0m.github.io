@@ -1,7 +1,0 @@
-@charset "UTF-8";
-#header, #header .menu .label A, #header .menu .label EM, #header .extra:hover .label EM { background-image: url(/a/projects/betplaynow/img/cyan.png)}
-	.account #header H1 { background-position: -300px -240px}
-
-/* Forms -----------------------------------------------------------------------------------------------------------------*/
-#f_history { position: relative; width: 100%}
-	#f_history H3 { font-weight: normal; position: absolute; top: -3.15em; right: 0}

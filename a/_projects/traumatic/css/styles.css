@@ -1,0 +1,357 @@
+@charset "UTF-8";
+HTML { text-align: center}
+BODY { color: #53565A; font: 81.3%/150% Arial, Geneva, Helvetica, sans-serif; text-align: left; margin: 0 auto; padding: 0; width: 960px}
+
+A, .nav A:visited { color: #66C; outline: none}
+	A.phone { color: #53565A !important; cursor: default; text-decoration: none}
+A:visited { color: #909}
+A:hover { color: #C00}
+H1 { font-size: 261.5%; font-weight: normal; line-height: 180.6%; margin: 0 auto .265em}
+	H1 .note { font-size: 38.2%}
+H2, .h2 {  font-size: 161.5%; font-weight: normal; margin: 1.25em auto .25em}
+
+H3 { font-size: 100%; margin: 0 auto;}
+H4 { font-size: 125%; margin: 0 auto; color:#66C;text-align: right;}
+IMG { border: 0}
+	IMG.left { margin: 2px 20px 0 0}
+	IMG.right { margin: 2px 0 0 20px}
+OL { margin: 0 auto 1.5em; padding: 0}
+P { margin: 0 auto 1.5em}
+UL { list-style-image: url(/a/_projects/traumatic/img/bullet.gif); margin: 0 auto 1.5em; padding: 0}
+	LI { margin-bottom: .4em}
+    OL UL { margin-bottom: 0}
+
+/* Header --------------------------------------------------------------------------------------------------------------*/
+#header { padding-bottom: 30px}
+#header A { text-decoration: none}
+#header H1 { float: left; font-size: 13px; line-height: 16px; text-align: center; margin: 0 0 0 -3px; width: 226px}
+	#header H1 A { background: url(/a/_projects/traumatic/img/logo.png) no-repeat 50% 20px; color: #53565A; display: block; padding-top: 131px; height: 39px; width: 226px}
+#header UL { list-style-image: none; list-style-type: none; margin: 0}
+	.lang { padding-top: 42px}
+		.lang LI, .lang A { background: url(/a/_projects/traumatic/img/24.png) no-repeat; display: block; text-indent: -4300em; height: 15px; width: 20px}
+		.lang LI  { float: right; margin-left: 6px}
+    		.lang .ru A  { background-position: -80px -100px}
+        	.lang .en A  { background-position: 0 -140px}
+        	.lang .ru, .lang .ru A:hover { background-position: -50px -100px}
+        	.lang .en, .lang .en A:hover  { background-position: -110px -100px}
+.name_and_menu { float: right; padding-top: 14px; width: 703px}
+	.calendar { background: url(/a/_projects/traumatic/img/24.png) no-repeat; float: left; font-size: 14px; font-weight: bold; line-height: 14px; text-align: center; padding-top: 27px; height: 59px; width: 65px}
+    .calendar SPAN { display: block; margin-top: 2px}
+    .name_and_menu .right { width: 628px}
+		.name_and_menu UL { padding-top: 6px; position: relative; width: 100%}
+			.name_and_menu LI { float: left; margin-right: 4px; padding: 3px 8px 2px}
+            	.name_and_menu LI A:visited { color: #66C}
+        		#m_sign_in, #m_sign_up, #m_user { top: 6px; position: absolute}
+                #m_sign_in { right: -12px}
+				#m_user, #m_sign_up { font-weight: bold; white-space: nowrap; left: 400px}
+                #m_user { background: url(/a/_projects/traumatic/img/blues.png) no-repeat 0 -390px; padding: 0 30px 0 0; width: 198px}
+                 	#m_user SPAN { display: block; overflow: hidden}
+						#m_user SPAN A { background: #FFF; display: block; float: left; padding: 3px 8px 2px}
+					#m_user EM { background: url(/a/_projects/traumatic/img/24.png) no-repeat; display: block; text-indent: -4300em; position: absolute; top: 1px; right: 0; height: 16px; width: 20px}
+					#m_user .pending { background-position: -230px -130px}
+                    #m_user .completed { background-position: -260px -130px}
+                    #m_user .sign_out { background: #FCC; color: #C00; display: none; font-weight: normal; padding: 3px 8px 2px; position: absolute; top: 24px; left: 0; z-index: 4}
+                     #m_user:hover .sign_out { display: block} 
+        .name_and_menu H2 { clear: both; color: #888B8F; margin: 0; padding: 8px 0 0 8px}
+			.name_and_menu H2 SPAN { display: block; padding-top: 5px}
+				.name_and_menu H2 SPAN.tight {  letter-spacing: -.05em}
+            
+.pic { margin-bottom: 40px}
+
+/* Main content ----------------------------------------------------------------------------------------------------------*/
+.main { margin-left: 260px}
+	.form { margin: 0 260px 0 0}
+    .post  .main { margin: 0}
+
+.author { color: #888B8F}
+.caption { margin-bottom: .4em}
+
+.left { float: left}
+.right { float: right}
+	.programme IMG.right { margin-top: -20px}
+
+.lquot { margin-left: -.55em}
+
+.master_detail .article { margin-right: 240px}
+.master_detail .aside { background: #ECEFF3; float: right; padding: 0 0 20px 0; width: 220px}
+	.master_detail .aside H2 { margin: 0; padding: 1.46em 20px 10px}
+	.master_detail .aside UL { list-style-image: none; list-style-type: none; margin: 0; padding: 0; overflow: auto; height: 300px; width: 220px}
+		.master_detail .aside UL LI { margin: 0; padding: 0 10px; overflow: hidden; max-height: 3.62em; height: 3.62em}
+			.master_detail .aside UL>LI { height: auto}
+        	.master_detail .aside UL A { border-top: 1px solid #FFF; display: block; text-decoration: none; padding: 4px 10px}
+				.master_detail .aside LI:first-child A { border-top: 0 none}
+			.master_detail .aside UL A:visited { color: #888B8F}
+			.master_detail .aside UL A:hover, .master_detail .aside .current A { background: #E1E4EA}
+        
+.nowrap { white-space: nowrap}
+
+OL.abstracts LI { font-size: 123.1%; margin-bottom: 1em; padding: 10px}
+	OL.abstracts A { text-decoration: none}
+	OL.abstracts A:hover { text-decoration: underline}
+    OL.abstracts SPAN { display: block; font-size:  81.3%}
+
+#tsr_organizers { padding: 13px 210px 0 0; position: relative}
+	#tsr_organizers UL { margin-bottom: 0}
+		#tsr_organizers LI { margin-bottom: 0}
+       #tsr_organizers .estes  { clip: rect(130px 220px 200px 140px); /*T>t  L>r T>b L>l*/ position: absolute; top: -117px; right: 40px}
+       #tsr_organizers .rgmu  { clip: rect(0 150px 90px 70px); position: absolute; top: 0; right: -130px}
+
+#tsr_welcome { padding-top: 52px; position: relative}
+	#tsr_welcome .author { color: #888B8F; margin: 0; position: absolute; bottom: 0;  left: 0; width: 120px}
+	#tsr_welcome .article  { margin: 0 0 0 140px}
+   #tsr_welcome IMG  { clip: rect(0 280px 120px 160px); position: absolute; top: 49px;  left: -160px}
+
+
+UL.history, UL.history UL, UL.secretariat  { list-style-image: none; list-style-type: none}
+	UL.history LI { position: relative; margin-bottom: 3em; padding-left: 80px}
+    	UL.history .dates { color: #888B8F; display: block; position: absolute; top: 0; left: 0; width: 60px}
+        UL.history UL LI { display: inline; padding: 0 10px 0 20px}
+		UL.history DIV { position: relative; padding: 0 10px 0 20px}
+            	UL.history UL LI EM, UL.history DIV EM { background: url(/a/_projects/traumatic/img/24.png) no-repeat -70px -140px; display: block; text-indent: -4300em; position: absolute; top: -1px; left: 0; height: 16px; width: 14px}
+            	UL.history DIV EM { top: 1px}
+                UL.history .pdf EM { background-position: -100px -140px}
+
+/* Forms ---------------------------------------------------------------------------------------------------------------*/
+FORM { margin: 0; padding: 0}
+	BUTTON,  .btn STRONG { cursor: pointer}
+	BUTTON, INPUT, SELECT, TEXTAREA { font: 107.7% Arial, Helvetica, sans-serif; vertical-align: middle}
+	BUTTON, INPUT.txt, LABEL, SELECT, TEXTAREA { display: block; margin-bottom: 10px}
+	FORM BR { clear: left; font-size: 20px; line-height: 20px}
+    INPUT.txt { width: 424px}
+    	INPUT.txt:focus { background: #F5F5FF}
+	INPUT.txt, TEXTAREA { border: 1px solid #888B8F; padding: 5px 7px 6px}
+	SELECT { border: 1px solid #888B8F; margin-bottom: 10px; padding: 5px}
+
+/* Custom properties: BUTTON, .btn - background, height; BUTTON STRONG, .btn STRONG - background, line-height (height -1px), height */
+BUTTON, .btn, UL.submenu LI.btn { background: url(/a/_projects/traumatic/img/blues.png) no-repeat 100% -50px; border: 0 none; margin: 10px 0; padding: 0 15px 0 0; overflow: visible !important; position: relative; height: 40px; width: auto}
+	.btn { font: 107.7% Arial, Helvetica, sans-serif; display: inline-block; text-align: center; text-decoration: none !important}
+    UL.submenu LI.btn { float: right; text-align: center; margin: 0 0 40px 0}
+	BUTTON STRONG, .btn STRONG { background: url(/a/_projects/traumatic/img/blues.png) no-repeat 0 0; color: #FFF; display: block; font-weight: normal; line-height: 39px; white-space: nowrap; position: relative; padding-left: 15px; height: 40px}
+	BUTTON.a, A.cancel { background: none; border: 0 none; color: #C00; float: right; font-size: 100%; line-height: 39px; text-decoration: none; margin: 0; padding: 0}
+    BUTTON.close { text-indent: -4300em; padding: 0; height: 15px; width: 15px}
+
+
+FIELDSET { border: 0 none; margin: 0; padding: 0 0 1.5em; position: relative}
+	FIELDSET.grouped { padding-bottom: 0}
+
+LABEL { cursor: pointer; display: block; float: left; text-align: right; margin-bottom: 10px; padding: .44em 40px 0 0; width: 220px}
+	.column LABEL { float: none; text-align: left; width: auto}
+    LABEL.cbx { float: none; text-align: left; margin: 0 0 20px 260px; padding: 0; position: relative; width: 460px}
+    	LABEL.cbx .cbx { position: absolute; top: 0; left: -26px}
+	LABEL .note, P.note { color: #888B8F; display: block}
+
+LEGEND { font-weight: bold; /*float: left; */text-align: left; padding: 0 0 10px 260px}
+
+DIV.message, P.message { background: #FFFFE1; margin-left: -39px; padding: 10px 39px; position: relative; min-height: 20px; height: 20px}
+	HTML>BODY DIV.message, HTML>BODY P.message { height: auto}
+	.message EM { background: url(/a/_projects/traumatic/img/24.png) no-repeat; display: block; text-indent: -3400em; position: absolute; top: .8em; left: 10px; height: 20px; width: 20px}
+    	.alert EM  { background-position: -30px -140px}
+        .done EM { background-position: 0 -180px}
+	.message .close { background: url(/a/_projects/traumatic/img/24.png) -30px -180px no-repeat; position: absolute; top: .2em; right: 17px; height: 15px; width: 15px}
+	.alert { margin-bottom: 1.5em}
+    	.alert H2 { font-size: 100%; font-weight: bold; margin: 0 0 .4em}
+
+
+.inline SELECT { display: inline}
+
+#f_confirm { padding-top: 3em}
+
+#f_sign_in BUTTON, #f_post BUTTON, #f_forgot BUTTON { margin: 0 0 40px 260px}
+
+#f_sign_up BUTTON { font-size: 138.5%; margin: 40px 0 40px 260px}
+#f_sign_up IMG { float: right; margin-bottom: 10px; height: 30px}
+#i_captcha { width: 304px}
+
+.form H1, .form P, .post .main H1, .post .main P, .post .restrictions { margin-left: 260px}
+	.form .alert, .form .done { margin-left: 220px}
+    
+.post .main INPUT, .post .main TEXTAREA { width: 684px}
+	#ta_txt  { height: 300px}
+    .post .steps { list-style-type: none; margin: 0 0 0 260px; padding: 1.15em 0 2.54em}
+		.post .steps LI { background: url(/a/_projects/traumatic/img/blues.png) no-repeat 100% -470px; color: #B1B4B8; float: left; margin: 0 100px 0 0; padding: 0 30px 0 0; position: relative; width: 270px}
+			.post .steps .current { color: #53565A}
+			.post .steps .second { background: none; margin: 0; padding: 0}
+			.post .steps H2 { margin: 0}
+     	       .post .steps SPAN { background: url(/a/_projects/traumatic/img/blues.png) no-repeat; display: block; text-indent: -4300em; position: absolute; top: .15em; left: -44px; height: 30px; width: 30px}
+     	       .post .steps .first SPAN { background-position: 0 -550px}
+					.post .steps .first .current { background-position: -40px -550px}
+				.post .steps .second SPAN { background-position: -80px -550px}
+					.post .steps .second .current { background-position: -120px -550px}
+
+
+.with_notes { color: #888B8F; float: left; padding-bottom: 1.85em}
+.with_notes_compact { position: relative}
+	.with_notes_compact A { display: block; position: absolute; top: .39em; left: 740px}
+
+/* Pager ----------------------------------------------------------------------------------------------------------------*/
+#pages { list-style-image: none; list-style-type: none; margin: 0; padding: 0}
+	#pages LI {  float: left; font-size: 123.1%; line-height: 26px; height: 26px}
+		#pages A, #pages STRONG { background: #ECEFF3; color: #66C; display: inline-block; line-height: 26px; padding: 0 .4em; height: 26px}
+        	#pages A:hover { background: #E3E6EA}
+        #pages .prev,  #pages .next { background: url(/a/_projects/traumatic/img/blues.png) no-repeat; text-indent: -4300em; height: 26px; width: 22px}
+			#pages .prev { background-position: -160px -550px}
+			#pages .next { background-position: -190px -550px}
+            #pages .prev A,  #pages .next A { background: transparent; display: block; padding: 0; height: 26px; width: 22px}
+		#pages STRONG { color: #C00}
+        #pages .disabled, FORM .disabled { cursor: default; filter: alpha(opacity=30); -moz-opacity: .3; opacity: .3}
+
+/* Tables ---------------------------------------------------------------------------------------------------------------*/
+TABLE { background: #FFF; border: 1px solid #CCCFD3; border-spacing: 0; border-collapse: collapse; empty-cells: show; line-height: normal; text-align: left; margin: 0 auto 1.5em; width: 100%}
+	CAPTION { font-weight: bold; text-align: left; margin: 0 auto; padding-bottom: .6em}
+	THEAD { background: #E1E3E7}
+    	THEAD TH { border-bottom: 1px solid #CCCFD3}
+	.even { background: #EDF0F4}
+	TD, TH { border-right: 1px solid #CCCFD3; font-size: 100%; font-weight: normal; vertical-align: top; padding: 10px}
+
+.sortable THEAD TH { cursor: pointer; padding-right: 30px}
+	.sortable THEAD .asc, .sortable THEAD .desc { background: #888B8F no-repeat 100% 1.15em; color: #FFF}
+    .sortable THEAD .asc { background-image: url(/a/_projects/traumatic/img/arrow-down.gif)}
+	.sortable THEAD .desc { background-image: url(/a/_projects/traumatic/img/arrow-up.gif)}
+
+/* Sidebar --------------------------------------------------------------------------------------------------------------*/
+.aside { float: left; width: 220px}
+	UL.aside { padding-top: .923em}
+    	UL.aside LI { background: url(/a/_projects/traumatic/img/blues.png) no-repeat 10px -177px; border-bottom: 1px solid #E3E6EA; display: block; margin-bottom: 0; padding: .385em 20px .462em}
+            	UL.aside .last { border-bottom: 0 none}
+			UL.aside A { text-decoration: none}
+	.sign_up .aside { float: right}
+    .aside .box { background: #ECEFF3; padding-bottom: 1.5em}
+    	.aside .box H2 { background: #C00; color: #FFF; margin: 0 0 15px; padding: 10px 20px 10px}
+        .aside .box H3, .aside .box P { margin: 0 20px .4em}
+        .aside .box UL { margin: 0 20px 0}
+
+.submenu { list-style-image: none; list-style-type: none}
+	UL.submenu LI { background: url(/a/_projects/traumatic/img/blues.png) no-repeat 100% -177px; text-align: right}
+    	UL.submenu LI SPAN { display: block; padding-bottom: .385em }
+    	UL.submenu LI UL { margin: 0}
+			UL.submenu LI LI { background: none; border-bottom: 0 none; padding: 0  0 .462em}
+            
+#sm_fees { font-weight: bold; margin-top: 2em}
+    
+/* Current pages ---------------------------------------------------------------------------------------------------------*/
+/*Main menu*/
+.sign_up #m_sign_up A, .sign_in #m_sign_in A, .user #m_user SPAN A, .programme #m_programme A
+{ cursor: default; color: #888B8F; text-decoration: none}
+
+.about #m_about, .organizers #m_about, .committee #m_about, .secretariat #m_about, .vystavka #m_about, .sponsors #m_sponsors, .news-list #m_about, .partner #m_about, .history #m_about, .fees #m_about, .hotel #m_about, .policy #m_about,
+.sign_up #m_sign_up, .sign_in #m_sign_in, .user #m_user SPAN A, .post #m_user SPAN A,
+.programme #m_programme, .abstracts #m_abstracts,  .abstract #sm_abstracts 
+{ background: #ECEFF3}
+
+.user #m_user SPAN A, .post #m_user SPAN A
+{ border-right: 3px solid #FFF}
+
+/*Submenus*/
+.sign_up #sm_sign_up, .fees #sm_fees, .hotel #sm_hotel, .policy #sm_policy
+{ background: #66C url(/a/_projects/traumatic/img/blues.png) no-repeat 10px -287px}
+
+.about #sm_overview, .organizers #sm_organizers, .committee #sm_committee, .secretariat #sm_secretariat, .vystavka #sm_vystavka, .sponsors #sm_sponsors, .news-list #sm_news-list,  .partner #sm_partner, .history #sm_history,
+.fees .submenu #sm_fees, .hotel .submenu #sm_hotel, .policy .submenu #sm_policy, .programme #sm_programme, .abstracts #sm_abstracts  
+{ background: #66C url(/a/_projects/traumatic/img/blues.png) no-repeat 100% -287px}
+	.about #sm_overview A, .organizers #sm_organizers A, .committee #sm_committee A, .secretariat #sm_secretariat A, .vystavka #sm_vystavka A, .sponsors #sm_sponsors A, .news-list #sm_news-list A, .partner #sm_partner A, .history #sm_history A,
+    .sign_up #sm_sign_up A, .fees #sm_fees A, .hotel #sm_hotel A, .policy #sm_policy A, .sign_up #sm_sign_up A, .programme #sm_programme A,
+    .abstracts #sm_abstracts A
+	{ cursor: default; color: #FFF; text-decoration: none}
+
+/* Footer ---------------------------------------------------------------------------------------------------------------*/
+
+#footer { border-top: 1px solid #DDE0E4; padding: 40px 0 60px; margin-top: 60px} 
+	#footer H2 { font-size: 100%; font-weight: bold; margin: 0 .3em 0 0}
+
+#footer .contacts { display: block; float: left; text-align: right; margin-right: 40px; width: 220px}
+/*	#footer .contacts UL { list-style-image: none; list-style-type: none; margin: 0}
+		#footer .phone  { display: block; font-size: 1.077em; font-weight: bold; margin: -1px 40px 0 0; padding-left: 60px; position: relative}
+			#footer .phone EM  { background: url(/a/img/24.png) 0 -100px; text-indent: -4300em; position: absolute; top: -4px; left: 0; height: 25px; width: 48px}*/
+
+#ticker  { float: left; width: 220px}
+	#countdown { font-weight: bold; white-space: nowrap}
+
+#venue  { float: left; margin-right: 20px; width: 460px}
+
+/* Widgets --------------------------------------------------------------------------------------------------------------*/
+/*Validator*/
+.f_error { padding-bottom: 13px; position: absolute; top: 300px; left: 300px; z-index: 4300}
+	.f_error_content { background: #FC0; border: 3px solid #FFF; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; box-shadow: 0 0 4px #000; -moz-box-shadow: 0 0 4px #000; -webkit-box-shadow: 0 0 4px #000; color: #41360D; cursor: pointer; padding: 10px; width: 150px}
+		.green_popup .f_error_content { background: #3C3; color: #1C3411}
+		.black_popup .f_error_content { background: #212428; color: #BBBEC2}
+
+.f_error .f_error_arrow { background: url(/a/_projects/traumatic/img/blues.png) no-repeat 0 -100px; position: absolute; bottom: 1px; left: 20px; height: 15px; width: 23px; z-index: 4300}
+	.f_error .f_error_arrow_bottom { margin: -6px; top: 0}
+    .green_popup .f_error_arrow { background-position: -30px -100px}
+    .black_popup .f_error_arrow { background-position: -60px -100px}
+
+.ajax_submit {  display: none; padding: 20px; background-color: #4CE54C}
+
+/* Modal box */
+.modal { background: #FFF; -moz-border-radius: 14px; -webkit-border-radius: 14px; display: none; text-align: center; padding: 30px; width: 600px; z-index: 1000}
+.modal .close { background: url(/a/_projects/traumatic/img/24.png) -60px -180px no-repeat; display: block; cursor: pointer; text-indent: -4300em; position: absolute; top: 20px; right: 20px; height: 15px; width: 15px}
+
+/* Clearing -------------------------------------------------------------------------------------------------------------*/
+.cfx:after { content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.cfx { display: inline-table}
+/* Hides from IE-mac \*/
+* HTML .cfx { height: 1%}
+.cfx { display: block}
+/* End hide from IE-mac */
+
+/* Hacks ---------------------------------------------------------------------------------------------------------------*/
+/* Firefox & IE */
+.btn, .btn STRONG,  BUTTON STRONG, #pages A, #pages LI
+{ display: -moz-inline-stack;  *display: inline; _overflow: hidden; zoom: 1}
+
+/* Firefox ------------------------------------------------------------------------------------------------------------------*/
+BUTTON::-moz-focus-inner { border: none /* overrides extra padding */}
+@-moz-document url-prefix() {
+BUTTON STRONG { line-height: 40px; margin-left: -2px}
+.name_and_menu H2 { padding-top: 6px}
+}
+
+/* Opera, Safari, Chrome ----------------------------------------------------------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+BUTTON STRONG { margin: -1px 0 0 -3px}
+}
+
+/* Opera --------------------------------------------------------------------------------------------------------------------*/
+HTML:first-child BUTTON STRONG { margin: 0}
+
+/* IE --------------------------------------------------------------------------------------------------------------------*/
+*HTML  BUTTON, *HTML  .btn { width: 1px}
+*+HTML BUTTON STRONG, *+HTML .btn STRONG { float: left}
+*HTML #f_confirm { padding-bottom: 3em}
+*HTML .f_error .f_error_arrow { bottom: -1px}
+*HTML #footer { position: static; margin: 0} /*Check it*/
+*+HTML #header, *+HTML #footer { zoom: 1}
+*HTML INPUT.txt { width: 418px}
+*HTML .post INPUT, *HTML .post TEXTAREA { width: 678px}
+*HTML TABLE { width: 99%}
+LEGEND { *margin-left: -7px}
+
+*HTML #tsr_welcome .author { top: 200px; bottom: auto}
+*HTML #tsr_organizers .estes  { right: auto; left: 380px}
+*HTML #tsr_organizers .rgmu  { right: auto; left: 550px}
+#footer #ticker { *display: none}
+
+
+ table.sort {
+  width: 400px;
+  margin: 0;
+  border: 0;
+ }
+ table.sort td {
+  border: 0;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+ }
+ table.sort td input {
+  width: 90px;
+  margin: 0;
+  
+ }
+ table.sort td label {
+  width: 90px;
+  margin: 0;
+  text-align: left;  
+ }
+

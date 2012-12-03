@@ -1,0 +1,286 @@
+﻿A { color: #CCA640}
+A:visited { color: #99A6B2}
+A:hover { color: #FFD973}
+BODY#system { margin: 40px 0}
+BODY { background: #0D1926; color: #99A6B2; font-family: Arial, Geneva, Helvetica, sans-serif; margin: 0 0 60px; padding: 0; text-align: center}
+CAPTION { font-weight: bold; padding-bottom: 6px}
+CAPTION, DIV, DL, H2, OL, P, TD, TH, UL { font-size: x-small; voice-family: "\"}\""; voice-family: inherit; font-size: small}
+CAPTION, TD, TH { font-size: x-small; voice-family: "\"}\""; voice-family: inherit; font-size: small}
+CAPTION, TH { text-align: left}
+DFN, EM { color: #9966FF; font-style: normal}
+FORM { margin: 0; padding: 0}
+H1 { font-size: 130%; margin: 0; padding: 20px 0 0.5em}
+H2 { font-size: 110%}
+H2.like-h3, .column1-1 H2.like-h3, .column1-2 H2.like-h3, .column2-2 H2.like-h3, H3 { font: bold Verdana, Geneva, Arial, sans-serif; font-size: x-small; margin: 1em 0 0; padding: 0; voice-family: "\"}\""; voice-family: inherit; font-size: small}
+IMG { border: 0}
+P { margin: 0 0 1em 0}
+P.txt-small { margin-top: 1em} 
+
+/* Flash */
+#intro-swf { background: #596673; margin-bottom: 1em; padding: 5px 0; width: 770px}
+#intro TD P { font-size: 13px}
+
+/* Layout - wrappers */
+.wrapper-level1 { background:  url(/a/_projects/motown/img/bg_wrapper.gif) repeat-y; margin: 0 auto; width: 760px}
+.wrapper-level1-sys { background:  url(/a/_projects/motown/img/bg_wrapper_sys.gif) repeat-y; margin: 0 auto; width: 660px}
+.wrapper-level2 { background:  url(/a/_projects/motown/img/bg_wrapper_level2.gif) no-repeat center bottom; width: 760px}
+.wrapper-level2-sys { background:  url(/a/_projects/motown/img/bg_wrapper_level2_sys.gif) no-repeat center bottom; width: 660px}
+.wrapper-columns { clear: both; text-align: left; margin: 0 auto; padding: 20px 0 47px; width: 620px}
+.wrapper-columns-sys { clear: both; text-align: left; margin: 0 auto; padding: 0 0 47px; width: 600px}
+#front .wrapper-columns, #casino .wrapper-columns { width: 700px}
+
+/* Alerts */
+.wrapper-alert-level1 { background: #99A6B2 url(/a/_projects/motown/img/bg_wrapper_alert.gif) repeat-y; margin: 0 auto 20px; width: 760px}
+.wrapper-alert-level2 { background:  url(/a/_projects/motown/img/bg_wrapper_alert_level2.gif) no-repeat center bottom; width: 760px}
+.noscript-noflash { color: #263340; font-size: 85%; text-align: left; padding: 20px 28px 20px; width: 760px; voice-family: "\"}\""; voice-family: inherit; width: 704px}
+#front .alert A, #front .alert A:visited, #intro .alert A, #intro .alert A:visited { color: #6633CC}
+#front .alert A:hover, #intro .alert A:hover { color: #263340}
+
+/* Header & meta */
+#meta { clear: both; margin: 0 auto; padding: 11px 30px; height: 80px; width: 760px; voice-family: "\"}\""; voice-family: inherit; height: 58px; width: 700px}
+#meta .column1-2 { text-align: left; margin: 0; width: 420px}
+#meta .column2-2 { margin: 0; width: 270px}
+#portal { float: left; margin-right: 21px}
+A#top-promo IMG { margin: 9px 0 0 20px}
+#meta UL { text-align: left; list-style-image: none; list-style-type: none; margin: 0; padding: 20px 0} /* !Important: text-align prevents bug in Mozilla */
+#meta LI { float: right; padding: 0}
+#meta LI A { display: block; padding: 3px 9px 5px}
+#meta LI, #meta LI A, #meta LI A:visited, #front #meta LI.selected A:hover { color: #99A6B2; font: bold 10px Verdana, Geneva, sans-serif; text-decoration: none}
+#meta LI A:hover { color: #FFD973; text-decoration: underline}
+#meta LI.selected {  background:  url(/a/_projects/motown/img/bg_meta_btn_left.gif) no-repeat left top; margin-left: 10px; padding: 0 0 0 4px}
+#meta LI.selected A { background:  url(/a/_projects/motown/img/bg_meta_btn_right.gif) no-repeat right top; padding: 3px 9px 5px 5px}
+#front #meta LI.selected A { cursor: text}
+#front_anime { display: none}
+#front #front_anime { display: block}
+#header { clear: both; background:  url(/a/_projects/motown/img/bg_header.gif) no-repeat; padding: 8px 8px 0; height: 220px; width: 760px; voice-family: "\"}\""; voice-family: inherit; height: 212px; width: 744px}
+#header-sys { clear: both; background:  url(/a/_projects/motown/img/bg_header_sys.gif) no-repeat; padding: 8px 8px 0; height: 160px; width: 660px; voice-family: "\"}\""; voice-family: inherit; height: 152px; width: 644px}
+#header .wrapper-columns { clear: both; padding: 0; width: 744px}
+#header-sys .wrapper-columns-sys { background: #9966FF url(/a/_projects/motown/img/bg_nameplate_sys.gif) no-repeat; clear: both; padding: 0; height: 152px; width: 644px}
+#header .wrapper-columns .column1-2 { background: #9966FF url(/a/_projects/motown/img/bg_nameplate.gif) no-repeat; margin: 0; padding: 0; height: 147px; width: 503px}
+#logo { float: left; margin: 0; padding: 10px 0 0 29px; height: 147px; width: 217px; voice-family: "\"}\""; voice-family: inherit; height: 137px; width: 188px}
+#entertainers { background-position: right top; background-repeat: no-repeat; float: right; margin: 0; padding: 0; height: 147px; width: 193px}
+#entertainers { background-image:  url(/a/_projects/motown/img/headers/4tops.gif)}
+#front #entertainers { background-image: none}
+#help #entertainers { background-image:  url(/a/_projects/motown/img/headers/supremes.jpg)}
+#promotions #entertainers { background-image:  url(/a/_projects/motown/img/headers/temptations.jpg)}
+
+/* Menu */
+#menu { float: right; background: #492501 url(/a/_projects/motown/img/bg_menu.gif) no-repeat; margin: 0; padding: 18px 11px 0 19px; height: 147px; width: 241px; voice-family: "\"}\""; voice-family: inherit; height: 129px; width: 211px}
+#menu .wrapper-columns { padding: 10px 0 0 0; width: 211px}
+.menu-column1-2 { float: left; list-style-image: none; width: 77px}
+.menu-column2-2 { float: right; list-style-image: none; padding-top: 3px; position: relative; width: 121px; voice-family: "\"}\""; voice-family: inherit; padding-top: 0}
+#menu UL { list-style: none; margin: 0; padding: 0}
+#menu UL LI { font-size: 1px; line-height: 1px; margin: 0 0 0 -16px; voice-family: "\"}\""; voice-family: inherit; margin: 0 0 6px 0}
+#menu A { background-position: 0 0; background-repeat: no-repeat; display: block; height: 10px}
+#menu A:hover { background-position: 0 -10px}
+#front #nav-home A, #casino #nav-home A, #about #nav-about A, #deposit #nav-deposit A, #help-index #nav-help A, #invite #nav-invite A, #news #nav-news A, #personal #nav-personal A, #preview #nav-preview A, #promo #nav-promo A, #support #nav-support A, #thistory #nav-thistory A, #whistory #nav-whistory A, #withdraw #nav-withdraw A { background-position: 0 -10px; cursor: default}
+#nav-about A { background-image:  url(/a/_projects/motown/img/en/btn_about.gif)}
+#nav-deposit A { background-image:  url(/a/_projects/motown/img/en/btn_deposit.gif)}
+#nav-help A { background-image:  url(/a/_projects/motown/img/en/btn_help.gif)}
+#nav-home A { background-image:  url(/a/_projects/motown/img/en/btn_home.gif)}
+#nav-invite A { background-image:   url(/a/_projects/motown/img/en/btn_invite_menu.gif)}
+#nav-news A { background-image:  url(/a/_projects/motown/img/en/btn_news.gif)}
+#nav-personal A { background-image:  url(/a/_projects/motown/img/en/btn_personal.gif)}
+#nav-preview A { background-image:  url(/a/_projects/motown/img/en/btn_preview.gif)}
+#nav-promo A { background-image:  url(/a/_projects/motown/img/en/btn_promo.gif)}
+#nav-support A { background-image:  url(/a/_projects/motown/img/en/btn_support.gif)}
+#nav-thistory A { background-image:  url(/a/_projects/motown/img/en/btn_thistory.gif)}
+#nav-whistory A { background-image:  url(/a/_projects/motown/img/en/btn_whistory.gif)}
+#nav-withdraw A { background-image:  url(/a/_projects/motown/img/en/btn_withdraw.gif)}
+.tooltip { background: #99A6B2 url(/a/_projects/motown/img/bg_tooltip.gif) no-repeat center top; border-bottom: 4px solid #0D1926; color: #263340; display: none; font: bold 10px Verdana, Geneva, sans-serif; padding: 10px; position: absolute; top: 6px; left: 30px; width: 120px; voice-family: "\"}\""; voice-family: inherit; top: 3px; width: 100px}
+DIV>SPAN.tooltip { top: 3px; left: 0}
+DIV.menu-column2-2:hover .tooltip { display: block}
+
+/* Play 4 Money Box */
+.p4m-box { background: #192633 url(/a/_projects/motown/img/bg_play4money_box.gif) repeat-x; border: 0; clear: both; text-align: right; height: 65px; width: 744px}
+.p4m-box DIV { font-size: 13px; text-align: center; padding-top: 24px}
+.p4m-box DIV SPAN { background:  url(/a/_projects/motown/img/dtl_star.gif) no-repeat left center; padding-left: 1.2em}
+.p4m-box DIV SPAN IMG { vertical-align: middle}
+.p4m-box TD { font-size: 13px; margin: 0; padding: 0; vertical-align: middle}
+#p4m-h2 { width: 139px}
+#p4m-h2 H2 { display: inline}
+#p4m-arrow { width: 27px}
+#p4m-username { width: 70px}
+.p4m-box LABEL { font-size: 13px}
+.p4m-input { width: 81px}
+#p4m-input INPUT { width: 74px}
+#p4m-password { width: 70px}
+#p4m-btn { width: 66px}
+#p4m-links { padding: 20px 30px 0 0; vertical-align: top; width: 210px; voice-family: "\"}\""; voice-family: inherit; width: 180px}
+#p4m-links A, #p4m-links A:visited { color: #99A6B2; font: 10px Verdana, Geneva, sans-serif}
+#p4m-links A:hover { color: #FFD973}
+
+/* Front */
+#front A, #casino A { color: #99A6B2}
+#front A:visited, #casino A:visited { color: #808C99}
+#front A:hover, #casino A:hover { color: #FFD973}
+#front H2, #casino H2 { margin: 1em 0 0}
+#front .sidebar, #casino .sidebar { float: left; background:  url(/a/_projects/motown/img/bg_sidebar_b.gif) no-repeat left bottom; padding-bottom: 20px; height: 340px; width: 220px; voice-family: "\"}\""; voice-family: inherit; height: 320px}
+#front .sidebar .include, #casino .sidebar .include { background: #263340 url(/a/_projects/motown/img/bg_sidebar_t.gif) no-repeat; padding: 20px 20px 0}
+#games-list { width: 460px}
+#games-list A { text-decoration: none}
+#games-list A:hover { text-decoration: underline}
+#games-list-h2 { border-bottom: 1px solid #33404C; padding: 7px 0 4px; width: 460px}
+#games-list-h2 H2 { float: left; width: 220px}
+#games-list-h2 SPAN { float: right; font-weight: bold; padding-top: 18px}
+#favourits { padding: 20px 0 24px; height: 84px; width: 460px; voice-family: "\"}\""; voice-family: inherit; height: 40px}
+#favourits .column1-3, #favourits .column2-3, #favourits .column3-3 { position: relative; width: 140px}
+#favourits IMG { float: left; margin-right: 9px}
+#favourits .valign-relative { position: relative; height: 40px; width: 91px}
+DIV.column1-3>DIV.valign-relative, DIV.column2-3>DIV.valign-relative, DIV.column3-3>DIV.valign-relative { display: table; position: static} /*display:table for Mozilla & Opera*/
+.valign-nested01 { position: absolute; top:50%} /*for IE - Include */
+DIV.valign-relative>DIV.valign-nested01 { display: table-cell; position: static; vertical-align: middle} /*for Mozilla and Opera*/
+.valign-nested02 { position: relative; top:-50%}
+#games-list P { line-height: 150%}
+
+/* Body Copy */
+#align { text-align: center; width: 100%}
+#callout-right-half-page { float: right; margin: 0 0 10px 10px; width: 280px}
+#cell-border-b, .cell-border-b { border-bottom: 1px solid #33404C}
+#cell-border-r-none { border-right: 0}
+#cell-border-t, .cell-border-t { border-top: 1px solid #33404C}
+#ch-password { float: right; margin: 0 10px 5px 10px; width: 243px}
+#hidden-link A, #hidden-link A:visited { color: #000000; text-decoration: none}
+#hidden-link A:hover { color: #000000; text-decoration: underline}
+#hidden-link H2 A, #hidden-link H2 A:visited { color: #FF4040; text-decoration: none}
+#hidden-link H2 A:hover { color: #FF4040; text-decoration: underline}
+#margin-b0 { margin-bottom: 0}
+#margin-b1em { margin-bottom: 1em}
+#margin-r10 { margin-right: 10px}
+#margin-r10-l10 { margin-right: 10px; margin-left: 10px}
+#margin-t0 { margin-top: 0}
+#margin-t1em-b0 { margin-top: 1em; margin-bottom: 0}
+#margin-t1em-r10-l10 { margin: 1em 10px 0 10px}
+#news { margin-bottom: 0}
+#security TD { padding: 0 0 5px 10px}
+#txt-color-emphasis { color: #CC3300}
+#txt-normal-weight, .txt-normal-weight { font-weight: normal}
+#txt-small, .txt-small { font-family: Verdana, Geneva, sans-serif; font-size: xx-small; voice-family: "\"}\""; voice-family: inherit; font-size: x-small}
+#txt-small-fixed, .txt-small-fixed { font: 11px Verdana, Geneva, sans-serif}
+#txt-soft, .txt-soft { color: #596673}
+
+.alert { background:  url(/a/_projects/motown/img/dtl_alert.gif) no-repeat left top; text-indent: 1.2em}
+LABEL.alert { background:  url(/a/_projects/motown/img/dtl_alert.gif) no-repeat left top; text-indent: 0; padding-left: 1.2em}
+.arrow-back { background:  url(/a/_projects/motown/img/dtl_arrow_back.gif) no-repeat left center; font-size: 85%; padding-left: 1.4em}
+.arrow-back A, .arrow-forward A, .arrow-up A { background: #192633}
+.arrow-forward { background:  url(/a/_projects/motown/img/dtl_arrow_forward.gif) no-repeat right center; font-size: 85%; padding-right: 1.4em}
+.arrow-up { background:  url(/a/_projects/motown/img/dtl_arrow_up.gif) no-repeat left center; font-size: 85%; padding-left: 1.2em}
+.arrow-up A:visited { color: #0000FF}
+.callout-right { background: #F2F2F2; float: right; margin: 0 0 10px 10px; padding: 10px; width: 200px}
+.list-end { font-size: 1px; line-height: 1px; height: 10px}
+.list-links LI { margin-top: 4px}
+.list-h2-h3 { color: #333399; font: bold 13px Arial, Geneva, Helvetica, sans-serif; margin-bottom: 5px}
+.nowrap { white-space: nowrap}
+.txt-em { color: #FFD973}
+
+/* Layout - Clearer */
+.cfx:after { content: "."; display: block; height: 0; clear: both; visibility: hidden}
+.cfx { display: inline-table}
+/* Hides from IE-mac \*/
+* html .cfx { height: 1%}
+.cfx { display: block}
+/* End hide from IE-mac */
+
+/* Layout - Columns */
+.clearer { border: 0; clear: both; display: block; font-size: 1px; line-height: 1px; margin: 0; padding: 0; height: 0}
+.column1-2, .column2-2 { width: 280px}
+.column1-2 { float: left}
+.column2-2 { float: right}
+.column1-3, .column2-3, .column3-3 { float: left; width: 180px}
+.column1-2, .column1-3, .column2-3 { margin-right: 20px}
+
+/* Tables */
+#ch-password { float: right; margin: 0 10px 5px 10px; width: 280px}
+#security TD { padding: 0 0 5px 10px}
+
+#cell-border-b, .cell-border-b { border-bottom: 1px solid #33404C}
+#cell-border-r-none { border-right: 0}
+#cell-border-t, .cell-border-t { border-top: 1px solid #33404C}
+.bg-content { background: #192633}
+.bg-odd { background: #263340}
+.bg-tfoot { background-color: #1F2C39}
+.bg-trow { background-color: #0D1926}
+.table-border { border: 1px solid #33404C; border-collapse: collapse}
+.table-border TD, .table-border TH, .width-table-border TD, .width-table-border TH { padding: 6px; border-right: 1px solid #33404C}
+.width-table { margin: 0 0 1em; width: 100%}
+.width-table TD, .width-table TH, #ch-password TD, #ch-password TH { padding: 6px}
+.width-table-border { border: 1px solid #33404C; border-collapse: collapse; margin: 0 0 1em; width: 100%}
+
+/* Lists */
+.list-caption { margin-bottom: 0}
+.list-end { padding-bottom: 1em}
+.list-h2-h3 { color: #333399; font-size: x-small; margin-bottom: 0; voice-family: "\"}\""; voice-family: inherit; font-size: small}
+.list-inline { display: inline; margin: 0; padding: 0}
+.list-inline LI { border-left: 1px solid #99A6B2; display: inline; line-height: 160%; list-style: none; margin-left: -5px; padding: 0 6px 0 5px}
+.list-inline LI.first { border-left: none}
+.list-links LI { margin-top: 4px}
+DD { margin: 0 0 1em}
+DD OL, DT { margin: 1em 0}
+DT IMG { float: right; margin: 2px 0 5px 10px}
+LI UL { margin: 0 0 0 16px}
+OL { list-style-type: none; margin: 0 0 1em 0; padding: 0}
+OL LI {	background: transparent 0 5px no-repeat; padding-left: 23px}
+OL LI.li01 { background-image:  url(/a/_projects/motown/img/dtl_01.gif)}
+OL LI.li02 { background-image:  url(/a/_projects/motown/img/dtl_02.gif)}
+OL LI.li03 { background-image:  url(/a/_projects/motown/img/dtl_03.gif)}
+OL LI.li04 { background-image:  url(/a/_projects/motown/img/dtl_04.gif)}
+OL LI.li05 { background-image:  url(/a/_projects/motown/img/dtl_05.gif)}
+OL LI.li06 { background-image:  url(/a/_projects/motown/img/dtl_06.gif)}
+OL LI.li07 { background-image:  url(/a/_projects/motown/img/dtl_07.gif)}
+OL LI.li08 { background-image:  url(/a/_projects/motown/img/dtl_08.gif)}
+OL LI.li09 { background-image:  url(/a/_projects/motown/img/dtl_09.gif)}
+OL LI.li10 { background-image:  url(/a/_projects/motown/img/dtl_10.gif)}
+OL LI.li11 { background-image:  url(/a/_projects/motown/img/dtl_11.gif)}
+OL LI.li12 { background-image:  url(/a/_projects/motown/img/dtl_12.gif)}
+OL LI.li13 { background-image:  url(/a/_projects/motown/img/dtl_13.gif)}
+OL LI.li14 { background-image:  url(/a/_projects/motown/img/dtl_14.gif)}
+OL LI.li15 { background-image:  url(/a/_projects/motown/img/dtl_15.gif)}
+OL LI.li16 { background-image:  url(/a/_projects/motown/img/dtl_16.gif)}
+UL { list-style:   url(/a/_projects/motown/img/dtl_bullet.gif) outside; margin: 0 0 1em 16px; padding: 0}
+UL.nested { list-style:  url(/a/_projects/motown/img/dtl_bullet_nested.gif)}
+UL LI { padding: 0}
+
+/* Forms */
+.reports-select-t { padding-bottom: 0.3em}
+.reports-select-t .column1-2, .reports-select-t .column2-2 { margin: 0; width: auto}
+.reports-select-t DIV { margin-bottom: 0.5em}
+.reports-select-b { margin: 1em 0; white-space: nowrap; width: 100%}
+.reports-select-b INPUT#OK, #subscriberu INPUT#OK { margin-left: 5px}
+FORM#period INPUT, FORM#period SELECT { vertical-align: middle}
+FORM#period { font-size: 13px}
+OPTGROUP { font-style: normal}
+SELECT#games { width: 170px}
+
+.input-standart { width: 120px}
+.optional-input { color: #FFF; background: #192633}
+
+.form-line { background: #F2F2F2; margin-bottom: 1em; padding: 7px; width: auto}
+.form-line INPUT { margin-right: 14px; vertical-align: middle}
+.form-line LABEL { font-weight: bold; margin-right: 9px}
+
+FORM#bug INPUT#submit { margin-bottom: 1em}
+FORM#form-login INPUT#login, FORM#login INPUT#password { width: 62px}
+FORM#form-login INPUT#sign-in-btn { border: 0; margin-left: 5px; height: 48px; width: 48px}
+FORM#newpass INPUT#password, FORM#newpass INPUT#newpassword, FORM#newpass INPUT#confirm { width: 80px}
+INPUT { color: #000; max-width: 155px}
+INPUT#amount { margin-left: 5px}
+INPUT#OK { border: 0; height: 20px; width: 40px}
+INPUT#change, INPUT#invite, INPUT#play, INPUT#signup, INPUT#submit { border: 0; max-width: 120px; width: 120px; height: 20px}
+TEXTAREA { width: 420px}
+P#bonuses { text-indent: 0.4em}
+
+/* IMGs */
+IMG.left, OBJECT.left { float: left; margin: 2px 10px 5px 0}
+IMG.right { float: right; margin: 2px 0 5px 10px}
+
+/* Footer */
+#footer { margin: 12px auto 0; height: 31px; width: 714px}
+#footer .column1-2 { width: 382px}
+#footer DIV { float: left}
+#footer .column1-2 IMG { margin-right: 5px}
+#footer .column1-2 .btns { float: left}
+.payout { background: #9966FF url(/a/_projects/motown/img/en/bg_payout.gif) no-repeat; color: #FFF; font-size: 13px; font-weight: bold; text-align: right; line-height: 31px; margin: 0; padding-right: 10px; height: 31px; width: 120px; voice-family: "\"}\""; voice-family: inherit; width: 110px}
+#footer .column2-2 { font: 10px Verdana, Geneva, Arial, sans-serif; line-height: 15px; text-align: left; width: 312px}
+
+/* Customization */
+#front #logo, #casino #logo { cursor: default}
