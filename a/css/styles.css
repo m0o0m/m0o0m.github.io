@@ -50,8 +50,7 @@ DIV.off { display: none}
 			.tbn_corp_travel { background-position: -80px -50px !important}
 			.tbn_rpm { background-position: 0 -100px !important}
 
-.info { background: url(/a/img/greys.png) no-repeat -600px 0; clear: right; padding: 0; height: 40px; width: 320px}
-.info.en { background-position: 0 0; width: 185px}
+.info { background: url(/a/img/greys.png) no-repeat 0 0; clear: right; padding: 0; height: 40px; width: 185px}
 	.info LI { float: left; margin: 5px 5px 0 0}
 	.info .btn_about { margin-left: 7px}
 		.info LI A, .info_en LI A { background: url(/a/img/greys.png) no-repeat; border-bottom: 0 none !important; display: block; height: 30px; width: 30px}

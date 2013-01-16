@@ -25,7 +25,7 @@ UL LI { padding: 0 0 .4em}
 	.b_back EM { background: url(/a/img/greys.png) -445px -50px no-repeat; display: block; line-height: 0; text-indent: -430em; margin-top: -3px; padding: 0; position: absolute; top: 50%; left: 0; height: 9px; width: 10px}
 
 /* Layout and widgets ------------------------------------------------------------------------------------*/
-#main { text-align: left; width: 360px; float: left}
+#main { text-align: left; width: 380px; float: left}
 	#main H2, #main H3, #sidebar H2 { margin-bottom: 0}
 #sidebar { text-align: left; float: right; width: 200px}
 		#sidebar H2 A { color: #565659; border-bottom: 0 none}
@@ -40,6 +40,7 @@ UL LI { padding: 0 0 .4em}
             #sidebar #ico_tumblr { background-position: -80px 0}
             #sidebar #ico_vkontakte { background-position: -80px -16px}
 			#sidebar #ico_my_mail { background-position: -96px 0}
+			#sidebar #ico_book { background-position: -96px 0}
 
 #goodreads { background: #CCC; padding: 5px 9px 5px 6px}
 #lastfm { background: #CCC; margin: .4em 0 1.33em; padding: 8px}
