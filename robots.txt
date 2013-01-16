@@ -1,5 +1,5 @@
 User-agent: *
-Sitemap: http://www.nickysheen.ru/sitemap.xml
+Sitemap: http://nickysheen.ru/sitemap.xml
 Disallow: /_labs/
 Disallow: /labs/
 Disallow: /personal/
