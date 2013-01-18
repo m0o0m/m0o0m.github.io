@@ -5,7 +5,6 @@ a/less
 
 #Source Files
 *.sublime-*
-.nojekyll
 _temp/index.htm
 
 # OS generated files
