@@ -45,10 +45,11 @@ DIV.off { display: none}
 	.recent LI, .info LI { text-indent: -640em}
 	.recent LI { margin: 0 0 10px 20px}
 		.recent LI A { background: url(/a/img/tbns.png) no-repeat; border-bottom: 0 none !important; display: block; height: 50px; width: 80px}
-			.tbn_vega { background-position: -80px 0 !important}
-			.tbn_backgammon { background-position: 0 -50px !important}
-			.tbn_corp_travel { background-position: -80px -50px !important}
-			.tbn_rpm { background-position: 0 -100px !important}
+			.tbn-betplaynow { background-position: -80px 0 !important}
+			.tbn-sakh-developmant-agency { background-position: 0 -50px !important}
+			.tbn-region-20 { background-position: -80px -50px !important}
+			.tbn-polylog { background-position: 0 -100px !important}
+
 
 .info { background: url(/a/img/greys.png) no-repeat 0 0; clear: right; padding: 0; height: 40px; width: 185px}
 	.info LI { float: left; margin: 5px 5px 0 0}
