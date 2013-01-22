@@ -1,0 +1,26 @@
+#header { margin: 0 auto; padding: 46px 0 0 13px; height: 154px; width: 907px}
+
+#header H1 { float: left; margin: 0; padding: 0; height: 114px; width: 175px}
+	#header H1 A { background-position: -60px 0; height: 114px; width: 175px}
+    #front #header H1 A { cursor: default}
+
+/* Main menu */
+#header NAV { float: right; padding-top: 18px; position: relative; width: 680px}
+
+#header NAV UL { list-style-image: none; list-style-type: none; margin: 0; padding: 0}
+	#header NAV LI { background: url(/a/_projects/epcc/img/b.gif) no-repeat -10px .143em; float: left; margin: 0; padding: 0 0 0 14px; height: 40px; width: 186px}
+    	#header #m_company { width: 664px}
+        #header #m_social, #header #m_environment { background-position: 12px .143em; padding-left: 36px; width: 244px}
+    	#header NAV A { float: left; color: #808285; text-decoration: none; white-space: nowrap; display: block; padding: 0 4px}
+            #header NAV A:hover { color: #000; border-bottom: 4px solid #B8BBBF}
+
+#header FORM {  background: #FFF; position: absolute; top: 14px; left: 220px; height: 28px; width: 338px}
+	#header #i_q { border: 0 none; float: left; margin: 0; width: 246px}
+    	.ie6 #header #i_q { border: 1px solid #B8BBBF; line-height: 24px; height: 24px}
+    #header BUTTON { border: 0 none; border-left: 1px solid #CBA600; text-align: left; padding: 0 0 0 1em; width: 78px}
+    	.ie6 #header BUTTON, .ie7 #header BUTTON { border-left: 0 none}
+
+            
+/* Current sections */
+.company #m_company A, .project #m_project A, .social #m_social A, .media #m_media A, .production #m_production A, .environment #m_environment A, .contacts #m_contacts A
+{ border-bottom: 4px solid #FFD200; color: #000; cursor: default}

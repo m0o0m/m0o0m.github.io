@@ -1,0 +1,36 @@
+/* Regular ———————————————————————————————————————————*/
+@font-face {
+    font-family: 'EuropeBold';
+    src: url('/a/_projects/epcc/type/europe-bold.eot');
+    src: local('EuropeCBold'), local('Europe C Bold'), local('EuropeCyrBold'), local('Europe Cyr Bold'),
+    url('/a/_projects/epcc/type/europe-bold.eot?#iefix') format('embedded-opentype'),
+    url('/a/_projects/epcc/type/europe-bold.woff') format('woff'),
+    url('/a/_projects/epcc/type/europe-bold.ttf') format('truetype'),
+    url('/a/_projects/epcc/type/europe-bold.svg#EuropeBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Europe';
+    src: url('/a/_projects/epcc/type/europe.eot');
+	src: local('EuropeC'), local('Europe C'), local('EuropeCyr'), local('Europe Cyr'),
+	url('/a/_projects/epcc/type/europe.eot?#iefix') format('embedded-opentype'),
+	url('/a/_projects/epcc/type/europe.woff') format('woff'),
+    url('/a/_projects/epcc/type/europe.ttf') format('truetype'),
+    url('/a/_projects/epcc/type/europe.svg#Eurofont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuropeMedium';
+    src: url('/a/_projects/epcc/type/europe-medium.eot');
+    src: local('EurofontCMedium'), local('EurofontCyrMedium'), local('EurofontCMedium'), local('Eurofont Cyr Medium'),
+    url('/a/_projects/epcc/type/europe-medium.eot?#iefix') format('embedded-opentype'),
+    url('/a/_projects/epcc/type/europe-medium.woff') format('woff'),
+    url('/a/_projects/epcc/type/europe-medium.ttf') format('truetype'),
+    url('/a/_projects/epcc/type/europe-medium.svg#EuropeBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

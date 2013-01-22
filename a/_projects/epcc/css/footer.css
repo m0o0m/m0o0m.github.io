@@ -1,0 +1,13 @@
+#footer { color: #808285; margin: 0 0 0 -460px; position: absolute; bottom: 0; left: 50%; height: 180px; width: 920px}
+
+#foot_logo { background-position: -250px 0; float: left; margin: 9px 49px 0; height: 63px; width: 102px}
+	.ie6 #foot_logo { display: inline}
+
+.ie6 #footer .oo2, #footer .oo4 { margin-left: 40px}
+
+#footer .oo4, #footer .oo2 { padding-top: 3.538em}
+#footer .oo4 A { float: left}
+	#footer .oo4 .rss { float: right; padding-left: 28px; position: relative}
+    	#footer .oo4 .rss SPAN { background-position: -260px -140px; position: absolute; top: 0; left: 0; height: 20px; width: 20px}
+
+

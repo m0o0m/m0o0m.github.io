@@ -1,0 +1,67 @@
+HTML { background: #FFF url(/a/_projects/epcc/img/bg-html.png) repeat-y 50% 0} 
+BODY { background: url(/a/_projects/epcc/img/bg-body.png) no-repeat 50% 0; counter-reset: section; font: 81.3%/1.54 'Helvetica Neue', Arial, sans-serif; *font-size:small; text-align: center; margin: 0; padding: 0}
+
+/* SHARED -----------------------------------------------------------------------------------------------*/
+BODY, .teasers A, .teasers A:visited, #billboard A, #billboard A:visited
+{ color: #393C40}
+
+H2 A:hover, .teasers A:hover, #billboard A:hover, .date, .pager A:visited, #submenu A:visited, UL.archive A, UL.archive A:visited
+{ color: #F37321; text-decoration: none}
+
+BUTTON, .btn, INPUT[type="text"], INPUT.txt, .txt INPUT, SELECT, TABLE, TEXTAREA, #header FORM, .box, .oo2_box
+{ border: 1px solid #B8BBBF}
+
+#billboard .pic SPAN, #foot_logo, #footer .oo4 .rss SPAN, .go:after, #header H1 A, .issue UL .ico, .pager .next, .pager .next A, .pager .prev, .pager .prev A
+{ background: url(/a/_projects/epcc/img/base-graphics.png) no-repeat; display: block; text-indent: -4000em}
+
+#header NAV LI, BUTTON
+{ font-size: 107.7%}
+
+INPUT[type="text"], INPUT.txt, .txt INPUT, TEXTAREA
+{ -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15); -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15); box-shadow: inset 0 2px 4px rgba(0,0,0,.15)} 
+
+TR:nth-child(even)
+{ background: #ECEFF3}
+/* Shared */
+
+A { color: #F37321; outline: 0; text-decoration: none}
+A:visited { color: #F32173}
+	H2 A, H2 A:visited
+	{ color: #000}
+A:hover { color: #000; text-decoration: underline}
+ABBR, BLOCKQUOTE, FIELDSET, FORM, IFRAME, LABEL, LEGEND, OBJECT, PRE, 
+ARTICLE, ASIDE, CANVAS, DETAILS, FIGCAPTION, FIGURE, FOOTER, HEADER, HGROUP, MENU, NAV, SECTION, SUMMARY, TIME, AUDIO, VIDEO
+{ background: transparent; border: 0 none; outline: 0; margin: 0; padding: 0; vertical-align: baseline}
+ABBR[title], DFN[title] { border-bottom: 1px dotted; cursor: help}
+ADDRESS { font-style: normal}
+ARTICLE, ASIDE, DETAILS, FIGCAPTION, FIGURE, FOOTER, HEADER, HGROUP, MENU, NAV, SECTION { display: block}
+BUTTON { outline: none}
+CITE, .cmd, EM, I { font-style: normal; color: #008000}
+CODE, KBD, PRE { font: 110% "Courier New", Courier, monospace}
+H1, H2 { color: #000; font-family: 'EuropeMedium', 'Helvetica Neue', Arial, sans-serif; font-weight: normal; /*text-rendering: optimizeLegibility*/}
+H1 { font-size: 284.6%; line-height: 1.081; margin: 0; padding: .297em 0 .378em}
+H2 { font-size: 176.9%; line-height: .87; margin: 0; padding: 0em 0 0em}
+	HGROUP H2 { margin-top: -.429em; padding-top: 0}
+H3, .h3, H2.date { font: bold 100%/1.54 Arial, Helvetica, sans-serif; margin: 0; padding: 0}
+H4, .h4 { color: #888B8F; font: bold 100%/1.54 Arial, Helvetica, sans-serif; margin: 0}
+HR { border: none 0; border-bottom: 1px solid #CCCFD3; height: 1px; display: block; margin: 1.5em 0; padding: 0}
+IFRAME { border: 0 none; overflow: auto; overflow-x: hidden; overflow-y: auto}
+IMG { border: 0; border-bottom: 10px solid #F37321; display: block}
+	.sup  { border: 0 none; border-top: 10px solid #F37321}
+    IMG.across { margin: -5px 0 20px}
+	IMG.left { margin: -4px 40px 10px 0}
+    IMG.right { margin: -4px 0 10px 40px}
+    .box IMG.first, .oo2_box IMG.first { margin-top: 16px}
+    .ie7 IMG { -ms-interpolation-mode: bicubic}
+P { margin: 0 0 1.54em}
+	.lead { font-weight: bold} /*lead*/
+    .figure .lead, #sidebar .lead { font-weight: normal}
+		#front H1+ P, #front .lead { font-weight: normal} /*lead*/
+    .teasers H1+ P { font-size: 100%; line-height: 1.54; margin-bottom: 1.54em} /*lead*/
+PRE { padding: 15px 20px 20px; white-space: pre; white-space: pre-wrap; white-space: pre-line; word-wrap: break-word}
+VIDEO { height: auto; max-width: 100%}
+
+.mobile { display: none} 
+
+::-moz-selection { background: #393C40; color: #FFF; text-shadow: none}
+::selection { background:#393C40; color: #FFF; text-shadow: none} 

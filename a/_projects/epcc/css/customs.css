@@ -1,0 +1,56 @@
+/*Front*/
+#front #container { background: transparent none}
+
+#billboard .col { margin: 0; width: 50%}
+	.ie6 #billboard .col, .ie7 #billboard .col { width: 49.9%}
+
+#billboard .pic { background: #EEF0F4 url(/a/_projects/epcc/img/stock/petrochemical-plant-01.jpg) no-repeat 100% 0; height: 400px}
+	#billboard .pic SPAN { background-position: -370px 0;  position: absolute; top: 40px; right: 20px; height: 200px; width: 10px}
+
+/*Take generator HTML and select cool looking sizes*/
+#billboard H1 { background: #F37321 url(/a/_projects/epcc/img/bg-orange.png); color: #FFF; font-family: 'EuropeBold', 'Helvetica Neue', Arial, sans-serif; text-shadow: 0 1px 0 #C25C1A; text-transform: uppercase; margin: 40px 0 0 -20px; padding: 17px 40px 0; height: 183px; width: 440px}
+    #billboard H1 STRONG { font-family: 'Europe', 'Helvetica Neue', Arial, sans-serif;  font-weight: normal; line-height: .892}
+	.ie6 #billboard H1, .ie7 #billboard H1, .ie8 #billboard H1 { font-family: 'EuropeMedium', 'Helvetica Neue', Arial, sans-serif; line-height: 1.054}
+        .ie6 #billboard H1  STRONG, .ie7 #billboard H1  STRONG, .ie8 #billboard H1  STRONG { font-size: 94.6%; line-height: 1.143}  
+    
+#billboard P { font-size: 107.7%; line-height: 1.429; margin: 0 0 0 -20px; padding: 24px 40px 0; width: 440px}
+
+#front #content { padding-top: 4.923em}
+	#front #content H2 { text-align: center; text-transform: uppercase; padding: 0; width: 21.7%}
+	#front #content H1 { font: bold 100%/1.54 Arial, Helvetica, sans-serif; margin: 0; padding: 1.615em 0 0}
+	#front #content ARTICLE.first { text-align: center}
+	#front #content .oo2_box { padding-bottom: 0}
+    	#front #content .oo2_box .go { margin-bottom: 1.462em}
+	#front #content .go:after { display: block; margin-top: 2em}
+    	#front #content .first .go:after { margin: 2em 47.75% 0}
+        
+/*Section Page*/
+.btl H1 { font-size: 176.9% !important; line-height: .87; padding: 2.565em 0 .913em}
+
+/*Video*/
+HTML > BODY .video .tbn, HTML > BODY .thumbnails .tbn { margin-bottom: 1.923em; position: relative; width: 200px}
+	HTML > BODY .video .tbn SPAN, HTML > BODY .thumbnails .tbn SPAN { background: url(/a/_projects/epcc/img/base-graphics.png) no-repeat 0 -140px; display: block; text-indent: -4000em; margin: -30px 0 0 -30px; position: absolute; top: 50%; left: 50%; height: 60px; width: 60px}
+	.ie6 .video .tbn SPAN, .ie6 .thumbnails .tbn SPAN { display: none}
+
+ARTICLE.video IMG, .thumbnails IMG { border-bottom: 0}
+
+.figure { padding-top: 1.154em}
+	.figure IFRAME { border-top: 10px solid #F37321; float: left}
+	.figure H1 { font: bold 100%/1.54 'Helvetica Neue', Arial, sans-serif; padding: .385em 0 0}
+
+.thumbnails { padding-top: 2.692em; width: 70.6%}
+	.thumbnails .row { padding-bottom: 4.231em}
+		.thumbnails FIGURE { float: left; margin-right: 8.33%; position: relative; min-height: 1px; width: 41.67%}
+
+
+/*Paper*/
+.issue UL { position: relative; margin: 0 0 1.54em; padding: 0 0 0 60px; min-height: 60px; height: 60px}
+	.issue UL.first { margin-bottom: 3.08em; padding: 20px 0 0 80px}
+    HTML>BODY .issue UL { height: auto}
+	.issue LI { background: url(/a/_projects/epcc/img/b.gif) no-repeat -10px 0; display: inline; margin-right: .308em; padding-left: 11px}
+    	.issue LI:first-child, .issue .first { background: transparent none; padding-left: 0}
+    .issue UL .ico { background-position: -180px -140px; margin-top: -36px; position: absolute; top: 50%; left: 0; height: 53px; width: 40px}
+    .issue UL.first .ico { background-position: -90px -140px; margin-top: -40px; height: 80px; width: 60px}
+
+/*Comments*/
+H1 .expert { display: block; font-family: 'Europe', 'Helvetica Neue', Arial, sans-serif;  font-weight: normal}

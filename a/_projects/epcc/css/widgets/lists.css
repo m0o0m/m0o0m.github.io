@@ -1,0 +1,35 @@
+DL, DD { margin: 0 0 1.54em}
+    DT { margin: 0}
+
+OL, UL { margin: 0 0 1.54em; padding: 0}
+OL { list-style: decimal}
+	.ie6 OL, .ie6 OL OL, .ie6 UL OL, .ie7 OL, .ie7 OL OL, .ie7 UL OL { margin-left: 1.77em}
+
+OL.chapter { list-style-type: none; list-style-position: outside}
+	OL.chapter LI { counter-increment: section; counter-reset: sub-section}
+		OL.chapter LI:before { content: counter(section) '. '} 
+		OL.chapter OL LI  { counter-increment: sub-section; counter-reset: none; list-style-type: none}
+        	OL.chapter OL LI:before { content: counter(section) '.' counter(sub-section) '. '} 
+		OL.chapter UL LI { counter-increment: none}
+		OL.chapter UL LI:before { content: normal}
+
+UL { list-style-image: url(/a/_projects/epcc/img/b.gif)}
+	NAV UL { list-style-image: none; list-style-type: none}
+    UL.inline { list-style-image: none; list-style-type: none}
+        UL.inline LI { display: inline; margin-left: .3em}
+            UL.inline LI:after { content: ","}
+            UL.inline .last:after { content: ""}
+	.ie6 #main UL LI, .ie7 #main UL LI { list-style-image: none; list-style-type: square; margin-left: 20px}
+
+OL OL, UL OL, OL UL, UL UL { margin: 0 0 0 1.54em}
+
+.pager { clear: left; list-style-image: none; list-style-type: none; margin: 0; padding: .846em 0 0}
+	.pager LI  { float: left; font: normal 176.9%/32px 'EuropeMedium', 'Helvetica Neue', Arial, sans-serif; text-align: center; *overflow-y: hidden; margin-right: 1px; height: 30px; min-width: 29px; width: 29px}
+		.pager A  {  color: #000; display: block; float: left; line-height: 32px; text-decoration: none; height: 30px; min-width: 29px; width: 29px}
+        HTML>BODY .pager LI, HTML>BODY .pager A { width: auto}
+        .current { background: #B8BBBF; color: #FFF; -moz-border-radius: .087em; -webkit-border-radius: .087em; border-radius: .087em}
+        .pager .next, .pager .prev { background-position: -400px -190px}
+        .pager .next { background-position: -400px -190px}
+			.pager .next A { background-position: -320px -190px}
+        .pager .prev { background-position: -400px -140px}
+			.pager .prev A { background-position: -260px -190px}

@@ -1,0 +1,21 @@
+.closed { display: none}
+:disabled, .disabled { cursor: default; filter: alpha(opacity=4); -moz-opacity: .4; opacity: .4}
+.go:after { background-position: -300px -140px; display: inline-block; content: ''; margin-left: .3em; height: 8px; width: 9px}
+
+/* Hide for both screenreaders and browsers */
+.hidden { display: none; visibility: hidden}
+/* Hide only visually, but have it available for screenreaders */
+.v_hidden { border: 0; clip: rect(0 0 0 0); margin: -1px; padding: 0; overflow: hidden; position: absolute; height: 1px; width: 1px}
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard */
+.v_hidden.focusable:active,
+.v_hidden.focusable:focus { clip: auto; margin: 0; overflow: visible; position: static; height: auto; width: auto}
+
+.hp { margin-left: -.381em} /*hanging punctuation */
+	H1 .hp { margin-left: -.486em}
+
+.left { float: left}
+.right { float: right}
+
+.note { color: #888B8F}
+.nowrap { white-space: nowrap}
+.tel { color: #535659; cursor: default; text-decoration: none}
