@@ -32,10 +32,10 @@ DIV.off { display: none}
 .teaser { clip: rect(0 320px 2em 0); white-space: nowrap; position: absolute; top: 23px; left: 160px; height: 1em; width: 320px}
 	.teaser H2 { color: #ACAEB2; display: inline; font-size: 100%; margin-right: .4em}
 	
-#billboard { background: url(/a/img/pic-marilyn.jpg) no-repeat 100% 60px; color: #FFF; float: left; position: relative; height: 340px; width: 460px; }
-	#billboard H2 { color: #FFF; font: normal 11px Tahoma, Geneva, sans-serif; margin: 0; padding: 0; position: absolute; top: 86px; left: 300px; width: 140px}
-		#billboard H1 { background: url(/a/img/pic-i.png) no-repeat; text-indent: -640em; margin: 0; padding: 0; position: absolute; bottom: 0; left: 0; height: 280px; width: 10px}
-			*HTML #billboard H1 { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/img/pic-i.png'), sizingMethod='scale')}
+#billboard, .sec-billboard { background: url(/a/img/pic-marilyn.jpg) no-repeat 100% 60px; color: #FFF; float: left; position: relative; height: 340px; width: 460px; }
+	#billboard H2, .sec-billboard H2 { color: #FFF; font: normal 11px Tahoma, Geneva, sans-serif; margin: 0; padding: 0; position: absolute; top: 86px; left: 300px; width: 140px}
+		#billboard H1, .sec-billboard H1 { background: url(/a/img/pic-i.png) no-repeat; text-indent: -640em; margin: 0; padding: 0; position: absolute; bottom: 0; left: 0; height: 280px; width: 10px}
+			*HTML #billboard H1, *HTML .sec-billboard H1 { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/img/pic-i.png'), sizingMethod='scale')}
 	
 .menu { background: url(/a/img/menu.png) no-repeat; float: left}
 	#ru .menu { background-position: -160px 0}
