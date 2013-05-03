@@ -3,26 +3,25 @@ var isIE=(navigator.appVersion.indexOf("MSIE")!=-1)?true:false;var isWin=(naviga
 
 function closeModalOnClick()
 {
-	var btn = document.getElementById('btn_close');
-	if(btn)
-	{
-		btn.onclick=function()
-		{
-			closeModal();
-		}		
-	}
+    var btn = document.getElementById('btn_close');
+    var aClose = document.getElementById('a-close');
+    if(btn)
+    {
+        btn.onclick=function() { closeModal(); };
+        aClose.onclick=function() { closeModal(); };
+    }
 }
 
-function closeModal()	
+function closeModal()
 {
-	var d = top.document;
-	d.getElementById('overlay').style.display = 'none';
-	d.getElementById('modal_box').style.display = 'none';
-	d.getElementById('mb_copy').src = 'about:blank';
-	// document.body.innerHTML = '';
+    var d = top.document;
+    d.getElementById('overlay').style.display = 'none';
+    d.getElementById('modal_box').style.display = 'none';
+    d.getElementById('mb_copy').src = 'about:blank';
+    // document.body.innerHTML = '';
 }
 
 window.onload=function()
 {
-	closeModalOnClick();
+    closeModalOnClick();
 }
