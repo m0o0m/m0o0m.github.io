@@ -56,6 +56,11 @@ DIV.off { display: none}
 .info{background-color:#121314;background-image:-moz-linear-gradient(top, #000000, #2d2f33);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#000000), to(#2d2f33));background-image:-webkit-linear-gradient(top, #000000, #2d2f33);background-image:-o-linear-gradient(top, #000000, #2d2f33);background-image:linear-gradient(to bottom, #000000, #2d2f33);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#000000, endColorstr=#2d2f33, GradientType=0);-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;clear:right;display:inline-block;*display:inline;*zoom:1;padding:0 8px 0 7px;height:40px;}
     .info LI { float: left; margin: 5px 5px 0 0}
         .info LI A, .info_en LI A { background: url(/a/img/greys.png) no-repeat; border-bottom: 0 none !important; display: block; height: 30px; width: 30px}
+            .info .btn-services A { background-position: -700px 0; width: 100px}
+            .info .btn-services A:hover { background-position: -700px -30px}
+            .info.en .btn-services A { background-position: -600px 0; width: 100px}
+            .info.en .btn-services A:hover { background-position: -600px -30px}
+
             .info .btn_about A { background-position: -345px 0; width: 100px}
             .info .btn_about A:hover { background-position: -345px -30px}
             .info .btn_docs A { background-position: -920px 0; width: 130px}

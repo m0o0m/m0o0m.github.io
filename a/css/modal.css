@@ -45,6 +45,7 @@ P { margin: 0 0 1.33em}
     .lead { font-weight: bold; }
 UL { list-style: url(/a/img/dtl-bullet.gif) outside; margin: 0 0 1em 16px; padding: 0}
 UL LI { padding: 0 0 .4em}
+    UL LI:last-of-type { padding: 0}
 
 .b_back { padding-left: 14px; position: relative; zoom: 1}
     .b_back EM { background: url(/a/img/greys.png) -445px -50px no-repeat; display: block; line-height: 0; text-indent: -430em; margin-top: -3px; padding: 0; position: absolute; top: 50%; left: 0; height: 9px; width: 10px}
