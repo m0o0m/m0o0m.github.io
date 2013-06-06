@@ -1,7 +1,7 @@
 ﻿* { -webkit-font-smoothing: antialiased; }
 
 HTML, BODY { height: 100%}
-BODY { background: #000 url(/a/img/bg.png) repeat-x; color: #ACAEB2; font: x-small/140% Arial, Helvetica, sans-serif; font-size/**/:/**/ small; text-align: center; margin: 0; padding: 0}
+BODY { background: #000 url(/a/img/bg.png) repeat-x; color: #ACAEB2; font: x-small/140% 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size/**/:/**/ small; text-align: center; margin: 0; padding: 0}
     #horizon { text-align: center; position: absolute; top: 37%; left: 0; width: 100%; height: 1px}
         #content { text-align: left; margin-left: -370px; position: absolute; top: -205px; left: 50%; width: 740px; height: 410px}
 
