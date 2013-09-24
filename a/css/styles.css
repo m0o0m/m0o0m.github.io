@@ -1,4 +1,4 @@
-﻿* { -webkit-font-smoothing: antialiased; }
+* { -webkit-font-smoothing: antialiased; }
 
 HTML, BODY { height: 100%}
 BODY { background: #000 url(/a/img/bg.png) repeat-x; color: #ACAEB2; font: x-small/140% 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; font-size/**/:/**/ small; text-align: center; margin: 0; padding: 0}
