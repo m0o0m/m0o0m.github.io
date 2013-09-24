@@ -19,6 +19,7 @@ Disallow: *.sublime-project
 Disallow: *.sublime-workspace
 Disallow: /yandex*.html
 Disallow: /nibbler-site-verification.txt
+Disallow: OXOmGhM5zsUQ6YJcQ_gpZ0lFe9s.html
 
 User-agent: Yandex
 Disallow: /en/
