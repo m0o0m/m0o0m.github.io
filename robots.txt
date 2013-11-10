@@ -6,6 +6,7 @@ Disallow: /labs/
 Disallow: /personal/
 Disallow: /a/sms-novel.epub
 Disallow: /web-design/reklama-vliftah32/
+Disallow: /nb/
 
 # Files
 Disallow: /_temp.html
