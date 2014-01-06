@@ -48,7 +48,7 @@ DIV.off { display: none}
     .recent LI { margin: 0 0 10px 20px}
         .recent LI A { background: url(/a/img/tbns.png) no-repeat; border-bottom: 0 none !important; display: block; height: 50px; width: 80px}
             .tbn-betplaynow { background-position: -80px 0 !important}
-            .tbn-sakh-developmant-agency { background-position: 0 -50px !important}
+            .tbn-colt { background-position: 0 -50px !important}
             .tbn-epcc { background-position: -80px -50px !important}
             .tbn-polylog { background-position: 0 -100px !important}
 
@@ -69,7 +69,7 @@ DIV.off { display: none}
             .info.en .btn_about A:hover { background-position: -185px -30px}
             .info .btn_contact A { background-position: -285px 0}
             .info .btn_contact A:hover { background-position: -285px -30px}
-        .info .btn_sitemap { margin-right: 0}
+        	.info .btn_sitemap { margin-right: 0}
             .info .btn_sitemap A { background-position: -315px 0}
             .info .btn_sitemap A:hover { background-position: -315px -30px}
 
