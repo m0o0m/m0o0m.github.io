@@ -4,7 +4,7 @@
 and then just before deployment,
 run it through MailChimp’s or Campaign Monitor's CSS Inliner Tool
 http://inliner.cm/
-http://beaker.mailchimp.com/inline-css
+http://templates.mailchimp.com/resources/inline-css/
 There are only .ReadMsgBody, .ExternalClass, pseudo- and @media classes will stay in the HEAD section.
 All others CSS will become INLINE
 
@@ -188,13 +188,13 @@ A[href^="tel"], A[href^="sms"] { /* Styling tel and sms links */
 }
 }
 
-@media  only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 5/4),
-        only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.25),
-        only screen and (max-width: 1024px) and (min-resolution: 120dpi) {
+@media  only screen and (min-width: 321px) and (max-width: 1024px) and (-o-min-device-pixel-ratio: 5/4),
+        only screen and (min-width: 321px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.25),
+        only screen and (min-width: 321px) and (max-width: 1024px) and (min-resolution: 120dpi) {
     
     .td-top IMG { visibility: hidden; }
 
-    .td-top FIGURE {
+    .td-top .figure {
         background: transparent url(http://nickysheen.ru/a/_projects/personal/wedding-invitation/top-x2.png) no-repeat;
         -webkit-background-size: 100% 100%;
         -moz-background-size: 100% 100%;
@@ -204,7 +204,7 @@ A[href^="tel"], A[href^="sms"] { /* Styling tel and sms links */
     
     .td-bottom IMG { visibility: hidden; }
 
-    .td-bottom FIGURE {
+    .td-bottom .figure {
         background: transparent url(http://nickysheen.ru/a/_projects/personal/wedding-invitation/bottom-x2.png) no-repeat;
         -webkit-background-size: 100% 100%;
         -moz-background-size: 100% 100%;
@@ -219,7 +219,7 @@ A[href^="tel"], A[href^="sms"] { /* Styling tel and sms links */
 |---------------------------------------
 */
 
- @media print,
+@media print,
         (-o-min-device-pixel-ratio: 5/4),
         (-webkit-min-device-pixel-ratio: 1.25),
         (min-resolution: 120dpi) {
@@ -260,9 +260,9 @@ A[href^="tel"], A[href^="sms"] { /* Styling tel and sms links */
 
             <tr class="line">
                 <td height="116" align="center" valign="top" class="line td-top">
-                <figure>
+                <div class="figure">
                 <img src="http://nickysheen.ru/a/_projects/personal/wedding-invitation/top.png" alt="Тут должна быть симпатичные линеечки и кружок с деревцем" />
-                </figure>
+                </div>
                 </td>
             </tr>
 
@@ -292,9 +292,9 @@ A[href^="tel"], A[href^="sms"] { /* Styling tel and sms links */
 
             <tr class="line">
                 <td align="center" valign="top" class="line td-bottom">
-                <figure>
+                <div class="figure">
                 <img src="http://nickysheen.ru/a/_projects/personal/wedding-invitation/bottom.png" alt="Тут должен быть элегантный вензель «В&amp;С»" />
-                </figure>
+                </div>
                 </td>
             </tr>
 
