@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Приглашаем на венчание</title>
+
+<style type="text/css">
+/*
+|---------------------------------------
+| Essentials and Layout
+|---------------------------------------
+*/
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+}
+
+body, td {
+    color: #abaeb2;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+body, #background-table { background-color: #1f2226; }
+
+#background-table { /* Fix Hotmail issues */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.5 !important;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 580px;
+    width: 580px;
+}
+
+/*
+|---------------------------------------
+| Body Copy
+|---------------------------------------
+*/
+
+a { color: #FFFFFF; }
+a:active { color: #e2de89; }
+a:visited { color: #FFFFFF; }
+a:hover { color: #e2de89; }
+
+br, strong br, b br, em br, i br { line-height: 100%; }
+
+h1, h2, h3, h4 {
+    display: block;
+    line-height: 1 !important;
+    text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #FFFFFF !important;
+    font-size: 29px;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    color: #FFFFFF !important;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 32px;
+}
+
+img {
+    border: none;
+    color: #abaeb2;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+    line-height: 100%;
+    outline: none;
+    height: auto;
+    max-width: 100%;
+}
+
+p { font-size: 18px;
+    margin: 0 auto 1.5em;
+}
+
+table, td { /* Fix Outlook table */
+    border-collapse: collapse;
+    line-height: 150%;
+    mso-table-lspace: 0;
+    mso-table-rspace: 0;
+}
+
+.ExternalClass, .ReadMsgBody { /* Fix Hotmail body width */
+    width: 100%;
+}
+
+.ExternalClass, .ExternalClass p, .ExternalClass span,
+.ExternalClass font, .ExternalClass td, .ExternalClass div { /* Fix Hotmail line-height */
+    line-height: 100%;
+}
+
+#outlook a { padding: 0; } /* Force Outlook to provide a "view in browser" menu link. */
+
+/*
+|---------------------------------------
+| Customs
+|---------------------------------------
+*/
+
+.td-top { padding-top: 44px; }
+.td-h1 { padding: 39px 0 40px; }
+.td-body { padding-top: 80px; }
+.td-bottom  { padding: 26px 0 53px; }
+
+/*
+|-------------------------------------------------------------------------------
+| Mobile Targeting
+|-------------------------------------------------------------------------------
+| Use @media queries with care. You should not bring these styles inline - so
+| it's recommended to apply them AFTER you bring the other stlying inline.
+| 1) Test carefully with Yahoo.
+| 2) To properly use @media queries and play nice with Yahoo Mail, use attribute
+| selectors instead of class, id declarations. table[class=classname]
+| 3) Don't bring anything below this line inline.
+|
+*/
+
+@media only screen and (max-width: 600px) {
+body { width: auto !important; }
+
+td[class='wrapper'] { padding: 0 20px !important; } /* Reset body padding for handheld devices */
+
+table[id='container'] { width: 100% !important; }
+
+.td-top, .td-h1, .td-body, .td-bottom {
+    height: auto !important;
+    padding-top: 27px !important;
+}
+
+.h1 {
+    padding-bottom: 27px;
+}
+
+@media only screen and (max-width: 979px) {
+
+A[href^="tel"], A[href^="sms"] { /* Styling tel and sms links */
+    color: black; /* or whatever your want */
+    cursor: default;
+    text-decoration: none;
+    pointer-events: none;
+}
+}
+
+@media  only screen and (min-width: 321px) and (max-width: 1024px) and (-o-min-device-pixel-ratio: 5/4),
+        only screen and (min-width: 321px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.25),
+        only screen and (min-width: 321px) and (max-width: 1024px) and (min-resolution: 120dpi) {
+    
+    .td-top IMG { visibility: hidden; }
+
+    .td-top .figure {
+        background: transparent url(http://nickysheen.ru/a/_projects/personal/wedding-invitation/top-x2.png) no-repeat;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        background-size: 100% 100%
+    }
+    
+    .td-bottom IMG { visibility: hidden; }
+
+    .td-bottom .figure {
+        background: transparent url(http://nickysheen.ru/a/_projects/personal/wedding-invitation/bottom-x2.png) no-repeat;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        background-size: 100% 100%
+    }
+}
+
+/*
+|---------------------------------------
+| High resolution devices
+|---------------------------------------
+*/
+
+@media print,
+        (-o-min-device-pixel-ratio: 5/4),
+        (-webkit-min-device-pixel-ratio: 1.25),
+        (min-resolution: 120dpi) {
+
+}
+</style>
+<!--[if !IE]><!-->
+<style type="text/css">
+@media  only screen and (max-width: 600px) {
+
+    tr.line, td.line { display: block; } /* Force table cells to not be like table cells anymore */
+}
+</style>
+<!--<![endif]-->
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" style="-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;color: #abaeb2;font-family: 'Times New Roman', Times, serif;font-size: 18px;line-height: 1.5;background-color: #1f2226;width: 100% !important;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id="background-table" class="weath" style="border-collapse: collapse;line-height: 1.5 !important;mso-table-lspace: 0;mso-table-rspace: 0;background-color: #1f2226;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;text-align: left;margin: 0;padding: 0;height: 100% !important;width: 100% !important;">
+    <tr>
+    <td align="center" valign="top" bgcolor="#1f2226" class="wrapper" style="padding-top: 20px;padding-bottom: 40px;color: #abaeb2;font-family: 'Times New Roman', Times, serif;font-size: 18px;line-height: 150%;border-collapse: collapse;mso-table-lspace: 0;mso-table-rspace: 0;"><table border="0" cellpadding="0" cellspacing="0" width="580" id="container" class="weath" style="border-collapse: collapse;line-height: 150%;mso-table-lspace: 0;mso-table-rspace: 0;margin: 0 auto;max-width: 580px;width: 580px;">
+<tr>
+<td valign="top" width="" style="color: #abaeb2;font-family: 'Times New Roman', Times, serif;font-size: 18px;line-height: 150%;border-collapse: collapse;mso-table-lspace: 0;mso-table-rspace: 0;"></td>
+</tr>
+<tr class="line">
+                <td height="116" align="center" valign="top" class="line td-top" style="color: #abaeb2;font-family: 'Times New Roman', Times, serif;font-size: 18px;line-height: 150%;border-collapse: collapse;mso-table-lspace: 0;mso-table-rspace: 0;padding-top: 44px;">
+                <div class="figure">
+                <img src="http://nickysheen.ru/a/_projects/personal/wedding-invitation/top.png" alt="Тут должна быть симпатичные линеечки и кружок с деревцем" style="border: none;color: #abaeb2;display: block;font-size: 18px;text-decoration: none;-ms-interpolation-mode: bicubic;line-height: 100%;outline: none;height: auto;max-width: 100%;" />
+                </div>
+                </td>
+            </tr>
+
+            <tr class="line">
+                <td height="38" align="center" valign="top" class="line td-h1" style="color: #abaeb2;font-family: 'Times New Roman', Times, serif;font-size: 18px;line-height: 150%;border-collapse: collapse;mso-table-lspace: 0;mso-table-rspace: 0;padding: 39px 0 40px;">
+                <h1 style="display: block;text-rendering: optimizelegibility;font-size: 29px;font-weight: normal;margin: 0;line-height: 1 !important;color: #FFFFFF !important;">
+                
+                <font color="#FFFFFF" face="'Times New Roman', Times, serif">
+                Приглашаем на венчание
+                </font>
+                
+                </h1>
+                </td>
+            </tr>
+
+            <tr class="line">
+                <td align="center" valign="top" class="line" style="color: #abaeb2;font-family: 'Times New Roman', Times, serif;font-size: 18px;line-height: 150%;border-collapse: collapse;mso-table-lspace: 0;mso-table-rspace: 0;">
+                <img src="http://nickysheen.ru/a/_projects/personal/wedding-invitation/pic.jpg" id="pic-billboard" alt="Тут должна быть красивая картинка: двое в лесу под фонарем" style="border: none;color: #abaeb2;display: block;font-size: 18px;text-decoration: none;-ms-interpolation-mode: bicubic;line-height: 100%;outline: none;height: auto;max-width: 100%;" />
+                </td>
+            </tr>
+
+
+            <tr class="line">
+                <td align="center" valign="top" class="line td-body" style="color: #abaeb2;font-family: 'Times New Roman', Times, serif;font-size: 18px;line-height: 150%;border-collapse: collapse;mso-table-lspace: 0;mso-table-rspace: 0;padding-top: 80px;">
+                
+                <h2 style="display: block;text-rendering: optimizelegibility;font-size: 18px;font-weight: normal;margin: 0 0 32px;line-height: 1 !important;color: #FFFFFF !important;">
+                
+                <font color="#FFFFFF" face="'Times New Roman', Times, serif">
+                Дорогой Саша.
+                </font>
+                
+                </h2>
+                
+                
+                <p style="font-size: 18px;margin: 0 auto 1.5em;">
+                
+                <font color="#ABAEB2" face="'Times New Roman', Times, serif">
+                Приглашаем тебя на наше венчание.<br style="line-height: 100%;" />
+				Событие состоится в субботу, 25 октября, в монастыре Дайбабе (Подгорица, Черногория).<br style="line-height: 100%;" />
+				Празднование продолжится в ресторане «Таверна М».
+                </font>
+                
+                </p>
+                
+                <p style="font-size: 18px;margin: 0 auto 1.5em;">
+                
+                <font color="#ABAEB2" face="'Times New Roman', Times, serif">
+                Будем оч. рады вас видеть.<br style="line-height: 100%;" />
+				Владимир и Софья
+                </font>
+                
+                </p>
+                
+                </td>
+            </tr>
+
+            <tr class="line">
+                <td align="center" valign="top" class="line td-bottom" style="color: #abaeb2;font-family: 'Times New Roman', Times, serif;font-size: 18px;line-height: 150%;border-collapse: collapse;mso-table-lspace: 0;mso-table-rspace: 0;padding: 26px 0 53px;">
+                <div class="figure">
+                <img src="http://nickysheen.ru/a/_projects/personal/wedding-invitation/bottom.png" alt="Тут должен быть элегантный вензель «В&amp;С»" style="border: none;color: #abaeb2;display: block;font-size: 18px;text-decoration: none;-ms-interpolation-mode: bicubic;line-height: 100%;outline: none;height: auto;max-width: 100%;" />
+                </div>
+                </td>
+            </tr>
+</table></td>
+    </tr>
+    </table>
+</body>
+</html>
