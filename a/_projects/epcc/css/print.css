@@ -1,0 +1,15 @@
+@media print {
+* { background: transparent !important; color: #000 !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important}
+@page { margin: .5cm} /*http://www.w3.org/TR/CSS21/page.html#page-box*/
+A, A:visited { color: #444 !important; text-decoration: underline}
+A:after { content: " (" attr(href) ")"}
+	.tel:after { content: ''}
+    A[href^="javascript:"]:after, A[href^="#"]:after { content: ""; }  
+ASIDE, FOOTER, NAV { display: none}
+ABBR:after { content: " (" attr(title) ")"}
+BLOCKQUOTE, PRE { border: 1px solid #999; page-break-inside: avoid}
+H2, H3 { page-break-after: avoid}
+H2, H3, P { orphans: 3; widows: 3}
+IMG, TR { page-break-inside: avoid}
+THEAD { display: table-header-group} 
+}

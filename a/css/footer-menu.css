@@ -1,0 +1,26 @@
+*HTML BODY { behavior: url(/a/js/csshover.htc)}
+#footer_menu { font: 13px Arial, Helvetica, sans-serif; text-align: center; list-style-image: none; list-style-type: none; margin: 0 auto; padding: 0; height: 60px; width: 40em;}
+	#footer_menu LI.btn { border: 1px solid transparent; color: #606266; display: inline-block; *display: inline; text-decoration: underline; margin: 0; padding: 12px; position: relative; *zoom: 1;}
+	#footer_menu LI.btn:hover {
+		background-color: #eef0f4;
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dadce0), color-stop(8%, #eef0f4), to(#eef0f4));
+		background-image: -webkit-linear-gradient(#dadce0, #eef0f4 12%, #eef0f4);
+		background-image: -moz-linear-gradient(top, #dadce0, #eef0f4 12%, #eef0f4);
+		background-image: -o-linear-gradient(#dadce0, #eef0f4 12%, #eef0f4);
+		background-image: linear-gradient(#dadce0, #eef0f4 12%, #eef0f4);
+		background-repeat: no-repeat;
+		filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#dadce0, endColorstr=#eef0f4, GradientType=0); /*	IE9 and down, gets no color-stop at all for proper fallback */
+		border: 1px solid #dadce0; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; color: #000; cursor: pointer; cursor: hand; text-decoration: none; margin: 0 1px; z-index: 4}
+		#footer_menu UL { background: #eef0f4; border: 1px solid #dadce0; -webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px; display: none; text-align: left; list-style-image: none; list-style-type: none; margin: 0; padding: 8px 0; position: absolute; bottom: 39px; left: -1px; width: 238px;}
+		#footer_menu LI.last UL { right: -1px; _right: -2px; left: auto}
+			#footer_menu .btn:hover UL { display: block}
+				#footer_menu .btn:hover UL UL { display: none !important}
+			#footer_menu .btn LI { float: left; margin: 0 0 1px; position: relative; width: 238px}
+				#footer_menu .btn LI A { display: block; color: #606266; text-decoration: none; padding: 8px 12px; width: 214px}
+				#footer_menu .btn LI A:hover { background: #E6E8EC}
+				#footer_menu .btn LI SPAN {  background: url(/a/img/dtl-arrow.gif) no-repeat 226px .8em; color: #606266; display: block; padding: 8px 19px 8px 12px; width: 207px}
+					#footer_menu .btn LI:hover SPAN { background-color: #E6E8EC; cursor: default}
+					#footer_menu .btn LI:hover UL { border-bottom: 1px solid #ACAEB2; display: block !important; top: -1px; left: 238px; bottom: auto}
+				
+					
+	

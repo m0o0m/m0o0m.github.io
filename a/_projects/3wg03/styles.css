@@ -1,0 +1,41 @@
+.bg-blue { background-color: #337FCC}
+.bg-grey153 { background-color: #999}
+.bg-grey194 { background-color: #C2C2C2}
+.bg-grey217 { background-color: #D9D9D9}
+.bg-grey243 { background-color: #F3F3F3}
+.brow { background-color: #F3F3F3}
+.bullet { list-style-image:   url(/a/_projects/3wg03/img/dtl_bullet.gif)}
+.mrow { background-color: #FFFFFF}
+.nav { font-family: Tahoma, Arial, sans-serif; color: #666666; font-size: 11px}
+.nav a { color: #666666; text-decoration: none}
+.nav a:visited { color: #666666}
+.nav a:hover { color: #000000}
+.margin-b0 { margin-bottom: 0}
+.margin-b11l2 { margin-bottom: 11px; margin-left: 2px}
+.margin-b7 { margin-bottom: 7px}
+.margin-l0 { margin-left: 0}
+.margin-l10 { margin-left: 10px}
+.margin-t12b9l12 { margin-top: 12px; margin-bottom: 9px; margin-left: 12px}
+.margin-t24 { margin-top: 24px}
+.margin-t24l10 { margin-top: 24px; margin-left: 10px}
+.margin-t4 { margin-top: 4px}
+.price { font-family: Verdana, Arial, sans-serif; color: #999; font-size: 12px; font-weight: bold; text-align: center}
+.small { font-family: Tahoma, Arial, sans-serif; color: #666666; font-size: 11px}
+.trow { background-color: #E5E5E5}
+.txt-black { color: #000000}
+.txt-blue { color: #039}
+.txt-front-h2 { font-family: Arial, Helvetica, sans-serif; color: #039; font-size: 14px}
+.txt-general { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal}
+.txt-grey102 { color: #666666}
+.txt-red { color: #E55933}
+.ul-blt-none { margin-left: 0; list-style-image: none}
+address { font-family: Tahoma, Arial, sans-serif; color: #000000; font-size: 11px; font-style: normal}
+a { color: #E55933}
+a:visited { color: #000000}
+a:hover { color: #339933}
+body { background-color: #FFFFFF; margin: 0; padding: 0}
+caption { font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 13px; font-weight: bold; text-align: left}
+h1 { font-family: Arial, Helvetica, sans-serif; color: #FFFFFF; font-size: 14px}
+h2 { font-family: Verdana, Arial, sans-serif; color: #039; font-size: 12px}
+ol, p, td, ul { font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 13px}
+th { font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 13px; text-align: left}

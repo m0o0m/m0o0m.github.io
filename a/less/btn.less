@@ -1,0 +1,68 @@
+@import '02-mixins.less';
+
+@c-btn-light:                   #4c80e5; // #4073d9;
+@c-btn-dark:                    #36c;   // #2659bf;
+@c-btn-brd-t:                   darken(@c-btn-light, 5%);
+@c-btn-brd:                     darken(@c-btn-light, 10%);
+@c-btn-brd-b:                   darken(@c-btn-dark, 5%);
+
+@c-btn-mob-header-light:        #5f6164;
+@c-btn-mob-header-dark:         #333538;
+@c-btn-mob-header-brd:          rgba(0, 0, 0, .64);
+
+@b:                             13;
+@bl:                            18.2;
+@baseline:                      @bl / @b + 0em;
+
+.btn {
+    -webkit-appearance: none; /* Prevent webkit buttons styling */
+    #gradient > .vertical-three-colors(@c-btn-light, @c-btn-dark, 86%, #3d70d6);
+    border: 1px solid darken(@c-btn-light, 10%);
+    *border: 0;
+    border-color: @c-btn-brd-t @c-btn-brd @c-btn-brd-b;
+    .border-radius(4px);
+    .box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 1px 2px rgba(0, 0, 0, 0.16));
+    color: #fff;
+    cursor: pointer;
+    .inline-block;
+    font-size: 100%;
+    line-height: inherit;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, .44);
+    margin-top: -1 / @b + 0em;
+    // margin-bottom: 1.5*@baseline;
+    *margin-left: .3em;
+    &:first-child { *margin-left: 0; }
+    padding: (1/2*@baseline - 1/@b) 13px;
+    vertical-align: middle;
+
+    &:hover {
+        background-color: @c-btn-light; /* Gradient goes up to uncover its dark side */
+        background-position: 0 16px;
+        color: #fff;
+        text-decoration: none;
+        .transition(background-position 0.1s linear); }
+
+    &:focus { .tab-focus; }
+
+    &:active, &.active { /* Replace gradient with darker color. Add deep inner shade */
+        background-color: @c-btn-light;
+        background-image: none;
+        .box-shadow(inset 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.12));
+        outline: 0; }
+
+    &.disabled, &[disabled] {
+        background-color: darken(#ECEEF2, 10%);
+        background-image: none;
+        .box-shadow(none);
+        cursor: default;
+        .opacity(44); }
+    }
+
+
+BUTTON { *padding: 11px 10px; /* Standart top and bottom padding -2px */ }
+
+.btn-email {
+    margin-left: .2em;
+}

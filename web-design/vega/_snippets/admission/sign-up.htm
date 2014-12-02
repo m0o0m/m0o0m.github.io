@@ -1,0 +1,57 @@
+<div class="close" id="page_01"></div>
+<div class="open">
+<div class="caption">
+<h2>Регистрация</h2>
+<a href="javascript:;" onClick="closeModal()" class="btn_close">Закрыть</a>
+</div>
+<form action="" method="post" class="modal narrow with_hints" name="form_sign_up" id="form_sign_up" onSubmit="return submitRegistrationForm(this, event)">
+<p>Все поля обязательны к заполнению.</p>
+
+<label for="email">Email</label>
+<input type="text" tabindex="1" maxlength="50" class="field" name="email" id="email" />
+<a href="javascript:;" class="tooltip"><span>Адрес электронной почты применяется как имя пользователя (логин) - для входа в систему. Адрес должен быть реальным - для получения прав постоянного доступа, нужно перейти по ссылке, которую мы вышлем письмом.</span></a>
+<br />
+<div class="alert" id="email_alert"></div>
+
+<label for="password">Придумайте себе пароль</label>
+<input type="password" tabindex="2" maxlength="128" class="field" name="password" id="password" />
+<a class="loadinto-page_01" href="/web-design/vega/_snippets/help/password-advice.htm" onClick="P7_swapClass(1,'none','close','open','div')" title="Открыть в этом же окне" id="tooltip_01"><span>Можно использовать латинские буквы (A-Z), цифры (0-9), спец. символы (- _ + @ и т. п.). Нельзя использовать: пробелы и кириллические буквы (А-Я). Щелкните на значке «вопрос», чтобы посмотреть советы по составлению пароля.</span></a>
+<br />
+<div class="alert" id="password_alert"></div>
+
+<label for="password_confirm">Введите пароль еще раз</label>
+<input type="password" tabindex="3" maxlength="128" class="field" name="password_confirm" id="password_confirm" />
+<br />
+<div class="alert" id="password_confirm_alert"></div>
+
+<label for="firstname">Имя</label>
+<input type="text" tabindex="4" maxlength="30" class="field" name="firstname" id="firstname" />
+<br />
+<div class="alert" id="firstname_alert"></div>
+
+<label for="lastname">Фамилия</label>
+<input type="text" tabindex="5" maxlength="50" class="field" name="lastname" id="lastname" />
+<br />
+<div class="alert" id="lastname_alert"></div>
+
+<label for="security_image">Код регистрации</label>
+
+<div><img src="/a/_projects/vega/img/captcha.png" alt="" width="100" height="30" class="f_left" style="margin: 0 10px 0 0" />
+<input type="text" tabindex="6" maxlength="6" class="field" style="width: 100px" name="security_image" id="security_image" />
+</div>
+<a href="javascript:;" class="tooltip"><span>Введите 6-значный номер, который видите на картинке в этой графе.</span></a>
+<br />
+<div class="alert" id="security_image_alert"></div>
+
+<label for="terms" class="for_checkbox">Вы согласны</label>
+<div>
+<input type="checkbox" tabindex="7" value="terms" name="terms" id="terms" />
+с <a class="loadinto-modal_box" href="/web-design/vega/_snippets/legal/common.htm" title="Открыть в этом же окне">Условиями участия в программах объединения</a>.</div>
+<br />
+<div class="alert" id="terms_alert"></div>
+
+<span class="btn submit">
+<input type="submit" tabindex="8" value="Зарегистрироваться" name="submit" id="submit" />
+</span><br />
+</form>
+</div>

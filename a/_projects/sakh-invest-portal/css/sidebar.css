@@ -1,0 +1,12 @@
+#sidebar { float: right; margin-right: 1px; padding: 3.077em 0 2.692em; width: 238px}
+	#sidebar UL>DIV, #sidebar H2, #sidebar H3, #sidebar P, #sidebar UL { padding-left: 20px; padding-right: 20px}
+	#sidebar H2 { background: url(/a/_projects/sakh-invest-portal/img/bg-h2.png); border-top: 1px solid #D6D6CC; border-bottom: 1px solid #D6D6CC; color: #668C59; margin-bottom: 0; padding-top: 25px; height: 35px}
+    #sidebar UL { padding-top: 1.85em}
+    
+#sidebar ARTICLE { padding-top: 1.85em; padding-bottom: 3.08em; overflow: hidden; width: 238px}
+	#sidebar ARTICLE IMG { margin-bottom: 1.54em}
+    #sidebar ARTICLE A H3 { color: #404E8C}
+    #sidebar ARTICLE H3:after { background-position: -160px -60px; content: ''; display: inline-block; margin-left: .6em; height: 8px; width: 8px}
+
+/*Hide teasers for current pages*/
+.one_window #bnr_window, .integrated_support #bnr_integrated { display: none}

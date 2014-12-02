@@ -1,0 +1,15 @@
+User-agent: *
+Sitemap: http://www.mysite.ru/sitemap.xml
+Sitemap: http://www.mysite.ru/en/sitemap.xml
+Disallow: /-labs
+Disallow: /&
+Disallow: /admin/
+Disallow: /modules/
+Disallow: /phpMyAdmin/
+Disallow: /*.php
+
+User-agent: Yandex 
+User-agent: StackRambler 
+User-agent: Aport
+Disallow: /en/
+Disallow: /en

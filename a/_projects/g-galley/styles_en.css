@@ -1,0 +1,17 @@
+﻿#navbar .column2-2 { width: 598px}
+#a-about { background:  url(/a/_projects/g-galley/img/en/btn_about.gif); width: 166px}
+#a-deposit { background:  url(/a/_projects/g-galley/img/en/btn_deposit.gif); width: 79px}
+#a-help { background:  url(/a/_projects/g-galley/img/en/btn_help.gif); width: 91px}
+#a-home { background:  url(/a/_projects/g-galley/img/en/btn_home.gif); float: left; margin: 0 !important; height: 50px !important; width: 141px}
+#a-news { background:  url(/a/_projects/g-galley/img/en/btn_news.gif); width: 92px}
+#a-promo { background:  url(/a/_projects/g-galley/img/en/btn_promotions.gif); width: 133px}
+#a-profile { background:  url(/a/_projects/g-galley/img/en/btn_profile.gif); width: 117px}
+#a-support { background:  url(/a/_projects/g-galley/img/en/btn_support.gif); width: 110px}
+#a-thistory { background:  url(/a/_projects/g-galley/img/en/btn_thistory.gif); width: 162px}
+#a-whistory { background:  url(/a/_projects/g-galley/img/en/btn_whistory.gif); width: 141px}
+#a-withdraw { background:  url(/a/_projects/g-galley/img/en/btn_withdraw.gif); width: 93px}
+
+/* Footer */
+.btns { padding-left: 98px; width: 730px; voice-family: "\"}\""; voice-family: inherit; width: 604px} /*155px*/
+.ie5-hack {}
+.payout { background: #FFBF00 url(/a/_projects/g-galley/img/en/bg_payout.gif) no-repeat; color: #CC1900; font-size: 13px; font-weight: bold; line-height: 31px; text-align: right; padding-right: 6px; height: 31px; width: 100px; voice-family: "\"}\""; voice-family: inherit; width: 94px}

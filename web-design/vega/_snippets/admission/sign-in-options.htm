@@ -1,0 +1,34 @@
+<div class="caption">
+<h2>Настройки входа</h2>
+<a href="javascript:;" onclick="closeModal()" class="btn_close">Закрыть</a>
+</div>
+
+<form id="form_sign_in_options" name="form_sign_in_options" method="post" action="" class="modal">
+<label>Тайм-аут:
+<select name="timeout" size="1" height="12">
+<option value="15" selected="selected">15 минут</option>
+<option value="30">30 минут</option>
+<option value="60">1 час</option>
+<option value="0">без ограничения</option>
+</select>
+</label>
+
+<br /><br />
+Привязать сессию к IP-адресу?
+<br />
+<input name="bind_to_ip" value="yes" checked="checked" type="radio" />
+Да (безопаснее)
+<br />
+<input name="bind_to_ip" value="no" type="radio" />
+Нет (работает от любого провайдера)
+<br /><br />
+Сохранять сессию при закрытии браузера?
+<br />
+<input name="permanent" value="yes" type="radio" />
+Да
+<br />
+<input name="permanent" value="no" checked="checked" type="radio" />
+Нет<br /><br />
+<span class="btn"><input name="submit" type="submit" id="submit" tabindex="3" value="Сохранить и вернуться" /></span><span class="btn"><a class="loadinto-modal_box" href="/web-design/vega/_snippets/admission/sign-in.htm" title="Вернуться к форме входа">Отмена</a></span><br />
+
+</form>

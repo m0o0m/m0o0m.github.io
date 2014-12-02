@@ -1,0 +1,38 @@
+<h2 id="modal_box_h">Регистрация<a href="javascript:;" onClick="closeModal()">Закрыть</a></h2>
+
+<form action="" method="post" name="form_user" id="form_user">
+
+<label for="email">Email</label>
+<input name="email" type="text" id="email" maxlength="50" />
+<a href="#" class="a_info"><span>Адрес электронной почты применяется как имя пользователя (логин) - для входа в зону игры на деньги. И для связи при выплате выигрышей.</span></a><br />
+
+<label for="password">Придумайте себе пароль</label>
+<input name="password" type="password" id="password" maxlength="9" />
+<a href="#" class="a_info"><span>Используйте только латинские буквы, цифры и знак нижнего подчёркивания<br />
+( _ ) - всего от 3 до 9 символов.</span></a><br />
+
+<label for="password_confirm">Введите пароль еще раз</label>
+<input name="password" id="password_confirm" type="password" maxlength="9" /><br />
+
+<label for="firstname">Имя</label>
+<input name="firstname" id="firstname" type="text" maxlength="30" /><br />
+
+<label for="lastname">Фамилия</label>
+<input name="lastname" id="lastname" type="text" maxlength="50" /><br />
+
+<label for="security_image">Код защиты</label>
+<div>
+<img src="/a/_projects/virtonomica/img/noise.png" alt="" class="f_left" style="margin-top: 0" />
+<input name="security_image" type="text" id="security_image" maxlength="6" />
+</div>
+<a href="#" class="a_info"><span>Введите 6-значный номер, который видите на картинке слева.</span></a><br />
+
+<label for="terms">Вы согласны</label>
+<div><input name="terms" type="checkbox" class="checkbox" id="terms" value="terms" />
+с <a href="#" title="Открыть в этом же окне">Договором об участии в игре</a>.</div>
+<br />
+<div class="alert"><p>Вы должны подтвердить свое согласие c Договором.</p></div>
+
+<input name="submit" type="submit" class="btn" id="submit" tabindex="3" value="Зарегистрироваться" /><br />
+
+</form>

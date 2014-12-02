@@ -1,0 +1,33 @@
+BODY { color: #535559; font: x-small/140% Arial, Geneva, Helvetica, sans-serif; font-size/**/:/**/ small; text-align: center; margin: 2em 0 0; padding: 0}
+	#container {}
+
+H1 { font: normal 185%/110% Georgia, "Times New Roman", Times, serif}
+IMG { border: 0}
+P { margin: 0 0 1.33em}
+
+FORM {  text-align: left; margin: 0 auto; padding: 0 20px 6em; width: 640px; width/**/:/**/ 600px}
+	FIELDSET { border: 0 none}
+		FORM BR { clear: left}
+		INPUT { border: 0 none; vertical-align: middle; margin: 0 .4em 0 0}
+		LEGEND { font: 135% Georgia, "Times New Roman", Times, serif; margin: 1.25em 0 .25em; *margin-left: -0.4em}
+		LABEL { color: #2D2F33; float: left; padding-right: 20px; margin-bottom: 1em; width: 160px; width/**/:/**/ 140px}
+			LI LABEL { float: none; padding-right: 0; margin-bottom: 0; width: auto}
+			LABEL SPAN { color: #86888C; display: block}
+			LABEL.for-ul { padding-top: .8em}
+		TEXTAREA { border: 1px solid #C6C8CC; margin-bottom: 1em; padding: .4em 10px; overflow-y: auto; height: 5em; height/**/:/**/ 4.2em; width: 418px; width/**/:/**/ 396px}
+
+UL { float: left; list-style: none; margin: 0 0 1em; padding: 0; width: 418px}
+	LI { background: none; margin-bottom: .4em}
+		.img LI { background-position: right center; background-repeat: no-repeat; padding: 10px 160px 0 0; min-height: 30px; min-height: 40px; height/**/:/**/ 30px}
+		HTML>BODY FIELDSET .img LI { height: auto}
+		#li-logo-type { background-image:  url(/labs/a/img/templates/brief-logo/type.gif)}
+		#li-logo-sign { background-image: url(/labs/a/img/templates/brief-logo/sign-type.gif); padding: 40px 160px 0 0; height: 100px; height/**/:/**/ 60px}
+		#li-serif { background-image: url(/labs/a/img/templates/brief-logo/serif.gif); margin-bottom: 1em}
+		#li-sans-serif { background-image: url(/labs/a/img/templates/brief-logo/sans-serif.gif)}
+		#li-script { background-image: url(/labs/a/img/templates/brief-logo/script.gif)}
+
+			
+TEXTAREA#comments, TEXTAREA#structural-design { min-height: 8em; height: 8em !important}
+	HTML>BODY TEXTAREA#comments, HTML>BODY TEXTAREA#structural-design { height: auto !important}
+LI.comments { padding-bottom: 2em}
+P.comments { margin-top: 2em}

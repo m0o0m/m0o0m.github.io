@@ -1,0 +1,309 @@
+<!--
+
+2. Develop with a <style> block in the <head>, 
+and then just before deployment,
+run it through MailChimp’s or Campaign Monitor's CSS Inliner Tool
+http://inliner.cm/
+http://templates.mailchimp.com/resources/inline-css/
+There are only .ReadMsgBody, .ExternalClass, pseudo- and @media classes will stay in the HEAD section.
+All others CSS will become INLINE
+
+13. TESTING
+a) Test email with Mailchimp Inbox inspector
+http://mailchimp.com/features/inbox-inspector/ ($3 per test)
+b) Strip out  DOCTYPE and test an email in IE (6), 7, 8, Firefox, Chrome, Safari and Opera.
+c) Once it's looking good in all browsers, add the XHTML 1.0 Transitional and repeat.
+
+3. NO COMMENTS in the code — Use Clean up XHTML command
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Приезжайте на венчание</title>
+
+<style type="text/css">
+/*
+|---------------------------------------
+| Essentials and Layout
+|---------------------------------------
+*/
+
+BODY {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+}
+
+BODY, TD {
+    color: #abaeb2;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+BODY, #background-table { background-color: #1f2226; }
+
+#background-table { /* Fix Hotmail issues */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.5 !important;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 580px;
+    width: 580px;
+}
+
+/*
+|---------------------------------------
+| Body Copy
+|---------------------------------------
+*/
+
+A { color: #FFFFFF; }
+A:active { color: #e2de89; }
+A:visited { color: #FFFFFF; }
+A:hover { color: #e2de89; }
+
+BR, STRONG BR, B BR, EM BR, I BR { line-height: 100%; }
+
+H1, H2, H3, H4 {
+    display: block;
+    line-height: 1 !important;
+    text-rendering: optimizelegibility;
+}
+
+H1 {
+    color: #FFFFFF !important;
+    font-size: 29px;
+    font-weight: normal;
+    margin: 0;
+}
+
+H2 {
+    color: #FFFFFF !important;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 32px;
+}
+
+IMG {
+    border: none;
+    color: #abaeb2;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+    line-height: 100%;
+    outline: none;
+    height: auto;
+    max-width: 100%;
+}
+
+P { font-size: 18px;
+    margin: 0 auto 1.5em;
+}
+
+TABLE, TD { /* Fix Outlook table */
+    border-collapse: collapse;
+    line-height: 150%;
+    mso-table-lspace: 0;
+    mso-table-rspace: 0;
+}
+
+.ExternalClass, .ReadMsgBody { /* Fix Hotmail body width */
+    width: 100%;
+}
+
+.ExternalClass, .ExternalClass P, .ExternalClass SPAN,
+.ExternalClass FONT, .ExternalClass TD, .ExternalClass DIV { /* Fix Hotmail line-height */
+    line-height: 100%;
+}
+
+#outlook A { padding: 0; } /* Force Outlook to provide a "view in browser" menu link. */
+
+/*
+|---------------------------------------
+| Customs
+|---------------------------------------
+*/
+
+.td-top { padding-top: 44px; }
+.td-h1 { padding: 39px 0 40px; }
+.td-body { padding-top: 80px; }
+.td-bottom  { padding: 26px 0 53px; }
+
+/*
+|-------------------------------------------------------------------------------
+| Mobile Targeting
+|-------------------------------------------------------------------------------
+| Use @media queries with care. You should not bring these styles inline - so
+| it's recommended to apply them AFTER you bring the other stlying inline.
+| 1) Test carefully with Yahoo.
+| 2) To properly use @media queries and play nice with Yahoo Mail, use attribute
+| selectors instead of class, id declarations. table[class=classname]
+| 3) Don't bring anything below this line inline.
+|
+*/
+
+@media only screen and (max-width: 600px) {
+BODY { width: auto !important; }
+
+TD[class='wrapper'] { padding: 0 20px !important; } /* Reset body padding for handheld devices */
+
+TABLE[id='container'] { width: 100% !important; }
+
+.td-top, .td-h1, .td-body, .td-bottom {
+    height: auto !important;
+    padding-top: 27px !important;
+}
+
+.h1 {
+    padding-bottom: 27px;
+}
+
+@media only screen and (max-width: 979px) {
+
+A[href^="tel"], A[href^="sms"] { /* Styling tel and sms links */
+    color: black; /* or whatever your want */
+    cursor: default;
+    text-decoration: none;
+    pointer-events: none;
+}
+}
+
+@media  only screen and (min-width: 321px) and (max-width: 1024px) and (-o-min-device-pixel-ratio: 5/4),
+        only screen and (min-width: 321px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.25),
+        only screen and (min-width: 321px) and (max-width: 1024px) and (min-resolution: 120dpi) {
+    
+    .td-top IMG { visibility: hidden; }
+
+    .td-top .figure {
+        background: transparent url(http://nickysheen.ru/a/_projects/personal/wedding-invitation/top-x2.png) no-repeat;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        background-size: 100% 100%
+    }
+    
+    .td-bottom IMG { visibility: hidden; }
+
+    .td-bottom .figure {
+        background: transparent url(http://nickysheen.ru/a/_projects/personal/wedding-invitation/bottom-x2.png) no-repeat;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        background-size: 100% 100%
+    }
+}
+
+/*
+|---------------------------------------
+| High resolution devices
+|---------------------------------------
+*/
+
+@media print,
+        (-o-min-device-pixel-ratio: 5/4),
+        (-webkit-min-device-pixel-ratio: 1.25),
+        (min-resolution: 120dpi) {
+
+}
+</style>
+
+<!--[if !IE]><!-->
+<style type="text/css">
+@media  only screen and (max-width: 600px) {
+
+    TR.line, TD.line { display: block; } /* Force table cells to not be like table cells anymore */
+}
+</style>
+<!--<![endif]-->
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0">
+
+    <!-- Use a wrapper table to control the width and the background color. Use with setting the same attributes on the body tag. -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="background-table" class="weath">
+    <tr>
+    <td align="center" valign="top" class="wrapper" style="padding-top: 20px; padding-bottom: 40px;">
+
+        <!--
+        INNER WRAPPER — 2 coumn/3row inner wraper to define header, main content
+        and footer regions. Set cells widths and reset cellspacing, cellpadding
+        and border to 0. Use class .weath for inner wrapper to avoid some
+        mail.ru issues
+        -->
+        <table border="0" cellpadding="0" cellspacing="0" width="580" id="container" class="weath">
+
+        <tr>
+        <td valign="top" width=""></td>
+        </tr>
+
+            <!-- Main Content -->
+
+            <tr class="line">
+                <td height="116" align="center" valign="top" class="line td-top">
+                <div class="figure">
+                <img src="http://nickysheen.ru/a/_projects/personal/wedding-invitation/top.png" alt="Тут должна быть симпатичные линеечки и кружок с деревцем" />
+                </div>
+                </td>
+            </tr>
+
+            <tr class="line">
+                <td height="38" align="center" valign="top" class="line td-h1">
+                <h1>Приглашаем на венчание</h1>
+                </td>
+            </tr>
+
+            <tr class="line">
+                <td align="center" valign="top" class="line">
+                <img src="http://nickysheen.ru/a/_projects/personal/wedding-invitation/pic.jpg" id="pic-billboard" alt="Тут должна быть красивая картинка: двое в лесу под фонарем" />
+                </td>
+            </tr>
+
+
+            <tr class="line">
+                <td align="center" valign="top" class="line td-body">
+                <h2>Дорогие Лёня и Оксана.</h2>
+                <p>Приглашаем вас на наше венчание.<br />
+				Событие состоится в субботу, 25 октября, в монастыре Дайбабе (Подгорица, Черногория).<br />
+				Празднование продолжится в ресторане «Таверна М».</p>
+                <p>Будем оч. рады вас видеть.<br />
+				Владимир и Софья</p>
+                </td>
+            </tr>
+
+            <tr class="line">
+                <td align="center" valign="top" class="line td-bottom">
+                <div class="figure">
+                <img src="http://nickysheen.ru/a/_projects/personal/wedding-invitation/bottom.png" alt="Тут должен быть элегантный вензель «В&amp;С»" />
+                </div>
+                </td>
+            </tr>
+
+
+            <!-- /Main Content -->
+
+    </table></td>
+    </tr>
+    </table>
+
+</body>
+</html>

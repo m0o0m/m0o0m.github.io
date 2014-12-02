@@ -1,0 +1,51 @@
+FORM { margin: 0}
+
+FIELDSET { border: 0; margin: 0; padding: 0; position: relative}
+FORM BR { clear: left; line-height: 20px}
+
+:-moz-placeholder { color: #888B8F; font-style: italic} /*We have to use two rules, because browsers ignore a rule with an unknown selector.*/
+::-webkit-input-placeholder { color: #888B8F; font-style: italic}
+
+BUTTON { outline: none}
+BUTTON, .btn STRONG, INPUT[type="button"], INPUT[type="reset"], INPUT[type="submit"] { cursor: pointer; -webkit-appearance: button}
+BUTTON, INPUT { line-height: normal; *overflow: visible}
+BUTTON, INPUT, SELECT, TEXTAREA { font: 107.7%  'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; vertical-align: baseline; *vertical-align: middle}
+BUTTON, INPUT.txt, .txt INPUT, LABEL, FORM SPAN.label, SELECT, TEXTAREA { display: block; margin: 0 0 20px}
+TABLE BUTTON, TABLE INPUT { *overflow: auto}
+
+BUTTON, .btn { overflow: visible !important; position: relative; width: auto}
+.primary BUTTON, .primary .btn { background: url(/a/_projects/sakh-invest-portal/img/scratching-widgets.png) 0 0 repeat-x;
+-moz-background-size: auto 38px; -o-background-size: auto 38px; -webkit-background-size: auto 38px; background-size: auto 38px;
+border: 1px solid #59804C; color: #FFF; line-height: 38px; white-space: nowrap; padding: 0 20px; height: 38px}
+	.btn { display: inline-block; text-align: center; text-decoration: none !important}
+	BUTTON.close { background: no-repeat; text-indent: -4000em; padding: 0; height: 20px; width: 20px}
+/*Adjustment*/
+BUTTON::-moz-focus-inner, INPUT::-moz-focus-inner { border: 0 none; padding: 0} /* FF — overrides extra padding and dotted outline */
+.btn_submit { margin-top: 20px}
+
+INPUT { _vertical-align: text-bottom}
+INPUT:invalid, TEXTAREA:invalid { background: #FFFFE1}
+INPUT[type="text"], INPUT.txt, .txt INPUT, TEXTAREA { padding: 6px 7px; outline: none}
+.primary INPUT[type="text"], .primary INPUT.txt, .primary .txt INPUT, .primary TEXTAREA { width: 100%; *width: 80%}
+.primary INPUT[type="text"], .primary INPUT.txt, .primary .txt INPUT, .primary TEXTAREA , INPUT[type="checkbox"], INPUT[type="radio"] { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box}
+INPUT[type="checkbox"] { vertical-align: bottom}
+	*+HTML INPUT[type="checkbox"] { vertical-align: baseline}
+INPUT[type="radio"] { vertical-align: text-bottom}
+INPUT[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box}
+INPUT[type="search"]::-webkit-search-decoration { -webkit-appearance: none}
+#i_captcha { float: left; margin: 0 20px 0 0; width: 44%}
+
+LABEL { cursor: pointer}
+LABEL, FORM SPAN.label { display: block; margin-bottom: .6em}
+	FIELDSET.radio LABEL { margin-bottom: 0; width: auto}
+
+LEGEND { border: 0; font-weight: bold; text-align: left; *margin-left: -7px; padding: 0 0 1em}
+
+SELECT { padding: 5px} 
+
+TEXTAREA { overflow: auto; resize: vertical; vertical-align: top; -webkit-appearance: none}
+
+.warning { background: #FFFFE1; webkit-box-sizing: border-box; text-align: left; margin-bottom: 1.54em; padding: 3.462em 40px 2.69em 80px; position: relative}
+	.warning EM { background: url(/a/_projects/sakh-invest-portal/img/base-graphics.png) no-repeat; display: block; text-indent: -4000em; position: absolute; top: 2.538em; left: 20px; height: 40px; width: 40px}
+	NOSCRIPT { background: #FFFFE1; display: block}
+    	NOSCRIPT .warning { margin: 0 auto; width: 840px}

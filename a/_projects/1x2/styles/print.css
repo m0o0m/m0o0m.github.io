@@ -1,0 +1,35 @@
+/* Hide */
+#header, #navbar, #footer, #meta, .arrow-back, .arrow-forward, .arrow-up, .sidebar { display: none}
+
+A:link, A:visited { font-weight: bold; text-decoration: underline; color: #999}
+BODY { background: white none; font-size: 10pt; color: black !important}
+H1 { font-size: 18pt; color: #666666}
+H2 { font-size: 14pt; color: #333}
+H3 { font-size: 12pt; color: #666666}
+H4 { font-weight: normal; font-size: 11pt; color: #999; margin-bottom: 0pt}
+P { margin-top: 0pt}
+
+/* Layout - Blocks */
+.column1-2, .column2-2 { width: 47%}
+.column1-3, .column2-3, .column3-3 { width: 30%}
+.container { background: transparent none; padding: 5%; width: 100%}
+.content { width: 100%}
+
+/* Tables */
+.bg-content { background: #FFF}
+.bg-odd { background: #F2F2F2 !important}
+.bg-tfoot { background: #EBEBEB}
+.bg-trow { background: #E5E5E5 !important}
+.cell-border-b { border-bottom: 0.5pt solid #999 !important}
+.cell-border-r-none { border-right: 0 !important}
+.cell-border-t { border-top: 0.5pt solid #999 !important}
+.table { margin: 0 0 1em}
+.table TD, .table TH { padding: 3pt}
+.table-border { border: 0.5pt solid #999 !important; border-collapse: collapse; margin: 0 0 1em}
+.table-border TD, .table-border TH { padding: 3pt; border-right: 0.5pt solid #999 !important}
+
+/* Lists */
+OL { list-style-type: decimal !important}
+OL LI, LI.li01, LI.li02, LI.li03, LI.li04, LI.li05, LI.li06, LI.li07, LI.li08, LI.li09, LI.li10 { background: none}
+UL { list-style-type: circle !important; margin-left: auto !important}
+UL.nested { list-style: square !important}

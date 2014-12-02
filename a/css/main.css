@@ -1,0 +1,7 @@
+@charset "UTF-8";
+#header{border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+#footer{border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+#header{background:#ff0000;top-margin:30px;}
+#d{}#d .h-color{color:#ee3322;}
+#d .bordered{border:solid 1px #eeeeee;}
+h1{border:solid 1px #eeeeee;color:#ee3322;}

@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Reports / Offside</title>
+
+<link rel="stylesheet" href="/a/_projects/offside/css/reports.css" type="text/css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+<script src="/a/_projects/offside/js/application-1.0.0.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#fs_subtype div div:not(.agg)").hide();
+});
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<div class="section window wide">
+<div class="header">
+<h1>Offsidebet Reports</h1>
+</div>
+
+<form id="f_reports" action="" class="cfx" method="post">
+
+<div id="fs_markets" class="fieldset">
+<label id="l_ag"><input checked="checked" name="market" type="radio" value="ag" /><em>Chose </em>Aggregate</label>
+<label id="l_en"><input name="market" type="radio" value="en" /><em>Chose </em>English</label>
+<label id="l_ru"><input name="market" type="radio" value="ru" /><em>Chose </em>Russian</label>
+<label id="l_es"><input name="market" type="radio" value="es" /><em>Chose </em>Spanish</label>
+<label id="l_de"><input name="market" type="radio" value="de" /><em>Chose </em>German</label>
+<label id="l_tr"><input name="market" type="radio" value="tr" /><em>Chose </em>Turkish</label>
+<label id="l_bg"><input name="market" type="radio" value="bg" /><em>Chose </em>Bulgarian</label>
+</div>
+
+<div id="fs_type" class="fieldset">
+<label id="l_bets"><input checked="checked" name="type" type="radio" value="bets" />Bets</label>
+<label id="l_transactions"><input name="type" type="radio" value="transactions" />Transactions</label>
+<label id="l_users"><input name="type" type="radio" value="users" />Users</label>
+<label id="l_events"><input name="type" type="radio" value="events" />Events</label>
+</div>
+
+<div id="fs_subtype" class="fieldset">
+<div id="bets">
+<h2>Bets</h2>
+<h3>Aggregate</h3>
+<div class="agg">
+<label><input checked="checked" name="subtype" type="radio" value="b_ag_by_period" />By Period</label>
+<label><input name="subtype" type="radio" value="b_ag_users_by_period" />By Users</label>
+<label><input name="subtype" type="radio" value="b_ag_settledusers_by_period" />Settled Users by Period</label>
+<label><input name="subtype" type="radio" value="b_ag_by_sports" />By Sports</label>
+<label><input name="subtype" type="radio" value="b_ag_by_subtypes" />By Subtypes</label>
+<label><input name="subtype" type="radio" value="b_ag_by_markettypes" />By Market Types</label>
+<label><input name="subtype" type="radio" value="b_ag_by_range" />By Range</label>
+<label><input name="subtype" type="radio" value="b_ag_lives_stat_all" />Lives Stats</label>
+<label><input name="subtype" type="radio" value="b_ag_lives_by_period" />Lives by Period</label>
+<label><input name="subtype" type="radio" value="b_ag_bets_lives_stat_bypass" />Lives Stats by Pass</label>
+<label><input name="subtype" type="radio" value="b_ag_live_expresses" />Live Expresses</label>
+<label><input name="subtype" type="radio" value="b_ag_live_traiders_stat" />Live Traders Stats</label>
+<label><input name="subtype" type="radio" value="b_ag_live_traiders_stat_bypass" />Live Traders Stats by Pass</label>
+<label><input name="subtype" type="radio" value="b_ag_night_by_period" />Night Bets by Period</label>
+<label><input name="subtype" type="radio" value="b_ag_night_by_users" />Night Bets by Users</label>
+<label><input name="subtype" type="radio" value="b_ag_on_changed_price" />On Changed Price</label>
+<label><input name="subtype" type="radio" value="b_ag_late" />Late</label>
+<label><input name="subtype" type="radio" value="b_ag_dangerous" />Dangerous</label>
+<label><input name="subtype" type="radio" value="b_ag_rejected" />Rejected</label>
+<label><input name="subtype" type="radio" value="b_ag_voided" />Voided</label>
+</div>
+
+<h3>English</h3>
+<div class="en">
+<label><input name="subtype" type="radio" value="b_en_by_period" />By period</label>
+<label><input name="subtype" type="radio" value="b_en_users_by_period" />By players</label>
+<label><input name="subtype" type="radio" value="b_en_settledusers_by_period" />Settled by players</label>
+<label><input name="subtype" type="radio" value="b_en_lives_stat" />Lives statistics</label>
+<label><input name="subtype" type="radio" value="b_en_by_sports" />Sports summary</label>
+<label><input name="subtype" type="radio" value="b_en_by_markettypes" />Markets types summary</label>
+<label><input name="subtype" type="radio" value="b_en_dangerous" />Dangerous</label>
+</div>
+
+<h3>Russian</h3>
+<div class="ru">
+<label><input name="subtype" type="radio" value="b_ru_by_period" />By period</label>
+<label><input name="subtype" type="radio" value="b_ru_users_by_period" />By players</label>
+<label><input name="subtype" type="radio" value="b_ru_settledusers_by_period" />Settled by players</label>
+<label><input name="subtype" type="radio" value="b_ru_lives_stat" />Lives statistics</label>
+<label><input name="subtype" type="radio" value="b_ru_by_sports" />Sports summary</label>
+<label><input name="subtype" type="radio" value="b_ru_by_markettypes" />Markets types summary</label>
+<label><input name="subtype" type="radio" value="b_ru_dangerous" />Dangerous</label>
+</div>
+
+<h3>Spain</h3>
+<div class="es">
+<label><input name="subtype" type="radio" value="b_es_by_period" />By period</label>
+<label><input name="subtype" type="radio" value="b_es_users_by_period" />By players</label>
+<label><input name="subtype" type="radio" value="b_es_settledusers_by_period" />Settled by players</label>
+<label><input name="subtype" type="radio" value="b_es_lives_stat" />Lives statistics</label>
+<label><input name="subtype" type="radio" value="b_es_by_sports" />Sports summary</label>
+<label><input name="subtype" type="radio" value="b_es_by_markettypes" />Markets types summary</label>
+<label><input name="subtype" type="radio" value="b_es_dangerous" />Dangerous</label>
+</div>
+
+<h3>German</h3>
+<div class="de">
+<label><input name="subtype" type="radio" value="b_de_by_period" />By period</label>
+<label><input name="subtype" type="radio" value="b_de_users_by_period" />By players</label>
+<label><input name="subtype" type="radio" value="b_de_settledusers_by_period" />Settled by players</label>
+<label><input name="subtype" type="radio" value="b_de_lives_stat" />Lives statistics</label>
+<label><input name="subtype" type="radio" value="b_de_by_sports" />Sports summary</label>
+<label><input name="subtype" type="radio" value="b_de_by_markettypes" />Markets types summary</label>
+<label><input name="subtype" type="radio" value="b_de_dangerous" />Dangerous</label>
+</div>
+
+<h3>Turkish</h3>
+<div class="tr">
+<label><input name="subtype" type="radio" value="b_tr_by_period" />By period</label>
+<label><input name="subtype" type="radio" value="b_tr_users_by_period" />By players</label>
+<label><input name="subtype" type="radio" value="b_tr_settledusers_by_period" />Settled by players</label>
+<label><input name="subtype" type="radio" value="b_tr_lives_stat" />Lives statistics</label>
+<label><input name="subtype" type="radio" value="b_tr_by_sports" />Sports summary</label>
+<label><input name="subtype" type="radio" value="b_tr_by_markettypes" />Markets types summary</label>
+<label><input name="subtype" type="radio" value="b_tr_dangerous" />Dangerous</label>
+</div>
+
+<h3>Bulgarian</h3>
+<div class="bg">
+<label><input name="subtype" type="radio" value="b_bg_by_period" />By period</label>
+<label><input name="subtype" type="radio" value="b_bg_users_by_period" />By players</label>
+<label><input name="subtype" type="radio" value="b_bg_settledusers_by_period" />Settled by players</label>
+<label><input name="subtype" type="radio" value="b_bg_lives_stat" />Lives statistics</label>
+<label><input name="subtype" type="radio" value="b_bg_by_sports" />Sports summary</label>
+<label><input name="subtype" type="radio" value="b_bg_by_markettypes" />Markets types summary</label>
+<label><input name="subtype" type="radio" value="b_bg_dangerous" />Dangerous</label>
+</div>
+</div>
+
+<div id="transactions">
+<h2>Transactions</h2>
+<h3>Aggregate</h3>
+<div class="agg">
+<label><input name="subtype" type="radio" value="t_ag_bonuses" />Bonuses</label>
+<label><input name="subtype" type="radio" value="t_ag_money_inout" />Money in/out</label>
+<label><input name="subtype" type="radio" value="t_ag_money_inout_pps" />Money in/out to payment systems</label>
+<label><input name="subtype" type="radio" value="t_ag_money_inout_bytype" />Money in/out by type</label>
+<label><input name="subtype" type="radio" value="t_ag_cur_payments" />Payout requests</label>
+<label><input name="subtype" type="radio" value="t_ag_cc_deposits" />Credit cards deposits</label>
+<label><input name="subtype" type="radio" value="t_ag_cc_casino_alerts" />CC casino alerts</label>
+<label><input name="subtype" type="radio" value="t_ag_account_hist" />History</label>
+<label><input name="subtype" type="radio" value="t_ag_fin_sheet" />Finance report sheet</label>
+<label><input name="subtype" type="radio" value="t_ag_commissions" />Commissions</label>
+<label><input name="subtype" type="radio" value="t_ag_tms_summary" />TMS summary</label>
+<label><input name="subtype" type="radio" value="t_ag_tms_fin" />TMS finance</label>
+</div>
+
+<h3>English</h3>
+<div class="en">
+<label><input name="subtype" type="radio" value="t_en_bonuses" />Bonuses</label>
+<label><input name="subtype" type="radio" value="t_en_money_inout" />Money in/out</label>
+<label><input name="subtype" type="radio" value="t_en_money_inout_by_type" />Money in/out by type</label>
+<label><input name="subtype" type="radio" value="t_en_cur_payments" />Payout requests</label>
+<label><input name="subtype" type="radio" value="t_en_cc_deposits" />Credit cards deposits</label>
+<label><input name="subtype" type="radio" value="t_en_cc_casino_alerts" />CC casino alerts</label>
+<label><input name="subtype" type="radio" value="t_en_cashans" />Cash transactions over certain amount</label>
+<label><input name="subtype" type="radio" value="t_en_cur_liability" />Current liability [win/draw/win market]</label>
+<label><input name="subtype" type="radio" value="t_en_rej_unsuc_ugs" />Rejected/unsuccessful UGS transactions</label>
+<label><input name="subtype" type="radio" value="t_en_commissions" />Commission</label>
+</div>
+
+<h3>Russian</h3>
+<div class="ru">
+<label><input name="subtype" type="radio" value="t_ru_bonuses" />Bonuses</label>
+<label><input name="subtype" type="radio" value="t_ru_money_inout" />Money in/out</label>
+<label><input name="subtype" type="radio" value="t_ru_money_inout_by_type" />Money in/out by type</label>
+<label><input name="subtype" type="radio" value="t_ru_cur_payments" />Payout requests</label>
+<label><input name="subtype" type="radio" value="t_ru_cc_deposits" />Credit cards deposits</label>
+<label><input name="subtype" type="radio" value="t_ru_cc_casino_alerts" />CC casino alerts</label>
+<label><input name="subtype" type="radio" value="t_ru_cashans" />Cash transactions over certain amount</label>
+<label><input name="subtype" type="radio" value="t_ru_cur_liability" />Current liability [win/draw/win market]</label>
+<label><input name="subtype" type="radio" value="t_ru_rej_unsuc_ugs" />Rejected/unsuccessful UGS transactions</label>
+<label><input name="subtype" type="radio" value="t_ru_commissions" />Commission</label>
+</div>
+
+<h3>Spain</h3>
+<div class="es">
+<label><input name="subtype" type="radio" value="t_es_bonuses" />Bonuses</label>
+<label><input name="subtype" type="radio" value="t_es_money_inout" />Money in/out</label>
+<label><input name="subtype" type="radio" value="t_es_money_inout_by_type" />Money in/out by type</label>
+<label><input name="subtype" type="radio" value="t_es_cur_payments" />Payout requests</label>
+<label><input name="subtype" type="radio" value="t_es_cc_deposits" />Credit cards deposits</label>
+<label><input name="subtype" type="radio" value="t_es_cc_casino_alerts" />CC casino alerts</label>
+<label><input name="subtype" type="radio" value="t_es_cashans" />Cash transactions over certain amount</label>
+<label><input name="subtype" type="radio" value="t_es_cur_liability" />Current liability [win/draw/win market]</label>
+<label><input name="subtype" type="radio" value="t_es_rej_unsuc_ugs" />Rejected/unsuccessful UGS transactions</label>
+<label><input name="subtype" type="radio" value="t_es_commissions" />Commission</label>
+</div>
+
+<h3>German</h3>
+<div class="de">
+<label><input name="subtype" type="radio" value="t_de_bonuses" />Bonuses</label>
+<label><input name="subtype" type="radio" value="t_de_money_inout" />Money in/out</label>
+<label><input name="subtype" type="radio" value="t_de_money_inout_by_type" />Money in/out by type</label>
+<label><input name="subtype" type="radio" value="t_de_cur_payments" />Payout requests</label>
+<label><input name="subtype" type="radio" value="t_de_cc_deposits" />Credit cards deposits</label>
+<label><input name="subtype" type="radio" value="t_de_cc_casino_alerts" />CC casino alerts</label>
+<label><input name="subtype" type="radio" value="t_de_cashans" />Cash transactions over certain amount</label>
+<label><input name="subtype" type="radio" value="t_de_cur_liability" />Current liability [win/draw/win market]</label>
+<label><input name="subtype" type="radio" value="t_de_rej_unsuc_ugs" />Rejected/unsuccessful UGS transactions</label>
+<label><input name="subtype" type="radio" value="t_de_commissions" />Commission</label>
+</div>
+
+<h3>Turkish</h3>
+<div class="tr">
+<label><input name="subtype" type="radio" value="t_tr_bonuses" />Bonuses</label>
+<label><input name="subtype" type="radio" value="t_tr_money_inout" />Money in/out</label>
+<label><input name="subtype" type="radio" value="t_tr_money_inout_by_type" />Money in/out by type</label>
+<label><input name="subtype" type="radio" value="t_tr_cur_payments" />Payout requests</label>
+<label><input name="subtype" type="radio" value="t_tr_cc_deposits" />Credit cards deposits</label>
+<label><input name="subtype" type="radio" value="t_tr_cc_casino_alerts" />CC casino alerts</label>
+<label><input name="subtype" type="radio" value="t_tr_cashans" />Cash transactions over certain amount</label>
+<label><input name="subtype" type="radio" value="t_tr_cur_liability" />Current liability [win/draw/win market]</label>
+<label><input name="subtype" type="radio" value="t_tr_rej_unsuc_ugs" />Rejected/unsuccessful UGS transactions</label>
+<label><input name="subtype" type="radio" value="t_tr_commissions" />Commission</label>
+</div>
+
+<h3>Bulgarian</h3>
+<div class="bg">
+<label><input name="subtype" type="radio" value="t_bg_bonuses" />Bonuses</label>
+<label><input name="subtype" type="radio" value="t_bg_money_inout" />Money in/out</label>
+<label><input name="subtype" type="radio" value="t_bg_money_inout_by_type" />Money in/out by type</label>
+<label><input name="subtype" type="radio" value="t_bg_cur_payments" />Payout requests</label>
+<label><input name="subtype" type="radio" value="t_bg_cc_deposits" />Credit cards deposits</label>
+<label><input name="subtype" type="radio" value="t_bg_cc_casino_alerts" />CC casino alerts</label>
+<label><input name="subtype" type="radio" value="t_bg_cashans" />Cash transactions over certain amount</label>
+<label><input name="subtype" type="radio" value="t_bg_cur_liability" />Current liability [win/draw/win market]</label>
+<label><input name="subtype" type="radio" value="t_bg_rej_unsuc_ugs" />Rejected/unsuccessful UGS transactions</label>
+<label><input name="subtype" type="radio" value="t_bg_commissions" />Commission</label>
+</div>
+</div>
+
+<div id="users">
+<h2>Players</h2>
+<h3>Aggregate</h3>
+<div class="agg">
+<label><input name="subtype" type="radio" value="p_ag_player_summary" />Summary</label>
+<label><input name="subtype" type="radio" value="p_ag_new_accounts" />New accounts</label>
+<label><input name="subtype" type="radio" value="p_ag_funded_accounts" />Funded accounts</label>
+<label><input name="subtype" type="radio" value="p_ag_dup_emails" />Duplicated emails</label>
+<label><input name="subtype" type="radio" value="p_ag_negative_bal" />Negative accounts balances</label>
+<label><input name="subtype" type="radio" value="p_ag_closed_susp_accounts" />Closed/suspended accounts</label>
+<label><input name="subtype" type="radio" value="p_ag_funds_closed_acc" />Funds on closed accounts</label>
+<label><input name="subtype" type="radio" value="p_ag_lapsed_players" />Lapsed players</label>
+</div>
+
+<h3>English</h3>
+<div class="en">
+<label><input name="subtype" type="radio" value="p_en_summary" />Summary</label>
+<label><input name="subtype" type="radio" value="p_en_accounts_by_group" />Players by group</label>
+<label><input name="subtype" type="radio" value="p_en_new_accounts" />New accounts</label>
+<label><input name="subtype" type="radio" value="p_en_funded_accounts" />Funded accounts</label>
+<label><input name="subtype" type="radio" value="p_en_dup_emails" />Duplicate emails</label>
+<label><input name="subtype" type="radio" value="p_en_negative_bal" />Negative accounts balances</label>
+<label><input name="subtype" type="radio" value="p_en_closed_susp_accounts" />Closed/suspended accounts</label>
+<label><input name="subtype" type="radio" value="p_en_funds_closed_acc" />Funds on closed accounts</label>
+<label><input name="subtype" type="radio" value="p_en_lapsed_players" />Lapsed players</label>
+</div>
+
+<h3>Russian</h3>
+<div class="ru">
+<label><input name="subtype" type="radio" value="p_ru_summary" />Summary</label>
+<label><input name="subtype" type="radio" value="p_ru_accounts_by_group" />Players by group</label>
+<label><input name="subtype" type="radio" value="p_ru_new_accounts" />New accounts</label>
+<label><input name="subtype" type="radio" value="p_ru_funded_accounts" />Funded accounts</label>
+<label><input name="subtype" type="radio" value="p_ru_dup_emails" />Duplicate emails</label>
+<label><input name="subtype" type="radio" value="p_ru_negative_bal" />Negative accounts balances</label>
+<label><input name="subtype" type="radio" value="p_ru_closed_susp_accounts" />Closed/suspended accounts</label>
+<label><input name="subtype" type="radio" value="p_ru_funds_closed_acc" />Funds on closed accounts</label>
+<label><input name="subtype" type="radio" value="p_ru_lapsed_players" />Lapsed players</label>
+</div>
+
+<h3>Spain</h3>
+<div class="es">
+<label><input name="subtype" type="radio" value="p_es_summary" />Summary</label>
+<label><input name="subtype" type="radio" value="p_es_accounts_by_group" />Players by group</label>
+<label><input name="subtype" type="radio" value="p_es_new_accounts" />New accounts</label>
+<label><input name="subtype" type="radio" value="p_es_funded_accounts" />Funded accounts</label>
+<label><input name="subtype" type="radio" value="p_es_dup_emails" />Duplicate emails</label>
+<label><input name="subtype" type="radio" value="p_es_negative_bal" />Negative accounts balances</label>
+<label><input name="subtype" type="radio" value="p_es_closed_susp_accounts" />Closed/suspended accounts</label>
+<label><input name="subtype" type="radio" value="p_es_funds_closed_acc" />Funds on closed accounts</label>
+<label><input name="subtype" type="radio" value="p_es_lapsed_players" />Lapsed players</label>
+</div>
+
+<h3>German</h3>
+<div class="de">
+<label><input name="subtype" type="radio" value="p_de_summary" />Summary</label>
+<label><input name="subtype" type="radio" value="p_de_accounts_by_group" />Players by group</label>
+<label><input name="subtype" type="radio" value="p_de_new_accounts" />New accounts</label>
+<label><input name="subtype" type="radio" value="p_de_funded_accounts" />Funded accounts</label>
+<label><input name="subtype" type="radio" value="p_de_dup_emails" />Duplicate emails</label>
+<label><input name="subtype" type="radio" value="p_de_negative_bal" />Negative accounts balances</label>
+<label><input name="subtype" type="radio" value="p_de_closed_susp_accounts" />Closed/suspended accounts</label>
+<label><input name="subtype" type="radio" value="p_de_funds_closed_acc" />Funds on closed accounts</label>
+<label><input name="subtype" type="radio" value="p_de_lapsed_players" />Lapsed players</label>
+</div>
+
+<h3>Turkish</h3>
+<div class="tr">
+<label><input name="subtype" type="radio" value="p_tr_summary" />Summary</label>
+<label><input name="subtype" type="radio" value="p_tr_accounts_by_group" />Players by group</label>
+<label><input name="subtype" type="radio" value="p_tr_new_accounts" />New accounts</label>
+<label><input name="subtype" type="radio" value="p_tr_funded_accounts" />Funded accounts</label>
+<label><input name="subtype" type="radio" value="p_tr_dup_emails" />Duplicate emails</label>
+<label><input name="subtype" type="radio" value="p_tr_negative_bal" />Negative accounts balances</label>
+<label><input name="subtype" type="radio" value="p_tr_closed_susp_accounts" />Closed/suspended accounts</label>
+<label><input name="subtype" type="radio" value="p_tr_funds_closed_acc" />Funds on closed accounts</label>
+<label><input name="subtype" type="radio" value="p_tr_lapsed_players" />Lapsed players</label>
+<!--Turkish Extra-->
+<label><input name="subtype" type="radio" value="p_tr_ugs_cust" />UGS Customers</label>
+<label><input name="subtype" type="radio" value="p_tr_speedcard_cust" />SpeedCard Customers</label>
+<label><input name="subtype" type="radio" value="p_tr_speedcard_signups" />Speedcard signups</label>
+<!--/Turkish Extra-->
+</div>
+
+<h3>Bulgarian</h3>
+<div class="bg">
+<label><input name="subtype" type="radio" value="p_bg_summary" />Summary</label>
+<label><input name="subtype" type="radio" value="p_bg_accounts_by_group" />Players by group</label>
+<label><input name="subtype" type="radio" value="p_bg_new_accounts" />New accounts</label>
+<label><input name="subtype" type="radio" value="p_bg_funded_accounts" />Funded accounts</label>
+<label><input name="subtype" type="radio" value="p_bg_dup_emails" />Duplicate emails</label>
+<label><input name="subtype" type="radio" value="p_bg_negative_bal" />Negative accounts balances</label>
+<label><input name="subtype" type="radio" value="p_bg_closed_susp_accounts" />Closed/suspended accounts</label>
+<label><input name="subtype" type="radio" value="p_bg_funds_closed_acc" />Funds on closed accounts</label>
+<label><input name="subtype" type="radio" value="p_bg_lapsed_players" />Lapsed players</label>
+</div>
+</div>
+
+<div id="events">
+<h2>Events</h2>
+<h3>Aggregate</h3>
+<div class="agg">
+<label><input name="subtype" type="radio" value="e_ag_bets_events_summary" />Summary</label>
+<label><input name="subtype" type="radio" value="e_ag_bets_unsettled_events" />Unsettled</label>
+<label><input name="subtype" type="radio" value="e_ag_reresult" />Changed results</label>
+<label><input name="subtype" type="radio" value="e_ag_event_hist" />History</label>
+</div>
+
+<div class="en ru es de tr bg">
+<h3>Selected Market</h3>
+<label id="selected_market_events"><input name="subtype" type="radio" value="" />Events</label>
+</div>
+</div>
+
+</div>
+
+<div class="fieldset last">
+<label>from <input class="txt date" maxlength="10" name="" type="text" value="dd/mm/yy" /></label>
+<label>to <input class="txt date" maxlength="10" name="" type="text" value="dd/mm/yy" /></label>
+<button type="submit"><strong>OK</strong></button>
+</div>
+</form>
+
+<div class="footer"></div>
+
+</div>
+
+</body>
+</html>

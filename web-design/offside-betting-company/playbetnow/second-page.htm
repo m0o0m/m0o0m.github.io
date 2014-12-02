@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+<script src="/a/_projects/offside/js/betplaynow-1.0.0.js" type="text/javascript"></script>
+<style type="text/css">
+<!--
+HTML { text-align: center}
+BODY { background: #292C30; color: #FFF; font: 81.3%/150% Arial, Geneva, Helvetica, sans-serif; text-align: left; margin: 3em auto; padding: 0; width: 450px}
+A, INPUT, SELECT, TEXTAREA { outline: 0}
+H1 { color: #9FA2A6; font-size: 200%}
+H1, H2 { font-weight: normal}
+H2 { font-size: 138.5%}
+
+
+/* Tables ---------------------------------------------------------------------------------------------------------------------*/	
+TABLE { border: 1px solid #626468; border-collapse: collapse; empty-cells: show; line-height: normal; text-align: left; margin: 0 auto 1.5em; width: 390px}
+	CAPTION { font-weight: bold; margin: 0 auto; padding-bottom: 0.5em}
+	THEAD { background: #E1E3E7}
+	.even { background: #303337}
+	TD, TH { font-size: 100%; vertical-align: top; padding: 6px}
+
+/* Forms ---------------------------------------------------------------------------------------------------------------------*/
+FORM { margin: 0; padding: 0}
+	BUTTON, INPUT, SELECT, TEXTAREA { font: 107.7% Arial, Helvetica, sans-serif; vertical-align: middle}
+	BUTTON, INPUT.txt, LABEL, SELECT, TEXTAREA { display: block; margin-bottom: 20px}
+	FORM BR { clear: left}
+	INPUT.txt, TEXTAREA { border: 1px solid #B4B7BB; padding: 5px 7px 6px}
+	SELECT { border: 1px solid #B4B7BB; padding: 5px}
+    
+BUTTON {  line-height: 40px; height: 40px}
+
+FIELDSET { border: 0 none; margin: 0; padding: 0 0 .6em; position: relative}
+		FIELDSET .labelled { padding: 1.5em 0 .6em}
+			FIELDSET .labelled LEGEND { text-indent: 0; padding-left: 17px}
+	.labelled { padding: 0 0 1.5em}
+
+LEGEND { text-align: left; padding: 0}
+    
+LABEL { cursor: pointer; display: block; margin-bottom: .6em}
+
+.betting_step2 FIELDSET { margin-bottom: 1.5em}
+	.betting_step2 LABEL { float: left; position: relative; padding: 0 30px; width:  145px}
+    .betting_step2 LEGEND { color: #9FA2A6; font-weight: bold; margin-bottom: .23em;  padding: 6px 30px 5px}
+		.betting_step2 LEGEND LABEL { float: none; margin-bottom: 0; padding: 0; width: 390px}
+        		.betting_step2 LEGEND INPUT { left: -25px}
+	.betting_step2 INPUT { position: absolute; top: 0; left: 5px}
+
+/* Clearers --------------------------------------------------------------------------------------------------------------------*/
+.cfx:after { clear: both; content: "."; display: block; font-size: 0; line-height: 0; height: 0; visibility: hidden}
+.cfx { display: inline-block}
+/* Hides from IE-mac \*/
+* HTML .cfx { height: 1%}
+.cfx { display: block}
+/* End hide from IE Mac */
+
+/* Hacks ---------------------------------------------------------------------------------------------------------------------*/
+/* Firefox & IE */
+BUTTON STRONG
+{ display: -moz-inline-stack;  *display: inline; _overflow: hidden; zoom: 1}
+
+/* IE */
+/*Forms*/
+LEGEND { *margin-left: -7px}
+-->
+</style>
+</head>
+<body>
+<div>
+<h1>Football</h1>
+</div>
+<form action="" method="get" class="betting_step2">
+<fieldset>
+<legend><label><input type="checkbox" name="" />Live Betting</label></legend>
+<label><input type="checkbox" name="" />In Play Matches</label>
+<label><input type="checkbox" name="" />In Play Specials</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />UEFA Champions League</label></legend>
+<label><input type="checkbox" name="" />Champions League Matches</label>
+<label><input type="checkbox" name="" />Champions League - Outright</label>
+<label><input type="checkbox" name="" />Champions League - Country of Winner</label>
+<label><input type="checkbox" name="" />Champions League - To Qualify</label>
+<label><input type="checkbox" name="" />Champions League - To Reach The Final</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />UEFA Europa League</label></legend>
+<label><input type="checkbox" name="" />Europa League Matches</label>
+<label><input type="checkbox" name="" />Europa League Specials</label>
+<label><input type="checkbox" name="" />Europa League - Outright</label>
+<label><input type="checkbox" name="" />Europa League - Country of Winner</label>
+<label><input type="checkbox" name="" />Europa League - To Qualify</label>
+<label><input type="checkbox" name="" />Europa League - To Reach the Final</label>
+<label><input type="checkbox" name="" />Europa League - Name the Finalists</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Internationals</label></legend>
+<label><input type="checkbox" name="" />U20 International Matches</label>
+<label><input type="checkbox" name="" />U19 International Matches</label>
+<label><input type="checkbox" name="" />International Youth Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />International Club Matches</label></legend>
+<label><input type="checkbox" name="" />AFC Cup Matches</label>
+<label><input type="checkbox" name="" />Baltic League Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Turkey</label></legend>
+<label><input type="checkbox" name="" />Superleague Matches</label>
+<label><input type="checkbox" name="" />Superleague Specials</label>
+<label><input type="checkbox" name="" />1. Lig Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />England</label></legend>
+<label><input type="checkbox" name="" />Premier League Matches</label>
+<label><input type="checkbox" name="" />Premier League Specials</label>
+<label><input type="checkbox" name="" />FA Cup - To Qualify</label>
+<label><input type="checkbox" name="" />Championship Matches</label>
+<label><input type="checkbox" name="" />League One Matches</label>
+<label><input type="checkbox" name="" />League Two Matches</label>
+<label><input type="checkbox" name="" />Conference Matches</label>
+<label><input type="checkbox" name="" />Conference North and South Matches</label>
+<label><input type="checkbox" name="" />Reserve Matches</label>
+<label><input type="checkbox" name="" />Ryman, Southern and Unibond Matches</label>
+<label><input type="checkbox" name="" />FA Cup Semi Finals (At Wembley)</label>
+<label><input type="checkbox" name="" />FA Youth Cup Matches</label>
+<label><input type="checkbox" name="" />Womens Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Scotland</label></legend>
+<label><input type="checkbox" name="" />Premier League Matches</label>
+<label><input type="checkbox" name="" />SPL Specials</label>
+<label><input type="checkbox" name="" />Scottish Cup Semi Finals (At Hampden Park)</label>
+<label><input type="checkbox" name="" />Division One Matches</label>
+<label><input type="checkbox" name="" />Division Two Matches</label>
+<label><input type="checkbox" name="" />Division Three Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Spain</label></legend>
+<label><input type="checkbox" name="" />Primera Liga Matches</label>
+<label><input type="checkbox" name="" />Primera Liga Specials</label>
+<label><input type="checkbox" name="" />Segunda Liga Matches</label>
+<label><input type="checkbox" name="" />Segunda B Group Matches</label>
+<label><input type="checkbox" name="" />Spanish Tercera  Matches</label>
+<label><input type="checkbox" name="" />Liga Futbol Indoor Matches (Veterans)</label>
+<label><input type="checkbox" name="" />Copa Federacion Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Germany</label></legend>
+<label><input type="checkbox" name="" />Bundesliga Matches</label>
+<label><input type="checkbox" name="" />Bundesliga Specials</label>
+<label><input type="checkbox" name="" />Bundesliga 2 Matches</label>
+<label><input type="checkbox" name="" />Bundesliga 3 Matches</label>
+<label><input type="checkbox" name="" />Bundesliga Regional North Matches</label>
+<label><input type="checkbox" name="" />Bundesliga Regional South Matches</label>
+<label><input type="checkbox" name="" />German Lower League Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Italy</label></legend>
+<label><input type="checkbox" name="" />Serie A Matches</label>
+<label><input type="checkbox" name="" />Serie B Matches</label>
+<label><input type="checkbox" name="" />Serie C1B Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Greece</label></legend>
+<label><input type="checkbox" name="" />Super League Matches</label>
+<label><input type="checkbox" name="" />Greek Cup Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />France</label></legend>
+<label><input type="checkbox" name="" />Ligue 1 Matches</label>
+<label><input type="checkbox" name="" />Ligue 1 Specials</label>
+<label><input type="checkbox" name="" />Ligue 2 Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Portugal</label></legend>
+<label><input type="checkbox" name="" />Liga Matches</label>
+<label><input type="checkbox" name="" />Liga Specials</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Netherlands</label></legend>
+<label><input type="checkbox" name="" />Eredivisie Matches</label>
+<label><input type="checkbox" name="" />Eredivisie League Specials</label>
+<label><input type="checkbox" name="" />Dutch Womens Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Belgium</label></legend>
+<label><input type="checkbox" name="" />Jupiler League Playoff Matches</label>
+<label><input type="checkbox" name="" />Tweede Klasse Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Denmark</label></legend>
+<label><input type="checkbox" name="" />SAS-Liga Matches</label>
+<label><input type="checkbox" name="" />Danish Cup Matches</label>
+<label><input type="checkbox" name="" />Danish Women's Cup</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Sweden</label></legend>
+<label><input type="checkbox" name="" />Allsvenskan Matches</label>
+<label><input type="checkbox" name="" />Superettan Matches</label>
+<label><input type="checkbox" name="" />Swedish U21 Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Norway</label></legend>
+<label><input type="checkbox" name="" />Tippeliga Matches</label>
+<label><input type="checkbox" name="" />Norwegian Womens Cup Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Austria</label></legend>
+<label><input type="checkbox" name="" />Bundesliga Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Switzerland</label></legend>
+<label><input type="checkbox" name="" />Super League Matches</label>
+<label><input type="checkbox" name="" />Challenge League Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Bulgaria</label></legend>
+<label><input type="checkbox" name="" />A Group Matches</label>
+<label><input type="checkbox" name="" />A Group Specials</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Russia</label></legend>
+<label><input type="checkbox" name="" />Premier League Matches</label>
+<label><input type="checkbox" name="" />Premier League Specials</label>
+<label><input type="checkbox" name="" />Russian 1st Division Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Czech Republic</label></legend>
+<label><input type="checkbox" name="" />Gambrinus League Matches</label>
+<label><input type="checkbox" name="" />Gambrinus League Specials</label>
+<label><input type="checkbox" name="" />Czech 1st Division Matches</label>
+<label><input type="checkbox" name="" />Czech Cup Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Hungary</label></legend>
+<label><input type="checkbox" name="" />NB I League Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Poland</label></legend>
+<label><input type="checkbox" name="" />Ekstraklasa Matches</label>
+<label><input type="checkbox" name="" />Ekstraklasa Specials</label>
+<label><input type="checkbox" name="" />Polish I Liga Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Romania</label></legend>
+<label><input type="checkbox" name="" />Liga 1 Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Slovakia</label></legend>
+<label><input type="checkbox" name="" />Corgon League Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Cyprus</label></legend>
+<label><input type="checkbox" name="" />Cypriot League Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Other European Club Competitions</label></legend>
+<label><input type="checkbox" name="" />Croatian League Matches</label>
+<label><input type="checkbox" name="" />Croatian Cup Matches</label>
+<label><input type="checkbox" name="" />Faroe Islands League Matches</label>
+<label><input type="checkbox" name="" />Icelandic League Cup Matches</label>
+<label><input type="checkbox" name="" />Icelandic U19 Matches</label>
+<label><input type="checkbox" name="" />Irish Premier League Matches</label>
+<label><input type="checkbox" name="" />Northern Ireland League Matches</label>
+<label><input type="checkbox" name="" />Northern Ireland Cup Matches</label>
+<label><input type="checkbox" name="" />Serbian League Matches</label>
+<label><input type="checkbox" name="" />Slovenian League Matches</label>
+<label><input type="checkbox" name="" />Ukraine Premier League Matches</label>
+<label><input type="checkbox" name="" />Ukraine Persha League Matches</label>
+<label><input type="checkbox" name="" />Ukraine Reserve Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Worldwide</label></legend>
+<label><input type="checkbox" name="" />Egyptian League Matches</label>
+<label><input type="checkbox" name="" />Hong Kong League Matches</label>
+<label><input type="checkbox" name="" />Indonesian Super Liga Matches</label>
+<label><input type="checkbox" name="" />Japanese J-League Matches</label>
+<label><input type="checkbox" name="" />Japanese J2 League Matches</label>
+<label><input type="checkbox" name="" />Morocco League Matches</label>
+<label><input type="checkbox" name="" />Singapore S-League Matches</label>
+<label><input type="checkbox" name="" />Tunisian League Matches</label>
+<label><input type="checkbox" name="" />UAE League Matches</label>
+<label><input type="checkbox" name="" />USA MLS Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Brazil</label></legend>
+<label><input type="checkbox" name="" />Gaucho Matches</label>
+<label><input type="checkbox" name="" />Mineiro Matches</label>
+<label><input type="checkbox" name="" />Paulista Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Latin America</label></legend>
+<label><input type="checkbox" name="" />Argentinian Primera Division Matches</label>
+<label><input type="checkbox" name="" />CONCACAF Champions League Matches</label>
+<label><input type="checkbox" name="" />Colombian League Matches</label>
+<label><input type="checkbox" name="" />Colombian Copa Premier Matches</label>
+<label><input type="checkbox" name="" />Copa Libertadores Matches</label>
+<label><input type="checkbox" name="" />Costa Rican League Matches</label>
+<label><input type="checkbox" name="" />Guatemalan League Matches</label>
+<label><input type="checkbox" name="" />Honduras League Matches</label>
+<label><input type="checkbox" name="" />Mexican Primera Matches</label>
+<label><input type="checkbox" name="" />Mexican Liga de Ascenso Matches</label>
+<label><input type="checkbox" name="" />Peru Primera Matches</label>
+<label><input type="checkbox" name="" />Uruguay League Matches</label>
+<label><input type="checkbox" name="" />Venezuela Primera Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Wolves Specials</label></legend>
+<label><input type="checkbox" name="" />Wolves Premiership Matches</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />World Cup 2010</label></legend>
+<label><input type="checkbox" name="" />Outright Winner</label>
+<label><input type="checkbox" name="" />World Cup 2010 Matches</label>
+<label><input type="checkbox" name="" />World Cup 2010 Groups</label>
+<label><input type="checkbox" name="" />Winning Confederation</label>
+<label><input type="checkbox" name="" />Top Goalscorer</label>
+<label><input type="checkbox" name="" />New Winner</label>
+<label><input type="checkbox" name="" />Total Tournament Goal Bands</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />England Outrights</label></legend>
+<label><input type="checkbox" name="" />Premiership Outright 2009-10</label>
+<label><input type="checkbox" name="" />Premiership Outright Without Big 4 2009-10</label>
+<label><input type="checkbox" name="" />Premiership Relegation - 2009-10</label>
+<label><input type="checkbox" name="" />Premiership Top Goalscorer 2009-10</label>
+<label><input type="checkbox" name="" />Premiership To Finish In Top 4 2009-10</label>
+<label><input type="checkbox" name="" />Championship Promotion 2009-10</label>
+<label><input type="checkbox" name="" />League 1 Outright - 2009-10</label>
+<label><input type="checkbox" name="" />League 1 Promotion 2009-10</label>
+<label><input type="checkbox" name="" />League 2 Outright - 2009-10</label>
+<label><input type="checkbox" name="" />League 2 Promotion 2009-10</label>
+<label><input type="checkbox" name="" />Conference Outright - 2009-10</label>
+<label><input type="checkbox" name="" />FA Cup Outright 2009-10</label>
+<label><input type="checkbox" name="" />FA Cup - To Qualify</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Spain Outrights</label></legend>
+<label><input type="checkbox" name="" />Primera Outright Winner 2009-10</label>
+<label><input type="checkbox" name="" />Primera Relegation 2009-10</label>
+<label><input type="checkbox" name="" />Primera Without Big 2 2009-10</label>
+<label><input type="checkbox" name="" />Primera Top Goalscorer 2009-10</label>
+<label><input type="checkbox" name="" />Segunda Outright 2009-10</label>
+<label><input type="checkbox" name="" />Copa Del Rey Outright 2009-10</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Scotland Outright</label></legend>
+<label><input type="checkbox" name="" />Division One Outright 2009-10</label>
+<label><input type="checkbox" name="" />Active Nations Scottish Cup Outright 2009-10</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />German Outright</label></legend>
+<label><input type="checkbox" name="" />Bundesliga Outright 2009-10</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Italy Outright</label></legend>
+<label><input type="checkbox" name="" />Serie A Outright Winner 2009-10</label>
+<label><input type="checkbox" name="" />Coppa Italia Outright 2010</label>
+<label><input type="checkbox" name="" />Coppa Italia - To Qualify</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />France Outright</label></legend>
+<label><input type="checkbox" name="" />Ligue 1 Outright 2009-10</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Eastern European Outrights</label></legend>
+<label><input type="checkbox" name="" />Bulgarian Outright 2009-10</label>
+<label><input type="checkbox" name="" />Czech Republic Outright 2009-10</label>
+<label><input type="checkbox" name="" />Hungary Outright 2009-10</label>
+<label><input type="checkbox" name="" />Poland Outright 2009-10</label>
+<label><input type="checkbox" name="" />Russia Outright 2010</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Turkey Outright</label></legend>
+<label><input type="checkbox" name="" />Superlig Outright 2009-10</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Austria Outright</label></legend>
+<label><input type="checkbox" name="" />Austrian Outright 2009-10</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Switzerland Outright</label></legend>
+<label><input type="checkbox" name="" />Switzerland Outright 2009-10</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Netherlands Outright</label></legend>
+<label><input type="checkbox" name="" />Eredivisie Outright 2009-10</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Denmark Outright</label></legend>
+<label><input type="checkbox" name="" />SAS Liga Outright 2009-10</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Euro 2012 Outrights</label></legend>
+<label><input type="checkbox" name="" />Outright Winner</label>
+<label><input type="checkbox" name="" />Group Winners</label>
+</fieldset>
+
+<fieldset>
+<legend><label><input type="checkbox" name="" />Copa Libertadores</label></legend>
+<label><input type="checkbox" name="" />Group 1 winner</label>
+<label><input type="checkbox" name="" />Group 2 winner</label>
+<label><input type="checkbox" name="" />Group 3 winner</label>
+<label><input type="checkbox" name="" />Group 5 winner</label>
+<label><input type="checkbox" name="" />Group 6 winner</label>
+<label><input type="checkbox" name="" />Group 7 winner</label>
+<label><input type="checkbox" name="" />Group 8 winner</label>
+</fieldset>
+
+<button type="submit">Continue</button>
+</form>
+</body>
+</html>

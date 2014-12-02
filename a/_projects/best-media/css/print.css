@@ -1,0 +1,30 @@
+/* Hide ---------------------------------------------------------------------------------------------------------------------------------*/
+#header, #footer, .arrow-forward { display: none}
+
+A:link, A:visited { font-weight: bold; text-decoration: underline; color: #999}
+BODY { background: white none; font-size: 10pt; color: black !important; padding: 5%}
+H1 { font-size: 18pt; color: #666666}
+H2 { font-size: 14pt; color: #333}
+H3 { font-size: 12pt; color: #666666}
+P { margin-top: 0pt}
+
+/* Blocks -------------------------------------------------------------------------------------------------------------------------------*/
+.container { width: 100%}
+	.column1_2, .column2_2 { width: 47%}
+	.column1_3, .column2_3, .column3_3 { width: 30%}
+
+/* Tables -------------------------------------------------------------------------------------------------------------------------------*/
+.table_border { border: 0.5pt solid #999 !important}
+	.table_border TD, .table_border TH { padding: 3pt; border-right: 0.5pt solid #999 !important}
+CAPTION { font-weight: bold; padding-bottom: 0.5em}
+CAPTION, TD, TH { font-size: x-small; font-size/**/:/**/ small; text-align: left}
+TD, TH { padding: 3pt}
+.bg_odd { background: #F2F2F2 !important}
+.bg_tfoot { background: #EBEBEB}
+.bg_trow { background: #E5E5E5 !important}
+.cell_border_b { border-bottom: 0.5pt solid #999 !important}
+.cell_border_t { border-top: 0.5pt solid #999 !important}
+
+/* Lists --------------------------------------------------------------------------------------------------------------------------------*/
+OL { list-style-type: decimal !important}
+UL { list-style-type: circle !important; margin-left: auto !important}

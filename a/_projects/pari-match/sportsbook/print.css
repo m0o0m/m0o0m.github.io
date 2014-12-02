@@ -1,0 +1,31 @@
+/* Hide */
+#header, #sidebar, #footer { display: none}
+
+A:link, A:visited { font-weight: bold; text-decoration: underline; color: #999}
+BODY { background: white none; font-size: 10pt; color: black !important}
+H1 { font-size: 18pt; color: #666666}
+H2 { font-size: 14pt; color: #333}
+H3 { font-size: 12pt; color: #666666}
+H4 { font-weight: normal; font-size: 11pt; color: #999; margin-bottom: 0pt}
+P { margin-top: 0pt}
+
+/* Layout - Blocks */
+#main, #content { background: transparent none; padding: 0; width: 100%}
+#wrapper { background: transparent none; padding: 5%; width: 100%}
+
+/* Tables */
+.tr-odd { background-color: #F3F3F3  !important}
+.tr-even { background-color: #FFF  !important}
+.tr-thead { background-color: #999 !important}
+.cell_border_b { border-bottom: 0.5pt solid #999 !important}
+.cell_border_r_none { border-right: 0 !important}
+.cell_border_t { border-top: 0.5pt solid #999 !important}
+.table_border { border: 0.5pt solid #999 !important; border-collapse: collapse; margin: 0 0 1em}
+.table_border TD, .table_border TH { border-right: 0.5pt solid #999 !important}
+TABLE { margin: 0 0 1em}
+TABLE TD, TABLE TH { padding: 3pt}
+
+/* Lists */
+OL { list-style-type: decimal !important}
+UL { list-style-type: circle !important; margin-left: auto !important}
+UL.nested { list-style: square !important}

@@ -1,0 +1,12 @@
+.bg-dmetal { background-color: #66747F}
+.footer { font-family: Tahoma, sans-serif; color: #C8CACC; font-size: 11px}
+.footer a { color: #C8CACC; text-decoration: none}
+.footer a:visited { color: #C8CACC; text-decoration: none}
+.footer a:hover { color: #FEC200; text-decoration: none}
+a { color: #15516B}
+a:visited { color: #196282}
+a:hover { color: #000}
+html, body { height: 100%}
+body { background-color: #C8CACC; background-image: url("/a/_projects/un03/img/bg.gif"); background-repeat: repeat-y; margin: 0; padding: 0}
+div, p, td { font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #000} 
+h1 { font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #66747F}

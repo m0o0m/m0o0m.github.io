@@ -1,0 +1,51 @@
+﻿#home .content { padding-top: 20px}
+	#billboard { background: #0073BF url(/a/_projects/virtonomica/img/front/bg-billboard-b.gif) no-repeat right bottom; color: #FFF; margin-bottom: 20px; position: relative}
+		#billboard #steps { background:  url(/a/_projects/virtonomica/img/front/bg-billboard-t.gif) no-repeat right top; padding: 30px 20px 0 360px; min-height: 370px; height: 400px; height/**/:/**/ 370px}
+			HTML>BODY #billboard #steps { height: auto}
+			#billboard H1 { text-indent: -6400px !important; margin: 0; padding: 0; height: 24px}
+			#billboard H2 { color: #4CCCFF; line-height: 1.5em; margin: .5em 0}
+				#billboard H2 .f_left { padding-right: .3em}
+				#billboard .a_info { background:  url(/a/_projects/virtonomica/img/front/dtl-question.gif) no-repeat right top; color: #4CCCFF; display: inline; margin-right: .3em; padding-right: 15px; position: relative; height: auto; width: auto}
+				#billboard .a_info:hover SPAN { border-color: #FFF; display: block; font-size: 75%; bottom: 2em; width: 160px; width/**/:/**/ 128px}
+					#billboard #steps OL { list-style-type: none; margin: 0; padding: 0 20px 1em 0}
+						#billboard #steps LI { background: transparent no-repeat left center; line-height: 30px; margin: 0; padding: 5px 0 5px 40px}
+							#billboard #steps LI A, #billboard #steps LI A:visited { color: #FFF}
+							#billboard LI A:hover { color: #FFCC4C !important}
+							.lh_norm { line-height: normal !important}
+		#billboard #target_tour { position: absolute; top: 0; left: 0}							
+			#billboard #target_tour OL { list-style-image: none; list-style-type: none; margin: 0; padding: 0; position: relative; height: 400px; width: 340px; z-index: 1}
+				#billboard #target_tour OL LI { font-size: 1.2em; margin: 0; padding: 0; position: absolute; height: 60px; width: 60px; z-index: 11}
+					#billboard #target_tour OL LI SPAN { display: none}
+					#billboard #target_tour OL LI:hover SPAN, #billboard #target_tour OL LI.pc_hover SPAN { background: #D2DEE5 url(/a/_projects/virtonomica/img/bg-tooltip.gif) repeat-x; border: 1px solid #FFF; border-bottom-width: 2px; color: #46484C; display: block; font: 70% Tahoma, Geneva, Arial, sans-serif; padding: 15px; position: absolute; bottom: 50%; width: 240px; width/**/:/**/ 208px}
+						#li_start:hover SPAN, .pc_hover#li_start SPAN { bottom: 100% !important} 
+						#billboard #target_tour OL LI STRONG { display: block; font-size: 100%}
+					#li_tour { top: 20px; left: 20px; height: 40px; width: 300px}
+						#li_tour A { display: block; text-indent: -6400px; height: 40px; width: 300px}
+					#li_start { top: 240px; left: 20px; height: 140px; width: 140px}
+						#li_start A { display: block; text-indent: -6400px; height: 140px; width: 140px}
+					#li_spot_01 { top: 320px; left: 180px}
+					#li_spot_02 { top: 320px; left: 260px}
+					#li_spot_04 { top: 160px; left: 260px}
+					#li_spot_05 { top: 80px; left: 260px}
+					#li_spot_06 { top: 80px; left: 180px}
+					#li_spot_07 { top: 80px; left: 100px}
+					#li_spot_09 { top: 160px; left: 20px}
+					#li_tour { top: 20px; left: 20px}
+					
+/* Teasers -----------------------------------------------------------------------------------------------------------------------------------*/					
+					
+#home .col1_2 H2, #home .col2_2 H2 { line-height: 30px; margin-top: 0; padding-left: 20px}
+	#home .col1_2 H2 A, #home .col2_2 H2 A { display: block; line-height: 30px; text-decoration: none}
+		#home .col1_2 H2 SPAN, #home .col2_2 H2 SPAN { display: block; text-indent: -6400px}
+	
+	#teaser_ratings H2 { background:  url(/a/_projects/virtonomica/img/front/bg-h-l-blue.gif) no-repeat left center}
+		#teaser_ratings H2 A { background:  url(/a/_projects/virtonomica/img/front/bg-h-r-blue.gif) no-repeat right center}
+	#teaser_advertisers H2 { background:  url(/a/_projects/virtonomica/img/front/bg-h-l-green.gif) no-repeat left center}
+		#teaser_advertisers H2 A { background:  url(/a/_projects/virtonomica/img/front/bg-h-r-green.gif) no-repeat right center}
+	#teaser_news_game H2 { background:  url(/a/_projects/virtonomica/img/front/bg-h-l-yellow.gif) no-repeat left center}
+		#teaser_news_game H2 A { background:  url(/a/_projects/virtonomica/img/front/bg-h-r-yellow.gif) no-repeat right center}
+	#teaser_news H2 { background:  url(/a/_projects/virtonomica/img/front/bg-h-l-red.gif) no-repeat left center}
+		#teaser_news H2 A { background:  url(/a/_projects/virtonomica/img/front/bg-h-r-red.gif) no-repeat right center}
+		
+#teaser_news_game LI, #teaser_news LI { line-height: 150%; padding-bottom: .3em}
+

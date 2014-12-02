@@ -1,0 +1,21 @@
+/*IE: hasLayout (zoom: 1) — need for most of relative positioned elements, but it some cases it's already established either by default or by the setting triggers like height+width, display: inline-block + width or float: left|right*/
+#billboard, BUTTON, .btn, #f_search, #footer NAV, #ftr_map, H1, #header NAV .menu, .primary
+{ zoom: 1}
+
+/*Inline-block for IE*/
+.b_search LI, .btn, .warning
+{ *display: inline; zoom: 1}
+
+/*
+Other bugs
+IE6 Float/Margin Bug — cure { display: inline}
+IE6 Across Block Width Bug — Set max width — cure { width: expression(this.width > 577 ? 577: true)}
+fix in place with .ie6 class
+*/
+
+/*
+*HTML, _property — IE6
+*+HTML — IE7
+*property — IE6, IE7
+property: value\0/ — IE8
+*/

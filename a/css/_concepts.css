@@ -1,0 +1,155 @@
+BODY { behavior: url("/a/js/csshover.htc"); color: #535559; font: .875em/140% Arial, Geneva, Helvetica, sans-serif; text-align: center; margin: 0; padding: 0}
+	#container, .container { text-align: left; margin: 0 auto; padding: 51px 20px 6em; position: relative; width: 580px; width/**/:/**/ 540px} /* In grid-based layout - 570px */
+		.liquid { width: 90% !important}
+
+A { color: #006BC4}
+	.inessential A { color: #80B5E2}
+A:visited { color: #909}
+	.inessential A:visited { color: #CC80CC}
+A:hover { color: #F81379}
+BLOCKQUOTE, .box, .pull-quote { background: #ECEEF2; margin: 0 0 1.33em; padding: 15px}
+CODE, PRE { font-size: 110%}
+DFN { background: url(/a/img/concepts/ico-help.gif) no-repeat right center; cursor: help; font-style: normal; font-style: normal; padding-right: 1em; position: relative}
+	DFN SPAN.dt, DFN STRONG.dt { border-bottom: 1px dotted #535559}
+		A DFN SPAN.dt { border-bottom: 0 none}
+	DFN .title { background: #EEF0F4; border: 1px solid #E1E3E7; border-bottom-width: 2px; display: none; font: 11px Tahoma, Geneva, Arial, sans-serif; padding: 15px; position: absolute; top: 1.6em; left: 0; width: 200px; width/**/:/**/ 168px}
+	DFN:hover .title { display: block; z-index: 2}
+	DFN.self_dfn { background: none; cursor: default; padding-right: 0}
+EM { background: #FFC; font-style: normal; padding:	.1em .4em}
+H1 { font: normal 185%/110% Georgia, "Times New Roman", Times, serif}
+	H1.with_kicker { margin-bottom: .25em}
+H2 { font: normal 135% Georgia, "Times New Roman", Times, serif; margin: 1.25em 0 .25em}
+	H2.kicker { font: bold 120% Arial, Geneva, Helvetica, sans-serif; margin: 0 0 .9em}
+	H2.first { margin-top: 0}
+H3 { color: #2D2F33; font-size: 100%; margin: 0}
+H4 { float: left; font-size: 100%; margin: 0 .4em 0 0}
+H5 { font-weight: normal; font-size: 100%; text-transform: uppercase; margin: 0}
+HR { border: none 0; border-top: 1px solid #C6C8CC; height: 1px; margin: 1.33em 0} 
+IMG { border: 0}
+	IMG.left { margin: 2px 10px 5px 0}
+	IMG.right { margin: 2px 0 5px 10px}
+INPUT { vertical-align: middle}	
+P { margin: 0 0 1.33em}
+	P:target, LI:target { background: #FFC}
+PRE { white-space: normal; width: 540px}
+Q:before{ content: no-open-quote}
+Q:after{ content: no-close-quote}
+STRONG { color: #4F6800}
+SUP { font-size: 80% !important; *font-size: 100% !important; line-height: 1; position: relative; bottom: 1.6ex; bottom/**/:/**/ 1ex; vertical-align: baseline; _vertical-align: bottom; height: 0}
+
+/* Layout ----------------------------------------------------------------------------------------------------------*/
+.col1-2 { float: left; width: 47%}
+.col2-2 { float: right; width: 47%}
+.col1-3, .col2-3 { float: left; margin-right: 5%; width: 30%}
+.col3-3 { float: left; width: 30%}
+
+/* Menu ------------------------------------------------------------------------------------------------------------*/
+#menu { list-style-image: none; list-style-type: 0; margin: 0; padding: 0; position: absolute; top: 0; left: -91px; width: 762px} 
+#menu LI { background: none; float: left; margin: 0 1px 0 0; padding: 0}
+#menu LI.last { margin: 0}
+#menu A { background: #ECEEF2; border-top: 2px solid; color: #535559; display: block; text-align: center; text-decoration: none; padding: 5px 0 0; height: 30px; height/**/:/**/ 25px; width: 108px}
+#menu #sec-1 A { border-top-color: #0080D9}
+#menu #sec-2 A { border-top-color: #00D980}
+#menu #sec-3 A { border-top-color: #33D933}
+#menu #sec-4 A { border-top-color: #D9BF00}
+#menu #sec-5 A { border-top-color: #D93300}
+#menu #sec-6 A { border-top-color: #D933D9}
+#menu #sec-7 A { border-top-color: #5900D9}
+
+#index #sec-1 A, #sec-1 A:hover { background: #0080D9}
+#algorithm #sec-2 A, #sec-2 A:hover { background: #00D980}
+#environment #sec-3 A, #sec-3 A:hover { background: #33D933}
+#audience #sec-4 A, #sec-4 A:hover { background: #D9BF00}
+#personality #sec-5 A, #sec-5 A:hover { background: #D93300}
+#message #sec-6 A, #sec-6 A:hover { background: #D933D9}
+#practice #sec-7 A, #sec-7 A:hover { background: #5900D9}
+#index #sec-1 A, #sec-1 A:hover, #algorithm #sec-2 A, #sec-2 A:hover, #environment #sec-3 A, #sec-3 A:hover, #audience #sec-4 A, #sec-4 A:hover, #personality #sec-5 A, #sec-5 A:hover, #message #sec-6 A, #sec-6 A:hover, #practice #sec-7 A, #sec-7 A:hover
+{ color: #FFF}
+
+#index #sec-1 A
+{ cursor: text}
+
+/* Body Copy -------------------------------------------------------------------------------------------------------*/
+.byline { color: #86888C}
+.caption { margin-bottom: .4em}
+.comment { color: #89898C}
+	BLOCKQUOTE .comment { color: #6D6F73}
+	OL.comment LI { font-size: 100%}
+.inessential { color: #A9AAAC}
+.lead { display: block; font-size: 120%; line-height: 130%}
+
+.left { float: left}
+.right { float: right}
+
+.nowrap { white-space: nowrap}
+
+/* Tables ----------------------------------------------------------------------------------------------------------*/	
+TABLE { background: #FFF; border: 1px solid #CDCFD3; border-collapse: collapse; empty-cells: show; line-height: normal; margin: 0 auto 1.33em; width: 100%}
+	TABLE * { font-size: 100%; text-align: left}
+	.bobtail { table-layout: fixed}
+	CAPTION { font-weight: bold; margin: 0 auto; padding-bottom: 0.5em}
+	THEAD { background: #E1E3E7}
+			.even { background: #EEF0F4}
+			TD, TH { border-right: 1px solid #CDCFD3; font-weight: normal; vertical-align: top; padding: 6px}
+				THEAD TH, .txt-small { font: 85% Tahoma, Geneva, Arial, sans-serif}				
+				TFOOT TD { border: 0 none; border-top: 1px solid #CCC; text-align: left !important}
+				TR.caption TH { background: #E7E9ED; border-top: 1px solid #CDCFD3; font-weight: bold}
+				.resume TH { font-weight: bold}
+					.resume THEAD TH { font-weight: normal}
+				.alpha-num TD, .alpha-num THEAD TH, .num { text-align: right}
+				.alpha-num TD.alpha, .alpha-num TH.alpha, .alpha-num TD.date, .alpha-num TFOOT TD { text-align: left}
+				.bobtail TD, TD.bobtail, TH.bobtail { text-align: left !important; white-space: nowrap; overflow: hidden}
+				.border-b { border-bottom: 1px solid #CDCFD3}
+				.chart TD, .chart TH { border-bottom: 1px solid #CDCFD3}
+				.indent { padding-left: 2em}
+				
+/* Lists -----------------------------------------------------------------------------------------------------------*/
+DL, DD { margin: 0 0 1.33em}
+	DT { float: left; font-weight: bold; margin: 0 .4em 0 0}
+		DD UL LI { margin-bottom: 0}
+
+OL { margin: 0 0 1em 1.5em; padding: 0}
+	UL OL LI { background: none !important; margin: 0 0 .4em 1.5em; padding-left: 0 !important}
+	OL OL { list-style-type: lower-alpha}
+	TFOOT OL { *margin-left: 1.8em}
+UL { list-style: none; margin: 0 0 1em; padding: 0}
+	UL LI, UL.titled LI LI { background: url(/a/img/concepts/dtls/bullet.gif) no-repeat 0 .75em; *background-position: 0 .79em; margin-bottom: .4em; padding-left: 20px}
+		UL.unmarked LI, UL.titled LI { background: none; *background-position: 0 .79em; padding-left: 0}
+		LI UL { margin-bottom: .4em}
+		LI P.last { margin-bottom: 0}
+
+OL.unmarked { list-style-type: none}
+	.inline LI	{ display: inline; margin: 0 .3em 0 0}
+		
+/* Spry - Collapsible Panel ----------------------------------------------------------------------------------------*/		
+.cp-open { background: #ECEEF2}
+
+.cp-tab { -khtml-user-select: none; -moz-user-select: none; background: url(/a/img/concepts/dtls/arrow-collapsible.gif) no-repeat 10px 14px; color: #006BC4; cursor: pointer; cursor: hand; font-size: 100% !important; font-weight: normal; text-decoration: underline; margin: 0 !important; padding: 12px 15px 12px 28px}
+	.cp-open .cp-tab { background: url(/a/img/concepts/dtls/arrow-collapsible-open.gif) no-repeat 10px 14px}
+.cp-content { padding: 0 15px 0 28px}
+	.cp-open .cp-content { padding-bottom: 15px}
+	.cp-content P { margin: 0; padding-bottom: 1em}
+	
+#hot-cool-channels, #acceleration
+{ margin: .4em 0}
+
+/* Form Template ---------------------------------------------------------------------------------------------------*/
+#form-template UL { margin: .4em 0 2em}
+	#form-template UL LI { background: none; padding-left: 0}
+	
+#form-template .comment { color: #7A7C80; display: block; font: x-small Arial, Geneva, Helvetica, sans-serif; font-size/**/:/**/ small}
+LABEL.empty { padding-left: 25px}
+	LABEL.empty INPUT, INPUT.empty { border: 0 none; border-bottom: 1px solid #535559; width: 373px}
+	INPUT.empty { margin-left: 2em; width: 410px}
+.cbx { background: url(/a/img/concepts/dtls/cbx.gif) no-repeat left center; padding-left: 25px}
+	.cbx INPUT { position: absolute; left: -6400px}
+	
+/* Clearers -------------------------------------------------------------------------------------------------------------------------*/
+.cfx:after { clear: both; content: "."; display: block; font-size: 0; line-height: 0; height: 0; visibility: hidden}
+.cfx { display: inline-block}
+/* Hides from IE-mac \*/
+* HTML .cfx { height: 1%}
+.cfx { display: block}
+/* End hide from IE Mac */
+
+.clearer { clear: both; font-size: 1px; line-height: 0; height: 0}

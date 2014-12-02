@@ -1,0 +1,8 @@
+HTML { overflow-y: hidden}
+BODY { overflow: hidden}
+#wrapper { overflow: auto}
+	#container { padding-bottom: 2em; width: expression((document.documentElement.offsetWidth) >960 * (parseInt(document.body.currentStyle.fontSize) / parseInt(document.body.currentStyle.fontSize))? "930px" : ((document.documentElement.offsetWidth) < 760? "730px" : "99%"))}
+
+LEGEND { text-indent: 0; left: -7px}
+
+#d_type INPUT { left: -3px}

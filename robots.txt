@@ -1,0 +1,28 @@
+User-agent: *
+Sitemap: http://nickysheen.ru/sitemap.xml
+
+Disallow: /_labs/
+Disallow: /labs/
+Disallow: /personal/
+Disallow: /a/sms-novel.epub
+Disallow: /web-design/reklama-vliftah32/
+Disallow: /nb/
+
+# Files
+Disallow: /_temp.html
+Disallow: /.gitignore
+Disallow: /BingSiteAuth.xml
+Disallow: /.nojekyll
+Disallow: /CNAME
+Disallow: *.DS_Store
+Disallow: /google*.html
+Disallow: *.sublime-project
+Disallow: *.sublime-workspace
+Disallow: /yandex*.html
+Disallow: /nibbler-site-verification.txt
+Disallow: /OXOmGhM5zsUQ6YJcQ_gpZ0lFe9s.html
+
+User-agent: Yandex
+Disallow: /en/
+Disallow: /en
+

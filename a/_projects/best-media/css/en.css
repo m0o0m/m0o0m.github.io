@@ -1,0 +1,15 @@
+#header H1 { background: url(/a/_projects/best-media/img/en/logo.gif)}
+
+#btn_services { background: url(/a/_projects/best-media/img/en/btn-services.gif); width: 73px}
+#btn_clients { background: url(/a/_projects/best-media/img/en/btn-clients.gif); width: 66px}
+#btn_company { background: url(/a/_projects/best-media/img/en/btn-company.gif); width: 73px}
+
+#btn_en { background-position: 0 -30px !important; cursor: default !important}
+	#not_found #btn_en { background-position: 0 0 !important; cursor: hand; cursor: pointer}
+	#not_found #header LI:hover, #not_found #header LI.pc_hover { background-position: 0 -30px !important}
+	
+#banner DIV H1 { background: url(/a/_projects/best-media/img/en/h-front.gif) no-repeat; text-indent: -6400px; margin: 0; position: absolute; top: 40px; left: 380px; height: 80px; width: 310px}	
+
+DD .quote { background: url(/a/_projects/best-media/img/dtl-quot.gif) no-repeat 0 0.3em; *background-position: 0 0.4em; display: block; padding-left: 10px} 
+
+.news H2 { float: left; font-size: 100%; margin: 23px 0 0 10px; width: 3.4em}

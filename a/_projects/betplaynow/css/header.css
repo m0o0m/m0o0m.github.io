@@ -1,0 +1,53 @@
+@charset "UTF-8";
+#user, #header, #user BUTTON, #user INPUT { font-size: 13px}
+
+#user { margin-left: -475px; padding-top: 30px; position: absolute; top: 0; left: 50%; width: 950px; z-index: 4}
+	#user .btn  { background: url(/a/_projects/betplaynow/img/yellow.png) no-repeat 100% -40px; color: #665704; float: left; margin: -.078em 0 0 192px; height: 32px}
+    	#user .btn STRONG { background: url(/a/_projects/betplaynow/img/yellow.png) no-repeat 0 0; line-height: 31px; height: 32px}
+    
+    #f_sign_in { float: right; padding-right: 55px; width: 435px}
+        #f_sign_in A { color: #BBBEC2; float: left; margin-top: .39em}
+        #f_sign_in BUTTON { background: url(/a/_projects/betplaynow/img/grey.png) no-repeat 100% -40px; float: right; margin: -.078em 0 0; height: 32px}
+            #f_sign_in BUTTON STRONG { background: url(/a/_projects/betplaynow/img/grey.png) no-repeat 0 0; line-height: 31px; height: 32px}
+        #f_sign_in FIELDSET { float: left; padding: 0}
+        #f_sign_in LABEL  { color: #8F9296; cursor: text; position: absolute; top: .39em; left: 9px }
+        #f_sign_in .txt { margin: 0 11px 0 0; ; padding: 6px 7px 7px; width: 114px}
+    
+    
+#header { background: #000 no-repeat 100% 0; padding-top: 30px; height: 120px}
+
+#header H1 { background: url(/a/_projects/betplaynow/img/24.png) no-repeat;  float: left; margin: 0; padding: 66px 0 10px 122px; height: 44px; width: 178px}
+	#header H1 A { background: url(/a/_projects/betplaynow/img/32/logo.png) no-repeat; display: block; text-indent: -4300em; height: 30px; width: 174px}
+
+/* Main menu */
+#header .nav { float: right; list-style-image: none; list-style-type: none; margin: 0; padding: 70px 70px 0 0; width: 550px}
+	#header .nav .menu { float: left; margin: 11px 15px 0 0; position: relative; z-index: 3}
+		#header .menu .label { display: block; cursor: pointer; float: left}
+            #header .menu .label A { background-repeat: no-repeat; display: block; float: left; text-indent: -4300em; height: 14px}
+            #header .menu .label A:hover { border-bottom: 1px solid #FFF}
+                #m_sport .label A { background-position: 0 -160px; width: 32px}
+                #m_poker .label A { background-position: -40px -160px; width: 38px}
+                #m_games .label A { background-position: -90px -160px; width: 55px}
+                #m_casino .label A { background-position: -160px -160px; width: 45px}
+			#header .menu .label EM, #user .menu .label EM { background: no-repeat -240px -160px; cursor: pointer;  display: block; float: left; text-align: left; text-indent: -4300em; margin: -4px 0 0 5px; height: 20px; width: 20px}
+            #header .menu:hover .label EM { background-position: -270px -160px}
+		#header .nav .extra { float: right; margin-top: 9px}
+			#header .extra .label A { text-indent: 0; height: auto}
+			#header .extra .label A:hover { border-bottom: 0 none}
+			#header .extra .label EM { background: none; margin-top: -10px; height: 28px; width: 40px}
+			#header .extra:hover .label EM { background: no-repeat -310px -160px}
+				#header .extra .label EM SPAN { background: url(/a/_projects/betplaynow/img/32/promotions.png) no-repeat; display: block; height: 28px; width: 40px}
+
+/* Drop-downs */
+#header .nav .menu UL, #user .menu UL { background: #E3E6EA; border: 1px solid #ABAEB2; border-bottom-width: 2px; display: none; text-align: left; list-style-image: none; list-style-type: none; margin: 0; padding: 10px 0; position: absolute; top: 17px; left: -15px; width: 208px}
+	#header .nav .menu LI, #user .menu LI { float: left; margin: 0 0 1px; width: 208px}
+		#header .nav .menu LI A, #user .menu LI A { background: none; color: #525559; display: block; text-decoration: none; padding: 3px 14px 4px; width: 180px }
+		#header .nav .menu:hover LI A, #user .menu:hover LI A { background: none}
+		#header .nav .menu LI A:hover, #user .menu LI A:hover { background: #D6D9DD}
+
+#user .menu { float: right; margin-right: 70px; position: relative; min-width: 180px}
+    	#user .menu .balance { background: #000; position: absolute; top: 0; right: 0}
+        	#user A:hover .balance { text-decoration: underline}
+		#user .menu .label EM { background: url(/a/_projects/betplaynow/img/grey.png) no-repeat -1180px -1020px; float: none; position: absolute; top: 2px; right: -30px}
+        #user .menu:hover .label EM { background-position: -1210px -1020px}
+        #user .menu UL { right: -30px; left: auto}

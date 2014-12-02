@@ -1,0 +1,57 @@
+<div class="close" id="page_01"></div>
+<div class="open">
+<div class="caption">
+<h2>Sign Up</h2>
+<a href="javascript:;" onClick="closeModal()" class="btn_close">Close</a>
+</div>
+<form action="" method="post" class="modal narrow with_hints" name="form_sign_up" id="form_sign_up" onSubmit="return submitRegistrationForm(this, event)">
+<p>All fields are required.</p>
+
+<label for="email">Email</label>
+<input type="text" tabindex="1" maxlength="50" class="field" name="email" id="email" />
+<a href="javascript:;" class="tooltip"><span>You will use email address as the username.</span></a>
+<br />
+<div class="alert" id="email_alert"></div>
+
+<label for="password">Password</label>
+<input type="password" tabindex="2" maxlength="128" class="field" name="password" id="password" />
+<a class="loadinto-page_01" href="/web-design/vega/en/_snippets/help/password-advice.htm" onClick="P7_swapClass(1,'none','close','open','div')" title="Open in same window" id="tooltip_01"><span>Please enter desired password. It can only contain English letters, the underscore (_) character and numbers with no spaces - 3-9 characters total.</span></a>
+<br />
+<div class="alert" id="password_alert"></div>
+
+<label for="password_confirm">Confirm password</label>
+<input type="password" tabindex="3" maxlength="128" class="field" name="password_confirm" id="password_confirm" />
+<br />
+<div class="alert" id="password_confirm_alert"></div>
+
+<label for="firstname">First name</label>
+<input type="text" tabindex="4" maxlength="30" class="field" name="firstname" id="firstname" />
+<br />
+<div class="alert" id="firstname_alert"></div>
+
+<label for="lastname">Last name</label>
+<input type="text" tabindex="5" maxlength="50" class="field" name="lastname" id="lastname" />
+<br />
+<div class="alert" id="lastname_alert"></div>
+
+<label for="security_image">Verification code</label>
+
+<div><img src="/a/_projects/vega/img/captcha.png" alt="" width="100" height="30" class="f_left" style="margin: 0 10px 0 0" />
+<input type="text" tabindex="6" maxlength="6" class="field" style="width: 100px" name="security_image" id="security_image" />
+</div>
+<a href="javascript:;" class="tooltip"><span>Please enter the 6-digit number you see in the picture.</span></a>
+<br />
+<div class="alert" id="security_image_alert"></div>
+
+<label for="terms" class="for_checkbox">You accept</label>
+<div>
+<input type="checkbox" tabindex="7" value="terms" name="terms" id="terms" />
+with <a class="loadinto-modal_box" href="/web-design/vega/en/_snippets/legal/common.htm" title="Open in same window">the Terms and conditions</a> of Vega.</div>
+<br />
+<div class="alert" id="terms_alert"></div>
+
+<span class="btn submit">
+<input type="submit" tabindex="8" value="Sign Up" name="submit" id="submit" />
+</span><br />
+</form>
+</div>

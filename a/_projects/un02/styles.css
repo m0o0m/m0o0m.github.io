@@ -1,0 +1,20 @@
+.bg-border { background: #19667F}
+.bg-content { background: #E5F3F3}
+.bg-footer01 { background: #E5F3F3 url("/a/_projects/un02/img/bg_footer01.gif") no-repeat}
+.bg-footer02 { background: #E5F3F3 url("/a/_projects/un02/img/bg_footer02.gif") no-repeat}
+.bg-top01 { background: #E5F3F3 url("/a/_projects/un02/img/bg_top01.gif") no-repeat}
+.bg-top02 { background: #19667F url("/a/_projects/un02/img/bg_top02.gif") no-repeat}
+.bg-top03 { background: #337F99 url("/a/_projects/un02/img/bg_top03.gif") no-repeat}
+.bg-top04 { background: #4C99B2 url("/a/_projects/un02/img/bg_top04.gif") no-repeat}
+.bg-top05 { background: #66B2CC url("/a/_projects/un02/img/bg_top05.gif") no-repeat}
+.bg-top06 { background-color: #7FCCE5}
+.bg-top07 { background-color: #99E5FF}
+.footer { font-family: Tahoma, sans-serif; color: #4C99B2; font-size: 11px}
+.footer a { color: #4C99B2}
+a { color: #FF7F00}
+a:visited { color: #4C99B2}
+a:hover { color: #19667F}
+html, body { height: 100%}
+body { margin: 0; padding: 0; background: #E5F3F3 url("/a/_projects/un02/img/bg.gif") repeat-y}
+p { font-family: Arial, Helvetica, sans-serif; color: #19667F; font-size: 13px; margin-right: 6px; margin-left: 6px}
+td, th { font-family: Arial, Helvetica, sans-serif; color: #19667F; font-size: 13px}

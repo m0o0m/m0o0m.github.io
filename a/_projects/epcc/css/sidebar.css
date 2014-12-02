@@ -1,0 +1,48 @@
+/*Left Sidebar — Submenu ————————————————————————————————————————————————————————*/
+#submenu { font-size: 107.7%; line-height: 1.429; text-align: center; margin-left: 0}
+	#submenu H3 { margin: 0; padding: 7.429em 0 1.357em; position: relative}
+	#submenu UL { list-style-image: none; list-style-type: none; margin: 0; padding: 0}
+    	#submenu LI { margin-bottom: 1.429em}
+			#submenu A { text-decoration: none; padding: 0 4px}
+			#submenu A:hover { color: #000; border-bottom: 4px solid #B8BBBF}
+
+/*Subsections Pics*/
+#submenu .pic { background: no-repeat; display: block; text-indent: -4000em; margin-left: -60px; position: absolute; top: 1px; left:50%; height: 78px; width: 120px}
+	.company #submenu .pic { background-image: url(/a/_projects/epcc/img/sections/company.jpg)} 
+    .contacts #submenu .pic { background-image: url(/a/_projects/epcc/img/sections/contacts.jpg)} 
+    .environment #submenu .pic { background-image: url(/a/_projects/epcc/img/sections/environment.jpg)} 
+    .media #submenu .pic { background-image: url(/a/_projects/epcc/img/sections/media.jpg)} 
+    .production #submenu .pic { background-image: url(/a/_projects/epcc/img/sections/production.jpg)} 
+    .project #submenu .pic { background-image: url(/a/_projects/epcc/img/sections/project.jpg)} 
+    .social #submenu .pic { background-image: url(/a/_projects/epcc/img/sections/social.jpg)} 
+    
+/*Current page or subsection*/
+#overview #sm_overview A, #management #sm_management A, #structure #sm_structure A, #docs #sm_docs A,
+#environment #sm_environment A, #env_policy #sm_env_policy A, #public #sm_public A,
+#news #sm_news A, #video #sm_video A, #comments #sm_comments A, #paper #sm_paper A,
+#capacities #sm_capacities A, #refining #sm_refining A, #petrochemistry #sm_petrochemistry A,
+#concept #sm_concept A, #place #sm_place A, #significance #sm_significance A, #infrastructure #sm_infrastructure A, #stages #sm_stages A,
+#charity #sm_charity A, #council #sm_council A, #social #sm_social A
+{ color: #000;  border-bottom: 4px solid #FFD200}
+
+/*Right Sidebar  —————————————————————————————————————————————————————————————*/
+#sidebar H1 { font-size: 176.9%; line-height: .87; padding: 1.696em 0 .913em}
+	#sidebar ARTICLE:first-child H1, #sidebar ARTICLE.first H1, #sidebar H1.subsection { padding: 1.043em 0 0}
+    NAV#sidebar ARTICLE H1, .col #sidebar H2 { font: bold 100%/1.54 'Helvetica Neue', Arial, sans-serif; text-transform: uppercase}
+        NAV#sidebar ARTICLE H1 { padding: 1.615em 0 0}
+    #sidebar .video H1 { padding-bottom: .696em !important}
+    
+.col #sidebar { float: right; margin-left: 0; width: 29.4%}
+
+NAV#sidebar ARTICLE, UL.headings LI { border-bottom: 1px dotted #B8BBBF}
+	NAV#sidebar ARTICLE .go { margin-bottom: 1.077em}
+
+NAV#sidebar IMG { margin: 15px 0 20px}
+
+UL.headings { font-weight: bold}
+	UL.headings LI { padding: 1.923em 0 1.077em}
+
+UL.archive LI { padding-top: .385em}
+UL.archive LI { border-left: 1px solid #B8BBBF; float: left; margin-left: .4em; padding-left: .4em}
+	.archive LI:first-child, .archive LI.first  { border-left: 0 none; margin-left: 0; padding-left: 0}
+

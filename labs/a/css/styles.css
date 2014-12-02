@@ -1,0 +1,74 @@
+HTML { text-align: center}
+BODY { background: #FFF; color: #535659; font: 81.3%/1.54 Arial, Helvetica, sans-serif; text-align: left; margin: 1em auto; padding: 0; width: 540px}
+
+A { color: #00F; outline: 0}
+A:visited { color: #800080}
+A: hover { color: #F00}
+A:link { -webkit-tap-highlight-color: #FF5E99} 
+ABBR, BLOCKQUOTE, FIELDSET, FORM, IFRAME, LABEL, LEGEND, OBJECT, PRE, 
+ARTICLE, ASIDE, CANVAS, DETAILS, FIGCAPTION, FIGURE, FOOTER, HEADER, HGROUP, MENU, NAV, SECTION, SUMMARY, TIME, AUDIO, VIDEO
+{ background: transparent; border: 0 none; outline: 0; margin: 0; padding: 0; vertical-align: baseline}
+ABBR[title], DFN[title] { border-bottom: 1px dotted; cursor: help}
+ADDRESS { font-style: normal}
+ARTICLE, ASIDE, DETAILS, FIGCAPTION, FIGURE, FOOTER, HEADER, HGROUP, MENU, NAV, SECTION { display: block}
+BUTTON { outline: none}
+CITE, .cmd, EM, I { font-style: normal; color: #008000}
+CODE, KBD, PRE { font: 110% "Courier New", Courier, monospace}
+H1, H2 { font-family: Georgia, "Times New Roman", Times, serif; font-weight: normal}
+H1 { font-size: 261.5%; line-height: 1.18; margin: 0; padding: .824em 0 .5em; }
+H2 { font-size: 161.5%; margin: 0; padding: 1.524em 0 .762em}
+H3, .h3 { font-size: 100%; text-transform: uppercase; margin: 0}
+H4, .h4 { font-size: 100%; margin: 0}
+HR { border: none 0; border-bottom: 1px solid #CCCFD3; height: 1px; display: block; margin: 1.5em 0; padding: 0}
+IFRAME { border: 0 none; overflow: auto; overflow-x: hidden; overflow-y: auto}
+IMG { border: 0; display: block}
+	IMG.ess { max-width: 100%; width: 100%}
+    	HTML>BODY IMG.ess { height: auto} /* remove ess' height/width in HTML to avoid IE6 sizing bug */
+	IMG.left { margin: 2px 20px 6px 0}
+    IMG.right { margin: 2px 0 6px 20px}
+P { margin: 0 0 1.54em}
+	H1+ P { font-size: 107.7%; line-height: 1.429; margin-bottom: 1.429em} /*lead*/
+    LI P { margin-bottom: 0}
+PRE { padding: 15px 20px 20px; white-space: pre; white-space: pre-wrap; white-space: pre-line; word-wrap: break-word}
+
+DL, DD { margin: 0 0 1.54em}
+    DT { margin: 0}
+OL, UL { margin: 0 0 1.54em; padding: 0}
+	OL OL, UL OL { margin: 0 0 0 1.54em}
+	OL UL, UL UL { margin-bottom: 0}
+
+UL { list-style-image: url(/a/img/b-mdash.gif)}
+	UL UL { list-style-image: url(/a/img/b.gif)}
+	NAV UL { list-style-image: none; list-style-type: none}
+    UL.inline { list-style-image: none; list-style-type: none}
+        UL.inline LI { display: inline; margin-left: .3em}
+            UL.inline LI:after { content: ","}
+            UL.inline .last:after { content: ""}
+
+::-moz-selection{ background: #F66; color: #FFF; text-shadow: none}
+::selection { background:#F66; color: #FFF; text-shadow: none}
+
+.caption { margin-bottom: 0}
+.cfx:after { clear: both; content: ""; display: block; font-size: 0; visibility: hidden; height: 0}
+.cfx { zoom: 1}
+.bicolumn { column-count: 2; -moz-column-count: 2; -webkit-column-count: 2; column-gap: 20px; -moz-column-gap: 20px; -webkit-column-gap: 20px }
+.hp { margin-left: -.381em} /*hanging punctuation */
+.lead { font: 123.1%/1.25 Georgia, "Times New Roman", Times, serif}
+
+.left { float: left}
+.right { float: right}
+
+.note { color: #888B8F}
+.nowrap { white-space: nowrap}
+
+TABLE { background: #FFF; border: 1px solid #CCCFD3; border-spacing: 0; border-collapse: collapse; empty-cells: show; line-height: normal; text-align: left; margin: .846em auto 2.385em; table-layout: fixed; width: 100%}
+	CAPTION { font-weight: bold; text-align: left; margin: -.692em 0 0 11px; padding: 0 0 1.035em}
+	THEAD { background: #E3E6EA}
+	TR:nth-child(even) { background: #ECEFF3}
+    TR.caption TH { background: #E3E6EA; font-weight: bold}
+	TD, TH { border-right: 1px solid #CCCFD3; border-bottom: 1px solid #CCCFD3; font-size: 100%; font-weight: normal; vertical-align: top; padding: 10px}
+
+/*Hacks*/
+*+HTML IMG { -ms-interpolation-mode: bicubic}
+OL, OL OL, UL OL { *margin-left: 1.77em}
+TABLE { *width: 97%}

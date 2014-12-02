@@ -1,0 +1,1310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Интегрированная оценка качества</title>
+<style type="text/css">
+HTML { text-align: center}
+BODY { background: #FFF; color: #535659; font: 81.3%/1.54 Arial, Helvetica, sans-serif; text-align: left; margin: 1em auto 12em; padding: 0; width: 540px}
+
+A { color: #00F; outline: 0}
+A:visited { color: #800080}
+A: hover { color: #F00}
+A:link { -webkit-tap-highlight-color: #FF5E99} 
+ABBR, BLOCKQUOTE, FIELDSET, FORM, IFRAME, LABEL, LEGEND, OBJECT, PRE, 
+ARTICLE, ASIDE, CANVAS, DETAILS, FIGCAPTION, FIGURE, FOOTER, HEADER, HGROUP, MENU, NAV, SECTION, SUMMARY, TIME, AUDIO, VIDEO
+{ background: transparent; border: 0 none; outline: 0; margin: 0; padding: 0; vertical-align: baseline}
+ABBR[title], DFN[title] { border-bottom: 1px dotted; cursor: help}
+ADDRESS { font-style: normal}
+ARTICLE, ASIDE, DETAILS, FIGCAPTION, FIGURE, FOOTER, HEADER, HGROUP, MENU, NAV, SECTION { display: block}
+BLOCKQUOTE, .pull_quote { background: #FFF2E5; margin-bottom: 1.54em; padding: 20px 40px}
+BUTTON { outline: none}
+CITE, .cmd, EM, I { font-style: normal; color: #008000}
+CODE, KBD, PRE { font: 110% "Courier New", Courier, monospace}
+H1, H2, .h2 { font-family: Georgia, "Times New Roman", Times, serif; font-weight: normal}
+H1 { font-size: 261.5%; line-height: 1.18; margin: 0; padding: .824em 0 .5em; }
+H2 { font-size: 161.5%; margin: 0; padding: 1.524em 0 .762em}
+	.h2 { display: block; font-size: 161.5%; line-height: 1; padding: .762em 0 .143em}
+H3, .h3 { font-size: 100%; text-transform: uppercase; margin: 0}
+H4, .h4 { font-size: 100%; margin: 0}
+HR { border: none 0; border-bottom: 1px solid #CCCFD3; height: 1px; display: block; margin: 1.5em 0; padding: 0}
+IFRAME { border: 0 none; overflow: auto; overflow-x: hidden; overflow-y: auto}
+IMG { border: 0; display: block; margin: 1.54em 0}
+	IMG.ess { max-width: 100%; width: 100%}
+    	HTML>BODY IMG.ess { height: auto} /* remove ess' height/width in HTML to avoid IE6 sizing bug */
+	IMG.left { margin: 2px 20px 6px 0}
+    IMG.right { margin: 2px 0 6px 20px}
+P { margin: 0 0 1.54em}
+	H1+ P { font-size: 107.7%; line-height: 1.429; margin-bottom: 1.429em} /*lead*/
+    LI P { margin-bottom: 0}
+PRE { padding: 15px 20px 20px; white-space: pre; white-space: pre-wrap; white-space: pre-line; word-wrap: break-word}
+
+DL, DD { margin: 0 0 1.54em}
+    DT { margin: 0}
+OL, UL { margin: 0 0 1.54em; padding: 0}
+	OL OL, UL OL { margin: 0 0 0 1.54em}
+	OL UL, UL UL { margin-bottom: 0}
+
+UL { list-style-image: url(/a/img/b-mdash.gif)}
+	TD UL { margin-left: 16px}
+	UL UL { list-style-image: url(/a/img/b.gif)}
+	NAV UL { list-style-image: none; list-style-type: none}
+    UL.inline { list-style-image: none; list-style-type: none}
+        UL.inline LI { display: inline; margin-left: .3em}
+            UL.inline LI:after { content: ","}
+            UL.inline .last:after { content: ""}
+
+::-moz-selection{ background: #F66; color: #FFF; text-shadow: none}
+::selection { background:#F66; color: #FFF; text-shadow: none}
+
+.caption { margin-bottom: 0}
+.cfx:after { clear: both; content: ""; display: block; font-size: 0; visibility: hidden; height: 0}
+.cfx { zoom: 1}
+.bicolumn { column-count: 2; -moz-column-count: 2; -webkit-column-count: 2; column-gap: 20px; -moz-column-gap: 20px; -webkit-column-gap: 20px }
+.hp { margin-left: -.381em} /*hanging punctuation */
+.lead { font: 123.1%/1.25 Georgia, "Times New Roman", Times, serif}
+
+.left { float: left}
+.right { float: right}
+
+.note { color: #888B8F}
+.nowrap { white-space: nowrap}
+
+TABLE { background: #FFF; border: 1px solid #CCCFD3; border-spacing: 0; border-collapse: collapse; empty-cells: show; line-height: normal; text-align: left; margin: .846em auto 2.385em; table-layout: fixed; width: 100%}
+	CAPTION { font-weight: bold; text-align: left; margin: -.692em 0 0 11px; padding: 0 0 1.035em}
+	THEAD { background: #E3E6EA}
+	TR:nth-child(even) { background: #ECEFF3}
+    TR.caption TH { background: #E3E6EA; font-weight: bold}
+	TD, TH { border-right: 1px solid #CCCFD3; border-bottom: 1px solid #CCCFD3; font-size: 100%; font-weight: normal; vertical-align: top; padding: 10px}
+
+/*Hacks*/
+*+HTML IMG { -ms-interpolation-mode: bicubic}
+OL, OL OL, UL OL { *margin-left: 1.77em}
+TABLE { *width: 97%}
+
+BODY { width: 620px }
+#header { position: relative; padding-right: 100px }
+	H1 { padding-bottom: 0}
+	H2.kicker { padding-top: 0; padding-right: 0}
+    #header .mark { background: #339; color: #FFF; font: 261.5% Georgia, "Times New Roman", Times, serif; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px; display: block; line-height: 80px; text-align: center; white-space: nowrap; position: absolute; top: 1px; right: 0; height: 80px; width: 80px}
+            #header .points { display: block; text-align: center; position: absolute; top: 101px; right: 0; width: 80px}
+
+H2 { padding-right: 4em; position: relative}
+	H2 .note { color: #535659; display: block; font: 13px Arial, Helvetica, sans-serif; }
+    H2 .mark { color: #369; position: absolute; top: 1.524em; right: 0}
+h2 em { background: #FCC; display: block; height: 20px; width: 4em}
+
+TD.mark, TH.mark { text-align: right}
+TD UL { margin-bottom: 0; padding-left: 16px }
+
+H2 { counter-reset: factor} /*Создаем счётчик */
+TBODY DIV:before { counter-increment: factor; content: counter(factor) ". "} /* Добавляем счётчик*/
+
+@media print {
+BODY { width: 100% }
+@page { margin: .5cm} /*http://www.w3.org/TR/CSS21/page.html#page-box*/
+A, A:visited { color: #444 !important; text-decoration: underline }
+H2, H3 { page-break-after: avoid }
+H2, H3, P { orphans: 3; widows: 3 }
+IMG, TR { page-break-inside: avoid }
+THEAD { display: table-header-group }
+}
+</style>
+</head>
+
+<body>
+<div id="header">
+<h1>Интегрированная<br />
+оценка качества</h1>
+<h2 class="kicker">[тип и принадлежность сайта — тематика или отрасль]<br />
+www.site.com</h2>
+<span class="mark" title="По десятибальной шкале">0,0</span> <span class="points" title="Сумма баллов">0/430</span> </div>
+<h2>Среда и маркетинговые решения <span class="note">(определяют верность выбранного бизнес-направления)</span> <span class="mark">0/98</span></h2>
+<table>
+<caption>Системные факторы</caption>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка<sup><a href="#notes" title="Оценки выставляются по трехбалльной шкале">1</a></sup></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Спрос и конкуренция в выбранном рыночном сегменте</div></th>
+<td>По статистике инструмента подсказки ключевых слов Google AdWords и службы <a href="http://www.seomoz.org/keyword-difficulty/" target="_blank">Keyword Difficulty Tool</a></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Доменное имя</div></th>
+<td><ul>
+<li>Длина,</li>
+<li>легкость запоминания,</li>
+<li>легкость написания,</li>
+<li>использование ключевых слов,</li>
+<li>национальный и международные домены.</li>
+</ul>
+Альтернативы можно предложить, поискав в службах слежения за брошенными доменами: <a href="http://www.expiredtraffic.com/" target="_blank">www.expiredtraffic.com</a> или <a href="http://www.deleteddomains.com/" target="_blank">www.deleteddomains.com</a></td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Статистика посещений (требуются права доступа к отчетам Google Analytics или аналогов)</caption>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Посетители</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Содержание</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Источники трафика</div></th>
+<td>В том числе — эмоциональная  окраска и calls to action (<a href="/pro/development/10-txt.htm#cta">CTA</a>) в рекламных объявлениях, ссылках, <a href="/pro/marketing/02-internet.htm#meta">результатах поиска</a></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Цели</div></th>
+<td><blockquote>На каждом сайте обычно есть несколько целей. Например,  пользователи могут попросить торгового представителя связаться с ними,  зарегистрировать свой адрес электронной почты и просмотреть страницу с  описанием продукта. Назначая целям ту или иную полезность, можно  сравнивать полезность посещения, произошедшего в результате перехода по  ссылкам или ключевым словам. Чтобы оценить полезность цели, можно  подсчитать, с какой частотой становятся клиентами посетители, достигшие  цели. Например, если отдел сбыта сообщает о 10% посетителей, которые  хотят, чтобы с ними связались, а средняя сумма транзакции составляет 500  долларов США, то для цели &quot;Связаться со мной&quot; полезность составляет 50  долларов США (т.е. 10% от 500). Если же к продаже приводит только 1%  подписок на рассылку, то полезность цели &quot;регистрация электронного  адреса&quot; составляет 5 долларов США. </blockquote></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Резкие колебания трафика</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Первая страница, другие страницы входа: представление товара/услуги</caption>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Соответствие общей стилистики стандартам качества и маркетинговым целям компании</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Привлекательность образов: hero shot, другие иллюстрации и пиктограммы. Баланс понятности и неординарности. Соответствие маркетинговым целям компании</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Лозунг</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Краткое и ясное изложение преимуществ и соответствия потребительским потребностям</div></th>
+<td>Использование модели «проблема-решение»</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Краткий перечень возможностей продукта</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Бесплатный «пробник»</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Цена</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Очевидность дальнейших действий</div></th>
+<td><a href="/pro/development/10-txt.htm#cta">CTA</a>, в том числе — кнопки заказа</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Использование скидок</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Использование принципа «ограниченного предложения»</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Оригинальность, «особые приметы», «фишки»</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Использование анимации, видео</div></th>
+<td><ul>
+<li>Рациональность причины использования</li>
+<li>Атрибут title, подпись или текстовая альтернатива</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Использование звука</div></th>
+<td><ul>
+<li>Рациональность причины использования</li>
+<li> Атрибут title, подпись или текстовая альтернатива</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div><a href="/a/img/psychology/emotion-map.jpg">Эмоциональная карта</a></div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Информация «над сгибом»</div></th>
+<td>1024х768</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Соответствие содержания рекламным объявлениям</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Первая страница, другие страницы входа: информация, внушающая доверие к компании</caption>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Логотип. Элементы фирменного стиля</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Адрес</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Телефонный номер</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Рейтинги</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Известные клиенты</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Положительные отзывы (рецензии) клиентов</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Политика возврата и обмена</div></th>
+<td>Кратко, со ссылкой на подробности</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Условия и сроки доставки</div></th>
+<td>Кратко, со ссылкой на подробности</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Политика конфиденциальности</div></th>
+<td>Кратко, со ссылкой на подробности</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Использование технологий безопасной передачи данных</div></th>
+<td>Кратко, со ссылкой на подробности</td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Страница продукта/услуги</caption>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Название продукта</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Снимки продукта в разных ракурсах</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Стандартная категоризация</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Цена и все дополнительные платежи </div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Краткое описание, характеристики</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Выбор параметров</div></th>
+<td>Размер, цвет, количество</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Кнопка «Добавить в корзину»</div></th>
+<td>Желательно — две: рядом с основной фотографией и внизу страницы</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Наличие</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Время и способы доставки</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Политика возврата и обмена</div></th>
+<td>Кратко, со ссылкой на подробности</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Гарантийные обязательства</div></th>
+<td>Кратко, со ссылкой на подробности</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Сравнение с другими товарами компании</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Сравнение с похожими товарами в традиционных магазинах</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Товары, которые покупают вместе с данным (cross-sell, add-on)</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Похожие товары (upsell)</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Рецензии клиентов</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<h2>Подробнее — внешний вид <span class="note">(влияет на первый потребительский импульс — желание ознакомиться с продуктом, содержанием; важнейшее конкурентное преимущество)</span> <span class="mark">0/36</span></h2>
+<table>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Баланс</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Контраст</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Значимость и подчиненность</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Направление внимания</div></th>
+<td>В том числе — в контексте AIDA, и как техника навигации</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Пропорциональность</div></th>
+<td>Использование модульной сетки</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Масштаб</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Ритм и графические рифмы</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Стилистическое единство</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Линия</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Форма</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div> Тон</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Цвет</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Текстура</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>«Воздух»</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Выравнивание</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Техника исполнения</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Качество оптимизации графики</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th>Соотношение текста<br />
+и изображений</th>
+<td>По результатам анализа сервиса <a href="http://nibbler.silktide.com" target="_blank">Nibbler</a></td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<h2>Подробнее — тексты на сайте <span class="note">(влияют на решение попробовать продукт)</span> <span class="mark">0/14</span></h2>
+<table>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Стилистика и стилистическое единство</div></th>
+<td>Кроме всего прочего — последовательность в терминологии (пример: везде веб-сайт, и ни разу web-сайт)</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Шрифтовое решение и удобочитаемость</div></th>
+<td><ul>
+<li>Количество шрифтов.</li>
+<li>Сочетаемость шрифтов. </li>
+<li>Простота символов шрифта.</li>
+<li>Длина строки.</li>
+<li>Межстрочное расстояние.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Грамотность</div></th>
+<td>В том числе — в невидимых текстах: атрибутах alt, title, системных сообщениях</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Оптимизация под беглый просмотр</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Соответствие нормам типографского набора </div></th>
+<td><ul>
+<li>Тире, дефисы, кавычки, перенос союзов, предлогов и частиц. </li>
+<li>Форматирование длинных последовательность цифр (например, телефонных номеров).</li>
+<li>Набор веб-адресов (без http://).</li>
+<li>Слитный набор формул, пар «ключ-значение» (например, д. 17).</li>
+<li>Отсутствие «<a href="http://ru.wikipedia.org/wiki/%D0%92%D0%B8%D1%81%D1%8F%D1%87%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0" target="_blank">висячих строк</a>» в важных абзацах статичных текстов.</li>
+<li>Кернинг в заголовках (в картинках и в текстах с использованием text-rendering: optimizeLegibility).</li>
+<li>Правильные знаки препинания в списках: точка в законченных предложениях; точка с запятой и точка в последнем пункте — в прочих случаях.</li>
+<li>Единообразие в <a href="http://www.englishelp.ru/learn-english/articles-for-learners/238-title-capitalization.html" target="_blank">использовании заглавных букв</a> в заголовках английских текстов (британское правило практичнее, так как соответствует русскому).</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Ясность и лаконичность инструкций и системных сообщений.</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Отсутствие «<a href="http://ru.wikipedia.org/wiki/%D0%A0%D1%8B%D0%B1%D0%B0_%28%D0%B7%D0%B0%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0%29" target="_blank">рыбы</a>»</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="components">Наличие и качество функциональных узлов, ключевых страниц и атрибутов <span class="note">(влияют на решение попробовать продукт и использовать его в будущем и на постоянной основе)</span> <span class="mark">0/46</span></h2>
+<table>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Навигация на уровне сайта</div></th>
+<td><ul>
+<li>Верхние уровни и мета-навигация, указание на текущее местоположение. </li>
+<li>Названия пунктов меню (понятные? привычные?).</li>
+<li>Привилегированное положение наиболее употребительных пунктов меню.</li>
+<li>Последовательность пунктов меню (1.File, 2.Edit, 3.Help).</li>
+<li>Быстрые методы доступа — «палитры» (меню раздела в раздельной навигации), панель инструментов.</li>
+<li>Степень использования Flash.</li>
+<li>Выбор фрагментов текста для ссылок основного содержания.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>«Шапка»</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>«Подвал»</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Регистрация</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Авторизация</div></th>
+<td><ul>
+<li>На видном месте. </li>
+<li>Безопасные соединения.</li>
+<li>Ссылка на регистрацию.</li>
+<li>Перечень преимуществ регистрации</li>
+<li>Восстановление пароля.</li>
+<li>«Оставаться в системе».</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Личная страница</div></th>
+<td><ul>
+<li>Явно обозначенный статус авторизованного пользователя. </li>
+<li>Редактируемая анкета.</li>
+<li>Подтверждения изменений в анкете по email.</li>
+<li>Финансовая отчетность. Подписка на почтовую рассылку.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Поиск</div></th>
+<td><ul>
+<li>В правом верхнем углу. </li>
+<li>Нечувствительный к регистру.</li>
+<li>Надпись на кнопке — «Найти»</li>
+<li>Расширенный поиск.</li>
+<li>Поиск с учетом возможных опечаток.</li>
+<li>Результаты: название и краткое описание страницы/продукта.</li>
+<li>Не более 20 результатов на страницу. Но с опцией увеличения этого количества.</li>
+<li>Результаты свободного поиска группируются по темам: продукт, справка и т.п.</li>
+<li>Первые места в результатах занимают точные совпадения. Далее — по степени убывания близости.</li>
+<li>Поисковый запрос в результатах.</li>
+<li>Слова из поискового запроса в результатах выделяются жирным.</li>
+<li>Результаты, близкие по теме.</li>
+<li>Всегда какой-нибудь результат — догадки системы.</li>
+<li>Постраничная навигация по результатам.</li>
+<li>Средства уточнения поискового запроса в результатах.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>О компании. Руководство (коллектив)</div></th>
+<td>Такую информацию нельзя не прятать в «подвал». Такая информация вызывает доверие</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Контактная информация</div></th>
+<td><ul>
+<li>Форма обратной связи с выбором тем и/или адресатов. </li>
+<li>Телефон.</li>
+<li>Схема проезда.</li>
+<li>Часы работы.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Вакансии</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Корпоративные новости</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Блог</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>RSS-лента</div></th>
+<td>В том числе — различимость и вадидность результатам анализа сервиса <a href="http://nibbler.silktide.com" target="_blank">Nibbler</a></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Email-рассылка </div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Формы</div></th>
+<td><ul>
+<li>Мягкие требования к формату ввода. </li>
+<li>Достаточная длина полей ввода.</li>
+<li>Понятность названий полей.</li>
+<li>Возможность перехода между полями с помощью табуляции.</li>
+<li>Использование значений по умолчанию и автозаполнения (например, определение географического положения).</li>
+<li>Инструкции.</li>
+<li>Деликатные сообщения об ошибках с инструкциями по их устранению.</li>
+<li>Точное указание ошибочно заполненных полей.</li>
+<li>Средства связи со службой поддержки.</li>
+<li>Сохранение верно заполненной информации при повторе попытки.</li>
+<li>Как можно более краткие списки select.</li>
+<li>Шкала прогресса и навигация по многостраничным формам.</li>
+<li>В многостраничных формах — страница для проверки введенной информации.</li>
+<li>Страница благодарности (во многих случаях — целевая страница Google Analytics).</li>
+<li>Макет в одну колонку</li>
+<li>Верное использование виджетов.</li>
+<li>Без кнопок «Отмена»</li>
+<li>Выключение автозаполнения в полях, которые подразумевают уникальность вводимой информации: поле каптчи, одноразовых паролей.</li>
+<li>Потребительское действие в качестве надписи на кнопке отправки формы — «Купить», например.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>«Корзина»</div></th>
+<td>Мини-корзина:
+<ul>
+<li>Кнопка оформления заказа.</li>
+<li>На всех страницах.</li>
+<li>Количество продуктов.</li>
+<li>Визуальный сигнал добавления нового товара.</li>
+<li>Возможность удаления товара. </li>
+</ul>
+Страница корзины:
+<ul>
+<li>Название продуктов.</li>
+<li>Их фотографии.</li>
+<li>Описания.</li>
+<li>Цена и дополнительные платежи.</li>
+<li>Поля количества.</li>
+<li>Сроки и условия доставки.</li>
+<li>Удаление из корзины.</li>
+<li>«Отложить на будущее».</li>
+<li>Выбор способа оплаты.</li>
+<li>Спец. предложения.</li>
+<li>Возможность оформления в качестве подарка.</li>
+<li>Кнопки «Оформить заказ» и «Вернуться к покупкам» (очевидная «вилка»).</li>
+<li>Гарантийные обязательства — ссылка.</li>
+<li>Здесь неуместны upsell и cross-sell.</li>
+<li>Простота редактирования.</li>
+<li>Сертификат безопасности.</li>
+<li>Абсолютные http-ссылки на страницы, не нуждающиеся в шифровании пользовательских данных.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Процесс оформления заказа</div></th>
+<td><ul>
+<li>Как можно более короткий. </li>
+<li>Никаких скрытых доплат.</li>
+<li>Поздняя регистрация/авторизация.</li>
+<li>Преимущества регистрации:
+<ul>
+<li>быстрое оформление в будущем,</li>
+<li>история заказов,</li>
+<li>отчеты о статусе заказа,</li>
+<li>возможность откладывать товары,</li>
+<li>спец. предложения.</li>
+</ul>
+</li>
+<li>Пошаговая шкала процесса.</li>
+<li>Страница благодарности (целевая страница — в Google Analytics)</li>
+<li>Поддержка связи до доставки и после покупки.</li>
+<li>Email с подтверждением:
+<ul>
+<li>благодарность,</li>
+<li>купленные товары,</li>
+<li>ожидаемое время доставки,</li>
+<li>номер и дата заказа,</li>
+<li>способ оплаты,</li>
+<li>политика отказа и возврата,</li>
+<li>гарантия,</li>
+<li>печатная версия,</li>
+<li>возможность пересылки.</li>
+</ul>
+</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Платежные системы</div></th>
+<td><ul>
+<li>Кредитные карты, </li>
+<li>Google Checkout,</li>
+<li>Paypal,</li>
+<li>Яндекс.Деньги,</li>
+<li>WebMoney.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Политика конфиденциальности</div></th>
+<td><ul>
+<li>Информация структурирована. </li>
+<li>Каждая глава кроме заголовка предваряется кратким содержанием.</li>
+<li>Темы:
+<ul>
+<li>как используются куки;</li>
+<li>как используются пользовательские данные;</li>
+<li>как пользовательские данные защищаются; </li>
+<li>советы по личной безопасности.</li>
+</ul>
+</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>«Страница не найдена»</div></th>
+<td>В том числе — анализ сводки по навигации, путей и источников входа (отчет по странице в разделе «Самое популярное содержание» Google Analytics)</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Средство веб-статистики </div></th>
+<td>Определить можно по HTML коду</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Работа узлов с выключенным JavaScript-ом</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Пиктограммы favicon и apple-touch-icon</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<h2>Удобство использования<sup>2</sup> <span class="note">(влияет на решение использовать продукт в будущем и на постоянной основе)</span> <span class="mark">0/38</span></h2>
+<table>
+<caption>Организация</caption>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Структура на уровне сайта</div></th>
+<td><ul>
+<li>Логика группировки. </li>
+<li>Количество щелчков мышью, которое требуется для того, чтобы перейти к выбранному разделу или странице.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Структура и навигация на уровне страницы</div></th>
+<td><ul>
+<li>Логика группировки функций и блоков информации. </li>
+<li>Длина страниц.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Внешняя последовательность</div></th>
+<td><ul>
+<li>Следование стандартам и принципу «лучше без сюрпризов». Это касается использования элементов интерфейса: окна, полосы прокрутки, простые списки, древовидные списки, однострочные текстовые поля, многострочные текстовые поля, радиокнопки, «флажки», группы полей и т.д. </li>
+<li>Использование привычных конструкций и метафор, их доходчивость, утилизация навыков и шаблонов из «реального мира» с учетом национальных различий (ср. метафору «письмо» и метафору «почтовый ящик»).</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Внутренняя последовательность</div></th>
+<td><ul>
+<li>Единообразие конструкций однотипных блоков (например, название полей формы —  всегда сверху; кнопка «отменить» всегда справа). </li>
+<li>Последовательность в выборе модального (Действие — Объект) и немодального (Объект — Действие) подходов к решению задач.</li>
+<li>Инерция экрана — некритичные отличия между страницами: первой, внутренней, титульных страниц разделов.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Заметность функциональных элементов </div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Лаконичность в интересах большинства</div></th>
+<td>«Кошелек Миллера»</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Деление сложных задач на простые, сведение их в линейные последовательности. Деление длинных последовательностей на короткие шаги</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Альтернативные представления для сложных структур и процессов</div></th>
+<td>Возможность выбора пользователем разных форм представления данных. Примеры — инфографика, справки, данные в таблицах и диаграммах и т.д.</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Легкий доступ к более низким уровням функциональной иерархии</div></th>
+<td>Меню, вложенные меню, диалоговые окна, точные настройки</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Визуальные акценты и информационная чистота. Фокус на текущей задаче</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Коммуникабельность</caption>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Элементарные удобства</div></th>
+<td><ul>
+<li>Логотип в левом верхнем углу со ссылкой на первую страницу. </li>
+<li>Краткое описание сайта рядом с логотипом.</li>
+<li>Очевидная иерархия содержания страницы: заголовок, подзаголовки, абзацы, списки.</li>
+<li>Ссылки: либо голубые, либо подчеркнутые, либо и то, и другое. При этом текст без ссылок не должен быть того же цвета, что и ссылки, и ни в коем случае подчеркнутым.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Справочная система</div></th>
+<td><ul>
+<li>Целе-ориентированная — «Что я могу с этим сделать?» </li>
+<li>Процедурная — «Как я могу это сделать?»</li>
+<li>Описательная — «Что это?»</li>
+<li>Пояснительная — «Почему это произошло?» <br />
+Должна состоять из полного сборника инструкций, средств обратной связи со службой поддержки и контекстуальных подсказок на страницах, которые могут вызвать затруднения у пользователей.<br />
+Для сайтов обычно требуется для форм.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Всплывающие окна, появляющиеся против воли пользователя</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Количество рекламы</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Реакция системы на пользовательские действия</div></th>
+<td><ul>
+<li>Изменение вида кнопок: «состояние покоя», курсор над кнопкой, кнопка нажата.</li>
+<li>Индикаторы выполнения задач.</li>
+<li>Посещенные ссылки.</li>
+<li>Системные сообщения с инструкциями.</li>
+<li>Изменения курсора.</li>
+<li>Достаточная продолжительность важных системных сообщений.</li>
+<li>Возможность отмены ошибочных действий.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Цветовое кодирование</div></th>
+<td><ul>
+<li>В качестве знаков различия. </li>
+<li>Для указания на характера системного сообщения (пример — желтый фон предупреждения).</li>
+<li>Для выделения.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Постоянство контекста</div></th>
+<td>Изменения интерфейса должны происходить без разрыва связи с предыдущей . Например, модальные окна предпочтительно открывать в стиле Apple — увеличением миниатюр<sup></sup></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Печатная версия</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Соответствие <a href="http://www.md-it.ru/articles/html/article80.html" target="_blank">стандарту доступности содержимого (WAI-WCAG)</a></div></th>
+<td>HTML Validator — проверка по алгоритму HTML Tidy</td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<h2>Оптимизация скорости загрузки сайта<sup>3</sup> <span class="note">(влияет на решение использовать продукт в будущем и на постоянной основе)</span> <span class="mark">0/16</span></h2>
+<table>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка<br />
+х2</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Файловые размеры</div></th>
+<td>Первая, внутренняя и титульная страница раздела — результаты теста <a href="http://getfirebug.com/" target="_blank">Firebug</a> (Net) с указанием наиболее проблемных файлов</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Результаты теста <a href="http://code.google.com/intl/ru/speed/page-speed/" target="_blank">Google Page Speed</a></div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Качество кода, соответствие стандартам </div></th>
+<td><ul>
+<li>Результаты проверки службами <a href="http://validator.w3.org/" target="_blank">W3C Markup Validation Service</a>, <a href="http://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validation Service</a>, <a href="http://www.jslint.com/" target="_blank">JSLint</a> и <a href="http://www.sitepoint.com/dustmeselectors/" target="_blank">Dust-Me</a>.</li>
+<li>Соответствие идеям семантической разметки, разделения содержания (HTML) и представления (CSS). Эксперименты показывают, что код, соответствующий стандартам, также <a href="http://www.leemunroe.com/how-important-is-valid-html-web-standards/" target="_blank">положительно влияет на позицию сайта в результатах поиска</a> (см. ниже). </li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Процедура оптимизации БД</div></th>
+<td>Требуется участие ответственных лиц со стороны заказчика</td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<h2>ПК-версия в разных условиях просмотра <span class="note">(влияет на количество потребителей)</span> <span class="mark">0/20</span></h2>
+<table>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка<br />
+х5</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Популярные браузеры</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div><a href="http://www.liveinternet.ru/stat/ru/resolutions.html?period=month" target="_blank">Популярные разрешения экрана</a></div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<h2>SEO — поисковая оптимизация <span class="note">(влияет на количество потребителей)</span> <span class="mark">0/22</span></h2>
+<table>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Текущие <a href="http://www.siteposition.ru/check.php" target="_blank">позиции сайта</a> в результатах поиска</div></th>
+<td>+ Лидеры SERP</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Количественные SEO-показатели сайта по результатам проверки с помощью <a href="http://www.seoquake.com/" target="_blank">SEOQuake</a></div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Интегрированная оценка службы <a href="http://websitegrader.com/" target="_blank">Website Grader</a></div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>HTML</div></th>
+<td><ul>
+<li>Documents/_reference/_cheatsheets/seo.png. </li>
+<li>Значимые названия графических файлов.</li>
+<li>Сводки для таблиц.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Содержание</div></th>
+<td><ul>
+<li>Если это интернет-магазин, можно обновлять фотографии товаров — делать снимки с разных ракурсов. </li>
+<li>Степень использования Flash</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Ссылки</div></th>
+<td><ul>
+<li>Ключевые слова в текстах и URL, отказ от ссылок типа «далее».</li>
+<li>Актуальность и безошибочность URL (проверяется с помощью <a href="http://www.xmarks.com/topic/link%20checker" target="_blank">специальных служб</a>).</li>
+<li>SEO-формат URL: коротко, в нижнем регистре, через дефис, без параметров.</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Карта сайта — HTML</div></th>
+<td><ul>
+<li>Актуальность. </li>
+<li>Наглядность иерархии.</li>
+<li>Вводный абзац. Зачем? Как? И т.п.</li>
+<li>Абзацы-сводки разделов верхнего уровня.    * Link to xml sitemap in robots.txt file</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Карта сайта — XML</div></th>
+<td><ul>
+<li>Актуальность. </li>
+<li>Формат.</li>
+<li>Ссылка на карту из robots.txt</li>
+</ul></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Robots.txt</div></th>
+<td>www.site.com/robots.txt. Какие страницы нужно, а какие не нужно индексировать (страницы денежных расчетов, оформления покупки и т.д.)</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Политика «единого» адреса</div></th>
+<td>www.site.com vs site.com vs www.site.com/index.htm</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Описание сайта в результатах поиска Google и Яндекс</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<h2>Мобильная версия <span class="note">(влияет на количество потребителей)</span> <span class="mark">0/60</span></h2>
+<table>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка<br />
+х 10</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Внешний вид</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Работа функциональных узлов</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Удобство использования</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<h2>Интеграция с социальными сетями <span class="note">(влияет на количество потребителей, качество обратной связи и возможности микромаркетинга)</span> <span class="mark">0/40</span></h2>
+<table>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка<br />
+х5</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Версии в Facebook, Twitter, LinkedIn</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th><div>Средства «перепечатки»: Facebook, Twitter, Reddit</div></th>
+<td></td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th>Цитирование сайта в Facebook</th>
+<td>По результатам анализа сервиса <a href="http://nibbler.silktide.com" target="_blank">Nibbler</a> и поиска в Goggle с фильтром site:facebook.com</td>
+<td class="mark"></td>
+</tr>
+<tr>
+<th>Цитирование сайта в Twitter, Delicious, Reddit, LiveJournal</th>
+<td>&nbsp;</td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<h2>Компьютерная безопасность<sup>4</sup> <span class="note">(влияет на устойчивость бизнеса и возможности роста)</span> <span class="mark">0/20</span></h2>
+<table>
+<col width="30%" />
+<col width="55%" />
+<col width="15%" />
+<thead>
+<tr>
+<th>Факторы</th>
+<td>Экспресс-анализ</td>
+<td class="mark">Оценка<br />
+х 10</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><div>Результаты тестирования с помощью программы-сканера <a href="http://www.cirt.net/nikto2" target="_blank">Nikto</a></div></th>
+<td>Также клиенту следует предложить установить платный сканнер <a href="http://www.nessus.org/products/nessus" target="_blank">Nessus<br />
+</a>($1 200 в год)</td>
+<td class="mark"></td>
+</tr>
+</tbody>
+</table>
+<ol id="notes">
+<li>Оценки за каждый параметр выставляются по трехбалльной шкале:<br />
+0 — плохо; 1 — нормально; 2 — хорошо.<br />
+В тех таблицах, где слово оценка «умножается», используются коэффициенты повышения важности факторов.<br />
+Двукратный коэффициент: 0 — плохо; 2 — нормально; 4 — хорошо.<br />
+Пятикратный коэффициент: 0 — плохо; 5 — нормально; 10 — хорошо.<br />
+Десятикратный коэффициент: 0 — плохо; 10 — нормально; 20 — хорошо.</li>
+<li>Удобство использования желательно также испытать в фокус-группе. Это потребует небольших дополнительных затрат: гонорар трем участникам и модератору.</li>
+<li>Также вместе с ответственными лицами анализируется и оптимизируется процедура создания резервных копий и восстановления БД.</li>
+<li>При наличии необходимых ресурсов желательно нанять специалистов по безопасности программного обеспечения для всестороннего <a href="http://en.wikipedia.org/wiki/Penetration_test" target="_blank">тестирования</a> и устранения уязвимостей. В идеале — на постоянной основе.</li>
+</ol>
+</body>
+</html>

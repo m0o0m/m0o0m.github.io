@@ -1,0 +1,17 @@
+﻿.bg-content { background-color: #EAEFF2}
+.bg-brow { background-color: #DDE2E5}
+.bg-orange { background-color: #FF4C00}
+.bg-trow { background-color: #D1D6D9}
+.bg-white { background-color: #FFF}
+.margin-t11 { margin-top: 11px}
+.margin-t23 { margin-top: 23px}
+.margin-t33 { margin-top: 33px}
+.margin-t36 { margin-top: 36px}
+.txt-comment { color: #5E6366}
+a { color: #FC0}
+a:hover { color: #E5E5D9}
+body { background: #000 url(/a/img/bg.png) repeat-x; margin: 0px}
+form, select { font-family: Tahoma, Arial, sans-serif; font-size: 11px}
+h1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FFF; margin-bottom: 0px}
+h2 { font-family: Tahoma, Arial, sans-serif; color: #E5E5D9; font-size: 11px; margin-top: 11px}
+p, td { font-family: Tahoma, Arial, sans-serif; color: #E5E5D9; font-size: 11px}

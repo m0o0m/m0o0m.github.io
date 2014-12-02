@@ -1,0 +1,17 @@
+@charset "utf-8";
+#front #header .pic { background-image: url(/a/_projects/polylog/img/en/applause.png); top: -6px}
+*HTML #front #header .pic { background-image: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/a/_projects/polylog/img/en/applause.png'), sizingMethod='scale')}
+
+#footer .copy { padding-left: 3em}
+
+/* Menus ----------------------------------------------------------------------------------------------------------------------------*/
+.btn#btn_home { width: 44px}
+#btn_services { width: 68px}
+#btn_clients { width: 58px}
+#btn_company { width: 71px}
+#main_menu #phone { width: 196px}
+
+.btn#btn_home SPAN, .btn#btn_services SPAN, .btn#btn_services SPAN, .btn#btn_clients SPAN, .btn#btn_company SPAN, .btn#btn_community SPAN, #phone
+{ background: url(/a/_projects/polylog/img/en/menu.png) no-repeat}
+
+#front #header A SPAN { width: 10em}
