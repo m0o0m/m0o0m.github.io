@@ -1,11 +1,16 @@
 # Souce Folders
 _notes/
 *.webarchive
-a/less
 
 #Source Files
 *.sublime-*
 _temp/index.htm
+a/css/02-mixins.css
+a/css/_temp.css
+a/css/modal.min.css
+a/css/styles.min.css
+a/css/btn.css
+homepage-gh-pages.zip
 
 # OS generated files
 .DS_Store
@@ -16,12 +21,4 @@ _temp/index.htm
 ehthumbs.db
 Thumbs.db
 
-a/css/02-mixins.css
 
-a/css/_temp.css
-
-a/css/modal.min.css
-
-a/css/styles.min.css
-
-a/css/btn.css

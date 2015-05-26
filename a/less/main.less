@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@m: 20px; /*base margin*/
+@c: #F00; /*base color*/
+
+.rounded-corners(@radius: 5px) { border-radius: @radius; -moz-border-radius: @radius; -webkit-border-radius: @radius}
+#header { .rounded-corners}
+#footer { .rounded-corners(3px)}
+
+#header { background: @c * 10; top-margin: @m + 10px} 
+
+#d {
+     @width: 960px;
+     @color: black;
+}
+
+.comment {
+     width: #d[@width]; 
+     width: #d[@color]; 
+}

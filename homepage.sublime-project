@@ -1,0 +1,43 @@
+{
+    "folders":
+    [
+        {
+            "path": "/Users/nikishin-va/Sites/homepage",
+            "file_exclude_patterns":[
+                ".nojekyll",
+                "BingSiteAuth.xml",
+                "cron.php",
+                "google*.html",
+                "gss.xsl",
+                "*.ico",
+                "index.php",
+                "install.php",
+                "pinterest-*.html",
+                "phpMyAdmin",
+                "*.swf",
+                "*.sublime-projectcompletions",
+                "*.sublime-project",
+                "*.sublime-workspace",
+                "*.tar",
+                "*.tgz",
+                "update.php",
+                "wp-*.php",
+                "yandex*.html",
+                "y_key_*.html",
+                "*.zip",
+                "xmlrpc.php"
+            ],
+            "folder_exclude_patterns":
+            [
+                "_notes",
+                "cgi-bin",
+                ".git",
+                "includes",
+                "profiles",
+                "scripts",
+                "wp-admin",
+                "wp-includes"
+            ]
+        }
+    ]
+}
