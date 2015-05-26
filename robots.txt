@@ -16,6 +16,7 @@ Disallow: /.nojekyll
 Disallow: /CNAME
 Disallow: *.DS_Store
 Disallow: /google*.html
+Disallow: /start.html
 Disallow: *.sublime-project
 Disallow: *.sublime-workspace
 Disallow: /yandex*.html

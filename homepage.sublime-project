@@ -2,8 +2,8 @@
     "folders":
     [
         {
-            "file_exclude_patterns":
-            [
+            "path": "/Users/nikishin-va/Sites/homepage",
+            "file_exclude_patterns":[
                 ".nojekyll",
                 "BingSiteAuth.xml",
                 "cron.php",
@@ -37,8 +37,7 @@
                 "scripts",
                 "wp-admin",
                 "wp-includes"
-            ],
-            "path": "/Users/vova/Sites/homepage"
+            ]
         }
     ]
 }
