@@ -9,9 +9,9 @@
     }
 
     * {
-        -webkit-box-sizing:border-box;
-        -moz-box-sizing:border-box;
-        box-sizing:border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     :focus { outline:none }
@@ -23,15 +23,15 @@
         -o-background-size: cover;
         background-size: cover;
 
-        font-size:100%;
-        -webkit-text-size-adjust:100%;
-        -ms-text-size-adjust:100%;
+        font-size: 100%;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
     }
 
     HTML,BODY { height:100%; }
 
     BODY {
-        color:#979a9e;
+        color: #979a9e;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -45,15 +45,15 @@
     ARTICLE { padding-bottom: 3em; }
 
     A, A:visited {
-        color:#979a9e;
-        text-decoration:none;
+        color: #979a9e;
+        text-decoration: none;
     }
 
-    A:hover { color:#fc0; }
+    A:hover { color: #fc0; }
 
-    A:link { -webkit-tap-highlight-color:transparent }
+    A:link { -webkit-tap-highlight-color: transparent }
 
-    B,STRONG { font-weight:700; }
+    B,STRONG { font-weight: 700; }
 
     SECTION {
         border-left: 1px solid #33363a;
@@ -69,34 +69,47 @@
             padding-left: 30px;
         }
 
-    H2 {
-        color:#dde0e4;
-        font-weight: 200;
-        font-size: 150%;
+    H1 {
+        font-weight: 400;
+        font-size: 200%;
+        letter-spacing: -.03em;
+        padding: 0 0 .906em;
+    }
+
+        H1 SPAN { color: #dde0e4; }
+
+    H1, H2 {
         text-rendering: optimizelegibility;
         margin: 0;
     }
 
+    H2 {
+        color: #dde0e4;
+        font-weight: 200;
+        font-size: 150%;
+        padding: .875em 0 .625em;
+    }
+
     UL {
-        margin-bottom: 1.5em;
+        margin: 0 0 1.5em;
         padding: 0;
     }
 
         LI {
             list-style: none;
-            margin-bottom: 0.75em;
+            margin-bottom: .75em;
         }
 
     ::-moz-selection {
-        background:#66c;
-        color:#fff;
+        background: #66c;
+        color: #fff;
         text-shadow:none;
     }
 
     ::selection {
-        background:#66c;
-        color:#fff;
-        text-shadow:none;
+        background: #66c;
+        color: #fff;
+        text-shadow: none;
     }
     </style>
 </head>
@@ -104,6 +117,30 @@
 
 <article>
 
+    <script>
+        var end = new Date('07/10/2015'); // MM/DD/YYYY
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById('countdown').innerHTML = '. Приехала :)';
+
+                return;
+            }
+
+            var days = Math.floor(distance / 86400000); // Day in milliseconds
+            document.getElementById('countdown').innerHTML = ' ' + days + ' дня';
+        }
+
+        timer = setInterval(showRemaining, 1000);
+
+    </script>
+
+    <h1>До приезда Поли осталось<span id="countdown"></span></h1>
     <section>
         <h2>Forex Club</h2>
         <ul>
@@ -165,6 +202,9 @@
     </section>
 
 </article>
+
+
+
 
 </body>
 </html>
