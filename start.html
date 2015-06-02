@@ -69,6 +69,17 @@
             padding-left: 30px;
         }
 
+        .two-columns { width: 400px; }
+
+            .bcol {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+                -webkit-column-gap: 30px;
+                -moz-column-gap: 30px;
+                column-gap: 30px;
+            }
+
     H1 {
         font-weight: 400;
         font-size: 200%;
@@ -97,7 +108,7 @@
 
         LI {
             list-style: none;
-            margin-bottom: .75em;
+            padding-top: .75em;
         }
 
     ::-moz-selection {
@@ -181,9 +192,9 @@
         </ul>
     </section>
 
-    <section>
+    <section class="two-columns">
         <h2>Investing</h2>
-        <ul>
+        <ul class="bcol">
         <li><a href="https://secure.sigfig.com/#/overview" title="SigFig">SigFig</a></li>
         <li><a href="https://www.google.com/finance?ei=GhBsVZniMM_L8AOmvYOIDA#stockscreener" title="Google Stock Screener">Stock Screener</a></li>
         <li><a href="https://www.google.com/finance/portfolio?action=view&amp;pid=1&amp;ei=1RFsVcH5Fs_L8AOmvYOIDA" title="Google Portfolio">Google Finance</a></li>
@@ -192,14 +203,15 @@
         <li><a href="https://flipboard.com/topic/investing" title="Flipboard Investing">Flipboard Investing</a></li>
         <li><a href="https://flipboard.com/topic/trading" title="Flipboard Trading">Flipboard Trading</a></li>
         <li><a href="http://hedgemind.com/consensus-stock-picks/top-100-stocks" title="HedgeMind">HedgeMind</a></li>
-        <li><a href="https://onboarding.betterment.com/#plan/44/60000" title="Betterment Portfolio Planner Tool">Betterment Planner</a></li>
+        <li><a href="https://www.tradingview.com/chart/0oSEVNMe/" title="TradingView">TradingView</a></li>
         <li><a href="https://secure.sigfig.com/#/guidance" title="SigFig Portfolio Planner Tool">SigFig Planner</a></li>
+        <li><a href="https://onboarding.betterment.com/#plan/44/60000" title="Betterment Portfolio Planner Tool">Betterment Planner</a></li>
         <li><a href="https://personal.vanguard.com/us/funds/tools/recommendation" title="Vanguard Portfolio Planner Tool">Vanguard Planner</a></li>
         <li><a href="http://www.stockopedia.com/screens/" title="Vanguard Portfolio Planner Tool">Stockopedia Screens</a></li>
         <li><a href="http://www.morningstar.com/tools.html" title="Morningstar Tools">Morningstar Tools</a></li>
         <li><a href="https://www.wealthfront.com/" title="Robo-adviser — Wealthfront">Robo-adviser — Wealthfront</a></li>
         <li><a href="https://trader.motifinvesting.com/motifs#catalog=our" title="Motif — ETF-like Investments">Motif — ETF-like Investments</a></li>
-        <li><a href="https://www.tradingview.com/chart/0oSEVNMe/" title="TradingView">TradingView</a></li>
+
         </ul>
     </section>
 
