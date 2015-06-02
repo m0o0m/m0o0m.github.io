@@ -83,7 +83,7 @@
 			"file": "start.html",
 			"settings":
 			{
-				"buffer_size": 6624,
+				"buffer_size": 7929,
 				"line_ending": "Unix"
 			}
 		}
@@ -256,8 +256,10 @@
 	},
 	"file_history":
 	[
-		"/Users/nikishin-va/Sites/homepage/a/less/main.less",
+		"/Users/nikishin-va/Sites/b-n-b/README.md",
+		"/Users/nikishin-va/Pictures/inspiration/_web-app-design-aesthetics/04-made-in-russia208.jpg",
 		"/Users/nikishin-va/Sites/homepage/.gitignore",
+		"/Users/nikishin-va/Sites/homepage/a/less/main.less",
 		"/Users/nikishin-va/Sites/homepage/robots.txt",
 		"/Users/vova/Library/Widgets/DashNote.wdgt/styles/content.css",
 		"/Users/vova/Library/Widgets/DashNote.wdgt/styles/layout.css",
@@ -381,9 +383,7 @@
 		"/Users/vova/Sites/homepage/sitemap (исходный).xml",
 		"/Users/vova/Sites/homepage/fsgef495.txt",
 		"/Users/vova/Sites/homepage/fsg1e250.txt",
-		"/Users/vova/Sites/homepage/labs/signature-en-02.htm",
-		"/Users/vova/Sites/homepage/.nojekyll",
-		"/Users/vova/Sites/homepage/homepage.sublime-project"
+		"/Users/vova/Sites/homepage/labs/signature-en-02.htm"
 	],
 	"find":
 	{
@@ -406,6 +406,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"PRT",
+			"Portfolio Recommendation Tool",
+			"Potfolio ",
+			"Potfolio Recommendation",
 			" target=\"_blank\"",
 			":  ",
 			": ",
@@ -840,15 +844,15 @@
 					"file": "start.html",
 					"settings":
 					{
-						"buffer_size": 6624,
+						"buffer_size": 7929,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4074,
-								4074
+								5242,
+								5242
 							]
 						],
 						"settings":
@@ -1003,8 +1007,8 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 3.0,
-						"translation.y": 2279.0,
+						"translation.x": 0.0,
+						"translation.y": 2539.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
