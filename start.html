@@ -153,8 +153,26 @@
 
     <h1>До приезда Поли осталось<span id="countdown"></span></h1>-->
 
-    <h1>
+<!--     <h1>
         <script type="text/javascript">
+            // Creating the array that stores the text strings
+            var motivation = new Array ();
+            motivation[0] = 'Хорошее — это подарок. Плохое — урок';
+            motivation[1] = 'Цель, миссия, движение, легкость, праздник, достаток';
+            motivation[2] = 'Полако и маньяна. Расслабиться. Наблюдение вместо контроля';
+            motivation[3] = 'Не жалеть денег на удовольствие';
+            motivation[4] = 'Вспомнить любимое стихотворение';
+            motivation[5] = 'If I was in L.A.';
+            motivation[6] = 'California dreaming, On such a winter\'s day';
+
+            // Generating a random number
+            var i = Math.floor(7*Math.random())
+
+            document.write(motivation[i]);
+        </script>
+    </h1> -->
+
+    <script type="text/javascript">
         // Creating the array that stores the text strings
         var motivation = new Array ();
         motivation[0] = 'Хорошее — это подарок. Плохое — урок';
@@ -168,9 +186,10 @@
         // Generating a random number
         var i = Math.floor(7*Math.random())
 
-        document.write(motivation[i]);
+        document.getElementById('motivation').innerHTML = motivation[i];
     </script>
-    </h1>
+
+    <h1 id="motivation"></h1>
 
     <section>
         <h2>Forex Club</h2>
