@@ -1,170 +1,380 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="utf-8">
-    <title>Вл. Никишин — Стартовая страница</title>
-    <style type="text/css">
-    ARTICLE,ASIDE,DETAILS,FIGCAPTION,FIGURE,FOOTER,HEADER,HGROUP,MAIN,NAV,SECTION,SUMMARY {
-    display:block;
-    }
+  <meta charset="utf-8">
+  <title>Вл. Никишин — Стартовая страница</title>
 
-    * {
-        -webkit-box-sizing:border-box;
-        -moz-box-sizing:border-box;
-        box-sizing:border-box;
-    }
+  <style type="text/css">
+  ARTICLE,
+  ASIDE,
+  DETAILS,
+  FIGCAPTION,
+  FIGURE,
+  FOOTER,
+  HEADER,
+  HGROUP,
+  MAIN,
+  NAV,
+  SECTION,
+  SUMMARY {
+    display: block;
+  }
 
-    :focus { outline:none }
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-    HTML {
-        background: #000 url(/a/img/bg-start.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+  :focus { outline: none; }
 
-        font-size:100%;
-        -webkit-text-size-adjust:100%;
-        -ms-text-size-adjust:100%;
-    }
+  HTML {
+    background: #000 url(/a/img/bg-start.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
 
-    HTML,BODY { height:100%; }
+  HTML,
+  BODY {
+    height: 100%;
+  }
 
-    BODY {
-        color:#979a9e;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font: 100% / 1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-shadow:rgba(0,0,0,0.6) 1px 1px 0;
-    }
+  BODY {
+    color: #979a9e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font: 100% / 1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  }
 
-    ARTICLE { padding-bottom: 3em; }
+  ARTICLE { padding: 1.813em 0; }
 
-    A, A:visited {
-        color:#979a9e;
-        text-decoration:none;
-    }
+  A,
+  A:visited {
+    color: #979a9e;
+    text-decoration: none;
+  }
 
-    A:hover { color:#fc0; }
+  A:hover { color: #fc0; }
 
-    A:link { -webkit-tap-highlight-color:transparent }
+  A:link { -webkit-tap-highlight-color: transparent }
 
-    B,STRONG { font-weight:700; }
+  B,
+  STRONG {
+    font-weight: 700;
+  }
 
-    SECTION {
-        border-left: 1px solid #33363a;
-        display: inline-block;
-        text-align: left;
-        padding: 0 30px 0 29px;
-        vertical-align: top;
-        width: 200px;
-    }
+  SECTION {
+    border-left: 1px solid #33363a;
+    display: inline-block;
+    text-align: left;
+    padding: 0 30px 0 29px;
+    vertical-align: top;
+    width: 200px;
+  }
 
-        SECTION:first-of-type {
-            border-left: none;
-            padding-left: 30px;
-        }
+  SECTION:first-of-type {
+    border-left: none;
+    padding-left: 30px;
+  }
 
-    H2 {
-        color:#dde0e4;
-        font-weight: 200;
-        font-size: 150%;
-        text-rendering: optimizelegibility;
-        margin: 0;
-    }
+  .two-columns { width: 400px; }
 
-    UL {
-        margin-bottom: 1.5em;
-        padding: 0;
-    }
+  .bcol {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
 
-        LI {
-            list-style: none;
-            margin-bottom: 0.75em;
-        }
+  H1 {
+    font-weight: 300;
+    font-size: 200%;
+    line-height: 1.5;
+    letter-spacing: -.03em;
+    padding: 0 0 1.25em;
+    max-width: 1240px;
+  }
 
-    ::-moz-selection {
-        background:#66c;
-        color:#fff;
-        text-shadow:none;
-    }
+  H1 SPAN { color: #dde0e4; }
 
-    ::selection {
-        background:#66c;
-        color:#fff;
-        text-shadow:none;
-    }
-    </style>
+  H1,
+  H2 {
+    text-rendering: optimizelegibility;
+    margin: 0;
+  }
+
+  H2 {
+    color: #dde0e4;
+    font-weight: 200;
+    font-size: 150%;
+    padding: .875em 0 .625em;
+  }
+
+  UL {
+    margin: 0 0 1.5em;
+    padding: 0;
+  }
+
+  LI {
+    list-style: none;
+    padding-top: .75em;
+  }
+
+  ::-moz-selection {
+    background: #66c;
+    color: #fff;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: #66c;
+    color: #fff;
+    text-shadow: none;
+  }
+  </style>
 </head>
+
 <body>
+  <article>
+    <!-- <script>
+    var end = new Date('07/10/2015'); // MM/DD/YYYY
+    var timer;
 
-<article>
+    function showRemaining() {
+    var now = new Date();
+    var distance = end - now;
+    if (distance < 0) {
 
+    clearInterval(timer);
+    document.getElementById('countdown').innerHTML = '. Приехала :)';
+
+    return;
+    }
+
+    var days = Math.floor(distance / 86400000); // Day in milliseconds
+    document.getElementById('countdown').innerHTML = ' ' + days + ' дня';
+    }
+
+    timer = setInterval(showRemaining, 1000);
+
+    </script>
+
+    <h1>До приезда Поли осталось<span id="countdown"></span></h1>-->
+
+    <h1>
+    <script type="text/javascript">
+    // Creating the array that stores the text strings
+    var motivation = new Array ();
+
+    //Отношение к жизни и себе
+    motivation[1] = 'Благодарен за дочку, жену, семью в целом, друзей, Черногорию, здоровье, работу';
+    motivation[2] = 'Хорошее — это подарок. Плохое — урок';
+    motivation[3] = 'Цель, миссия, движение, лёгкость, праздник, достаток';
+    motivation[4] = 'Люблю себя в первую очередь. Таким, какой я есть. Принимаю свои слабости';
+    motivation[5] = 'Живу для себя, не для других людей';
+    motivation[6] = 'Живу легко. Счастлив';
+    motivation[7] = 'Другой жизни у меня не будет';
+    motivation[8] = 'Живу сейчас. Сам выбираю, с кем общаться, что делать и чувствовать';
+    motivation[9] = 'Сегодняшний день — это самый лучший день моей жизни';
+    motivation[10] = 'Жизнь состоит только из сегодня. Вчера уже нет, завтра не наступило. Этот день должен быть счастливым';
+    motivation[11] = 'Каждое утро одеваюсь в счастье';
+    motivation[12] = 'Получаю удовольствие от каждого события';
+    motivation[13] = 'Меня переполняет энергия и оптимизм';
+    motivation[14] = 'У меня есть цели в жизни. Мне есть зачем вставать по утрам';
+    motivation[15] = 'Утром: «Что я собираюсь сделать?» Перед сном: «Что я сделал?»';
+    motivation[16] = 'Я этого хочу. Значит, это будет';
+    motivation[17] = 'Всё стоящее в жизни требует риска и усилий';
+    motivation[18] = 'Кто не стучится — тому не открывают. Кто не пробует — у того не получается';
+    motivation[19] = 'Никогда не сдаюсь. Пытаюсь, пытаюсь и снова пытаюсь';
+    motivation[20] = 'Сфокусирован на главном. Не трачу время, силы и нервы на пустяки и на то, что невозможно изменить';
+    motivation[21] = 'Однако не придаю ничему большего значения — всё суета сует и томление духа';
+    motivation[22] = 'Не тороплюсь. Дьявол — в суете';
+    motivation[23] = 'Всё, что ни делается, — к лучшему. Сложится, что задумал — хорошо. Нет — тоже хорошо. Значит, мне приготовлен лучший вариант';
+    motivation[24] = 'Меньше переживаю, больше люблю и радуюсь';
+    motivation[25] = 'Не всякая проблема является концом света';
+    motivation[26] = 'Расслабленно наблюдаю, а не контролирую. Полако и маньяна';
+    motivation[27] = 'Если проблему можно разрешить, не стоит о ней беспокоиться. Если проблема неразрешима, беспокоиться о ней бессмысленно';
+    motivation[28] = 'Тоска и страдания — это сигналы о том, что я живу против собственной природы';
+    motivation[29] = 'Если что-то тревожит (будущее) или печалит (прошлое), «пробуждаюсь» в настоящем, смотреть на себя со стороны и делать шаг к цели';
+    motivation[30] = 'У меня здоровое тело, блестящий ум, спокойный дух. Я всё могу';
+    motivation[31] = 'Честность — лучшая линия поведения. Не вру ни себе, ни кому-либо ещё';
+    motivation[32] = 'Качество лучше количества';
+    motivation[33] = 'Не привязываюсь к вещам. Выбросил всё старое и ненужное';
+    motivation[34] = 'Танцую и пою при первой возможности';
+
+    //Саморазвитие
+    motivation[35] = 'Здоровое питание, разгрузочный день раз в неделю (йогурт), спорт, дыхательные упражнения, прогулки, обливания';
+    motivation[36] = 'Всегда есть время: для любви, семьи, дружбы, работы, смеха, здоровья, чтения, игры и планирования';
+    motivation[37] = 'Бросил пить. Любимые напитки — зелёный чай с лимоном и мёдом, минеральная вода с лимоном и льдом';
+    motivation[38] = 'На завтрак — два варёных яйца и овсянка с мёдом и орехами';
+    motivation[39] = 'Бегаю после работы';
+    motivation[40] = 'Читаю по 70 стр. ipad 5 дней в неделю: классика, беллетристика, профессиональная, историческая';
+    motivation[41] = 'Не перестаю учиться. Узнаю что-то новое каждый день: программирование, география, ботаника и т. д.';
+    motivation[42] = 'В непонятных ситуациях всегда ложусь спать';
+    motivation[43] = 'Каждый день пробую новое: новое блюдо, новый путь домой и т. д.';
+    motivation[44] = 'Раз в год посещаю новое место — где ещё не бывал';
+    motivation[45] = '20 минут после работы: чтение или медитация, или программирование';
+    motivation[46] = 'Таблицы Шульте: 4 раза в неделю по 20 минут на протяжении 3 недель';
+    motivation[47] = 'Учу по одному стихотворению в день';
+    motivation[48] = 'Каждый вечер пишу план на завтра';
+    motivation[49] = 'Не пользуюсь мобильным интернетом. Только — wi fi';
+    motivation[50] = 'Раз в неделю провожу час одиночества: без гаджетов и на природе';
+    motivation[51] = 'Делаю то, что пугает: прыгал с парашютом, дерусь с хамами и т. д.';
+    motivation[52] = 'Прочитаю «Улисс» и «Войну и мир»';
+    motivation[53] = 'Отправлюсь на яхте в открытое море';
+    motivation[54] = 'Отдохну в сотнях километров от цивилизации';
+    motivation[55] = 'Освою новую профессию: архитектор, художник';
+    motivation[56] = 'Начну свой бизнес';
+    motivation[57] = 'Попробую новый вид спорта: скейтборд, бокс, картинг';
+    motivation[58] = 'Пробегу марафон';
+    motivation[59] = 'Прокачусь верхом на слоне';
+    motivation[60] = 'Научусь танго';
+
+    //Деньги
+    motivation[61] = 'Икигай: то, что люблю и умею; то, что нужно миру и за что я получаю деньги';
+    motivation[62] = 'Создаю вещи, за которые другие готовы платить деньги';
+    motivation[63] = 'В 45 лет куплю квартиры себе и дочке, стану долларовым миллионером';
+    motivation[64] = 'Богатство и нищета — это состояние ума. Одежда, интерьеры, гаджеты программируют сознание на уровень достатка';
+    motivation[65] = 'Не жалею денег на удовольствие';
+    motivation[66] = 'Страх потратить деньги на себя делает нищим';
+    motivation[67] = 'Жизнь ожиданием будущего приводит к разрухе';
+    motivation[68] = 'Нищета находится в немытой голове';
+
+    //Отношения с другими людьми
+    motivation[69] = 'Мне никто ничего не должен. Я никому ничего не должен';
+    motivation[70] = 'Злиться — это всё равно, что принять яд и ждать, когда умрёт другой';
+    motivation[71] = 'Жизнь становится в миллион раз проще, если видеть в людях хорошее, а не плохое';
+    motivation[72] = 'Всегда рассчитываю только на себя. Но принимаю помощь и использую возможности';
+    motivation[73] = 'Интересуюсь людьми';
+    motivation[74] = 'Любезен с окружающими — благодарность другим помогает';
+    motivation[75] = 'Радуюсь за тех, кто счастлив';
+    motivation[76] = 'Не сравниваю себя с другими, они никогда не будут такими как я';
+    motivation[77] = 'Не скрываю чувств';
+    motivation[78] = 'Пишу друзьям и семье';
+    motivation[79] = 'Не канючу — попрошаек никто не любят. Любят терпеливых и с чувством собственного достоинства';
+    motivation[80] = 'Не жалуюсь. Никого не интересуют чужие проблемы';
+    motivation[81] = 'Не ной, не бойся, не проси';
+    motivation[82] = 'Оптимизм вырабатывается с помощью осознанной замены негативных предположений о мотивах других людей';
+    motivation[83] = 'Всегда демонстрирую хорошее настроение и дружелюбие';
+    motivation[84] = 'Не коплю обиды. Прощаю';
+    motivation[85] = 'Уважаю себя. Уважаю других. Отвечаю за свои поступки';
+    motivation[86] = 'Не критикую и не спорю';
+    motivation[87] = 'Оценивая поведение другого человека, принимаю во внимание ситуацию и обстоятельства';
+    motivation[88] = 'Не парюсь о том, что думают обо мне окружающие';
+    motivation[89] = 'Сначала даю, а потом получаю';
+    motivation[90] = 'Улыбаюсь, когда разговариваю. Слушаю внимательно. Отношусь к собеседнику, как к важнейшему человеку на земле';
+    motivation[91] = 'Улыбаюсь, разговаривая по телефону — люди это чувствуют';
+    motivation[92] = 'Делаю комплименты';
+    motivation[93] = 'Бескорыстно делаю добро. Помогаю другим хотя бы раз в день — добрые дела приносят счастье';
+    motivation[94] = 'Делюсь знанием';
+    motivation[95] = 'Принцип «бумеранга»: что посеешь, то и пожнёшь; как аукнется, так и откликнется; не суди и не судим будешь';
+    motivation[96] = 'Не навязываю своё прошлое окружающим, если об этом не просят';
+    motivation[97] = 'Не требую и не ожидаю от других схожести с собой';
+    motivation[98] = 'Делегирую, избегаю ненужных встреч и неквалифицированной помощи, отдыхаю';
+    motivation[99] = 'Я защитник, великодушный, щедрый, аккуратный, ухоженный, самоуверенный, ласковый и добрый';
+    motivation[0] = 'Нельзя угодить всем';
+
+
+    // Generating a random number
+    var i = Math.floor(100*Math.random());
+
+    document.write(motivation[i]);
+    </script>
+</h1>
     <section>
-        <h2>Forex Club</h2>
-        <ul>
-        <li><a href="http://www.fxclub.org/" title="Forex Club" target="_blank">Корп. вебсайт</a></li>
-        <li><a href="https://trello.com/b/N7RRqtIp/service-desk-icebox" title="Forex Club — Trello" target="_blank">Trello</a></li>
-        <li><a href="https://sd.fxclub.org/HomePage.do" title="Forex Club — Service Desk" target="_blank">Service Desk</a></li>
-        <li><a href="http://jira.fxclub.org/secure/RapidBoard.jspa?rapidView=152&amp;view=planning" title="Forex Club — Jira" target="_blank">Jira</a></li>
-        </ul>
-
-        <h2>Google</h2>
-        <ul>
-        <li><a href="https://drive.google.com/#my-drive" title="Google Drive" target="_blank">Drive</a></li>
-        <li><a href="https://www.google.com/analytics/web/?#report/visitors-overview/a49381759w81115273p84001921/" title="Google Analytics" target="_blank">Analytics</a></li>
-        <li><a href="https://www.google.com/webmasters/tools/home?hl=ru" title="Google Webmaster Tools" target="_blank">Webmaster Tools</a></li>
-        </ul>
-
-        <h2>Design</h2>
-        <ul>
-        <li><a href="http://feedly.com/#category%2F%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD" title="Design | Feedly" target="_blank">Feedly</a></li>
-        <li><a href="http://lesscss.org/features/" title="LESS Features and Functions" target="_blank">LESS</a></li>
-        </ul>
+      <h2>Forex Club</h2>
+      <ul>
+        <li><a href="http://www.fxclub.org/" title="Forex Club">Корп. вебсайт</a></li>
+        <li><a href="https://intranet.fxclub.org/" title="Forex Club — Интранет">Интранет</a></li>
+        <!-- <li><a href="https://trello.com/b/N7RRqtIp/service-desk-icebox" title="Forex Club — Trello">Trello</a></li> -->
+        <li><a href="https://sd.fxclub.org/HomePage.do" title="Forex Club — Service Desk">Service Desk</a></li>
+        <li><a href="https://jira.fxclub.org/secure/RapidBoard.jspa?rapidView=179&amp;view=planning.nodetail" title="Forex Club — Jira">Jira</a></li>
+      </ul>
+      <h2>Design and Front-end</h2>
+      <ul>
+        <li><a href="http://getbootstrap.com/components/" title="Bootstrap Components">Bootstrap Components</a></li>
+        <li><a href="http://travislorton.com/bootstraplist/" title="Bootstrap Components">Bootstrap Cheat Sheet</a></li>
+        <li><a href="http://feedly.com/#category%2F%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD" title="Design | Feedly">Feedly</a></li>
+        <li><a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html" title="Sass (Syntactically Awesome StyleSheets)">Sass</a></li>
+        <li><a href="http://lesscss.org/features/" title="LESS Features and Functions">LESS</a></li>
+      </ul>
     </section>
 
     <section>
-        <h2>Marketing</h2>
-        <ul>
-        <li><a href="http://www.similarweb.com/" title="SimilarWeb" target="_blank">SimilarWeb</a></li>
-        <li><a href="https://www.crazyegg.com/dashboard" title="Crazy Egg" target="_blank">Crazy Egg</a></li>
-        <li><a href="http://www.semrush.com/" title="SEMrush" target="_blank">SEMrush</a></li>
-        <li><a href="http://moz.com/researchtools/ose" title="Moz | Open Site Explorer" target="_blank">Moz | Open Site Explorer</a></li>
-        <li><a href="https://ahrefs.com/" title="ahrefs" target="_blank">ahrefs</a></li>
-        <li><a href="http://www.majesticseo.com/" title="Majestic SEO" target="_blank">Majestic SEO</a></li>
-        <li><a href="http://spywords.ru/sword.php" title="Spywords" target="_blank">Spywords</a></li>
-        <li><a href="http://www.spyfu.com/" title="SpyFu — Competitors Keywords" target="_blank">SpyFu — Competitors Keywords</a></li>
-        <li><a href="http://siteexplorer.search.yahoo.com/" title="Yahoo! Siteexplorer — Popular Competitors Pages" target="_blank">Yahoo! Siteexplorer</a></li>
-        </ul>
+      <h2>Marketing</h2>
+      <ul>
+        <li><a href="http://www.similarweb.com/" title="SimilarWeb">SimilarWeb</a></li>
+        <li><a href="https://ru.ahrefs.com/content-explorer/overview/v3/table/1d/en/1/rank_desc?topic=trading" title="ahrefs Content Explorer">ahrefs Content Explorer</a></li>
+        <li><a href="https://ahrefs.com/" title="ahrefs">ahrefs</a></li>
+        <li><a href="https://www.crazyegg.com/dashboard" title="Crazy Egg">Crazy Egg</a></li>
+        <li><a href="http://moz.com/researchtools/ose" title="Moz | Open Site Explorer">Moz | Open Site Explorer</a></li>
+        <li><a href="http://spywords.ru/sword.php" title="Spywords">Spywords</a></li>
+        <li><a href="http://www.spyfu.com/" title="SpyFu — Competitors Keywords">SpyFu</a></li>
+        <li><a href="http://www.moat.com/" title="Moat">Moat</a></li>
+        <li><a href="http://www.semrush.com/" title="SEMrush">SEMrush</a></li>
+        <li><a href="http://www.majesticseo.com/" title="Majestic SEO">Majestic SEO</a></li>
+        <li><a href="http://siteexplorer.search.yahoo.com/" title="Yahoo! Siteexplorer — Popular Competitors Pages">Yahoo! Siteexplorer</a></li>
+      </ul>
     </section>
 
     <section>
-        <h2>Investing</h2>
-        <ul>
-        <li><a href="https://www.sigfig.com/site/#/home" title="SigFig" target="_blank">SigFig</a></li>
-        <li><a href="http://stocktwits.com/home#people" title="StockTwits" target="_blank">StockTwits</a></li>
-        <li><a href="https://flipboard.com/topic/investing" title="Flipboard Investing" target="_blank">Flipboard Investing</a></li>
-        <li><a href="https://flipboard.com/topic/trading" title="Flipboard Trading" target="_blank">Flipboard Trading</a></li>
-        <li><a href="http://hedgemind.com/consensus-stock-picks/top-100-stocks" title="HedgeMind" target="_blank">HedgeMind</a></li>
-        <li><a href="https://www.tradingview.com/chart/0oSEVNMe/" title="TradingView" target="_blank">TradingView</a></li>
-        </ul>
+      <h2>Google</h2>
+      <ul>
+        <li><a href="https://drive.google.com/#my-drive" title="Google Drive">Drive</a></li>
+        <li><a href="https://www.google.com/analytics/web/?#report/visitors-overview/a49381759w81115273p84001921/" title="Google Analytics">Analytics</a></li>
+        <li><a href="https://www.google.com/webmasters/tools/home?hl=ru" title="Search Console">Search Console</a></li>
+      </ul>
+      <h2>Texts</h2>
+      <ul>
+        <li><a href="http://glvrd.ru/" title="Главред">Главред</a></li>
+        <li><a href="http://quittance.ru/tautology.php#effectus" title="Свежий взгляд">Свежий взгляд</a></li>
+        <li><a href="http://cabinet.orfogrammka.ru/" title="Орфограммка">Орфограммка</a></li>
+        <li><a href="http://shop.club-neformat.com/04/sms/" title="Роман в SMS — бумажный">Роман в SMS — бумажный</a></li>
+      </ul>
     </section>
 
-    <section>
-        <h2>Texts</h2>
-        <ul>
-        <li><a href="http://glvrd.ru/" title="Главред" target="_blank">Главред</a></li>
-        <li><a href="http://quittance.ru/tautology.php#effectus" title="Свежий взгляд" target="_blank">Свежий взгляд</a></li>
-        <li><a href="http://cabinet.orfogrammka.ru/" title="Орфограммка" target="_blank">Орфограммка</a></li>
-        <li><a href="http://shop.club-neformat.com/04/sms/" title="Роман в SMS — бумажный" target="_blank">Роман в SMS — бумажный</a></li>
-        </ul>
+    <section class="two-columns">
+      <h2>Investing</h2>
+      <ul class="bcol">
+        <li><a href="https://secure.sigfig.com/#/overview" title="SigFig">SigFig</a></li>
+        <li><a href="https://www.google.com/finance?ei=GhBsVZniMM_L8AOmvYOIDA#stockscreener" title="Google Stock Screener">Stock Screener</a></li>
+        <li><a href="https://www.google.com/finance/portfolio?action=view&amp;pid=1&amp;ei=1RFsVcH5Fs_L8AOmvYOIDA" title="Google Portfolio">Google Finance</a></li>
+        <li><a href="https://finance.yahoo.com/portfolio/pf_1/view/v1" title="Google Portfolio">Yahoo Finance</a></li>
+        <li><a href="http://stocktwits.com/home#people" title="StockTwits">StockTwits</a></li>
+        <li><a href="https://flipboard.com/topic/investing" title="Flipboard Investing">Flipboard Investing</a></li>
+        <li><a href="https://flipboard.com/topic/trading" title="Flipboard Trading">Flipboard Trading</a></li>
+        <li><a href="http://hedgemind.com/consensus-stock-picks/top-100-stocks" title="HedgeMind">HedgeMind</a></li>
+        <li><a href="https://www.tradingview.com/chart/0oSEVNMe/" title="TradingView">TradingView</a></li>
+        <li><a href="https://secure.sigfig.com/#/guidance" title="SigFig Portfolio Planner Tool">SigFig Planner</a></li>
+        <li><a href="https://onboarding.betterment.com/#plan/44/60000" title="Betterment Portfolio Planner Tool">Betterment Planner</a></li>
+        <li><a href="https://personal.vanguard.com/us/funds/tools/recommendation" title="Vanguard Portfolio Planner Tool">Vanguard Planner</a></li>
+        <li><a href="http://www.stockopedia.com/screens/" title="Vanguard Portfolio Planner Tool">Stockopedia Screens</a></li>
+        <li><a href="http://www.morningstar.com/tools.html" title="Morningstar Tools">Morningstar Tools</a></li>
+        <li><a href="https://www.wealthfront.com/" title="Robo-adviser — Wealthfront">Robo-adviser — Wealthfront</a></li>
+        <li><a href="https://trader.motifinvesting.com/motifs#catalog=our" title="Motif — ETF-like Investments">Motif — ETF-like Investments</a></li>
+      </ul>
     </section>
+  </article>
 
-</article>
+  <!--
+  Free Marketing Tools
+  https://www.hotjar.com/ — Crazy Egg and KissMetrics alternative
+  https://charlieapp.com/ — CRM tool
+  http://peek.usertesting.com/ — Testing
+  -->
 
 </body>
 </html>

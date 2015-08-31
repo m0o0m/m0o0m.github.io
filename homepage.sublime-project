@@ -1,43 +1,60 @@
 {
+    "url": "http://www.nickysheen.dev/",
+
     "folders":
     [
         {
-            "path": "/Users/nikishin-va/Sites/homepage",
-            "file_exclude_patterns":[
+            "path": "/Users/vova/Sites/homepage",
+            
+            "file_exclude_patterns":
+            [
+                "*.ico",
+                "*.sublime-projectcompletions",
+                "*.sublime-project",
+                "*.sublime-workspace",
+                "*.swf",
+                "*.tar",
+                "*.tgz",
+                "*.zip",
+                ".gitattributes",
                 ".nojekyll",
+                ".sublime-grunt.cache",
                 "BingSiteAuth.xml",
                 "cron.php",
                 "google*.html",
                 "gss.xsl",
-                "*.ico",
                 "index.php",
                 "install.php",
                 "pinterest-*.html",
-                "phpMyAdmin",
-                "*.swf",
-                "*.sublime-projectcompletions",
-                "*.sublime-project",
-                "*.sublime-workspace",
-                "*.tar",
-                "*.tgz",
                 "update.php",
                 "wp-*.php",
                 "yandex*.html",
                 "y_key_*.html",
-                "*.zip",
                 "xmlrpc.php"
             ],
+
             "folder_exclude_patterns":
             [
+                ".git",
                 "_notes",
                 "cgi-bin",
-                ".git",
                 "includes",
+                "node_modules",
+                "phpMyAdmin",
                 "profiles",
                 "scripts",
                 "wp-admin",
                 "wp-includes"
             ]
         }
-    ]
+    ], // end progect folder settings
+     
+    "settings":
+        {
+        "less2css":
+            {
+                "lessBaseDir": "./a/less/",
+                "outputDir": "./a/css/"
+            }
+    } // end plugins settings
 }
