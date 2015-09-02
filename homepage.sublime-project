@@ -4,8 +4,8 @@
     "folders":
     [
         {
-            "path": "/Users/vova/Sites/homepage",
-            
+            "path": "/Users/nikishin-va/Sites/homepage",
+
             "file_exclude_patterns":
             [
                 "*.ico",
@@ -47,14 +47,6 @@
                 "wp-includes"
             ]
         }
-    ], // end progect folder settings
-     
-    "settings":
-        {
-        "less2css":
-            {
-                "lessBaseDir": "./a/less/",
-                "outputDir": "./a/css/"
-            }
-    } // end plugins settings
+    ] // end progect folder settings
+
 }
