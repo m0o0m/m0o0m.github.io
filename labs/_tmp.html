@@ -1,20 +1,354 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<!--[if lt IE 9]><html lang="" class="oldie"><![endif]-->
+<!--[if gt IE 10]><!--><html lang=""><!--<![endif]-->
+<!-- http://localhost:9000/_src/_pages/_wip/_wip.html -->
 <head>
   <meta charset="utf-8">
-  <title>.tmp</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-    }
-    body { overflow-y: hidden; }
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <title>Work in Progress</title>
 
-  </style>
+  <!--
+   * Styles
+   * Paths to source files should be relative to current page.
+   * form page to /app/themes/supermark-2016/_src/css/main.css
+   * Paths to built files should be relative to resulted page.
+   * form page to /app/themes/supermark-2016/css/main.css
+  -->
+  <!-- build:css ../../../css/main.css -->
+  <link rel="stylesheet" href="../../css/main.css">
+  <!-- endbuild-->
+
+  <!-- build:css ../../../css/front.css -->
+  <link rel="stylesheet" href="../../css/_pages/front/front.css">
+  <!-- endbuild-->
+
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- build:css ../../../js/vendor/picturefill.js -->
+  <script src="../../../../../../bower_components/picturefill/dist/picturefill.js" async="async"></script>
+  <!-- endbuild-->
 </head>
-
 <body>
-<iframe width="1440" height="1080" src="https://www.youtube.com/embed/NTt7eCq02hM" frameborder="0" allowfullscreen></iframe>
+
+  <div class="container-main">
+
+
+
+
+  <!-- HEADER: MOVE TO INCLUDE TO SHARE W/ SINGLE / PAGE =================== -->
+
+    <header class="header">
+
+      <!-- Humburger button -->
+      <button class="header-btn header-navbar-toggle hidden-lg-up" type="button" title="Меню">
+        <i class="icon icon-hamburger">Меню</i>
+      </button>
+
+      <!-- Logo area -->
+      <div id="header-brand" class="header-brand dropdown has-context-menu" aria-haspopup="true" itemtype="http://schema.org/Corporation" itemscope="">
+
+        <!-- Logo & Tagline -->
+        <a href="/" role="button" itemprop="url" >
+          <img src="/app/themes/supermark-2016/img/header/logo-supermark-lg.svg" itemprop="image" class="header-logo svg" alt="Логотип SuperMark">
+          <h2 class="header-title">
+            <span class="header-logo-mobile hidden-lg-up text-hide" itemprop="name">{{site.name}}</span>
+            <span class="header-tagline hidden-sm-down">UX/UI, разработка, маркетинг</span>
+          </h2>
+        </a>
+
+        <!-- Context Menu -->
+        <div class="header-context-menu dropdown-menu on-left" aria-labelledby="header-brand">
+          <h2 class="context-menu-heading"><a href="https://www.facebook.com/hashtag/дешевлебыстрееоx_енно" target="_blank">#‎ДешевлеБыстрееОфигенно‬</a></h2>
+          <p>Прогрессивный веб-дизайн. Современные методики продвижения в&nbsp;интернете, соцмедиа и&nbsp;на&nbsp;мобильных устройствах. Мы&nbsp;в&nbsp;диджитал-маркетинге с&nbsp;1999&nbsp;года.</p>
+
+          <div class="header-context-menu-footer">
+            <img src="/app/themes/supermark-2016/img/header/context-menu/cuty.png" alt="Kотик — это 20% успешного SMM">
+            <hr>
+            <p>Кстати, нравятся котики?<br>
+            Cтавьте лайки, делитесь</p>
+
+            <!-- Social Sharing -->
+            <ul class="header-social-sharing social-sharing social-sharing-h">
+              <!-- https://www.facebook.com/share.php?u=#{_URL}&amp;title=#{_PageTitleEnc} -->
+              <li class="social-sharing-h-item"><a href="" class="social-sharing-link icon icon-social-facebook" target="_blank" title="Поделиться в Фейсбуке">Поделиться в Фейсбуке</a></li>
+              <!-- https://twitter.com/home?status='#{_PageTitleEnc}'+#{_URL} -->
+              <li class="social-sharing-h-item"><a href="" class="social-sharing-link icon icon-social-twitter" target="_blank" title="Поделиться в Твиттере">Поделиться в Твиттере</a></li>
+              <!-- http://vk.com/share.php?url=#{_URL} -->
+              <li class="social-sharing-h-item"><a href="" class="social-sharing-link icon icon-social-vk" target="_blank" title="Поделиться в ВКонтакте">Поделиться в ВКонтакте</a></li>
+              <!-- https://plus.google.com/share?url=#{_URL} -->
+              <li class="social-sharing-h-item"><a href="" class="social-sharing-link icon icon-social-google" target="_blank" title="Поделиться в Google+">Поделиться в Google+</a></li>
+              <!-- https://www.linkedin.com/shareArticle?mini=true&url=#{_URL}&amp;title=#{_PageTitleEnc} -->
+              <li class="social-sharing-h-item"><a href="" class="social-sharing-link icon icon-social-linkedin" target="_blank" title="Поделиться в Ликедине">Поделиться в Ликедине</a></li>
+            </ul>
+          </div><!-- / context menu footer -->
+        </div><!-- / context menu -->
+
+      </div>
+
+      <!-- CTA Button -->
+      <a href="#" class="header-btn-primary btn hidden-sm-down hidden-lg-up" role="button">Нанять специалиста</a>
+
+      <a class="header-btn header-btn-lang hidden-md-up" href="/en" title="English">
+        <i class="icon icon-flag-us">English</i>
+      </a>
+
+    </header>
+
+
+
+
+  <!-- CONTENT ============================================================= -->
+
+    <main id="carousel-main" class="carousel-main carousel slide" data-ride="carousel">
+
+      <article class="carousel-inner">
+
+        <!-- First slide -->
+        <header class="carousel-item carousel-home active">
+
+          <picture class="home-header">
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="/app/themes/supermark-2016/img/_pages/front/home-cinemagraph-md.gif" media="(min-width: 768px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img class="home-img" src="/app/themes/supermark-2016/img/_pages/front/home-cinemagraph.gif" alt="Сильные веб-мастера и маркетологи">
+          </picture>
+
+
+
+          <h1 class="home-headline carousel-headline"><strong>Один веб-мастер</strong>  и&nbsp;маркетолог заменит целый отдел</h1>
+
+          <p>Вам невыгодна постоянная команда маркетологов, дизайнеров и&nbsp;программистов? Но&nbsp;нужны продвижение, поддержка сайта, landing-страницы? Причём на&nbsp;уровне, а&nbsp;не&nbsp;из&nbsp;сельпо. <span title="Цена, конечно, ни три копейки, но и не как чугунный мост">И&nbsp;за&nbsp;разумные деньги.</span> Замените отдел <strong>одним</strong> удалённым универсалом на&nbsp;подряде&nbsp;&mdash; <span title="Быстрее, дешевле и то, что доктор прописал">будет вам счастье…</span></p>
+
+          <!-- CTA Button — Green -->
+          <a href="tel:+382-69-18-4524" class="carousel-btn-primary btn hidden-md-up" role="button">Звоните — договоримся</a>
+
+          <!-- Last projects -->
+          <figure class="home-projects hidden-sm-down">
+
+            <figcaption>
+              <span class="icon icon-projects">Последние работы: </span>
+              <a class="home-projects-more" href="#">ещё</a>
+            </figcaption>
+
+            <a class="home-projects-link" href="/app/themes/supermark-2016/_src/_pages/projects/forex-club/forex-club.html" data-target="#modal" data-toggle="modal" data-src="external" title="Forex Club Украина: UX, UI, разработка">
+              <img class="home-thumbnail first img-thumbnail" src="data:image/png;base64,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" alt="Forex Club: UI/UX, разработка, маркетинг">
+            </a>
+
+            <a class="home-projects-link" href="#" data-toggle="modal" data-src="external" data-target="#modal" title="">
+              <img class="home-thumbnail second img-thumbnail" src="data:image/png;base64,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" alt="Polylog: веб-дизайн, разработка, маркетинг">
+            </a>
+
+            <a class="home-projects-link" href="#" data-toggle="modal" data-src="external" data-target="#modal" title="">
+              <img class="home-thumbnail third img-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABACAMAAADS6oI8AAAB5lBMVEUPDw8SEhIUFBQUFBUVFRUVFRcXFxcXFxgYGBgYGhoaGhoaGxsbGxsbHR0dHR0dHh4eHh4gICAhISEiIiIkJCQlJSUoKCgrKysvLy8wMDA1NTVBQUFCQkJISEhJSUlPT09QUFBXV1dZWVlbW1tlZWVpaWlqampycnJ1dXV/gYWChYmDg4OEh4uFiIyHio6IiIiIi4+JjJCKioqLjpGMj5OOkJSPj4+PkpaRlJeRlJiSlZmUl5uVlZWWmJyXmp6bnqGcn6KeoKOioqKlpaWnqq2pqamrq6utra2usLOxs7ays7W0t7q2tra3ur24uby5ubm7vL++v8G/v7/AwcTBwcHBwsTCw8bDw8PExMTExcjFxcXGxsbGx8rIyczIy8/JycnJyszJzNDKysrKy83LzM7LzM/MHADMzMzNzdDOz9HPz8/P0NLR0tXSICDS0tLS09XT09PT1NbU1NTU1dfV1dXW1tbW19nX19fX2NrY2NjY2dvY2dzZ2dna2tra293b29vb3N7c3Nzc3eDd3d3d4OTe3t7e3+Hf39/f4OHg4ODh4eHi4uLi4+Tj4+Pk5OTl5eXl5ufm5+nn5+fo6Ojo6Orp6enp6uzs7e/u7/Hv8PLw8fPy293y8/Xz9Pb09ff19vj29/n3+PqWJGKrAAACrElEQVRYw+2Q6V8SURSGD0TTNOIwg9hi+15UFJXl2mplZVqalO1pWrmFpSmpGRqguSEZmLb+p13By5xBJsax+8Wfz4fhhfec+1wGcimO3XEcOCWR+kMjk18v5uUuGUgme+JYO05YEAp9jgQOpj1k4UYUh0rgoEiJVsJJKfsChNDolzvbHYuR1QIZd0sSEMVEpGTTIoGkFkgqQQ5FTLQiTkrpG1pgZLJrX04KolqAF3OWLBgKjEYqtvx/QbdfITA+fmIDS4HfH5p4sUevwE6hx+KklF0DGO+DKztle+pqUoAW7SBTrInWipNSYkF3fcVeQZDk1FUKXpT1Cjr7Kb7m6mMbLVZJ1inIpnCJlsNJKZMC7/1L20wWPisbt2oBXswGG4VPtDxOSvmmL07Xk6r9WZb1ok0FrxbgRRuIFHosTkoZF5C3c3qzmbeKKaQKcKdX4PX5fO33Lu8wWQRRNCagbx4npfT6OuurDohprj8vMAHCpPUPTLRVkiJob64uyTNxaa5PsPIcQn0HsFKE+BQv4JSEu3t1l9ms+kknoG+MO2w3cwaOJwJBF7zZwvOCEfQKDB5PBDxjVgWZBesYswIEaxnDXmBhzAoQrGHMqiCzYCtj4HlDw1OWQEvLK6bA246OjtcMgfc9Pe9YAh8JHxgCw8PDQYNcL6gkz8aThwoatYdgzDCPyly3yEd++Vh5vvYUVDqd58MGOXM7HG51BsNBZ6vmDBypmTZMIdmtKSThH4dA2akbUaMUeaJRTxEJRz2aMxCrO1ccM0hxXSzW65qKTbl6NWfg28zL49Mzxih9OP+4OXOtVHsG3G537awhasmqe3Z28Kz7wqD2FHxnDPwk/GAI/GIM/F4mjzP07AV/lsmzDP2qICNqwSeE3i9NiDRjMMda0DbHWNDUxlbwF6TOXaOEsYbpAAAAAElFTkSuQmCC" alt="Colt: UI/UX, маркетинг">
+            </a>
+
+          </figure>
+
+        </header>
+
+        <!-- Second slide. @TODO: add lazy load
+        http://stackoverflow.com/questions/27675968/lazy-load-not-work-in-bootstrap-carousel  -->
+        <section class="carousel-item carousel-about">
+
+          <h2 class="article-flag">Любя, съешь щипцы, — вздохнёт мэр, — кайф жгуч</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, quis, facere. Nihil quam, quisquam doloribus accusamus ab vel repellat. Veritatis dignissimos cumque reiciendis quia quam, minima deserunt, sapiente id nemo!</p>
+
+          <h1 class="article-headline">Любя, съешь щипцы, — вздохнёт мэр, — кайф жгуч</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, quis, facere. Nihil quam, quisquam doloribus accusamus ab vel repellat. Veritatis dignissimos cumque reiciendis quia quam, minima deserunt, sapiente id nemo!</p>
+
+          <h2 class="article-subhead">Широкая электрификация южных губерний даст мощный толчок подъёму сельского хозяйства</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, quis, facere. Nihil quam, quisquam doloribus accusamus ab vel repellat. Veritatis dignissimos cumque reiciendis quia quam, minima deserunt, sapiente id nemo!</p>
+
+<!--           <header class="carousel-header">
+            <h2 class="carousel-headline">О нас</h2>
+          </header>
+
+          <div class="row">
+
+          </div>
+
+          <footer class="carousel-footer">
+
+          </footer> -->
+
+        </section>
+
+        <section class="carousel-item carousel-services">
+
+          <header class="carousel-header">
+            <h2 class="carousel-headline">Услуги</h2>
+          </header>
+
+
+          <footer class="carousel-footer">
+
+          </footer>
+
+        </section>
+
+      </article>
+
+    </main>
+
+
+
+
+    <!-- NAVBAR / DRAWER: MOVE TO INCLUDE TO SHARE W/ SINGLE / PAGE ======== -->
+    <nav class="navbar">
+
+      <!-- Navbar header on mobiles -->
+      <header class="navbar-header hidden-lg-up">
+        <a class="navbar-logo" href="#carousel-main" role="button" data-slide-to="0">{{site.name}}</a>
+        <a class="header-btn header-btn-lang hidden-sm-down hidden-lg-up" href="/en" title="English"><i class="icon icon-flag-us">English</i></a>
+      </header>
+
+      <!-- Search -->
+      <form class="navbar-search hidden-lg-up" action="/">
+        <input type="text" class="form-control navbar-search-input" placeholder="Поиск" autocomplete="off">
+        <button class="navbar-search-btn btn" type="submit"><i class="icon icon-search">Найти</i></button>
+        <div class="dropdown-menu search-results" id="search-results"></div>
+      </form>
+
+      <!-- Language switcher and search -->
+      <ul class="navbar-secondary nav hidden-md-down">
+        <li><a href="/" class="navbar-secondary-link-flag active"><i class="icon icon-flag-ru">По-русски</i></a></li>
+        <li><a href="/en" class="navbar-secondary-link-flag"><i class="icon icon-flag-us">English</i></a></li>
+        <li class="navbar-secondary-search"><a href="#" class="navbar-secondary-link-search"><i class="icon icon-search">Поиск</i></a></li>
+      </ul>
+
+      <!-- Main menu / Drawer on mobiles -->
+      <ul class="navbar-primary nav">
+        <li class="navbar-primary-item">
+          <a class="navbar-primary-link" href="#carousel-main" role="button" data-slide-to="1">Услуги</a>
+        </li><!-- / services -->
+
+        <!--
+        Идут исключительно в модальные окна
+        - Веб-разработка
+        - Дизайн (галерея работ)
+        - Контент-маркетинг
+        - Комплексное продвижение
+        - Рабочий процесс
+         -->
+
+        <li class="navbar-primary-item">
+          <a class="navbar-primary-link" href="#carousel-main" role="button" data-slide-to="2">Цены</a>
+        </li><!-- / services -->
+
+        <li class="navbar-primary-item">
+          <a class="navbar-primary-link" href="#carousel-main" role="button" data-slide-to="3">Об агентстве</a>
+        </li><!-- / about -->
+
+        <li class="navbar-primary-item">
+          <a class="navbar-primary-link" href="#carousel-main" role="button" data-slide-to="4">Блог</a>
+          <!-- <a class="navbar-primary-link" href="/blog">Блог</a> -->
+        </li><!-- / blog -->
+
+      </ul>
+
+      <!-- Social Sharing and Pin Up -->
+      <footer class="navbar-footer hidden-lg-up">
+
+        <figure class="navbar-footer-cta hidden-sm-down">
+
+          <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="/app/themes/supermark-2016/img/navbar/girl.png 2x" media="(min-width: 545px) and (max-width: 991px) and (min-height: 696px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img class="navbar-footer-pic" src="data:image/gif;base64,R0lGODlhAQABAAAAADs=" alt="Пин-ап Сида Брака. Красивые женщины — это 80% успешного маркетинга.">
+          </picture>
+
+          <figcaption><b>Нравятся картинки?</b> Делитесь, ставьте лайки</figcaption>
+
+        </figure>
+
+        <ul class="navbar-social-sharing social-sharing social-sharing-h">
+          <!-- https://www.facebook.com/share.php?u=#{_URL}&amp;title=#{_PageTitleEnc} -->
+          <li class="social-sharing-h-item"><a href="" class="social-sharing-link icon icon-social-facebook" target="_blank" title="Поделиться в Фейсбуке">Поделиться в Фейсбуке</a></li>
+          <!-- https://twitter.com/home?status='#{_PageTitleEnc}'+#{_URL} -->
+          <li class="social-sharing-h-item"><a href="" class="social-sharing-link icon icon-social-twitter" target="_blank" title="Поделиться в Твиттере">Поделиться в Твиттере</a></li>
+          <!-- http://vk.com/share.php?url=#{_URL} -->
+          <li class="social-sharing-h-item"><a href="" class="social-sharing-link icon icon-social-vk" target="_blank" title="Поделиться в ВКонтакте">Поделиться в ВКонтакте</a></li>
+          <!-- https://plus.google.com/share?url=#{_URL} -->
+          <li class="social-sharing-h-item"><a href="" class="social-sharing-link icon icon-social-google" target="_blank" title="Поделиться в Google+">Поделиться в Google+</a></li>
+          <!-- https://www.linkedin.com/shareArticle?mini=true&url=#{_URL}&amp;title=#{_PageTitleEnc} -->
+          <li class="social-sharing-h-item"><a href="" class="social-sharing-link icon icon-social-linkedin" target="_blank" title="Поделиться в Ликедине">Поделиться в Ликедине</a></li>
+        </ul>
+
+      </footer><!-- / navbar footer -->
+
+      <!-- CTA Button -->
+      <a href="#" class="navbar-btn-primary btn hidden-md-down" role="button">Нанять специалиста</a>
+
+    </nav><!-- / navbar / drawer -->
+
+  </div><!-- container-main -->
+
+
+
+
+  <!-- MODAL =============================================================== -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      </div><!-- / modal-content -->
+    </div><!-- / modal-dialog -->
+  </div><!-- / modal fade -->
+
+  <!-- SCRIPTS ============================================================= -->
+  <!--[if !(IE 8)]><!-->
+
+  <!-- build:js ../../../js/vendor/jquery.js-->
+    <script src="../../../../../../bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbuild-->
+
+  <!-- build:js ../../../js/plugins.js-->
+
+    <!-- Mobile libraries-->
+    <script src="../../../../../../bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="../../js/jquery.mobile.custom.js"></script>
+
+    <!-- Bootstrap plugins -->
+    <script src="../../../../../../bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="../../../../../../bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="../../../../../../bower_components/bootstrap/js/dist/button.js"></script>
+    <!-- <script src="../../../../../../bower_components/bootstrap/js/dist/collapse.js"></script> -->
+    <script src="../../../../../../bower_components/bootstrap/js/dist/dropdown.js"></script>
+
+  <!-- endbuild-->
+
+
+  <!-- build:js ../../../js/main.js -->
+    <script src="../../dropdown/context-menu/context-menu.js"></script>
+    <script src="../../img/img.js"></script>
+    <script src="../../navbar/navbar.js"></script>
+    <script src="../../main.js"></script>
+  <!-- endbuild-->
+
+  <!-- build:js ../../../js/front.js -->
+    <script src="../../../../../../bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="../../../../../../bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="../../carousel/carousel.js"></script>
+    <script src="../../modal/modal.js"></script>
+  <!-- endbuild-->
+
+
+  <!--<![endif]-->
+
+  <!-- @todo: update js.srcPlugins in /gulpfile.js/config.json -->
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="/app/themes/supermark-2016/js/plugins-oldie.js"></script>
+  <script src="/app/themes/supermark-2016/js/main-oldie.js"></script>
+  <script src="/app/themes/supermark-2016/js/front-oldie.js"></script>
+  <![endif]-->
+
+<!-- bower:js-->
+<!-- endbower-->
+
 </body>
 </html>
