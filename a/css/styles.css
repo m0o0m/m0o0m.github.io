@@ -29,7 +29,7 @@ DIV.off { display: none}
         #switcher .on SPAN { background-position: -445px 0}
         #switcher .off SPAN { background-position: -445px -14px}
 
-#flash { position: absolute; top: 0; left: 460px; z-index: 2}
+#flash, #menu { position: absolute; top: 0; left: 460px; z-index: 2}
 
 .teaser { clip: rect(0 320px 2em 0); white-space: nowrap; position: absolute; top: 23px; left: 160px; height: 1em; width: 320px}
     .teaser H2 { color: #ACAEB2; display: inline; font-size: 100%; margin-right: .4em}

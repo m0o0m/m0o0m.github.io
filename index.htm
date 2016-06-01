@@ -32,8 +32,15 @@
     <meta name="verify-v1" content="QR7k1LL+NW0ntkR3KTZsncIry9pvTfezUmzR5lJ5l+o=" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+    <script src="/a/js/scripts.js" type="text/javascript" ></script>
 
     <script>
+    var params = {
+      name: 'menu',
+      id: 'menu',
+      wmode: 'transparent'
+    };
+
     swfobject.embedSWF('/a/swf/menu.swf', 'menu', '160', '370', '6.0.0', '/a/flash/expressInstall.swf', '', params);
     </script>
 
@@ -50,23 +57,9 @@
     <li class="off" id="swt_ru"><span><!--Indicator--></span>По-русски</li>
     </ul>
 
-
-    <object id="menu" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="160" height="370">
-
-        <param name="movie" value="/a/swf/menu.swf">
-        <param name="wmode" value="opaque">
-        <param name="name" value="menu">
-        <!--[if !IE]>-->
-        <object type="application/x-shockwave-flash" data="/a/swf/menu.swf" width="160" height="370">
-
-        <!--<![endif]-->
+    <div id="menu">
         <img src="/a/img/spacer.gif" alt="" width="160" height="370" usemap="#map_en" class="menu" />
-        <!--[if !IE]>-->
-        </object>
-        <!--<![endif]-->
-
-    </object>
-
+    </div>
 
     <!-- English -->
     <div class="on" id="en">
@@ -150,7 +143,7 @@
 </div>
 <!-- /Modal Box -->
 
-<script src="/a/js/scripts.js" type="text/javascript" ></script>
+
 
 <!-- Google Analytics ====================================================== -->
 <script type="text/javascript">
