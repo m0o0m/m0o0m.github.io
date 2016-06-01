@@ -31,7 +31,13 @@
     <meta name='yandex-verification' content='6ccf352da7c6c8b5' />
     <meta name="verify-v1" content="QR7k1LL+NW0ntkR3KTZsncIry9pvTfezUmzR5lJ5l+o=" />
 
-    <script src="/a/js/scripts.js" type="text/javascript" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+    <script>
+    swfobject.embedSWF('/a/swf/menu.swf', 'menu', '160', '370', '6.0.0', '/a/flash/expressInstall.swf', '', params);
+    </script>
+
+
 </head>
 
 <body>
@@ -44,11 +50,23 @@
     <li class="off" id="swt_ru"><span><!--Indicator--></span>По-русски</li>
     </ul>
 
-    <div id="flash">
-    <script type="text/javascript">
-    AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0','name','menu','width','160','height','370','id','menu','src','/a/swf/menu','quality','high','wmode','transparent','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','/a/swf/menu' ); //end AC code
-    </script>
-    </div>
+
+    <object id="menu" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="160" height="370">
+
+        <param name="movie" value="/a/swf/menu.swf">
+        <param name="wmode" value="opaque">
+        <param name="name" value="menu">
+        <!--[if !IE]>-->
+        <object type="application/x-shockwave-flash" data="/a/swf/menu.swf" width="160" height="370">
+
+        <!--<![endif]-->
+        <img src="/a/img/spacer.gif" alt="" width="160" height="370" usemap="#map_en" class="menu" />
+        <!--[if !IE]>-->
+        </object>
+        <!--<![endif]-->
+
+    </object>
+
 
     <!-- English -->
     <div class="on" id="en">
@@ -60,10 +78,6 @@
     <h2 title="It's me and a girl">Digital marketing<br />
     and design</h2>
     </div>
-
-    <noscript>
-    <img src="/a/img/spacer.gif" alt="" width="160" height="370" usemap="#map_en" class="menu" />
-    </noscript>
 
     <div class="recent">
     <h2>Recent 5</h2>
@@ -103,10 +117,6 @@
     и дизайн</h2>
     </div>
 
-    <noscript>
-    <img src="/a/img/spacer.gif" alt="" width="160" height="370" usemap="#map_ru" class="menu" />
-    </noscript>
-
     <div class="recent">
     <h2>5 новинок</h2>
     <ul>
@@ -126,12 +136,6 @@
     <li class="btn_contact"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#110;&#105;&#99;&#107;&#121;&#115;&#104;&#101;&#101;&#110;&#64;&#121;&#97;&#110;&#100;&#101;&#120;&#46;&#114;&#117;?Subject=design%20request" title="Пишите письма">Пишите письма</a></li>
     <li class="btn_sitemap"><a href="/sitemap.htm" title="Карта сайта" target="mb_copy" rel="open">Карта сайта</a></li>
     </ul>
-
-    <map name="map_ru" id="map_ru">
-    <area shape="poly" coords="11,77,11,105,18,108,134,76,140,70,140,41,133,36,11,77" href="/ru/corporate.htm" alt="«Корпоратив», порталы" title="«Корпоратив», порталы" />
-    <area shape="poly" coords="11,113,11,141,17,144,135,121,140,114,140,85,135,82,11,113" href="/ru/online-games-and-casinos.htm" alt="Онлайн-игры, казино" title="Онлайн-игры, казино" />
-    <area shape="poly" coords="11,150,11,177,16,180,135,165,140,160,140,130,133,126,11,150" href="/ru/misc.htm" alt="Разное" title="Разное" />
-    </map>
     </div>
     <!-- /Russian -->
 </div>
@@ -145,6 +149,8 @@
 <div class="footer"></div>
 </div>
 <!-- /Modal Box -->
+
+<script src="/a/js/scripts.js" type="text/javascript" ></script>
 
 <!-- Google Analytics ====================================================== -->
 <script type="text/javascript">

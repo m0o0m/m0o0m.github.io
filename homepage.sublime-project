@@ -12,7 +12,6 @@
                 "*.sublime-projectcompletions",
                 "*.sublime-project",
                 "*.sublime-workspace",
-                "*.swf",
                 "*.tar",
                 "*.tgz",
                 "*.zip",
